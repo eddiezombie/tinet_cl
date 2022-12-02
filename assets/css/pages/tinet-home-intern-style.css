@@ -712,7 +712,9 @@
   /* background: #eceff1; */
   border-radius: 0px 0px 144px 0px;
   width: 100%;
-  display: block;
+  height: 724px;
+  display: flex;
+  align-items: center;
 }
 .case-intern .banner-content-home{
   height: 620px;
@@ -724,8 +726,9 @@
   min-height: 724px;
 }
 .banner-swiper-home-text {
-  display: flex;
+ display: flex;
   flex-direction: column;
+  max-width: 860px;
   align-items: flex-start;
 }
 .case-intern.banner-swiper-home-text {
