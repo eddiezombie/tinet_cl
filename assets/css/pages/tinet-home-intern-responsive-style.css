@@ -1,0 +1,136 @@
+@media only screen and (max-width: 1280px) {
+  .baner-blog-content {
+    padding: 0px 32px;
+    height: auto;
+    border-radius: 0px;
+  }
+  .baner-blog-text-content {
+    max-width: 45%;
+  }
+  .content-lateral {
+    padding: 0px 32px;
+  }
+  .relation-cards-content {
+    padding: 0px 32px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .baner-blog-content {
+    padding: 100px 0px;
+    border-radius: 0px;
+  }
+  .relation-cards-content .card-group .relation-card-info{
+    padding-top: 16px;
+  }
+  .baner-blog-img-content {
+    display: none;
+  }
+  .baner-blog-text-content {
+    max-width: 534px;
+  }
+  .baner-blog-text-content .baner-blog-text-content__subtitle {
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -0.4px;
+  }
+  .baner-blog-text-content .baner-blog-text-content__des {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.25px;
+  }
+  .content-lateral {
+    max-width: 582px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px auto;
+  }
+  .content-text-lateral-border {
+    border: 0px;
+    padding-bottom: 29px;
+  }
+  .red-social-content {
+    display: none;
+  }
+  .content-text-lateral {
+    max-width: 582px;
+  }
+  .content-info-lateral {
+    margin-top: 40px;
+    border: 0px;
+    padding-left: 0px;
+    max-width: 582px;
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .relation-cards-content {
+    padding: 0px;
+    margin: 72px auto;
+    max-width: 582px;
+  }
+  .mobile-none {
+    display: none;
+  }
+  .relation-card.mrg {
+    margin: 0px;
+    width: 100%;
+  }
+  .relation-card-img {
+    width: 100%;
+    min-height: 248px;
+    height: auto;
+  }
+  .relation-card-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 248px;
+  }
+  .nav-tour {
+    padding: 11px 24px;
+  }
+
+}
+
+@media only screen and (max-width: 645px) {
+  .baner-blog-content {
+    padding: 120px 24px;
+    min-height: 0px;
+  }
+  .content-lateral {
+    padding: 0px 24px;
+  }
+  .relation-cards-content {
+    padding: 0px 24px;
+  }
+  .baner-blog-text-content .baner-blog-text-content__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .baner-blog-text-content .baner-blog-text-content__subtitle {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .baner-blog-text-content .baner-blog-text-content__des {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+  }
+  .img-lateral-content .content-text-lateral__p2{
+    font-size: 12px;
+line-height: 16px;
+letter-spacing: -0.25px;
+  }
+  .relation-header__btn{
+width: 116px;
+padding: 8px 22px;
+height: 40px;
+  }
+  .relation-header__text{
+    width: min-content
+  }
+  .relation-header{
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

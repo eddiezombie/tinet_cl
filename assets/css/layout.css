@@ -1,0 +1,14 @@
+.info-line-content .line{
+	position: relative;
+}
+.info-line-content .line svg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+#trigger1{
+	position: absolute;
+	left: 0;
+	top: 0px;
+}
