@@ -1,3 +1,22 @@
+@media only screen and (min-width: 1441px){
+  .case-intern.banner-content-home .banner-swiper-home,
+  .section-ul-circle,
+  .case-intern.relation-cards-content,
+  .num-spk-work,
+  .content-services-section .relation-cards-content,
+  .case-study{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .case-study .content-response-section{margin: 0 auto;}
+  #section-service-video .relation-cards-content{
+    max-width: 1440px;
+  }
+  .cg-slider .page.left{left: 648px;}
+  .cg-slider .page.right {left: 760px;}
+  .linea-cohete-tres{left: -1156px;}
+  .linea-cohete-uno{width: 1270px;}
+}
 @media only screen and (max-width: 1280px) {
   .baner-blog-img-content img{
     margin-top: 75px;
