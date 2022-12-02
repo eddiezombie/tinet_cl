@@ -2,6 +2,62 @@
     margin: 0 auto;
     text-align: center;
   }
+.i-banner-main{
+    text-align: left;
+    position: relative;
+    overflow: hidden;    
+}
+.i-banner-main:after{
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    right: -30px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-image: url('../img/industry/1.png');
+}
+.i-banner-container{
+    margin: 0 auto;
+    padding: 160px 24px 0;
+    max-width: 1180px;
+    min-height: 724px;
+    position: relative;
+    z-index: 1;
+}
+.i-banner-container h3{
+    color: #212121;
+}
+.i-banner-container p{
+    padding-top: 16px;
+    max-width: 670px;
+}
+@media (max-width:1000px){
+    .i-banner-container{
+        padding: 100px 24px 0;
+        min-height: 422px;
+    }
+    .i-banner-container h3{
+        font-size: 48px;
+        line-height: 52px;
+    }
+    .i-banner-container span{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .i-banner-container p{
+        font-size: 18px;
+        line-height: 21px;
+        max-width: 85%; 
+    }
+    .i-banner-main:after{
+        right: -30%;
+    }
+}
 .i-tabs{
     margin: 16px 0;
   }  
