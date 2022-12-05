@@ -1311,6 +1311,9 @@ height: 172px;
   display: flex;
   align-items: flex-start;
 }
+.case-study-relative{
+  position: relative;
+}
 .case-study .case-study-left{
   height: 100%;
   display: flex;
