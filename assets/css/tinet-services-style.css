@@ -291,6 +291,9 @@
   position: absolute;
   right: 0;
 }
+.swiper-lista-item{
+  margin-top: 112px;
+}
 @media (min-width:1441px){
   .dig-exp-content .img-video{
     margin-right: 0px;
