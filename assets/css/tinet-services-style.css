@@ -713,6 +713,9 @@
   justify-content: end;
   padding-bottom: 150px;
 }
+.pesta-page.pesta-page-none{
+  display: none;
+}
 .our-cap .pesta-page .dig-exp-title-general {
   margin: 0px;
 }
