@@ -169,11 +169,11 @@ $('.slide-circle-three').on('afterChange', function(event, slick, currentSlide, 
   $(".index-tres .index-slide").text(suma);
 });
 
+// var reproductor = videojs('fm-video', {
+//   fluid: true,
+//   aspectRatio: '9:16'
+// });
 
-var reproductor = videojs('fm-video', {
-  fluid: true,
-  aspectRatio: '9:16'
-});
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 
