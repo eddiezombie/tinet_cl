@@ -1,122 +1,4 @@
 $(document).ready(function () {
-  //formulario
-  $(window).click(function() {
-    $('.contenido-select').removeClass("active");
-    outSelect();
-  });
-  $('.cont-select-tab').click(function(event){
-     event.stopPropagation();
-  });
-  var tagSelect = document.querySelector(".pseudo-select");
-  var cont = document.querySelector(".contenido-select");
-  var valo = document.querySelector(".valores");
-  tagSelect.addEventListener("click", function(){
-    cont.classList.toggle("active");
-    if( !cont.classList.contains("active") ){
-      outSelect();
-    }
-  })
-  const servicios = [
-    {
-      nombre: 'Digital Transformation Services',
-      select: false,
-    },
-    {
-      nombre: 'Desarrollo de canales digitales',
-      select: false,
-    },
-    {
-      nombre: 'Diseño de experiencia digital',
-      select: false,
-    },
-    {
-      nombre: 'Automatización',
-      select: false,
-    },
-    {
-      nombre: 'IT Staff Augmentation',
-      select: false
-    },
-    {
-      nombre: 'Consultoría y modernización tecnológica',
-      select: false
-    },
-    {
-      nombre: 'Cloud Solution',
-      select: false
-    },
-    {
-      nombre: 'Agile organization',
-      select: false
-    },
-    {
-      nombre: 'Gestión de proyectos',
-      select: false
-    },
-    {
-      nombre: 'Desarrollo de Software',
-      select: false
-    }
-  ]
-  function outSelect(){
-    var cn = 0
-    var res = 0
-    for(let i = 0; i < servicios.length; i++ ){
-      if( servicios[i].select ){
-        cn++
-      }
-    }
-    valo.innerHTML = "<span class='demspan fs-16 lh-21 text-[#838799]'>Selecciona uno o más servicios</span>";
-    //console.log(cn);
-    if(cn > 0){
-      for(let i = 0; i < servicios.length; i++){
-        if( servicios[i].select ){
-          document.querySelector(".demspan").style.display = 'none';
-          if( cn > 1 ){
-            res = cn - 1
-            valo.insertAdjacentHTML("beforeend", "<span class='tagS active bg-[#fff] fs-12 lh-[16px] rounded-full p-[8px] border-solid border border-[#006099] mb-[16px] mr-[8px] cursor-pointer'>"+servicios[i].nombre+"</span>");
-            valo.insertAdjacentHTML("beforeend", "<span class='tagS active bg-[#fff] fs-12 lh-[16px] rounded-full p-[8px] border-solid border border-[#006099] mb-[16px] mr-[8px] cursor-pointer'>+"+ res +"</span>");
-            return
-          }else{
-            valo.insertAdjacentHTML("beforeend", "<span class='tagS active bg-[#fff] fs-12 lh-[16px] rounded-full p-[8px] border-solid border border-[#006099] mb-[16px] mr-[8px] cursor-pointer'>"+servicios[i].nombre+"</span>");
-          }
-        }
-      }
-    }else{
-      valo.innerHTML = "<span class='demspan fs-16 lh-21 text-[#838799]'>Selecciona uno o más servicios</span>";
-      cn = 0;
-    }
-  }
-    function insertData(p){
-      for (let i = 0; i < servicios.length; i++){
-        if(p[i].select){
-          cont.insertAdjacentHTML("beforeend", "<span class='tagS active bg-[#fff] fs-12 lh-[16px] rounded-full p-[8px] border-solid border border-[#006099] mb-[16px] mr-[8px] cursor-pointer'>"+p[i].nombre+"</span>");
-        }else{
-          cont.insertAdjacentHTML("beforeend", "<span class='tagS bg-[#fff] fs-12 lh-[16px] rounded-full p-[8px] border-solid border border-[#006099] mb-[16px] mr-[8px] cursor-pointer'>"+p[i].nombre+"</span>");
-        }
-      }
-    }
-    insertData(servicios)
-
-    $(".tagS").click(function(){
-      $(this).toggleClass("active")
-      if( $(this).hasClass("active") ){
-        for (let i = 0; i < servicios.length; i++){
-          if( servicios[i].nombre == $(this).text()){
-            servicios[i].select = true
-          }
-        }
-      }else{
-        for (let i = 0; i < servicios.length; i++){
-          if( servicios[i].nombre == $(this).text()){
-            servicios[i].select = false
-          }
-        }
-      }
-      
-    })
-    //fin formulario
-
 
   function reveal() {
     var reveals = document.querySelectorAll(".reveal");
@@ -469,5 +351,123 @@ $(document).ready(function () {
   })
     .setTween(tween).addTo(controller);
 	//.addIndicators()
+
+  //formulario
+  $(window).click(function() {
+    $('.contenido-select').removeClass("active");
+    outSelect();
+  });
+  $('.cont-select-tab').click(function(event){
+     event.stopPropagation();
+  });
+  var tagSelect = document.querySelector(".pseudo-select");
+  var cont = document.querySelector(".contenido-select");
+  var valo = document.querySelector(".valores");
+  tagSelect.addEventListener("click", function(){
+    cont.classList.toggle("active");
+    if( !cont.classList.contains("active") ){
+      outSelect();
+    }
+  })
+  const servicios = [
+    {
+      nombre: 'Digital Transformation Services',
+      select: false,
+    },
+    {
+      nombre: 'Desarrollo de canales digitales',
+      select: false,
+    },
+    {
+      nombre: 'Diseño de experiencia digital',
+      select: false,
+    },
+    {
+      nombre: 'Automatización',
+      select: false,
+    },
+    {
+      nombre: 'IT Staff Augmentation',
+      select: false
+    },
+    {
+      nombre: 'Consultoría y modernización tecnológica',
+      select: false
+    },
+    {
+      nombre: 'Cloud Solution',
+      select: false
+    },
+    {
+      nombre: 'Agile organization',
+      select: false
+    },
+    {
+      nombre: 'Gestión de proyectos',
+      select: false
+    },
+    {
+      nombre: 'Desarrollo de Software',
+      select: false
+    }
+  ]
+  function outSelect(){
+    var cn = 0
+    var res = 0
+    for(let i = 0; i < servicios.length; i++ ){
+      if( servicios[i].select ){
+        cn++
+      }
+    }
+    valo.innerHTML = "<span class='demspan fs-16 lh-21 text-[#838799]'>Selecciona uno o más servicios</span>";
+    //console.log(cn);
+    if(cn > 0){
+      for(let i = 0; i < servicios.length; i++){
+        if( servicios[i].select ){
+          document.querySelector(".demspan").style.display = 'none';
+          if( cn > 1 ){
+            res = cn - 1
+            valo.insertAdjacentHTML("beforeend", "<span class='tagS active bg-[#fff] fs-12 lh-[16px] rounded-full p-[8px] border-solid border border-[#006099] mb-[16px] mr-[8px] cursor-pointer'>"+servicios[i].nombre+"</span>");
+            valo.insertAdjacentHTML("beforeend", "<span class='tagS active bg-[#fff] fs-12 lh-[16px] rounded-full p-[8px] border-solid border border-[#006099] mb-[16px] mr-[8px] cursor-pointer'>+"+ res +"</span>");
+            return
+          }else{
+            valo.insertAdjacentHTML("beforeend", "<span class='tagS active bg-[#fff] fs-12 lh-[16px] rounded-full p-[8px] border-solid border border-[#006099] mb-[16px] mr-[8px] cursor-pointer'>"+servicios[i].nombre+"</span>");
+          }
+        }
+      }
+    }else{
+      valo.innerHTML = "<span class='demspan fs-16 lh-21 text-[#838799]'>Selecciona uno o más servicios</span>";
+      cn = 0;
+    }
+  }
+    function insertData(p){
+      for (let i = 0; i < servicios.length; i++){
+        if(p[i].select){
+          cont.insertAdjacentHTML("beforeend", "<span class='tagS active bg-[#fff] fs-12 lh-[16px] rounded-full p-[8px] border-solid border border-[#006099] mb-[16px] mr-[8px] cursor-pointer'>"+p[i].nombre+"</span>");
+        }else{
+          cont.insertAdjacentHTML("beforeend", "<span class='tagS bg-[#fff] fs-12 lh-[16px] rounded-full p-[8px] border-solid border border-[#006099] mb-[16px] mr-[8px] cursor-pointer'>"+p[i].nombre+"</span>");
+        }
+      }
+    }
+    insertData(servicios)
+
+    $(".tagS").click(function(){
+      $(this).toggleClass("active")
+      if( $(this).hasClass("active") ){
+        for (let i = 0; i < servicios.length; i++){
+          if( servicios[i].nombre == $(this).text()){
+            servicios[i].select = true
+          }
+        }
+      }else{
+        for (let i = 0; i < servicios.length; i++){
+          if( servicios[i].nombre == $(this).text()){
+            servicios[i].select = false
+          }
+        }
+      }
+      
+    })
+    //fin formulario
   
 });
