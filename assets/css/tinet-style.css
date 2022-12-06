@@ -97,6 +97,9 @@ body {
 .left-navbar.active{
   left: 0px;
 }
+.case-study-relative{
+  position: relative;
+}
 .screen-block{
   position: absolute;
   display: none;

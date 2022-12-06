@@ -1,5 +1,61 @@
 $(document).ready(function () {
 
+
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active-reveal");
+      } else {
+        //reveals[i].classList.remove("active-reveal");
+      }
+    }
+  }
+
+  $('#section-service-1').addClass("active-reveal");
+
+  window.addEventListener("scroll", reveal);
+  function initSwipersAll () {
+    var swiper = new Swiper(".mySwiperS3", {
+        slidesPerView: 1,
+        spaceBetween: 11,
+        grid: {
+          rows: 1
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        navigation: {
+          prevEl: ".mySwiperS3-left-page",
+          nextEl: ".mySwiperS3-right-pag",
+        },
+        breakpoints: {
+          1095: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+            grid: {
+              rows: 2
+            }
+          },
+          601:{
+            slidesPerView: 2,
+            spaceBetween: 11,
+            grid: {
+              rows: 1
+            }
+          }
+      },
+      });
+    console.log('window was resized', screen.width);
+  }
+  initSwipersAll();
+
   function animate_numbers(id) {
     var count = 0;
     var classToAnimate = ".animate-numbers";
@@ -67,41 +123,41 @@ $(document).ready(function () {
     var divposition3 = element_position + (3 * svgheight) / 5;
     if (winposition > divposition) {
       //do stuff
-      console.log("Show Blob1");
+      // console.log("Show Blob1");
       if ($("#process-easy-1").hasClass("haslabel")) {
         $("#process-easy-1 .infoblob-label").fadeIn(1);
       }
       $("#process-easy-1 .infoblob").fadeIn(500);
       if (winposition > divposition1) {
-        console.log("Show Blob2");
+        // console.log("Show Blob2");
         if ($("#process-easy-2").hasClass("haslabel")) {
           $("#process-easy-2 .infoblob-label").fadeIn(1);
         }
         $("#process-easy-2 .infoblob").fadeIn(500);
       } else {
-        console.log("Hide Blob2");
+        // console.log("Hide Blob2");
       }
       if (winposition > divposition2) {
-        console.log("Show Blob3");
+        // console.log("Show Blob3");
         if ($("#process-easy-3").hasClass("haslabel")) {
           $("#process-easy-3 .infoblob-label--alt").fadeIn(1);
         }
         $("#process-easy-3 .infoblob-label--alt").fadeIn(1);
         $("#process-easy-3 .infoblob").fadeIn(500);
       } else {
-        console.log("Hide Blob3");
+        // console.log("Hide Blob3");
       }
       if (winposition > divposition3) {
-        console.log("Show Blob4");
+        // console.log("Show Blob4");
         if ($("#process-easy-4").hasClass("haslabel")) {
           $("#process-easy-4 .infoblob-label").fadeIn(1);
         }
         $("#process-easy-4 .infoblob").fadeIn(500);
       } else {
-        console.log("Hide Blob4");
+        // console.log("Hide Blob4");
       }
     } else {
-      console.log("Hide Blob1");
+      // console.log("Hide Blob1");
     }
   });
   $(window).resize(function () {
@@ -296,95 +352,5 @@ $(document).ready(function () {
   })
     .setTween(tween).addTo(controller);
 	//.addIndicators()
-
-  MicroModal.init();
-
-  window.Components = {
-    customSelect(options) {
-      return {
-        init() {
-          this.$refs.listbox.focus();
-          this.optionCount = this.$refs.listbox.children.length;
-          this.$watch("selected", (value) => {
-            if (!this.open) return;
-
-            if (this.selected === null) {
-              this.activeDescendant = "";
-              return;
-            }
-
-            this.activeDescendant =
-              this.$refs.listbox.children[this.selected - 1].id;
-          });
-        },
-        activeDescendant: null,
-        optionCount: null,
-        open: false,
-        selected: null,
-        value: 1,
-        choose(option) {
-          this.value = option;
-          this.open = false;
-        },
-        onButtonClick() {
-          if (this.open) return;
-          this.selected = this.value;
-          this.open = true;
-          this.$nextTick(() => {
-            this.$refs.listbox.focus();
-            this.$refs.listbox.children[this.selected - 1].scrollIntoView({
-              block: "nearest",
-            });
-          });
-        },
-        onOptionSelect() {
-          if (this.selected !== null) {
-            this.value = this.selected;
-          }
-          this.open = false;
-          this.$refs.button.focus();
-        },
-        onEscape() {
-          this.open = false;
-          this.$refs.button.focus();
-        },
-        onChoise(){
-          if(this.value == 1){
-            const co = document.querySelector('#inputCorreo');
-            const ce = document.querySelector('#inputCelular');
-            co.classList.add("hidden");
-            ce.classList.add("hidden");
-          }
-          if(this.value == 2 || this.value == 4){
-            const co = document.querySelector('#inputCorreo');
-            const ce = document.querySelector('#inputCelular');
-            co.classList.add("hidden");
-            ce.classList.remove("hidden");
-          }
-          if(this.value == 3){
-            const ce = document.querySelector('#inputCelular');
-            const el = document.querySelector('#inputCorreo');
-            ce.classList.add("hidden");
-            el.classList.remove("hidden");
-          }
-        },
-        onArrowUp() {
-          this.selected =
-            this.selected - 1 < 1 ? this.optionCount : this.selected - 1;
-          this.$refs.listbox.children[this.selected - 1].scrollIntoView({
-            block: "nearest",
-          });
-        },
-        onArrowDown() {
-          this.selected =
-            this.selected + 1 > this.optionCount ? 1 : this.selected + 1;
-          this.$refs.listbox.children[this.selected - 1].scrollIntoView({
-            block: "nearest",
-          });
-        },
-        ...options,
-      };
-    },
-  };
   
 });
