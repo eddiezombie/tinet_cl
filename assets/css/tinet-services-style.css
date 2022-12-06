@@ -169,6 +169,20 @@
   top: 220px;
 /*  transition: 0.5s linear 4s;*/
 }
+.cont-select-tab{
+  position: relative;
+}
+.contenido-select{
+  display: none;
+  position: absolute;
+}
+.contenido-select.active{
+  display: flex;
+}
+.tagS.active{
+  background-color: #006099;
+  color: white;
+}
 /*@keyframes rocket-0 {
   0% {
     left: -340px;
