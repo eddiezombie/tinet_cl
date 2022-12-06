@@ -1611,7 +1611,9 @@ display: flex;
 .modal-proposal .modal__overlay {
   align-items: flex-end;
 }
-
+.modal-proposal .modal__overlay.noflexend{
+  align-items: center;
+}
 .modal-proposal .modal__overlay .modal-full {
   height: initial;
 }
