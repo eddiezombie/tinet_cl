@@ -733,6 +733,9 @@
 .pesta-page.pesta-page-none{
   display: none;
 }
+.pesta-page.pesta-page-flex{
+  display: flex;
+}
 .our-cap .pesta-page .dig-exp-title-general {
   margin: 0px;
 }
