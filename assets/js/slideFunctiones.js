@@ -168,8 +168,3 @@ $('.slide-circle-three').on('afterChange', function(event, slick, currentSlide, 
   var suma = currentSlide + 1;
   $(".index-tres .index-slide").text(suma);
 });
-
-// var reproductor = videojs('fm-video', {
-//   fluid: true,
-//   aspectRatio: '9:16'
-// });
