@@ -239,6 +239,7 @@
     .working-case.banner-swiper-home{
       flex-direction: column;
       margin-top: 0px;
+      padding: 0 24px;
     }
     .banner-content-home.border-left-bottom{
       height: auto;
@@ -263,7 +264,9 @@
     }
     .banner-swiper-home-text{
       max-width: 100%;
-      margin: 0 24px;
+    }
+    .case-wrapper .reveal.active-reveal .content-rocket-dashed{
+      display: none;
     }
     .banner-content-home{
       height: auto;

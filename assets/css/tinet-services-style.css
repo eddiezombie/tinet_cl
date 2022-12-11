@@ -2023,7 +2023,6 @@
   .num-spk-work .content-response-section {
     flex-direction: column;
     height: auto;
-    max-width: 534px;
   }
   .num-spk-work .one-card {
     display: none;

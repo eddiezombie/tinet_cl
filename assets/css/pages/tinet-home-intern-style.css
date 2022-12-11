@@ -22,22 +22,137 @@
 }
 
 .case-wrapper .banner-content-home{
-  padding-top: 150px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.case-wrapper .case-intern.banner-content-home .banner-swiper-home{
+  width: 1180px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+.case-wrapper .line-content.x-98{
+  position: absolute;
+  right: 100%;
+  margin-right: 15px;
+  max-width: 100%;
+}
+.case-wrapper .line-content.x-98 .circle{
+  background-color: #FFFFFF;
+}
+.case-wrapper .line-dashed-x.w-79{
+  max-width: 100%;
 }
 .case-wrapper .banner-swiper-home{
   min-height: 620px;
+  padding-top: 150px;
+  display: block;
+  position: relative;
 }
 .case-wrapper .reveal.active-reveal .content-rocket-dashed{
   position: absolute;
-  left: 0;
+  right: 0;
+  top: 330px;
+  left: inherit;
+  margin-top: 0;  
 }
-
+.case-wrapper .reveal.active-reveal .content-rocket-dashed .line-content.x-y-392{
+  max-width: 1010px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.case-wrapper .line-content.x-y-392, .case-wrapper .line-content.y-x-392, .case-wrapper .reveal.active-reveal .line-dashed-x.h-147-w-352{
+  max-width: 100%;
+}
+.case-wrapper .line-content.y-x-392{
+  height: 460px;
+}
+.case-wrapper .reveal.active-reveal .line-dashed-x.h-147-w-352{
+  height: 230px;
+  position: absolute;
+}
+.case-wrapper .reveal .line-dashed-x.line-dashed-1.h-147-w-352{
+  border-bottom: 2px dashed #b0bec5;
+  border-right: 2px dashed #b0bec5;
+}
+.case-wrapper .reveal.active-reveal .line-dashed-x.line-dashed-1.h-147-w-352{
+  border: none;
+  border-bottom: 2px dashed #b0bec5;
+  border-right: 2px dashed #b0bec5;
+  max-width: 30px;
+  margin-left: auto;
+  right: 20%;
+  top: 0;
+  transition: 1s;
+}
+.case-wrapper .reveal.active-reveal .line-dashed-x.line-dashed-2.h-147-w-352{
+  max-width: calc(70% - 30px);
+  left: 10%;
+  top: 50%;
+  transform: translate(0,-2px);
+}
+.case-wrapper .line-content.y-x-392 .circle{
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  transform: translate(-50%,0);
+}
+.case-wrapper .content-rocket-dashed img{
+  transform: rotate(180deg);
+}
+.case-wrapper .content-rocket-dashed img.reveal.active-reveal{
+  animation: rocket-2 6s linear;
+  top: 400px;
+  left: -930px;
+  transform: rotate(-90deg);
+}
 .case-wrapper .banner-swiper-home{
   display: inline-block;
   width: 1180px;
   max-width: 100%;
   margin: 0 auto;
 }
+.case-wrapper + .section-ul-circle{
+  padding-top: 200px;
+}
+
+@keyframes rocket-2 {
+  0%{
+    top:-50px;
+    left: -10%;
+  }
+  5%{
+    /*transform: rotate(300deg);*/
+  }
+  25%{
+    transform: rotate(-60deg);
+  }
+  30%{
+    top: 200px;
+    left: -10%;
+    transform: rotate(0deg);
+  }
+  60%{
+    transform: rotate(0deg);
+  }
+  65%{
+    transform: rotate(-30deg);
+  }
+  70%{
+    top: 200px;
+    left: -930px;
+  }
+  71%{
+    transform: rotate(-60deg);
+  }
+  75%{
+    transform: rotate(-90deg);
+  }
+}
+
+
 .baner-blog-text-content {
   display: flex;
   flex-direction: column;
@@ -779,6 +894,9 @@
   max-width: 100%;
   color: #fafafa;
 }
+.case-intern .working-case-alt.banner-swiper-home-text__subtitle{
+  color: #004D7A;
+}
 .banner-swiper-home-text__info {
   font-size: 14px;
   line-height: 20px;
@@ -884,7 +1002,10 @@
 .circle-group-case{
   width: 402px;
   height: 402px;
-  position: relative;
+  position: absolute;
+  right: 20%;
+  top: 75px;
+  transform: translate(200px,0);
 }
 .circle-group-case__1{
   background: linear-gradient(180deg, #B7C4CA 0%, rgba(207, 216, 220, 0.3) 100%);
@@ -1038,6 +1159,7 @@
   line-height: 24px;
   letter-spacing: -0.25px;
   color: #424242;
+  max-width: calc(100% - 50px);
 }
 .title-circle{
   font-size: 20px;
@@ -1125,6 +1247,7 @@ color: #424242;
   margin: 0px 0px 0px auto;
   max-width: 1310px;
   width: 100%;
+  overflow: hidden;
 }
 .banner-content-home.border-left-bottom{
   border-radius: 0px 0px 0px 144px;
@@ -1337,7 +1460,7 @@ height: 283px;
   max-width: 100%;
   overflow: hidden;
   display: flex;
-  height: 455px;
+  height: 480px;
 }
 .content-services-section .container-scroll-card-group{
   display: block;

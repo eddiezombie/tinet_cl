@@ -17,10 +17,12 @@ body {
 .header-content {
   height: 104px;
   background: #fff;
+  padding-left: 24px;
+  padding-right: 24px;
   box-shadow: 0px 8px 20px rgba(183, 183, 183, 0.15);
 }
 .cntHead{
-  max-width: 1440px;
+  max-width: 1180px;
   margin: 0 auto;
   height: 104px;
   background: #fff;
@@ -32,7 +34,8 @@ body {
   align-items: center;
 }
 .header-content .logo-header{
-  padding-left: 130px;
+  padding-left: 0px;
+  padding-right: 15px;
 }
 .responsive-burger{
   display: none;
@@ -84,7 +87,7 @@ body {
 }
 .btn-nav{
   margin-left: auto;
-  padding-right: 40px;
+  padding-right: 15px;
 }
 .left-navbar{
   position: absolute;
@@ -122,7 +125,7 @@ body {
   margin-top: 20px;
 }
 .btn-nav > ul.tr-ul > li{
-  padding: 0 20px;
+  padding: 0 15px;
   position: relative;
 }
 .btn-nav > ul.tr-ul > li .menu-desplegable{
@@ -146,7 +149,7 @@ body {
   padding: 6px 24px;
 }
 .side-nav{
-  padding-right: 130px;
+  padding-right: 0px;
   text-align: right;
 }
 .menu-desplegable.m-servicios{
@@ -416,10 +419,10 @@ body {
 }
 @media (max-width:1024px){
   .header-content .logo-header{
-    padding-left: 26px;
+    padding-left: 0px;
   }
   .side-nav {
-    padding-right: 26px;
+    padding-right: 0px;
   }
 }
 @media (max-width:768px) {
@@ -445,8 +448,11 @@ body {
   .responsive-burger{
     display: block;
   }
+  .responsive-burger.ml-\[26px\]{
+    margin-left: 0;
+  }
   .header-content .logo-header{
-    padding-left: 40px;
+    padding-left: 0px;
   }
   .left-navbar{
     display: block;
@@ -616,7 +622,7 @@ body {
     width: 100px;
   }
   .header-content .logo-header{
-    padding-left: 16px;
+    padding-left: 0px;
   }
   .indContM {
     width: 100%;
@@ -629,7 +635,7 @@ body {
 }
 /* fin nav */
 .nav-tour {
-    padding: 11px 130px;
+    padding: 11px 24px;
     height: 40px;
     background: #fafafa;
     font-weight: 500;
