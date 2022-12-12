@@ -1759,6 +1759,9 @@
   .td_btns{
     padding-left: 0;
   }
+  .swiper-lista-item{
+    margin-top: 90px;
+  }
 }
 
 @media only screen and (max-width: 1176px) {
@@ -1794,9 +1797,7 @@
     z-index: 0;
   }
   .banner-swiper-home {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column-reverse;
+    display: block;
     width: 100%;
   }
   .dig-exp-content .dig-exp-text-content {

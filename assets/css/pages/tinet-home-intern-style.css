@@ -1586,4 +1586,22 @@ margin-top: 24px;
   .section-ul-circle .line-content.mr-t{
     display: none;
   }
+  .banner-swiper-home{
+    display: block;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .case-wrapper .case-intern.banner-content-home .banner-swiper-home{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    min-height: 0;
+  }
+  .case-wrapper + .section-ul-circle{
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .case-intern.relation-cards-content{
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

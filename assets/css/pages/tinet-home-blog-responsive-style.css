@@ -39,7 +39,8 @@
     }
     .section-ul-circle{
       height: initial;
-      padding: 0 26px;
+      padding: 0 24px;
+      margin-left: 0;
     }
     .content-flex-info-circle{
       flex-direction: column;
@@ -59,6 +60,10 @@
     }
   }
   @media only screen and (max-width: 1000px) {
+    .working-case.banner-swiper-home-img{
+      margin-left: 24px;
+      margin-top: 0;
+    }
     .content-text-lateral {
       padding-right: 0px;
     }
@@ -118,12 +123,10 @@
     }
     .banner-swiper-home {
       justify-content: center;
-      margin-top: 112px;
     }
     .banner-content-home {
       align-items: flex-start;
       border-radius: 0px;
-      height: 816px;
     }
     .banner-swiper-home-text {
       max-width: 534px;
@@ -143,6 +146,9 @@
       width: 100%;
       justify-content: space-between;
       align-items: center;
+    }
+    .container-mobile.hide-mobile{
+      display: none;
     }
     .banner-swiper-paginator {
       display: none;
@@ -225,6 +231,28 @@
     }
   }
   @media only screen and (max-width:768px) {
+    .circle-content-info .circle-content{
+      width: 330px;
+      height: 330px;
+    }
+    .content-info-circle {
+      height: auto;
+      max-width: 271px;
+      left: 8%;
+      padding-top: 57px;
+    }
+    .text-coment-quote, .circle-content-info .content-perfil__title{
+      font-size: 12px;
+      line-height: 16px;
+    }
+    .circle-content-info .content-perfil__position{
+      font-size: 10px;
+      line-height: 16px;
+    }
+    .case-intern .banner-swiper-home-text__subtitle{
+      font-size: 44px;
+      line-height: 52px;
+    }
     .hide-mobile{
       display: none;
     }
@@ -238,6 +266,7 @@
     .working-case.banner-swiper-home{
       flex-direction: column;
       margin-top: 0px;
+      margin-bottom: 60px;
       padding: 0 24px;
     }
     .banner-content-home.border-left-bottom{
@@ -269,17 +298,16 @@
     }
     .banner-content-home{
       height: auto;
-      padding-bottom: 80px;
+      padding-bottom: 0px;
     }
-    #section-service-video{
-      background:white;
+    #section-service-video .relation-cards-content{
+      padding: 0px 0;
     }
     .num-spk-work{
       flex-direction: column;
       height: auto;
     }
     #section-service-video .relation-cards-content{
-      height: 500px;
       max-width: 100%;
     }
     .section-ul-circle .line-content .line-dashed-y{
@@ -293,6 +321,7 @@
       height: 654px;
       margin-top: 0px;
       width: 728px;
+      padding-bottom: 90px;
     }
     .solucion-slide .page.right{
       left: 368px;
@@ -324,7 +353,8 @@
     .content-services-section .relation-cards-content{
       margin: 0px 0 0 0px;
       max-width: 100%;
-      padding-top: 120px;
+      padding-top: 90px;
+      padding-bottom: 90px;
     }
     .relation-cards-content .card-group .relation-card-info {
       padding-top: 16px;
@@ -344,7 +374,6 @@
     .banner-content-home {
       align-items: flex-start;
       border-radius: 0px;
-      height: 654px;
     }
     .banner-swiper-home-text {
       max-width: 311px;
@@ -567,23 +596,5 @@
     }
     .contenedor-slider .page.left{
       right: 55px;
-    }
-    .circle-content-info .circle-content{
-      width: 330px;
-      height: 330px;
-    }
-    .content-info-circle {
-      height: auto;
-      max-width: 271px;
-      left: 8%;
-      padding-top: 57px;
-    }
-    .text-coment-quote, .circle-content-info .content-perfil__title{
-      font-size: 12px;
-      line-height: 16px;
-    }
-    .circle-content-info .content-perfil__position{
-      font-size: 10px;
-      line-height: 16px;
     }
   }
