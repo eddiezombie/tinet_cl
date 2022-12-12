@@ -1,0 +1,678 @@
+@media only screen and (max-width: 600px) {
+  .somos-logros .somos-logros__slider {
+    margin-top: -22px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .somos-logros .somos-logros__slider {
+    margin-top: -88px;
+  }
+}
+
+@media only screen and (max-width: 645px) {
+  .somos-banner-animation {
+    height: 100%;
+    padding: 16px;
+  }
+
+  .somos-banner__box .dig-exp-title-general .text-content-mobile__des {
+    font-size: 48px;
+    line-height: 52px;
+  }
+
+  .dig-exp-title-general {
+    word-break: break-word;
+  }
+
+  .somos-pilares .somos-pilares__circle-progress {
+    width: 328px;
+    height: 328px;
+  }
+
+  .somos-pilares .somos-pilares__circle-number {
+    width: 40px;
+    height: 40px;
+  }
+
+  .somos-pilares .somos-pilares__circle3 {
+    transform: rotate(46deg);
+  }
+
+  .somos-pilares .somos-pilares__circle {
+    border-width: 44px;
+  }
+
+  .somos-pilares .somos-pilares__circle-number.one {
+    top: 2px;
+    left: 146px;
+  }
+
+  .somos-pilares .somos-pilares__circle-number.two {
+    top: 168px;
+    right: 5px;
+  }
+
+  .somos-pilares .somos-pilares__circle-number.trhee {
+    top: 126px;
+    left: 3px;
+  }
+
+  .somos-pilares .somos-pilares__circle-text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .somos-pilares .somos-pilares__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .somos-pilares .somos-pilares__title {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .somos-tabs .somos-tabs__title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 40px;
+  }
+
+  .somos-tabs .somos-tabs__description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .somos-tabs__img {
+    margin: 0 auto 20px;
+  }
+
+  .somos-equipment .content-response-section {
+    padding-bottom: 68px;
+  }
+
+  .somos-equipment .swiper.mySwiperEquipment {
+    width: 304px;
+  }
+
+  .somos-page .card-equipment {
+    width: 304px !important;
+  }
+
+  .somos-equipment .mySwiperS3-left-page,
+  .somos-slider-thumbs .swiper-button-prev {
+    left: calc(50% - 50px);
+  }
+
+  .somos-equipment .mySwiperS3-right-pag,
+  .somos-slider-thumbs .swiper-button-next {
+    right: calc(50% - 50px);
+  }
+
+  .somos-equipment .mySwiperS3-left-page,
+  .somos-equipment .mySwiperS3-right-pag {
+    bottom: -70px;
+  }
+}
+
+@media only screen and (min-width: 646px) {
+  .somos-banner-animation {
+    border-radius: 0;
+  }
+
+  .somos-content .somos-slider+.pagination {
+    display: none;
+  }
+
+  .somos-logros .info-estadist {
+    margin-top: 32px;
+  }
+
+  .somos-pilares .somos-pilares__circle-progress {
+    width: 348px;
+    height: 348px;
+  }
+
+  .somos-pilares .somos-pilares__circle {
+    border-width: 46px;
+  }
+
+  .somos-pilares .somos-pilares__circle-number {
+    width: 42px;
+    height: 42px;
+  }
+
+  .somos-pilares .somos-pilares__circle3 {
+    transform: rotate(45deg);
+  }
+
+  .somos-pilares .somos-pilares__circle-number.one {
+    left: 155px;
+    top: 2px;
+  }
+
+  .somos-pilares .somos-pilares__circle-number.two {
+    top: 177px;
+    right: 4px;
+  }
+
+  .somos-pilares .somos-pilares__circle-number.trhee {
+    left: 3px;
+    top: 133px;
+  }
+
+  .somos-pilares .somos-pilares__circle-text {
+    font-size: 21px;
+    line-height: 28px;
+  }
+
+  .somos-pilares .somos-pilares__title {
+    font-size: 64px;
+    line-height: 72px;
+  }
+
+  .somos-pilares .content-response-section {
+    align-items: center;
+  }
+
+  .somos-tabs .somos-tabs__title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 8px;
+  }
+
+  .somos-tabs .somos-tabs__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .somos-tabs__img {
+    margin: 0 auto 16px;
+  }
+
+  .somos-equipment .swiper.mySwiperEquipment {
+    max-width: 560px;
+  }
+
+  .somos-equipment .mySwiperS3-left-page {
+    left: 0;
+  }
+
+  .somos-equipment .mySwiperS3-right-pag {
+    right: 0;
+  }
+
+  .somos-equipment .mySwiperS3-left-page,
+  .somos-equipment .mySwiperS3-right-pag {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .somos-page .pagination {
+    justify-content: center;
+  }
+  .somos-pilares {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+  .somos-slider-thumbs .swiper-slide {
+    width: 120px !important;
+    height: 100% !important;
+  }
+
+  .somos-slider-thumbs {
+    width: 360px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .somos-tabs .content-response-section{
+    padding-top: 62px;
+  }
+  .somos-tabs .dig-exp-text-content__subtitle,
+  .somos-alianzas .dig-exp-text-content__subtitle,
+  .somos-pilares .somos-pilares__title,
+  .somos-consult .dig-exp-text-content__subtitle,
+  .somos-logros .dig-exp-text-content__subtitle{
+    font-size: 40px !important;
+    line-height: 44px !important;
+    letter-spacing: -0.4px !important;
+  }
+  .somos-alianzas .dig-exp-text-content .text,
+  .somos-alianzas .somos-alianzas__box .title,
+  .somos-content__description{
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.25px;
+  }
+  .somos-pilares .somos-pilares__circle-box{
+    margin-bottom: 40px;
+  }
+  .somos-pilares .somos-pilares__box .somos-pilares__circle2 {
+    border-left-color: #003A5C;
+    border-bottom-color: #003A5C;
+  }
+  
+  .somos-pilares .somos-pilares__box .somos-pilares__circle3 {
+    border-left-color: #006099;
+  }
+  
+  .somos-pilares .somos-pilares__info .somos-pilares__steps.steps2,
+  .somos-pilares .somos-pilares__info .somos-pilares__steps.steps3,
+  .somos-pilares .somos-pilares__info .btn-tab {
+    opacity: 1;
+    margin-top: -20px
+  }
+  .somos-pilares.active-reveal .somos-pilares__circle-number{
+    color: #000000;
+    transition: none !important;
+  }
+  .somos-tabs__list{
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .somos-page .pagination {
+    justify-content: flex-end;
+  }
+
+  .somos-slider-thumbs .swiper-slide {
+    width: 125px !important;
+  }
+  .somos-tabs .dig-exp-text-content__subtitle,
+  .somos-alianzas .dig-exp-text-content__subtitle{
+    font-size: 56px !important;
+    line-height: 64px !important;
+    letter-spacing: -0.4px !important;
+  }
+  .somos-pilares {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .somos--pading-mobile {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .somos-banner-animation,
+  .somos-banner__box {
+    height: 100%;
+  }
+
+  .somos-banner__box {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 100px;
+  }
+
+  .somos-banner__img-content {
+    max-width: 40vw;
+  }
+
+  .somos-equipment .content-response-section {
+    height: 756px;
+  }
+
+  .somos-equipment .content-response-section .text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .somos-equipment .content-response-section .title {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .somos-equipment {
+    padding-left: 16px;
+  }
+
+  .somos-consult {
+    padding-right: 0;
+  }
+
+  .somos-pilares .somos-pilares__box {
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .somos-slider-thumbs {
+    padding-bottom: 180px;
+  }
+
+  .somos-slider-thumbs .swiper-button-prev {
+    left: calc(50% - 50px);
+  }
+
+  .somos-slider-thumbs .swiper-button-next {
+    right: calc(50% - 50px);
+  }
+
+  .somos-slider-thumbs .swiper-button-next,
+  .somos-slider-thumbs .swiper-button-prev {
+    bottom: 0;
+    top: auto;
+  }
+
+  .somos-tabs .line-content,
+  .somos-tabs .somos-tabs__list::before,
+  .somos-tabs .somos-tabs__list::after,
+  .somos-tabs .somos-tabs__list-border,
+  .somos-alianzas .line-content{
+    display: none;
+  }
+
+  .somos-tabs {
+    min-height: auto;
+    padding-bottom: 32px;
+  }
+  .somos-alianzas {
+    padding: 40px 16px;
+  }  
+  .somos-alianzas .content-response-section{
+    flex-direction: column;
+  }
+  .somos-alianzas .somos-alianzas__box{
+padding-top: 40px;
+  }
+  .somos-alianzas .somos-alianzas__logos{
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+  .somos-alianzas .somos-alianzas__cards{
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 1001px) {
+  .somos-banner-animation {
+    height: 787px;
+  }
+  .somos-banner__img-content {
+    max-width: 620px;
+  }
+
+  .somos-equipment .content-response-section {
+    height: 888px;
+  }
+
+  .somos-equipment .content-response-section .text,
+  .somos-equipment .content-response-section .title,
+  .somos-pilares .content-response-section .text,
+  .somos-pilares .content-response-section .title {
+    text-align: center;
+  }
+
+  .somos-consult__slider .swiper.mySwiperPhoto {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .somos-pilares {
+    padding-top: 95px;
+    padding-bottom: 127px;
+  }
+  
+  .somos-pilares .somos-pilares__box {
+    margin-top: 56px;
+  }
+
+  .somos-pilares .somos-pilares__circle-progress {
+    width: 470px;
+    height: 470px;
+  }
+
+  .somos-pilares .somos-pilares__circle {
+    border-width: 54px;
+  }
+
+  .somos-pilares .somos-pilares__circle-number {
+    width: 48px;
+    height: 48px;
+  }
+
+  .somos-pilares .somos-pilares__circle-number.one {
+    left: 214px;
+    top: 3px;
+  }
+
+  .somos-pilares .somos-pilares__circle-number.two {
+    right: 5px;
+    top: 240px
+  }
+
+  .somos-pilares .somos-pilares__circle-number.trhee {
+    top: 182px;
+    left: 5px;
+  }
+
+  .somos-pilares .somos-pilares__info {
+    border-left: 1px solid #E0E0E0;
+    padding-left: 60px;
+  }
+
+  .somos-slider-thumbs .swiper-slide {
+    width: auto !important;
+  }
+
+  .somos-slider-thumbs .swiper-button-next,
+  .somos-slider-thumbs .swiper-button-prev {
+    display: none;
+  }
+  .somos-alianzas {
+    padding: 0 16px 112px 16px;
+  }  
+  .somos-slider-thumbs .swiper-wrapper{
+    padding: 0 60px 0 40px;
+    width: calc(100% - 100px);
+  }
+  .somos-tabs{
+    padding-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 1095px) {
+  .somos-page .pagination {
+    padding-right: 24px;
+  }
+
+  .somos-logros {
+    padding-bottom: 80px;
+    padding-right: 0;
+  }
+
+  .somos-logros .info-estadist {
+    display: flex;
+    padding-left: 0;
+  }
+
+  .somos-logros__line--mobile {
+    display: block;
+  }
+
+  .somos-logros__line--desktop {
+    display: none;
+  }
+
+  .somos-logros .info-estadist .info-line-content {
+    flex: 1;
+    justify-content: space-between;
+    margin-bottom: 88px;
+  }
+
+  .somos-logros .info-estadist .somos-logros__line {
+    position: relative;
+    top: 0;
+    margin-right: 60px;
+  }
+
+  .somos-logros .info-estadist .somos-logros__line--mobile .line-content,
+  .somos-logros .info-estadist .somos-logros__line--mobile .line-content .line-dashed-y {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1096px) {
+
+  .somos-number,
+  .somos-number .dig-exp-title-general {
+    width: 645px !important;
+    max-width: 645px !important;
+  }
+
+  .somos-logros {
+    padding-bottom: 40px;
+  }
+
+  .somos-logros__line--desktop {
+    display: block;
+  }
+
+  .somos-logros__line--mobile {
+    display: none;
+  }
+
+  .somos-logros .somos-logros__slider {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .somos-equipment .swiper.mySwiperEquipment {
+    max-width: 1147px;
+  }
+
+  .somos-equipment .mySwiperS3-left-page {
+    left: -14px;
+  }
+
+  .somos-equipment .mySwiperS3-right-pag {
+    right: -14px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .somos-content {
+    padding-left: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .somos-content__list {
+    max-width: 424px;
+    width: 100%;
+    margin: 64px auto 0;
+  }
+
+  .somos-content .somos-slider {
+    margin-top: 32px;
+    margin-bottom: 54px;
+    max-width: 440px;
+  }
+
+  .somos-content__items.swiper-slide {
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 24px;
+    width: 120px !important;
+    height: 120px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .somos-consult .line-content {
+    height: 160px;
+  }
+
+  .somos-logros.num-spk-work .content-response-section,
+  .somos-page .dig-exp-text-content,
+  .somos-page .dig-exp-text-content .dig-exp-text-content__title,
+  .somos-tabs .content-response-section,
+  .somos-alianzas .dig-exp-text-content .text{
+    max-width: none;
+  }
+
+  .somos-consult__slider {
+    margin-top: 48px;
+    width: 100%;
+  }
+
+  .somos-consult {
+    height: auto;
+  }
+
+  .somos-consult .content-response-section {
+    flex-direction: column;
+  }
+
+  .somos-consult {
+    padding-bottom: 64px;
+  }
+}
+
+@media only screen and (min-width: 1281px) {
+  .somos-banner__box .line-content {
+    position: absolute;
+    left: 0;
+  }
+
+  .somos-content__items.swiper-slide {
+    background: transparent;
+  }
+
+  .somos-content .somos-slider {
+    max-width: 491px;
+  }
+
+  .somos-consult {
+    height: 880px;
+    padding-right: 0;
+  }
+
+  .somos-consult .pagination {
+    padding-right: 130px;
+  }
+
+  .somos-consult .dig-exp-text-content {
+    padding-right: 100px;
+  }
+
+  .somos-consult__slider {
+    width: calc(100% - 575px);
+    align-items: flex-end;
+  }
+
+  .somos-consult__slider .swiper.mySwiperPhoto {
+    margin-top: 168px;
+    max-width: 638px;
+    width: 100%;
+    height: calc(791px - 168px);
+  }
+
+  .somos-consult {
+    padding-bottom: 80px;
+  }
+
+  .somos-logros.num-spk-work .info-line-content {
+    justify-content: space-evenly;
+  }
+
+  .somos-pilares {
+    padding-top: 91px;
+  }
+
+  .somos-pilares .somos-pilares__box {
+    margin-top: 72px;
+  }
+}
