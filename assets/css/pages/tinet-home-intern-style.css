@@ -15,11 +15,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-@media only screen and (max-width: 1000px) {
-  .baner-blog-content-wrap{
-    max-width: 582px;
-  }
-}
 
 .case-wrapper .banner-content-home{
   padding-left: 24px;
@@ -1082,9 +1077,17 @@
   border-top-left-radius: 16px;
 }
 .section-ul-circle{
-  margin: 0px 0px 0px auto;
-  max-width: 1310px;
-  height: 920px;
+  margin: 0;
+  margin-left: 24px;
+  min-height: 920px;
+  position: relative;
+  overflow: hidden;
+}
+.section-ul-circle .relation-cards{
+  overflow: hidden;
+  margin: 0 auto;
+  width: 1180px;
+  max-width: 100%;
 }
 .content-flex-info-circle{
   display: flex;
@@ -1101,8 +1104,9 @@
   height: 190px;
 }
 .section-ul-circle .content-flex-colum{
-  max-width: 473px;
-  width: 100%;
+  padding-right: 24px;
+  width: 490px;
+  max-width: 100%;
 }
 .solucion-slide{
   position: relative;
@@ -1176,12 +1180,14 @@
   margin-bottom: 40px;
 }
 .circle-content-info{
-  position: relative;
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
 }
 .circle-content-info .circle-content{
   width: 769px;
   height: 769px;
-  border-radius: 1000px;
+  border-radius: 100%;
   position: relative;
     z-index: -9;
 }
@@ -1248,10 +1254,10 @@ color: #424242;
   max-width: 1310px;
   width: 100%;
   overflow: hidden;
+  padding-left: 24px;
 }
 .banner-content-home.border-left-bottom{
   border-radius: 0px 0px 0px 144px;
-  height: 920px;
 }
 .flex-align-start{
   display: flex;
@@ -1325,6 +1331,7 @@ height: 172px;
   justify-content: center;
   max-width: 500px;
   width: 100%;
+  padding-right: 24px;
 }
 .num-spk-work .dig-exp-text-content .dig-exp-text-content__title {
   display: none;
@@ -1382,7 +1389,8 @@ height: 172px;
   height: 920px;
   background-color: #ffffff;
   margin: 0px auto;
-  max-width: 1226px;
+  width: 1180px;
+  max-width: 100%;
   display: flex;
   align-items: flex-start;
 }
@@ -1548,18 +1556,34 @@ margin-top: 24px;
   padding-top: 16px;
 }
 #section-service-video{
-  background: #eceff1;
+  background: #F4F8F9;
   padding: 0px 0px;
 }
 #section-service-video .relation-cards-content{
-  display: flex;
-  justify-content: center;
+  display: block;
+  margin: 0 auto;
+  width: 1180px;
   max-width: 100%;
   height: auto;
+  padding: 60px 0;
 }
 #section-service-video .relation-cards-content video{
   width: 100%;
     height: 600px;
     object-fit: cover;
     z-index: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .baner-blog-content-wrap{
+    max-width: 582px;
+  }
+  .circle-content-info{
+    position: static;
+    right: 0;
+    bottom: 0;
+  }
+  .section-ul-circle .line-content.mr-t{
+    display: none;
+  }
 }
