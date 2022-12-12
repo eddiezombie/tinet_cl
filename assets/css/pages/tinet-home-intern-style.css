@@ -150,6 +150,9 @@
 }
 .case-wrapper .content-rocket-dashed img{
   transform: rotate(180deg);
+  opacity: 1;
+  top:-100px;
+  left: -9.2%;
 }
 .case-wrapper .content-rocket-dashed img.reveal.active-reveal{
   animation: rocket-3 6s linear;
@@ -205,35 +208,35 @@
 @keyframes rocket-3 {
   0%{
     top:-100px;
-    left: -10%;
+    left: -9.2%;
     transform: rotate(-180deg);
   }
   15%{
     top:-100px;
-    left: 0%;
+    left: 1%;
     transform: rotate(-180deg);
   }
   20%{
     transform: rotate(-90deg);
   }
-  40%{
+  30%{
     transform: rotate(-90deg);
   }
-  42%{
+  32%{
     transform: rotate(-75deg);
   }
-  44%{
+  34%{
     transform: rotate(-60deg);
   }
-  46%{
+  36%{
     transform: rotate(-45deg);
   }
-  48%{
+  38%{
     transform: rotate(-30deg);
   }
-  50%{
-    top: 200px;
-    left: 0%;
+  40%{
+    top: 190px;
+    left: 1%;
     transform: rotate(0deg);
   }
   60%{
@@ -243,7 +246,7 @@
     transform: rotate(-30deg);
   }
   70%{
-    top: 200px;
+    top: 190px;
     left: calc(-90% - 5px);
   }
   71%{
