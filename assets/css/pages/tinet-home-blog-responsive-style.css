@@ -34,9 +34,6 @@
     }
   }
   @media only screen and (max-width: 1024px) {
-    .circle-group-case{
-      display: none;
-    }
     .section-ul-circle{
       height: initial;
       padding: 0 24px;
@@ -293,7 +290,7 @@
     .banner-swiper-home-text{
       max-width: 100%;
     }
-    .case-wrapper .reveal.active-reveal .content-rocket-dashed{
+    .case-wrapper .reveal.active-reveal .content-rocket-dashed, .circle-group-case{
       display: none;
     }
     .banner-content-home{
