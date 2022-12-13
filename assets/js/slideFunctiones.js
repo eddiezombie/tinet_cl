@@ -156,6 +156,21 @@ $(".contenedor-slider").slick({
     }
   ]
 })
+$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 8,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true
+});
 $('.slide-circle-one').on('afterChange', function(event, slick, currentSlide, nextSlide){
   var suma = currentSlide + 1;
   $(".index-uno .index-slide").text(suma);
@@ -167,6 +182,10 @@ $('.slide-circle-two').on('afterChange', function(event, slick, currentSlide, ne
 $('.slide-circle-three').on('afterChange', function(event, slick, currentSlide, nextSlide){
   var suma = currentSlide + 1;
   $(".index-tres .index-slide").text(suma);
+});
+$('.slide-somos').on('afterChange', function(event, slick, currentSlide, nextSlide){
+  var suma = currentSlide + 1;
+  $(".index-uno .index-slide").text(suma);
 });
 
 // var reproductor = videojs('fm-video', {

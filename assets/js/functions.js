@@ -51,7 +51,7 @@ $(document).ready(function () {
           }
       },
       });
-    console.log('window was resized', screen.width);
+    // console.log('window was resized', screen.width);
   }
   initSwipersAll();
 
@@ -86,7 +86,189 @@ $(document).ready(function () {
     });
   }
 
-  animate_numbers("#section-service-4");
+  if($('#service-somos').length > 0){
+    animate_numbers("#service-somos");
+  }
+  if($('#section-service-4').length > 0){
+    animate_numbers("#section-service-4");
+  }
+
+  function initSwipersLogros() {
+    var swiper = new Swiper(".mySwiperLogros", {
+      slidesPerView: 1,
+      spaceBetween: 11,
+      grid: {
+        rows: 1
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        prevEl: ".mySwiperS3-left-page",
+        nextEl: ".mySwiperS3-right-pag",
+      },
+      breakpoints: {
+        1095: {
+          slidesPerView: 4,
+          spaceBetween: 32,
+          grid: {
+            rows: 1
+          }
+        },
+        601: {
+          slidesPerView: 2,
+          spaceBetween: 24,
+          grid: {
+            rows: 1
+          }
+        }
+      },
+    },
+    );
+    // console.log('window was resized', screen.width);
+  }
+  initSwipersLogros();
+  function initSwipersSomos() {
+    var swiperTwo = new Swiper(".mySwiperSomos", {
+      slidesPerView: 1,
+      spaceBetween: 11,
+
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        prevEl: ".mySwiperS3-left-page",
+        nextEl: ".mySwiperS3-right-pag",
+      },
+      breakpoints: {
+        1095: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 32,
+        }
+      },
+    },
+    );
+    // console.log('window was resized', screen.width);
+  }
+  initSwipersSomos();
+  function initSwipersPhoto() {
+    var swiperTrhee = new Swiper(".mySwiperPhoto", {
+      slidesPerView: 1,
+      spaceBetween: 11,
+      grid: {
+        rows: 1
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        prevEl: ".mySwiperS3-left-page",
+        nextEl: ".mySwiperS3-right-pag",
+      },
+      breakpoints: {
+        1280: {
+          slidesPerView: 3,
+          spaceBetween: 28,
+          grid: {
+            rows: 2
+          }
+        },
+        601: {
+          slidesPerView: 3,
+          spaceBetween: 11,
+          grid: {
+            rows: 1
+          }
+        }
+      },
+    },
+    );
+    // console.log('window was resized', screen.width);
+  }
+  initSwipersPhoto();
+  function initSwipersEquipment() {
+    var swiperFour = new Swiper(".mySwiperEquipment", {
+      loop: true,
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 0,
+        modifier: 2,
+        slideShadows: false,
+      },
+      breakpoints: {
+        1200: {
+          coverflowEffect: {
+            stretch: 10,
+            depth: 150,
+          },
+        },
+        645: {
+          coverflowEffect: {
+            stretch: 85,
+            depth: 150,
+          },
+        },
+        320: {
+          coverflowEffect: false,
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+      },
+
+      navigation: {
+        prevEl: ".mySwiperS3-left-page",
+        nextEl: ".mySwiperS3-right-pag",
+      },
+
+    },
+    );
+    // console.log('window was resized', screen.width);
+  }
+  initSwipersEquipment();
+  function initSwipersPrueba() {
+    var galleryThumbs = new Swiper('.somos-slider-thumbs', {
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+      centerInsufficientSlides: true,
+      slideToClickedSlide: true,
+      breakpoints: {
+        1000: {
+          slidesPerView: 8,
+        },
+        768: {
+          slidesPerView: 6,
+        },
+        320: {
+          slidesPerView: 3,
+        }
+      },
+    });
+    var galleryTop = new Swiper('.somos-slider-top', {
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      thumbs: {
+        swiper: galleryThumbs,
+      },
+    });
+    // console.log('window was resized', screen.width);
+  }
+  initSwipersPrueba();
+  $('.somos-banner-animation').click(function () {
+    $(this).addClass('active');
+  });
   
 	$(".content-circle").click(function() {
 		if (!$(this).hasClass("active")) {
