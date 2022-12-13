@@ -1,3 +1,114 @@
+@media only screen and (max-width: 1000px) {
+  .somos--pading-mobile {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .dig-exp-content .text-content-mobile .text-content-mobile__des{
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .somos-banner__description{
+    padding-bottom: 0;
+  }
+  .somos-banner__box {
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .somos-banner__box .dig-exp-text-content{
+    margin-top: 0;
+  }
+  .somos-banner-animation .somos-banner{
+    justify-content: center;
+  }
+
+  .somos-banner__box {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .somos-banner__img-content {
+    max-width: 40vw;
+  }
+
+  .somos-equipment .content-response-section {
+    height: 756px;
+  }
+
+  .somos-equipment .content-response-section .text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .somos-equipment .content-response-section .title {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .somos-equipment {
+    padding-left: 16px;
+  }
+
+  .somos-consult {
+    padding-right: 0;
+  }
+
+  .somos-pilares .somos-pilares__box {
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .somos-slider-thumbs {
+    padding-bottom: 180px;
+  }
+
+  .somos-slider-thumbs .swiper-button-prev {
+    left: calc(50% - 50px);
+  }
+
+  .somos-slider-thumbs .swiper-button-next {
+    right: calc(50% - 50px);
+  }
+
+  .somos-slider-thumbs .swiper-button-next,
+  .somos-slider-thumbs .swiper-button-prev {
+    bottom: 0;
+    top: auto;
+  }
+
+  .somos-tabs .line-content,
+  .somos-tabs .somos-tabs__list::before,
+  .somos-tabs .somos-tabs__list::after,
+  .somos-tabs .somos-tabs__list-border,
+  .somos-alianzas .line-content{
+    display: none;
+  }
+
+  .somos-tabs {
+    min-height: auto;
+    padding-bottom: 32px;
+  }
+  .somos-alianzas {
+    padding: 40px 16px;
+  }  
+  .somos-alianzas .content-response-section{
+    flex-direction: column;
+  }
+  .somos-alianzas .somos-alianzas__box{
+    padding-top: 40px;
+  }
+  .somos-alianzas .somos-alianzas__logos{
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+  .somos-alianzas .somos-alianzas__cards{
+    margin-bottom: 10px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .somos-logros .somos-logros__slider {
     margin-top: -22px;
@@ -13,7 +124,13 @@
 @media only screen and (max-width: 645px) {
   .somos-banner-animation {
     height: 100%;
-    padding: 16px;
+  } 
+  .dig-exp-content .text-content-mobile .text-content-mobile__des{
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .somos-banner__box{
+    justify-content: center;
   }
 
   .somos-banner__box .dig-exp-title-general .text-content-mobile__des {
@@ -212,6 +329,11 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .somos-banner-animation .somos-banner{
+    padding-top: 0px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
   .somos-page .pagination {
     justify-content: center;
   }
@@ -222,6 +344,10 @@
   .somos-slider-thumbs .swiper-slide {
     width: 120px !important;
     height: 100% !important;
+  }
+  .somos-banner__box{
+    /*padding-top: 30px;
+    padding-bottom: 30px;*/
   }
 
   .somos-slider-thumbs {
@@ -293,103 +419,6 @@
   .somos-pilares {
     padding-top: 80px;
     padding-bottom: 80px;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .somos--pading-mobile {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  .somos-banner-animation,
-  .somos-banner__box {
-    height: 100%;
-  }
-
-  .somos-banner__box {
-    flex-direction: column-reverse;
-    align-items: center;
-    width: 100%;
-    padding-bottom: 100px;
-  }
-
-  .somos-banner__img-content {
-    max-width: 40vw;
-  }
-
-  .somos-equipment .content-response-section {
-    height: 756px;
-  }
-
-  .somos-equipment .content-response-section .text {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .somos-equipment .content-response-section .title {
-    font-size: 40px;
-    line-height: 44px;
-  }
-
-  .somos-equipment {
-    padding-left: 16px;
-  }
-
-  .somos-consult {
-    padding-right: 0;
-  }
-
-  .somos-pilares .somos-pilares__box {
-    margin-top: 40px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .somos-slider-thumbs {
-    padding-bottom: 180px;
-  }
-
-  .somos-slider-thumbs .swiper-button-prev {
-    left: calc(50% - 50px);
-  }
-
-  .somos-slider-thumbs .swiper-button-next {
-    right: calc(50% - 50px);
-  }
-
-  .somos-slider-thumbs .swiper-button-next,
-  .somos-slider-thumbs .swiper-button-prev {
-    bottom: 0;
-    top: auto;
-  }
-
-  .somos-tabs .line-content,
-  .somos-tabs .somos-tabs__list::before,
-  .somos-tabs .somos-tabs__list::after,
-  .somos-tabs .somos-tabs__list-border,
-  .somos-alianzas .line-content{
-    display: none;
-  }
-
-  .somos-tabs {
-    min-height: auto;
-    padding-bottom: 32px;
-  }
-  .somos-alianzas {
-    padding: 40px 16px;
-  }  
-  .somos-alianzas .content-response-section{
-    flex-direction: column;
-  }
-  .somos-alianzas .somos-alianzas__box{
-padding-top: 40px;
-  }
-  .somos-alianzas .somos-alianzas__logos{
-    flex-wrap: wrap;
-    margin-bottom: 24px;
-  }
-  .somos-alianzas .somos-alianzas__cards{
-    margin-bottom: 10px;
   }
 }
 
@@ -593,6 +622,9 @@ padding-top: 40px;
 
   .somos-consult .line-content {
     height: 160px;
+  }
+  .somos-consult.reveal.active-reveal .line-content .line-dashed-y{
+    height: 140px;
   }
 
   .somos-logros.num-spk-work .content-response-section,

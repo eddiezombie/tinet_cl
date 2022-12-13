@@ -317,7 +317,7 @@
         </div>
       </div>
     </div>
-    <div class="num-spk-work reveal somos-logros">
+    <div class="num-spk-work reveal somos-logros" id="service-somos">
       <div class="content-response-section">
         <div class="fw-6 cl-gr-8 dig-exp-text-content somos-number">
           <div class="dig-exp-title-general box-animation delay-bezier-3">
@@ -353,10 +353,10 @@
                   </span>
                 </div>
               </div>
-              <div class="text-line box-animation delay-bezier-5">
-                <span class="fw-7 fs-72 leading-[80px] tracking-[-0.4px] cl-sc-5 text-line__title flex">
-                  +1000%
-                </span>
+              <div class="text-line boxanimation delay-bezier-5">
+                <div class="fw-7 fs-72 leading-[80px] tracking-[-0.4px] cl-sc-5 text-line__title flex">
+                  +<span class="animate-numbers">1000</span>%
+                </div>
                 <span class="fw-4 fs-16 lh-24 tracking-[-0.25px] cl-gr-7 text-line__des">Proyectos transformacionales
               </div>
               </span>
@@ -370,10 +370,10 @@
                   </span>
                 </div>
               </div>
-              <div class="text-line box-animation delay-bezier-3">
-                <span class="fw-7 fs-72 leading-[80px] tracking-[-0.4px] cl-sc-5 text-line__title">
-                  +200
-                </span>
+              <div class="text-line boxanimation delay-bezier-3">
+                <div class="fw-7 fs-72 leading-[80px] tracking-[-0.4px] cl-sc-5 text-line__title">
+                  +<span class="animate-numbers">200</span>
+                </div>
                 <span class="fw-4 fs-16 lh-24 tracking-[-0.25px] cl-gr-7 text-line__des">Talentos en </span><span
                   class="fw-6">7 nacionalidades</span>
               </div>
@@ -388,10 +388,10 @@
                   </span>
                 </div>
               </div>
-              <div class="text-line delay-bezier-4 box-animation delay-bezier-4">
-                <span class="fw-7 fs-72 leading-[80px] tracking-[-0.4px] cl-sc-5 text-line__title flex">
-                  +20
-                </span>
+              <div class="text-line delay-bezier-4 boxanimation">
+                <div class="fw-7 fs-72 leading-[80px] tracking-[-0.4px] cl-sc-5 text-line__title flex">
+                  +<span class="animate-numbers">20</span>
+                </div>
                 <span class="fw-4 fs-16 lh-24 tracking-[-0.25px] cl-gr-7 text-line__des">Años de experiencia</span>
               </div>
               </span>
@@ -1074,214 +1074,21 @@
     </div>
   </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-<script src="https://scrollmagic.io/assets/js/lib/greensock/TweenMax.min.js"></script>
-<script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/glider.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+
+<script src="assets/js/scrollmagic.min.js"></script>
+<script src="assets/js/tweenmax.min.js"></script>
+<script src="assets/js/debug.addIndicators.js"></script>
 <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
 <script src="assets/js/slick.min.js"></script>
 <script src="assets/js/app.js"></script>
 <script src="assets/js/functions.js"></script>
 <script src="assetS/js/slideFunctiones.js"></script>
 <script src="assets/js/navbar.js"></script>
-<script>
-  function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
-
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active-reveal");
-      } else {
-        reveals[i].classList.remove("active-reveal");
-      }
-    }
-  }
-  window.addEventListener("scroll", reveal);
-  function initSwipersLogros() {
-    var swiper = new Swiper(".mySwiperLogros", {
-      slidesPerView: 1,
-      spaceBetween: 11,
-      grid: {
-        rows: 1
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-      },
-      navigation: {
-        prevEl: ".mySwiperS3-left-page",
-        nextEl: ".mySwiperS3-right-pag",
-      },
-      breakpoints: {
-        1095: {
-          slidesPerView: 4,
-          spaceBetween: 32,
-          grid: {
-            rows: 1
-          }
-        },
-        601: {
-          slidesPerView: 2,
-          spaceBetween: 24,
-          grid: {
-            rows: 1
-          }
-        }
-      },
-    },
-    );
-    console.log('window was resized', screen.width);
-  }
-  initSwipersLogros();
-  function initSwipersSomos() {
-    var swiperTwo = new Swiper(".mySwiperSomos", {
-      slidesPerView: 1,
-      spaceBetween: 11,
-
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-      },
-      navigation: {
-        prevEl: ".mySwiperS3-left-page",
-        nextEl: ".mySwiperS3-right-pag",
-      },
-      breakpoints: {
-        1095: {
-          slidesPerView: 3,
-          spaceBetween: 40,
-        },
-        480: {
-          slidesPerView: 2,
-          spaceBetween: 32,
-        }
-      },
-    },
-    );
-    console.log('window was resized', screen.width);
-  }
-  initSwipersSomos();
-  function initSwipersPhoto() {
-    var swiperTrhee = new Swiper(".mySwiperPhoto", {
-      slidesPerView: 1,
-      spaceBetween: 11,
-      grid: {
-        rows: 1
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-      },
-      navigation: {
-        prevEl: ".mySwiperS3-left-page",
-        nextEl: ".mySwiperS3-right-pag",
-      },
-      breakpoints: {
-        1280: {
-          slidesPerView: 3,
-          spaceBetween: 28,
-          grid: {
-            rows: 2
-          }
-        },
-        601: {
-          slidesPerView: 3,
-          spaceBetween: 11,
-          grid: {
-            rows: 1
-          }
-        }
-      },
-    },
-    );
-    console.log('window was resized', screen.width);
-  }
-  initSwipersPhoto();
-  function initSwipersEquipment() {
-    var swiperFour = new Swiper(".mySwiperEquipment", {
-      loop: true,
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        rotate: 0,
-        modifier: 2,
-        slideShadows: false,
-      },
-      breakpoints: {
-        1200: {
-          coverflowEffect: {
-            stretch: 10,
-            depth: 150,
-          },
-        },
-        645: {
-          coverflowEffect: {
-            stretch: 85,
-            depth: 150,
-          },
-        },
-        320: {
-          coverflowEffect: false,
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-      },
-
-      navigation: {
-        prevEl: ".mySwiperS3-left-page",
-        nextEl: ".mySwiperS3-right-pag",
-      },
-
-    },
-    );
-    console.log('window was resized', screen.width);
-  }
-  initSwipersEquipment();
-  function initSwipersPrueba() {
-    var galleryThumbs = new Swiper('.somos-slider-thumbs', {
-      watchSlidesVisibility: true,
-      watchSlidesProgress: true,
-      centerInsufficientSlides: true,
-      slideToClickedSlide: true,
-      breakpoints: {
-        1000: {
-          slidesPerView: 8,
-        },
-        768: {
-          slidesPerView: 6,
-        },
-        320: {
-          slidesPerView: 3,
-        }
-      },
-    });
-    var galleryTop = new Swiper('.somos-slider-top', {
-      spaceBetween: 30,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      thumbs: {
-        swiper: galleryThumbs,
-      },
-    });
-    console.log('window was resized', screen.width);
-  }
-  initSwipersPrueba();
-  $('.somos-banner-animation').click(function () {
-    $(this).addClass('active');
-  });
-</script>
 
 </html>
