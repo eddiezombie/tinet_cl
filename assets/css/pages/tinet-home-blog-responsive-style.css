@@ -65,6 +65,9 @@
     }
   }
   @media only screen and (max-width: 1000px) {
+    .working-case.banner-home-img-alt{
+      margin-left: 0px;
+    }
     .content-services-section .title-services{
       font-size: 32px;
       line-height: 40px;

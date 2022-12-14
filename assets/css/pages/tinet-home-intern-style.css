@@ -1424,6 +1424,19 @@ height: 172px;
   align-items: flex-start;
   position: relative;
 }
+.working-case.banner-swiper-home.banner-swiper-home-alt{
+  align-items: end;
+  justify-content: flex-start;
+}
+.working-case.banner-home-img-alt{
+  margin-left: 110px;
+  padding: 0 24px;
+}
+.working-case.banner-home-img-alt img{
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .num-spk-work {
   height: 100%;
