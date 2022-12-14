@@ -25,7 +25,7 @@ $('.casos-relacionados').slick({
     slidesToShow: 3,
     arrows: true,
     variableWidth: true,
-    infinite: false,
+    infinite: true,
     prevArrow: "<div class='page left'><i class='icon-arrow-left-page'></i></div>",
     nextArrow: "<div class='page right'><i class='icon-arrow-right-page'></i></div>",
     responsive: [
