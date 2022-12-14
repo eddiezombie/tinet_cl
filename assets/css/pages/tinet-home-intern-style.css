@@ -1239,15 +1239,15 @@
 }
 .solucion-slide .page.left{
   bottom: 10px;
-  left: 50%;
-  transform: translate(-55px);
+  left: 300px;
+  transform: translate(-80px);
   position:absolute;
   z-index: 20;
 }
 .solucion-slide .page.right{
   bottom: 10px;
-  left: 50%;
-  transform: translate(15px);
+  left: 300px;
+  transform: translate(-5px);
   position:absolute;
   z-index: 20;
 }
@@ -1358,11 +1358,12 @@ color: #424242;
   margin: 0px 0px 0px auto;
   max-width: 1310px;
   width: 100%;
-  overflow: hidden;
   padding-left: 24px;
 }
 .banner-content-home.border-left-bottom{
   border-radius: 0px 0px 0px 144px;
+  overflow: hidden;
+  padding-bottom: 200px;
 }
 .flex-align-start{
   display: flex;
@@ -1394,12 +1395,14 @@ height: 172px;
 }
 .working-case.banner-swiper-home-img{
   max-width: 100%;
-  margin-left: 130px;
+  margin-left: 0px;
   display: flex;
-  margin-top: 147.11px;
-  overflow: hidden;
   height: 670px;
-  margin-bottom: 30px;
+  position: absolute;
+  left: 50%;
+  bottom: -120px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 .banner-swiper-home-img .working-case.item-swiper{
   width: 235px;
@@ -1419,6 +1422,7 @@ height: 172px;
 .working-case.banner-swiper-home{
   justify-content: space-between;
   align-items: flex-start;
+  position: relative;
 }
 
 .num-spk-work {
@@ -1551,7 +1555,10 @@ height: 283px;
 }
 .content-services-section .container-scroll-card-group{
   display: block;
-  padding-left: 24px;
+  padding-left: 0px;
+  width: 1180px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 .cg-slider .page{
   position: absolute;

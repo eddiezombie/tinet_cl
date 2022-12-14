@@ -22,7 +22,7 @@ $('.casos-relacionados').slick({
     ]
   });
   $('.cg-slider').slick({
-    slidesToShow: 3,
+    slidesToShow: 4,
     arrows: true,
     variableWidth: true,
     infinite: true,

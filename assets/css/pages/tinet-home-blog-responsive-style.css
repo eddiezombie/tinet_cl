@@ -11,8 +11,10 @@
   #section-service-video .relation-cards-content{
     max-width: 1440px;
   }
-  .cg-slider .page.left{left: 648px;}
-  .cg-slider .page.right {left: 760px;}
+  .case-intern.relation-cards-content{
+    max-width: 100%;
+    width: 1180px;
+  }
   .linea-cohete-tres{left: -1156px;}
   .linea-cohete-uno{width: 1270px;}
 }
@@ -22,6 +24,15 @@
   }
   .filter-blog .relation-card{
     width: 350px;
+  }
+  .cg-slider .page.left{
+    transform: translate(-80px);
+  }
+  .cg-slider .page.right{
+    transform: translate(-5px);
+  }
+  .content-services-section .container-scroll-card-group{
+    padding-left: 24px;
   }
     .banner-swiper-home-text {
       /*max-width: 52%;*/
@@ -65,6 +76,14 @@
       margin-left: 24px;
       margin-top: 0;
       padding-left: 0;
+      padding-right: 0;
+      position: static;
+    }
+    .solucion-slide .page.left, .solucion-slide .page.right{
+      left: 50%;
+    }
+    .banner-content-home.border-left-bottom{
+      padding-bottom: 60px;
     }
     .content-text-lateral {
       padding-right: 0px;
@@ -264,7 +283,7 @@
     .working-case.banner-swiper-home{
       flex-direction: column;
       margin-top: 0px;
-      margin-bottom: 60px;
+      margin-bottom: 0px;
       padding: 0 24px;
     }
     .banner-content-home.border-left-bottom{
