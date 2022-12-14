@@ -388,9 +388,6 @@
   display: flex;
   flex-direction: row;
 }
-.line-content.mr-t {
-  margin-left: 31px;
-}
 .line-content .line-dashed-y {
   height: 122px;
   width: 1px;
@@ -1194,7 +1191,7 @@
   overflow: hidden;
 }
 .section-ul-circle .relation-cards{
-  overflow: hidden;
+  position: relative;
   margin: 0 auto;
   width: 1180px;
   max-width: 100%;
@@ -1251,11 +1248,6 @@
   position:absolute;
   z-index: 20;
 }
-.conteiner-carrousel-case {
-  max-width: 978px;
-  width: 100%;
-  overflow-x: hidden;
-}
 .content-ul{
   display: flex;
   margin-bottom: 24px;
@@ -1291,7 +1283,7 @@
 }
 .circle-content-info{
   position: absolute;
-  right: -50px;
+  right: -150px;
   bottom: -50px;
 }
 .circle-content-info .circle-content{
@@ -1495,37 +1487,11 @@ height: 172px;
   font-size: 14px;
   line-height: 21px;
 }
-.case-study {
-  height: 920px;
-  background-color: #ffffff;
-  margin: 0px auto;
-  width: 1180px;
-  max-width: 100%;
-  display: flex;
-  align-items: flex-start;
-}
-.case-study-relative{
-  position: relative;
-}
-.case-study .case-study-left{
-  height: 100%;
-  display: flex;
-}
-.case-study .line-content{
-  margin-right: 30px;
-}
+
 .case-study .line-dashed-y{
 height: 283px;
 }
-.case-study .dig-exp-text-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  max-width: 472px;
-  margin-right: 29px;
-  height: 100%;
-}
+
 .case-study .dig-exp-text-content .dig-exp-text-content__subtitle{
   max-width: 372px;
 }
