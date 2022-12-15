@@ -742,10 +742,10 @@
 }
 .our-cap .pesta-page-bg{
   background-repeat: no-repeat;
-  background-position: 450px bottom;
+  background-position: center bottom;
 }
 .our-cap .pesta-page-bg1{
-  background-image: url(../img/flower-cell.svg);
+  background-image: url(../img/road.svg);
 }
 
 .our-cap .pesta-page .dig-exp-title-general {
@@ -2209,6 +2209,10 @@
     padding-left: calc((100vw - 600px) / 4);
     margin: 0px;
     justify-content: flex-end;
+  }
+  .our-cap .pesta-page.pesta-page-bg1{
+    padding-bottom: 200px;
+    background-size: 150px;
   }
   .our-cap .pesta-page.pesta-page-list{
     align-items: flex-start;
