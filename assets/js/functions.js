@@ -272,24 +272,28 @@ $(document).ready(function () {
   
 	$(".content-circle").click(function() {
 		if (!$(this).hasClass("active")) {
-			$(".content-circle").removeClass("active")
-			$(this).addClass("active")
+			$(".content-circle").removeClass("active");
+			$(this).addClass("active");
 
 			$(".pesta-page").removeClass('pesta-page-flex');
       $(".pesta-page").addClass('pesta-page-none');
 			if ($(this).hasClass("design")) {
-				$(".header-exp").addClass("design", 500).removeClass("research", 500).removeClass("consulting", 500);
+				$(".header-exp").addClass("design", 500).removeClass("research", 500).removeClass("consulting", 500).removeClass("extra", 500);
 				$(".pesta-page.design").removeClass('pesta-page-none');
         $(".pesta-page.design").addClass('pesta-page-flex');
 			} else if ($(this).hasClass("research")) {
-				$(".header-exp").addClass("research", 500).removeClass("design", 500).removeClass("consulting", 500);
+				$(".header-exp").addClass("research", 500).removeClass("design", 500).removeClass("consulting", 500).removeClass("extra", 500);
 				$(".pesta-page.research").removeClass('pesta-page-none');
         $(".pesta-page.research").addClass('pesta-page-flex');
 			} else if ($(this).hasClass("consulting")) {
-				$(".header-exp").addClass("consulting", 500).removeClass("design", 500).removeClass("research", 500);
+				$(".header-exp").addClass("consulting", 500).removeClass("design", 500).removeClass("research", 500).removeClass("extra", 500);
 				$(".pesta-page.consulting").removeClass('pesta-page-none');
         $(".pesta-page.consulting").addClass('pesta-page-flex');
-			}
+			} else if ($(this).hasClass("extra")) {
+        $(".header-exp").addClass("extra", 500).removeClass("design", 500).removeClass("research", 500).removeClass("consulting", 500);
+        $(".pesta-page.extra").removeClass('pesta-page-none');
+        $(".pesta-page.extra").addClass('pesta-page-flex');
+      }
 
 		}
 	});

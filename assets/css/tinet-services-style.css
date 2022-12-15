@@ -736,6 +736,18 @@
 .pesta-page.pesta-page-flex{
   display: flex;
 }
+.our-cap .pesta-page-top{
+  justify-content: flex-start;
+  padding-top: 120px;
+}
+.our-cap .pesta-page-bg{
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.our-cap .pesta-page-bg1{
+  background-image: url(../img/road.svg);
+}
+
 .our-cap .pesta-page .dig-exp-title-general {
   margin: 0px;
 }
@@ -751,6 +763,54 @@
   letter-spacing: -0.25px;
   max-width: 472px;
 }
+
+.dig-exp-list{
+  position: relative;
+  margin-top: 18px;
+  margin-bottom: 70px;
+}
+.dig-exp-list .dig-exp-listitem{
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
+  position: relative;
+  padding-left: 24px;
+  width: 354px;
+  max-width: 100%;
+}
+.dig-exp-list .dig-exp-listitem.dig-exp-listitem-und, .dig-exp-list .dig-exp-listitem a{
+  text-decoration: underline;
+}
+.dig-exp-list .dig-exp-listitem:last-child{
+  margin-bottom: 0;
+}
+.dig-exp-list:after{
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 10px;
+  height: calc(100% - 16px);
+  border-left: 1px dashed #FAFAFA;
+}
+.dig-exp-list .dig-exp-listitem:after{
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: -8px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-color: #FAFAFA;
+  border-radius: 50%;
+}
+.dig-exp-dlist{
+  padding-left: 20px;
+}
+.dig-exp-dlist li{
+  list-style-type: disc;
+}
+
 .our-cap .circle-dashed-content-scroll {
   width: 100%;
 }
@@ -760,6 +820,9 @@
 .our-cap .circle-dashed-content {
   display: flex;
   margin-top: 54px;
+}
+.our-cap .circle-dashed-content + .circle-dashed-content{
+  margin-top: 30px;
 }
 .our-cap .circle-dashed-content .content-circle {
   display: flex;
@@ -789,6 +852,9 @@
 .consulting {
   color: #607d8b;
 }
+.extra {
+  color: #006099;
+}
 .our-cap .circle-dashed-content .content-circle .icon-long-arrow-up {
   font-size: 24px;
   display: none;
@@ -797,6 +863,9 @@
   color: #fafafa;
 }
 .our-cap .circle-dashed-content .content-circle.design.active .circle-dashed {
+  background: #006099;
+}
+.our-cap .circle-dashed-content .content-circle.extra.active .circle-dashed {
   background: #006099;
 }
 .our-cap .circle-dashed-content .content-circle.research.active .circle-dashed {
@@ -2137,9 +2206,20 @@
   .our-cap .pesta-page .dig-exp-text-content-2 {
     max-width: 100%;
     padding-right: 0px;
-    padding-left: calc((100vw - 600px) / 2);
+    padding-left: calc((100vw - 600px) / 4);
     margin: 0px;
     justify-content: flex-end;
+  }
+  .our-cap .pesta-page.pesta-page-bg1{
+    padding-bottom: 200px;
+    background-size: 150px;
+  }
+  .our-cap .pesta-page.pesta-page-list{
+    align-items: flex-start;
+  }
+  .our-cap .pesta-page.pesta-page-list .dig-exp-text-content-2{
+    padding-left: 36px;
+    padding-right: 24px;
   }
   .our-cap .paginatuion-total-content {
     max-width: 100%;
@@ -2645,6 +2725,9 @@
     align-items: center;
     margin-left: inherit;
     padding-left: 130px;
+  }
+  .our-cap .pesta-page.pesta-page-top .dig-exp-text-content-2{
+    padding-left: 30px;
   }
 }
 
