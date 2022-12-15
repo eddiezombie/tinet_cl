@@ -852,6 +852,9 @@
 .consulting {
   color: #607d8b;
 }
+.extra {
+  color: #006099;
+}
 .our-cap .circle-dashed-content .content-circle .icon-long-arrow-up {
   font-size: 24px;
   display: none;
@@ -860,6 +863,9 @@
   color: #fafafa;
 }
 .our-cap .circle-dashed-content .content-circle.design.active .circle-dashed {
+  background: #006099;
+}
+.our-cap .circle-dashed-content .content-circle.extra.active .circle-dashed {
   background: #006099;
 }
 .our-cap .circle-dashed-content .content-circle.research.active .circle-dashed {
@@ -2715,6 +2721,9 @@
     align-items: center;
     margin-left: inherit;
     padding-left: 130px;
+  }
+  .our-cap .pesta-page.pesta-page-top .dig-exp-text-content-2{
+    padding-left: 30px;
   }
 }
 
