@@ -64,7 +64,7 @@
   right: 0;
   top: 330px;
   left: inherit;
-  margin-top: 0;  
+  margin-top: 0;
 }
 .case-wrapper .reveal.active-reveal .content-rocket-dashed .line-content.x-y-392{
   max-width: 1010px;
@@ -1637,8 +1637,8 @@ height: 283px;
   padding: 0px 20px 40px;
 }
 .content-services-section .relation-card-info__title{
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 26px;
   font-family: Poppins-Bold;
 }
 .content-services-section .relation-card-info__desc{
