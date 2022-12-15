@@ -736,6 +736,18 @@
 .pesta-page.pesta-page-flex{
   display: flex;
 }
+.our-cap .pesta-page-top{
+  justify-content: flex-start;
+  padding-top: 120px;
+}
+.our-cap .pesta-page-bg{
+  background-repeat: no-repeat;
+  background-position: 450px bottom;
+}
+.our-cap .pesta-page-bg1{
+  background-image: url(../img/flower-cell.svg);
+}
+
 .our-cap .pesta-page .dig-exp-title-general {
   margin: 0px;
 }
@@ -808,6 +820,9 @@
 .our-cap .circle-dashed-content {
   display: flex;
   margin-top: 54px;
+}
+.our-cap .circle-dashed-content + .circle-dashed-content{
+  margin-top: 30px;
 }
 .our-cap .circle-dashed-content .content-circle {
   display: flex;

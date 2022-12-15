@@ -272,8 +272,8 @@ $(document).ready(function () {
   
 	$(".content-circle").click(function() {
 		if (!$(this).hasClass("active")) {
-			$(".content-circle").removeClass("active")
-			$(this).addClass("active")
+			$(".content-circle").removeClass("active");
+			$(this).addClass("active");
 
 			$(".pesta-page").removeClass('pesta-page-flex');
       $(".pesta-page").addClass('pesta-page-none');
