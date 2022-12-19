@@ -1,5 +1,18 @@
 $(document).ready(function () {
 
+  $(window).scroll(function() {
+     if($('#section-service-1')){
+      var hT = $('#section-service-1').offset().top,
+          hH = $('#section-service-1').outerHeight(),
+          wH = $(window).height(),
+          wS = $(this).scrollTop() + 10;
+      if (wS > (hT+hH-wH)){
+          console.log('H1 on the view!');
+          $('#section-service-1').addClass('active');
+      }
+     }
+  });
+
   function reveal() {
     var reveals = document.querySelectorAll(".reveal");
 
