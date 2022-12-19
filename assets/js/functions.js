@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+  $('.methodology__circleitem').click(function(){
+    $(this).toggleClass('active');
+    $('.methodology__circleitem__plus').slideToggle(1);
+    $('.methodology__circleitem__minus').slideToggle(1);
+  });
+
   $(window).scroll(function() {
      if($('#section-service-1').length){
       var hT = $('#section-service-1').offset().top,
