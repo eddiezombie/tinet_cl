@@ -764,6 +764,83 @@
   max-width: 472px;
 }
 
+.methodology{
+  background: #eceff1;
+  padding: 90px 24px;
+}
+.methodology__container{
+  width: 1180px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.methodology__circles{
+  width: 698px;
+  height: 698px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px dashed #B0BEC5;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.methodology__circleitem{
+  width: 48.5%;
+  height: 48.5%;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 30px;
+  display: flex;
+  /*position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0,-50%);*/
+  background: #E5EFF5;
+  background-color: yellow;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.5s;
+}
+.methodology__circleitem__plus{
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+  background-image: url(../img/circleplus.svg);
+}
+.methodology__circleitem__title{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+.methodology__circleitem__subtitle{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+.methodology__circleitem__title, .methodology__circleitem__subtitle{
+  letter-spacing: -0.25px;
+  color: #006099;
+  transition: 0.5s;
+}
+.methodology__circles:hover .methodology__circleitem{
+  background: #FAFAFA;
+}
+.methodology__circles:hover .methodology__circleitem__title, .methodology__circles:hover .methodology__circleitem__subtitle{
+  color: #EEEEEE;
+}
+.methodology__circles:hover .methodology__circleitem:hover{
+  background: green;
+}
+
 .dig-exp-list{
   position: relative;
   margin-top: 18px;
