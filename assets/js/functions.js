@@ -61,7 +61,7 @@ $(document).ready(function () {
     var offsetToScrollThrough = 500;
     var animationDuration = 9000;
     var animationEasing = "easeOutExpo";
-    
+
     $(window).scroll(function() {
       var oTop = $(id).offset().top - window.innerHeight + offsetToScrollThrough;
       if (count == 0 && $(window).scrollTop() > oTop) {
@@ -269,7 +269,7 @@ $(document).ready(function () {
   $('.somos-banner-animation').click(function () {
     $(this).addClass('active');
   });
-  
+
 	$(".content-circle").click(function() {
 		if (!$(this).hasClass("active")) {
 			$(".content-circle").removeClass("active");
@@ -392,11 +392,11 @@ $(document).ready(function () {
 	var widthScreen = $(window).width();
 	var svg1Back = document.getElementById("svgroad-back");
 	let widthScreenSvg = (widthScreen < 1400) ? (widthScreen - 320)  : (widthScreen - (widthScreen - 800) / 2);
-	svg1Back.innerHTML = `<path class="svg-lg" id="svgscroll" style="stroke-dasharray: 3009.22px; stroke-dashoffset: 2709px; stroke: #891265;" fill="none" 
-	  d="M 0,120.0 l ${widthScreenSvg},0 
+	svg1Back.innerHTML = `<path class="svg-lg" id="svgscroll" style="stroke-dasharray: 3009.22px; stroke-dashoffset: 2709px; stroke: #891265;" fill="none"
+	  d="M 0,120.0 l ${widthScreenSvg},0
 	  c 0,0,200,0,200,200
 	  c 0,0,0,200,-200,200
-	  l -810,0 
+	  l -810,0
 	  c 0,0,-200,0,-200,200
 	  l 0, 100
 	"></path>`;
@@ -414,11 +414,11 @@ $(document).ready(function () {
 	var widthScreen = $(window).width();
 	var svg1Back = document.getElementById("svgroad-back");
 	let widthScreenSvg = (widthScreen < 1400) ? (widthScreen - 320)  : (widthScreen - (widthScreen - 800) / 2);
-	svg1Back.innerHTML = `<path class="svg-lg" id="svgscroll" style="stroke-dasharray: 3009.22px; stroke-dashoffset: 2216px; stroke: #891265;" fill="none" 
-	  d="M 0,120.0 l ${widthScreenSvg},0 
+	svg1Back.innerHTML = `<path class="svg-lg" id="svgscroll" style="stroke-dasharray: 3009.22px; stroke-dashoffset: 2216px; stroke: #891265;" fill="none"
+	  d="M 0,120.0 l ${widthScreenSvg},0
 	  c 0,0,200,0,200,200
 	  c 0,0,0,200,-200,200
-	  l -810,0 
+	  l -810,0
 	  c 0,0,-200,0,-200,200
 	  l 0, 100
 	"></path>`;
@@ -429,7 +429,7 @@ $(document).ready(function () {
     self = self.parents(".infoblob-wrapper");
     $('.proccess-layer').toggleClass('active')
     $(".infoblob-wrapper").toggleClass("disabled-3");
-    
+
     $(".infoblob-wrapper").addClass("transition");
     self.removeClass("disabled-3");
     self.find(".infoblob__hidden:first").stop().slideToggle();
@@ -447,11 +447,11 @@ $(document).ready(function () {
 	var widthScreen = $(window).width();
 	var svg1Back = document.getElementById("svgroad-back");
 	let widthScreenSvg = (widthScreen < 1400) ? (widthScreen - 320)  : (widthScreen - (widthScreen - 800) / 2);
-	svg1Back.innerHTML = `<path class="svg-lg" id="svgscroll" style="stroke-dasharray: 3009.22px; stroke-dashoffset: 1238px; stroke: #891265;" fill="none" 
-	  d="M 0,120.0 l ${widthScreenSvg},0 
+	svg1Back.innerHTML = `<path class="svg-lg" id="svgscroll" style="stroke-dasharray: 3009.22px; stroke-dashoffset: 1238px; stroke: #891265;" fill="none"
+	  d="M 0,120.0 l ${widthScreenSvg},0
 	  c 0,0,200,0,200,200
 	  c 0,0,0,200,-200,200
-	  l -810,0 
+	  l -810,0
 	  c 0,0,-200,0,-200,200
 	  l 0, 100
 	"></path>`;
@@ -462,7 +462,7 @@ $(document).ready(function () {
     self.toggleClass("active");
     self = self.parents(".infoblob-wrapper");
     $('.proccess-layer').toggleClass('active')
-    // $(".infoblob-wrapper").toggleClass("disabled-4");
+    $(".infoblob-wrapper").toggleClass("disabled-4");
     $(".infoblob-wrapper").addClass("transition");
     self.removeClass("disabled-4");
     self.find(".infoblob__hidden:first").stop().slideToggle();
@@ -476,11 +476,11 @@ $(document).ready(function () {
 	var widthScreen = $(window).width();
 	var svg1Back = document.getElementById("svgroad-back");
 	let widthScreenSvg = (widthScreen < 1400) ? (widthScreen - 320)  : (widthScreen - (widthScreen - 800) / 2);
-	svg1Back.innerHTML = `<path class="svg-lg" id="svgscroll" style="stroke-dasharray: 3009.22px; stroke-dashoffset: 745px; stroke: #891265;" fill="none" 
-	  d="M 0,120.0 l ${widthScreenSvg},0 
+	svg1Back.innerHTML = `<path class="svg-lg" id="svgscroll" style="stroke-dasharray: 3009.22px; stroke-dashoffset: 745px; stroke: #891265;" fill="none"
+	  d="M 0,120.0 l ${widthScreenSvg},0
 	  c 0,0,200,0,200,200
 	  c 0,0,0,200,-200,200
-	  l -810,0 
+	  l -810,0
 	  c 0,0,-200,0,-200,200
 	  l 0, 100
 	"></path>`;
@@ -493,19 +493,19 @@ $(document).ready(function () {
     var svg1Back = document.getElementById("svgroad-back");
 	let widthScreenSvg = (widthScreen < 1400) ? (widthScreen - 320)  : (widthScreen - (widthScreen - 800) / 2);
 
-    svg1.innerHTML = `<path class="svg-lg" fill="none" 
-		d="M 0,120.0 l ${widthScreenSvg},0 
+    svg1.innerHTML = `<path class="svg-lg" fill="none"
+		d="M 0,120.0 l ${widthScreenSvg},0
 		c 0,0,200,0,200,200
 		c 0,0,0,200,-200,200
-		l -810,0 
+		l -810,0
 		c 0,0,-200,0,-200,200
 		l 0, 100
 	  "></path>`;
-    svg1Back.innerHTML = `<path class="svg-lg" id="svgscroll" style="stroke-dasharray: 3009.22px; stroke-dashoffset: 2009.22px; stroke: #891265;" fill="none" 
-	  d="M 0,120.0 l ${widthScreenSvg},0 
+    svg1Back.innerHTML = `<path class="svg-lg" id="svgscroll" style="stroke-dasharray: 3009.22px; stroke-dashoffset: 2009.22px; stroke: #891265;" fill="none"
+	  d="M 0,120.0 l ${widthScreenSvg},0
 	  c 0,0,200,0,200,200
 	  c 0,0,0,200,-200,200
-	  l -810,0 
+	  l -810,0
 	  c 0,0,-200,0,-200,200
 	  l 0, 100
 	"></path>`;
@@ -541,5 +541,5 @@ $(document).ready(function () {
   })
     .setTween(tween).addTo(controller);
 	//.addIndicators()
-  
+
 });
