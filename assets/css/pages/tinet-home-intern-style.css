@@ -1701,3 +1701,60 @@ margin-top: 24px;
     padding-right: 0;
   }
 }
+.box-c-1{
+  border-radius: 20px 0px 0px 20px;
+}
+.box-c-2{
+  border-radius: 0px 20px 20px 0px;
+}
+.box-c-3{
+  border-radius: 20px;
+}
+.box-c-4{
+  border-radius: 20px 20px 0px 0px;
+}
+.box-c-5{
+  border-radius: 0px 0px 20px 20px;
+}
+.box-c-6{
+  border-radius: 0px 20px 20px 0px;
+}
+.arr{
+  height: 1px;
+  border-bottom: 2px dashed #C41A90;
+  border-radius: 16px;
+}
+.anex{
+  border-left: 2px dashed #C41A90;
+  border-right: 2px dashed #C41A90;
+  border-bottom: 2px dashed #C41A90;
+  position: relative;
+}
+.anex > div:first-child{
+  position: absolute;
+  bottom: -32px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 1px;
+  height: 32px;
+  border-left: 2px dashed #C41A90;
+}
+.anex > div:last-child{
+  position: absolute;
+  bottom: -32px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+@media (max-width:1024px){
+  .box-c-1{
+    border-radius:20px 20px 0 0;
+  }
+  .box-c-2{
+    border-radius: 0 0 20px 20px;
+  }
+  .box-c-6{
+    border-radius: 0 0 20px 20px;
+  }
+}
