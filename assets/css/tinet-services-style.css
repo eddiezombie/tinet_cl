@@ -932,6 +932,7 @@
   right: 0;
   top: 50%;
   transform: translate(1px,-50%);
+  transition: 0.5s;
 }
 .methodology__circleitem__text{
   display: none;
