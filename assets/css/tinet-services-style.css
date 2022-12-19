@@ -1685,8 +1685,8 @@
   transition: 1s opacity 1.5s;
 }
  .reveal.active-reveal .delay-bezier-2{
-  animation-delay:  2s;
-  transition: 1s opacity 2s;
+  animation-delay:  1.5s;
+  transition: 1s opacity 1.5s;
 }
 .reveal.active-reveal .delay-bezier-025{
   animation: box-7 2.5s cubic-bezier(1,-0.42,.42,-0.39);
@@ -1774,7 +1774,7 @@
 
 @keyframes box-7 {
   0% {
-    transform: translateY(100px);
+    transform: translateY(60px);
     opacity: 0;
   }
   100% {

@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
   $(window).scroll(function() {
-     if($('#section-service-1')){
+     if($('#section-service-1').length){
       var hT = $('#section-service-1').offset().top,
           hH = $('#section-service-1').outerHeight(),
           wH = $(window).height(),
@@ -72,7 +72,7 @@ $(document).ready(function () {
     var count = 0;
     var classToAnimate = ".animate-numbers";
     var offsetToScrollThrough = 500;
-    var animationDuration = 9000;
+    var animationDuration = 7000;
     var animationEasing = "easeOutExpo";
 
     $(window).scroll(function() {

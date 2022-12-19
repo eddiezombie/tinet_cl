@@ -222,37 +222,28 @@
   30%{
     transform: rotate(-90deg);
   }
-  32%{
-    transform: rotate(-75deg);
-  }
-  34%{
-    transform: rotate(-60deg);
-  }
-  36%{
-    transform: rotate(-45deg);
-  }
-  38%{
-    transform: rotate(-30deg);
+  39%{
+    transform: rotate(-90deg);
   }
   40%{
     top: 190px;
     left: 1%;
     transform: rotate(0deg);
   }
-  60%{
+  78%{
     transform: rotate(0deg);
   }
-  65%{
+  79%{
     transform: rotate(-30deg);
   }
-  70%{
+  80%{
     top: 190px;
     left: calc(-90% - 5px);
   }
-  71%{
+  81%{
     transform: rotate(-60deg);
   }
-  75%{
+  85%{
     transform: rotate(-90deg);
   }
 }
@@ -391,6 +382,7 @@
 .line-content .line-dashed-y {
   height: 122px;
   width: 1px;
+  border:0px;
   border-left: 1px dashed #b0bec5;
 }
 .line-content .line-dashed-x {
