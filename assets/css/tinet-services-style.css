@@ -796,6 +796,15 @@
   color: #006099;
   font-size: 120px;
 }
+.methodology__head__title2{
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: -0.4px;
+  color: #424242;
+}
+.methodology__head__title2 span{
+  color: #006099; 
+}
 .methodology__head__subtitle{
   font-weight: 400;
   font-size: 24px;
@@ -908,10 +917,21 @@
   line-height: 20px;
 }
 .methodology__circleitem__title span{
-  /*display: inline-block;
-  padding-right: 6px;
-  margin-right: 6px;
-  border-right: 2px dashed #006099;*/
+  display: inline-block;
+  padding-right: 8px;
+  margin-right: 8px;
+  position: relative;
+}
+.methodology__circleitem__title span:before{
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 27px;
+  border-right: 2px dashed #006099;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(1px,-50%);
 }
 .methodology__circleitem__text{
   display: none;
@@ -938,6 +958,9 @@
 .methodology__circles:hover .methodology__circleitem__title, .methodology__circles:hover .methodology__circleitem__subtitle{
   color: #EEEEEE;
 }
+.methodology__circles:hover .methodology__circleitem__title span:before{
+  border-color: #EEEEEE;
+}
 .methodology__circles:hover .methodology__circleitem.methodology__circleitem-alt:hover{
   background: #E5EFF5;
 }
@@ -946,6 +969,9 @@
 }
 .methodology__circles:hover .methodology__circleitem:hover .methodology__circleitem__title, .methodology__circles:hover .methodology__circleitem:hover .methodology__circleitem__subtitle{
   color: #006099;
+}
+.methodology__circles:hover .methodology__circleitem:hover .methodology__circleitem__title span:before{
+  border-color: #006099;
 }
 
 .dig-exp-list{
