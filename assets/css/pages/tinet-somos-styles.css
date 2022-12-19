@@ -142,7 +142,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  margin-top: 44px;
+  margin-top: 0px;
 }
 
 .somos-slider-thumbs .swiper-button-next::after,
@@ -207,6 +207,7 @@
 
 .somos-page .card-equipment.swiper-slide-active::before {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(33, 33, 33, 0) 50%, rgba(0, 0, 0, 0.6) 100%);
+  border-radius: 16px;
 }
 
 .somos-page .card-equipment.card-equipment--sm {
@@ -258,6 +259,11 @@
 
 .somos-consult .dig-exp-text-content {
   margin-top: 0;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+.somos-consult .swiper.mySwiperS3{
+  max-width: 575px;
 }
 
 .somos-consult {
@@ -266,10 +272,10 @@
 
 .somos-consult .content-response-section {
   max-width: 100%;
+  width: 1180px;
+  margin: 0 auto;
   display: flex;
-  width: 100%;
-  padding-left: calc((100% - 1180px)/2);
-  margin: 0;
+  justify-content: space-between;
 }
 
 .somos-consult__slider {
