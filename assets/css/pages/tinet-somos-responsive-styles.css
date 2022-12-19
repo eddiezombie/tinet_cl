@@ -1,3 +1,8 @@
+@media only screen and (max-width: 1094px) {
+  .somos-consult .swiper.mySwiperS3{
+    max-width: 100%;
+  }
+}
 @media only screen and (max-width: 1000px) {
   .somos--pading-mobile {
     padding-left: 16px;
@@ -20,6 +25,15 @@
   }
   .somos-banner-animation .somos-banner{
     justify-content: center;
+  }
+  .somos-consult{
+    padding-left: 24px;
+    padding-right: 0;
+  }
+  .somos-consult .content-response-section{
+  }
+  .somos-consult .swiper.mySwiperS3{
+    max-width: 100%;
   }
 
   .somos-banner__box {
@@ -122,6 +136,10 @@
 }
 
 @media only screen and (max-width: 645px) {
+  .somos-consult .swiper.mySwiperS3{
+    width: 100%;
+    margin: 0;
+  }
   .somos-banner-animation {
     height: 100%;
   } 
@@ -644,10 +662,6 @@
     height: auto;
   }
 
-  .somos-consult .content-response-section {
-    flex-direction: column;
-  }
-
   .somos-consult {
     padding-bottom: 64px;
   }
@@ -657,6 +671,7 @@
   .somos-banner__box .line-content {
     position: absolute;
     left: 0;
+    opacity: 0;
   }
 
   .somos-content__items.swiper-slide {
@@ -668,16 +683,17 @@
   }
 
   .somos-consult {
-    height: 880px;
-    padding-right: 0;
+    min-height: 880px;
   }
 
   .somos-consult .pagination {
-    padding-right: 130px;
+    padding-right: 24px;
   }
 
   .somos-consult .dig-exp-text-content {
-    padding-right: 100px;
+    padding-right: 0px;
+    width: 472px;
+    max-width: 100%;
   }
 
   .somos-consult__slider {
