@@ -765,7 +765,7 @@
 }
 
 .methodology{
-  background: #fff;
+  background: #eceff1;
   padding: 90px 24px;
 }
 .methodology__container{
@@ -803,7 +803,7 @@
   color: #424242;
 }
 .methodology__head__title2 span{
-  color: #006099; 
+  color: #006099;
 }
 .methodology__head__subtitle{
   font-weight: 400;
