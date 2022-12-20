@@ -806,7 +806,7 @@
   margin-right: 24px;
 }
 .relation-card-max-img {
-  background: url("/assets/img/blog-intern/img-card-img.svg") no-repeat;
+  background: url("../../../assets/img/blog-intern/img-card-img.svg") no-repeat;
   height: 478px;
   width: 574px;
   border-radius: 16px;
