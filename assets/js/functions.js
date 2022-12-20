@@ -6,6 +6,15 @@ $(document).ready(function () {
     $('.methodology__circleitem__minus').slideToggle(1);
   });
 
+  $('.methodology__bubble__show').click(function(event){
+    let self = $(this);
+    event.preventDefault();
+    $('.methodology__bubble').toggleClass('disabled');
+    self.parents('.methodology__bubble').removeClass('disabled');
+    self.toggleClass('active');
+    self.next().stop().slideToggle();
+  });
+
   $(window).scroll(function() {
      if($('#section-service-1').length){
       var hT = $('#section-service-1').offset().top,
