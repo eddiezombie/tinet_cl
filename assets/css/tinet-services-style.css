@@ -1312,6 +1312,9 @@
 }
 
 #process-easy-1.disabled-4{
+  left: -100px;
+}
+.content-met-circle__single #process-easy-1.disabled-4{
   left: 50px;
 }
 #process-easy-2.disabled-4{

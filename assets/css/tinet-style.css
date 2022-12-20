@@ -13,6 +13,9 @@ body {
   border-style: solid;
   border-color: #e5e7eb;
 }
+strong{
+  font-family: Poppins-SemiBold;
+}
 /* nav */
 .header-content {
   height: 104px;
