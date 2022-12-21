@@ -1817,8 +1817,8 @@
   transition: 1s opacity 0.5s;
 }
 .reveal.active-reveal .delay-bezier-1{
-  animation-delay: 1s;
-  transition: 1s opacity 1s;
+  animation-delay: 0.2s;
+  transition: 0.2s opacity 0.2s;
 }
 .reveal.active-reveal .delay-bezier-015{
   animation-delay:  1.5s;
