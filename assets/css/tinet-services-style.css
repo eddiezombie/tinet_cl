@@ -3193,6 +3193,15 @@
     font-size: 13px;
     line-height: 19px;
   }
+  .methodology__path__wrapper.methodology__path__wrapper-relative .methodology__column:last-child{
+    left: calc(50% + 30px);
+  }
+  .methodology__path__wrapper.methodology__path__wrapper-relative .methodology__column:first-child {
+    right: calc(50% + 30px);
+  }
+  .methodology__bubble.methodology__bubble-side:after{
+    width: 30px;
+  }
   .dig-exp-content {
     height: 673px;
     padding-top: 0px;
