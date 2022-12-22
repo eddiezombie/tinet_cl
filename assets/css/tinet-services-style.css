@@ -3055,3 +3055,7 @@
     border-radius: 0 0 20px 20px;
   }
 }
+.trg-c.inactivo img{opacity: 0.4;}
+.trg-c.inactivo a,
+.trg-c.inactivo h4,
+.trg-c.inactivo p{color: #9E9E9E;}
