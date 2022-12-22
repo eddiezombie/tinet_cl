@@ -1083,6 +1083,20 @@
   background-size: cover;
   background-image: url(../img/purple-arrow.svg);
 }
+.methodology__bubble__arrow-down{
+  position: absolute;
+  display: inline-block;
+  left: calc(50% - 14px);
+  top: -15px;
+  transform: rotate(0);
+  z-index: 2;
+  width: 28px;
+  height: 17px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/purple-arrow.svg);
+}
 .methodology__bubble__label{
   position: absolute;
   font-size: 12px;
