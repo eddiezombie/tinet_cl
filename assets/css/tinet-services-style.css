@@ -2240,6 +2240,21 @@
   .methodology__path__wrapper.methodology__path__wrapper-relative .methodology__column:last-child{
     left: calc(50% + 85px);
   }
+  .methodology__bubble__arrow-right-responsive{
+    position: absolute;
+    display: inline-block;
+    left: -28px;
+    top: calc(50% - 8px);
+    transform: rotate(-90deg);
+    z-index: 2;
+    width: 28px;
+    height: 17px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/purple-arrow.svg);
+  }
+
   .methodology__bubble{
     margin-bottom: 100px;
   }
@@ -2314,9 +2329,9 @@
     border-left: 2px dashed #C41A90;
   }
   .methodology__path.methodology__path-alpha .methodology__path__wrapper .methodology__column:first-child:after{
-    height: calc(200% + 70px);
+    height: calc(200% + 81px);
     border-top: 2px dashed #C41A90;
-    width: 144px;
+    width: 100px;
   }
   .methodology__path.methodology__path-alpha .methodology__path__wrapper{
     padding-top: 0;
