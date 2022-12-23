@@ -1566,6 +1566,24 @@
   left: 30%;
 }
 
+.process-easy .auto .infoblob__title{
+  margin-top: 8px;
+}
+.process-easy .auto .infoblob__subtitle{
+  margin-bottom: 0px;
+}
+.process-easy .auto .infoblob__main{
+  padding: 0 12px;
+}
+.process-easy #process-easy-1.auto, .process-easy #process-easy-2.auto, 
+.process-easy #process-easy-3.auto, .process-easy #process-easy-4.auto{
+  align-items: center;
+}
+.process-easy .infoblob{
+  display: flex;
+  align-items: center;
+}
+
 
 #process-easy-1.agility{
   left: 17%;
