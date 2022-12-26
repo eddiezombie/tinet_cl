@@ -262,27 +262,32 @@
             <p class="text-[#424242] text-2xl fw-6">Cómo Trabajamos</p>
             <h3 class="fw-7 text-[#424242] text-[64px] leading-[72px]">Gestion<span class="text-[#006099]">deProyectos</span></h3>
         </div>
-        <div class="relative">
-            <div class="charge bg-[#E0E0E0] h-[15px] absolute w-[100%] z-0 top-[115px]"><div class="fill"></div></div>
+        <div class="relative pathd">
+            <svg id="svgroadd" class="z-[1] w-[100%] h-[100%] absolute top-[0px]" version="1.1" width="100%" xmlns="http://www.w3.org/2000/svg">
+
+            </svg>
+            <svg id="svgroad-backd" class="z-[2] w-[100%] h-[100%] absolute top-[0px]" version="1.1"  width="100%" xmlns="http://www.w3.org/2000/svg">
+  
+            </svg>
             <div class="circulo-c relative z-10 max-w-[1440px] lg:px-[130px] px-[24px] flex flex-row flex-wrap justify-around items-start">
                 <div class="trg-c transition-all duration-200 w-[240px] h-[240px] bg-[#ffffff] shadow-md rounded-full ">
                     <img class="w-[64px] h-[64px] mt-[67px] mx-[auto]" src="assets/img/c1.svg" alt="">
                     <h4 class="text-[#006099] text-[20px] leading-[28px] fw-6 mt-[6px] text-center">Descubrimos</h4>
-                    <a class="vmas text-[#C41A90] text-sm fw-6 mt-[45px] mb-[-45px] block text-center" href="#!">Ver más</a>
+                    <a class="vmas br1 text-[#C41A90] text-sm fw-6 mt-[45px] mb-[-45px] block text-center" href="#!">Ver más</a>
                     <a class="vmnos text-[#C41A90] text-sm fw-6 hidden mt-[45px] mb-[30px] block text-center" href="#!">Ver menos</a>
                     <p class="hidden text-sm text-[#616161] fw-4 px-[20px]">Diagnosticamos las necesidades del cliente en sus proyectos, considerando el nivel de madurez de sus equipos. Conocemos y nos alineamos a sus objetivos.</p>
                 </div>
                 <div class="trg-c transition-all duration-200 w-[240px] h-[240px] bg-[#ffffff] shadow-md rounded-full ">
                     <img class="w-[64px] h-[64px] mt-[67px] mx-[auto]" src="assets/img/c2.svg" alt="">
                     <h4 class="text-[#006099] text-[20px] leading-[28px] fw-6 mt-[6px] text-center">Intervenimos</h4>
-                    <a class="vmas text-[#C41A90] text-sm fw-6 mt-[45px] mb-[-45px] block text-center" href="#!">Ver más</a>
+                    <a class="vmas br2 text-[#C41A90] text-sm fw-6 mt-[45px] mb-[-45px] block text-center" href="#!">Ver más</a>
                     <a class="vmnos text-[#C41A90] text-sm fw-6 hidden mt-[45px] mb-[30px] block text-center" href="#!">Ver menos</a>
                     <p class="hidden text-sm text-[#616161] fw-4 px-[20px]">Adaptamos las metodologías, para co-crear el modelo de gestión con el cliente.</p>
                 </div>
                 <div class="trg-c transition-all duration-200 w-[240px] h-[240px] bg-[#ffffff] shadow-md rounded-full ">
                     <img class="w-[64px] h-[64px] mt-[67px] mx-[auto]" src="assets/img/c3.svg" alt="">
                     <h4 class="text-[#006099] text-[20px] leading-[28px] fw-6 mt-[6px] text-center">Implementamos</h4>
-                    <a class="vmas text-[#C41A90] text-sm fw-6 mt-[45px] mb-[-45px] block text-center" href="#!">Ver más</a>
+                    <a class="vmas br3 text-[#C41A90] text-sm fw-6 mt-[45px] mb-[-45px] block text-center" href="#!">Ver más</a>
                     <a class="vmnos text-[#C41A90] text-sm fw-6 hidden mt-[45px] mb-[30px] block text-center" href="#!">Ver menos</a>
                     <p class="hidden text-sm text-[#616161] fw-4 px-[20px]">Implementamos el modelo de gestión, lo monitoreamos, ajustamos y preparamos a tus equipos.</p>
                 </div>
@@ -374,38 +379,121 @@
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/video.js"></script>
     <script src="assets/js/slideFunctiones.js"></script>
-    <script src="assets/js/form.js"></script>
+    <!-- <script src="assets/js/form.js"></script> -->
     <script>
         $(window).click(function() {
-
+          $('.trg-c').each(function(){
+            $(this).removeClass('inactivo')
+            $(this).find('p').addClass('hidden')
+            $(this).find('.vmas').removeClass('hidden')
+            $(this).find('.vmnos').addClass('hidden')
+            $(this).removeClass('h-[550px]').addClass('h-[240px]')
+            $(this).removeClass("activo")
+          })
         });
-        $('.trg-c a').click(function(e){
-            $('.trg-c a').parent().removeClass("inactivo");
-            var eP = $(this).parent()
-            eP.find('p').addClass('hidden')
-            eP.find('.vmas').removeClass('hidden')
-            eP.find('.vmnos').addClass('hidden')
-            eP.removeClass('h-[550px]').addClass('h-[240px]')
-            
-            $(this).parent().find('p').removeClass('hidden')
-            $(this).parent().find('.vmas').addClass('hidden')
-            $(this).parent().find('.vmnos').removeClass('hidden')
-            $(this).parent().removeClass('h-[240px]').addClass('h-[550px]')
-            // if( eP.find('p').hasClass('hidden') ){
-            //     eP.find('p').removeClass('hidden')
-            //     eP.find('.vmas').addClass('hidden')
-            //     eP.find('.vmnos').removeClass('hidden')
-            //     eP.removeClass('h-[240px]').addClass('h-[550px]')
-            // }else{
-            //     eP.find('p').addClass('hidden')
-            //     eP.find('.vmas').removeClass('hidden')
-            //     eP.find('.vmnos').addClass('hidden')
-            //     eP.removeClass('h-[550px]').addClass('h-[240px]')
-            // }  
-            $('.trg-c a').not(this).parent().addClass("inactivo")
-            $(this).parent().removeClass("inactivo")
+        $('.trg-c').click(function(e){
+          e.stopPropagation()
+        })
+        $('.trg-c a.vmas').click(function(e){
+          $('.trg-c').each(function(){
+            $(this).removeClass('inactivo')
+            $(this).find('p').addClass('hidden')
+            $(this).find('.vmas').removeClass('hidden')
+            $(this).find('.vmnos').addClass('hidden')
+            $(this).removeClass('h-[550px]').addClass('h-[240px]')
+            $(this).removeClass("activo")
+          })
+          let sefl = $(this);
+          $(this).parent().addClass("activo")
+          $(this).parent().removeClass("inactivo")
+          $('.trg-c a').not(this).parent().addClass("inactivo")
+          $(this).parent().removeClass("inactivo")
+          $(this).parent().find('p').removeClass('hidden')
+          $(this).parent().find('.vmas').addClass('hidden')
+          $(this).parent().find('.vmnos').removeClass('hidden')
+          $(this).parent().removeClass('h-[240px]').addClass('h-[550px]')
+          if( !$(this).parent().hasClass('activo') ){
+            $('trg-c a.vmas').not(this).parent().removeClass('activo')
+          }
             e.stopPropagation();
         })
+        $('.trg-c a.vmnos').click(function(){
+          $('.trg-c').removeClass('inactivo')
+          $(this).remove("activo")
+          $(this).parent().find('p').addClass('hidden')
+          $(this).parent().find('.vmas').removeClass('hidden')
+          $(this).parent().find('.vmnos').addClass('hidden')
+          $(this).parent().removeClass('h-[550px]').addClass('h-[240px]')
+        })
+        $('.br1').click(function(){
+          var widthScreend = $(window).width();
+	        var svg1Backd = document.getElementById("svgroad-backd");
+	        let widthScreenSvgd = (widthScreend < 1400) ? (widthScreend - 320)  : (widthScreend - (widthScreend - 800) / 2);
+	        svg1Backd.innerHTML = `<path class="svg-lg" id="svgscrolld" style="stroke-dasharray: 3000px; stroke-dashoffset: 2709px; stroke: #891265;" fill="none"
+	        d="M 0,120.0 l ${widthScreenSvgd},0
+          "></path>`;
+        });
+        $('.br2').click(function(){
+          var widthScreend = $(window).width();
+	        var svg1Backd = document.getElementById("svgroad-backd");
+	        let widthScreenSvgd = (widthScreend < 1400) ? (widthScreend - 320)  : (widthScreend - (widthScreend - 800) / 2);
+	        svg1Backd.innerHTML = `<path class="svg-lg" id="svgscrolld" style="stroke-dasharray: 3000px; stroke-dashoffset: 2346px; stroke: #891265;" fill="none"
+	        d="M 0,120.0 l ${widthScreenSvgd},0
+          "></path>`;
+        });
+        $('.br3').click(function(){
+          var widthScreend = $(window).width();
+	        var svg1Backd = document.getElementById("svgroad-backd");
+	        let widthScreenSvgd = (widthScreend < 1400) ? (widthScreend - 320)  : (widthScreend - (widthScreend - 800) / 2);
+	        svg1Backd.innerHTML = `<path class="svg-lg" id="svgscrolld" style="stroke-dasharray: 3000px; stroke-dashoffset: 1958px; stroke: #891265;" fill="none"
+	        d="M 0,120.0 l ${widthScreenSvgd},0
+          "></path>`;
+        });
+        function svgrized() {
+          var widthScreen = $(window).width();
+          var svg1 = document.getElementById("svgroadd");
+          var svg1Back = document.getElementById("svgroad-backd");
+          let widthScreenSvg = (widthScreen < 1400) ? (widthScreen - 320)  : (widthScreen - (widthScreen - 800) / 2);
+
+          svg1.innerHTML = `<path class="svg-lg" fill="none"
+          d="M 0,120.0 l ${widthScreen},0
+          "></path>`;
+          svg1Back.innerHTML = `<path class="svg-lg" id="svgscrolld" style="stroke-dasharray: 3000px; stroke-dashoffset: 2009.22px; stroke: #891265;" fill="none"
+          d="M 0,120.0 l ${widthScreen},0
+          "></path>`;
+        } 
+        svgrized();
+        function pathPrepared($el) {
+          var tresmil = 3000
+          //var lineLength = $el[0].getTotalLength();
+          $el.css("stroke-dashoffset", tresmil);
+        }
+
+        var $svgscrolld = $("path#svgscrolld");
+
+        pathPrepared($svgscrolld);
+
+  var controllerd = new ScrollMagic.Controller();
+
+  var tweend = new TimelineMax()
+    .add(
+      TweenMax.to($svgscrolld, 1, {
+        strokeDashoffset: 0,
+        ease: Linear.easeNone,
+      })
+    )
+    .add(
+      TweenMax.to("#svgroad-back path", 1, { stroke: "#891265", ease: Linear.easeNone }),
+      0
+    );
+
+  var scened = new ScrollMagic.Scene({
+    triggerElement: "#svgtrigger",
+    duration: 900,
+    tweenChanges: true,
+  })
+    .setTween(tweend).addTo(controllerd);
+	//.addIndicators()
     </script>
 </body>
 </html>
