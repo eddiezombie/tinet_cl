@@ -1988,8 +1988,8 @@
   <script src="assets/js/slideFunctiones.js"></script>
   <script src="assets/js/form.js"></script>
   <script>
-    //funciones 9 gestion de proyectos
-$(window).click(function() {
+$(document).ready(function(){
+  $(window).click(function() {
   $('.trg-c').each(function(){
     $(this).removeClass('inactivo')
     $(this).find('p').addClass('hidden')
@@ -2073,8 +2073,8 @@ function svgrized() {
 svgrized();
 function pathPrepared($el) {
   var tresmil = 3000
-  //var lineLength = $el[0].getTotalLength();
-  $el.css("stroke-dashoffset", tresmil);
+  var lineLength = $el[0].getTotalLength();
+  $el.css("stroke-dashoffset", lineLength);
 }
 
 var $svgscrolld = $("path#svgscrolld");
@@ -2095,11 +2095,14 @@ var tweend = new TimelineMax()
     0
   );
 
-var scened = new ScrollMagic.Scene({
-  triggerElement: "#svgtrigger",
-  duration: 900,
-  tweenChanges: true,
+  var scened = new ScrollMagic.Scene({
+    triggerElement: "#svgtrigger",
+    duration: 900,
+    tweenChanges: true,
+  })
+  .setTween(tweend).addTo(controllerd);
 })
-.setTween(tweend).addTo(controllerd);
+    //funciones 9 gestion de proyectos
+
   </script>
 </html>
