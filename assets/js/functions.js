@@ -338,44 +338,36 @@ $(document).ready(function () {
     var divposition1 = element_position + (1 * svgheight) / 5;
     var divposition2 = element_position + (2 * svgheight) / 5;
     var divposition3 = element_position + (3 * svgheight) / 5;
+    var divposition4 = element_position + (3 * svgheight) / 5;
     if (winposition > divposition) {
       //do stuff
-      // console.log("Show Blob1");
       if ($("#process-easy-1").hasClass("haslabel")) {
         $("#process-easy-1 .infoblob-label").fadeIn(1);
       }
       $("#process-easy-1 .infoblob").fadeIn(500);
       if (winposition > divposition1) {
-        // console.log("Show Blob2");
         if ($("#process-easy-2").hasClass("haslabel")) {
           $("#process-easy-2 .infoblob-label").fadeIn(1);
         }
         $("#process-easy-2 .infoblob").fadeIn(500);
-      } else {
-        // console.log("Hide Blob2");
-      }
+      } 
       if (winposition > divposition2) {
-        // console.log("Show Blob3");
         if ($("#process-easy-3").hasClass("haslabel")) {
           $("#process-easy-3 .infoblob-label--alt").fadeIn(1);
         }
         $("#process-easy-3 .infoblob-label--alt").fadeIn(1);
         $("#process-easy-3 .infoblob").fadeIn(500);
-      } else {
-        // console.log("Hide Blob3");
-      }
+      } 
       if (winposition > divposition3) {
-        // console.log("Show Blob4");
         if ($("#process-easy-4").hasClass("haslabel")) {
           $("#process-easy-4 .infoblob-label").fadeIn(1);
         }
         $("#process-easy-4 .infoblob").fadeIn(500);
-      } else {
-        // console.log("Hide Blob4");
+      } 
+      if (winposition > divposition4) {
+        $("#process-easy-5 .infoblob").fadeIn(500);
       }
-    } else {
-      // console.log("Hide Blob1");
-    }
+    } 
   });
   $(window).resize(function () {
     svgrize();
