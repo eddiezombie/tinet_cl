@@ -121,42 +121,6 @@ $(document).ready(function () {
     animate_numbers("#section-service-4");
   }
 
-  function initSwipersLogros() {
-    var swiper = new Swiper(".mySwiperLogros", {
-      slidesPerView: 1,
-      spaceBetween: 11,
-      grid: {
-        rows: 1
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-      },
-      navigation: {
-        prevEl: ".mySwiperS3-left-page",
-        nextEl: ".mySwiperS3-right-pag",
-      },
-      breakpoints: {
-        1095: {
-          slidesPerView: 4,
-          spaceBetween: 32,
-          grid: {
-            rows: 1
-          }
-        },
-        601: {
-          slidesPerView: 2,
-          spaceBetween: 24,
-          grid: {
-            rows: 1
-          }
-        }
-      },
-    },
-    );
-    // console.log('window was resized', screen.width);
-  }
-  initSwipersLogros();
   function initSwipersSomos() {
     var swiperTwo = new Swiper(".mySwiperSomos", {
       slidesPerView: 1,

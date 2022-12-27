@@ -1,3 +1,8 @@
+$('.logros-slider').slick({
+  infinite: true,
+  slidesToShow: 4
+});
+
 $('.casos-relacionados').slick({
     slidesToShow: 3,
     arrows: false,
