@@ -1,3 +1,22 @@
+$('.logros-slider').slick({
+  infinite: true,
+  slidesToShow: 4,
+  responsive: [
+    {
+      breakpoint: 1072,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+
 $('.casos-relacionados').slick({
     slidesToShow: 3,
     arrows: false,

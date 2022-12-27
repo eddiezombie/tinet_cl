@@ -123,17 +123,6 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .somos-logros .somos-logros__slider {
-    margin-top: -22px;
-  }
-}
-
-@media only screen and (min-width: 601px) {
-  .somos-logros .somos-logros__slider {
-    margin-top: -88px;
-  }
-}
 
 @media only screen and (max-width: 645px) {
   .somos-consult .swiper.mySwiperS3{
@@ -577,7 +566,7 @@
   }
 
   .somos-logros {
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
 
   .somos-logros__line--desktop {
