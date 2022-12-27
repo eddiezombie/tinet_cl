@@ -3,7 +3,7 @@ $('.logros-slider').slick({
   slidesToShow: 4,
   responsive: [
     {
-      breakpoint: 1000,
+      breakpoint: 1072,
       settings: {
         slidesToShow: 2
       }
