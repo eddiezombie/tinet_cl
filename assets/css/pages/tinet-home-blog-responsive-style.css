@@ -199,7 +199,7 @@
       flex-direction: column;
     }
     .relation-cards-content {
-      padding: 0;
+      padding: 0 20px;
     }
     .relation-cards-content.list-categorys {
       margin-top: 112px;
@@ -375,7 +375,11 @@
       border-radius: 0px;
     }
     .banner-swiper-home-text {
-      max-width: 311px;
+      max-width: 100%;
+      padding: 120px 24px 0px 24px;
+    }
+    .case-intern .banner-swiper-home-text {
+      padding: 0px 24px 0px 24px;
     }
     .banner-swiper-home-text__title {
       font-size: 24px;
