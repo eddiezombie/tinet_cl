@@ -37,6 +37,9 @@
     .banner-swiper-home-text {
       /*max-width: 52%;*/
     }
+    .relation-cards-content {
+      padding: 0px 32px;
+    }
     .suscribe-section-content {
       padding: 0px 24px;
     }
@@ -376,7 +379,7 @@
     }
     .banner-swiper-home-text {
       max-width: 100%;
-      padding: 120px 24px 0px 24px;
+      padding: 40px 0px 0px 0px;
     }
     .case-intern .banner-swiper-home-text {
       padding: 0px 24px 0px 24px;
@@ -514,8 +517,32 @@
       line-height: 20px;
       letter-spacing: -0.25px;
     }
+    .contenedor-slider .banner-swiper-home{
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-content: flex-start;
+      min-height: 0px;
+      padding: 0px 24px 45px;
+    }
+    .banner-swiper-home-text__btn{
+      max-width: 100%;
+    }
+     .banner-content-home .contenedor-slider .page.left, .banner-content-home .contenedor-slider .page.right {
+        bottom: -20px;
+    }
+    .banner-content-home .contenedor-slider .page.right {
+      right: 50%;
+      margin-right: -60px;
+    }
+    .banner-content-home .contenedor-slider .page.left {
+      right: 50%;
+    }
   }
   @media only screen and (max-width:495px) {
+
     .banner-content-home .relation-cards-content{
       width: 100%;
       padding: 0px;
@@ -547,16 +574,7 @@
     .num-spk-work .info-line .text-line .text-line__des{
       background-color: white;
     }
-    .contenedor-slider .banner-swiper-home{
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      flex-wrap: nowrap;
-      flex-direction: column;
-      align-content: flex-start;
-      min-height: 0px;
-      padding: 120px 24px 45px;
-    }
+
     .contenedor-slider .page.right{
       right: 5px;
     }
