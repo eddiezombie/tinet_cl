@@ -98,10 +98,34 @@
   margin-left: 0;
 }
 
-.somos-logros__slider {
+.logros-slider .slick-arrow {
+  width: 40px;
+  height: 40px;
+  background: #003a5c;
+  border-radius: 100%;
+  padding: 8px;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 0px;
+  top: 100%;
+  margin-top: 30px;
 }
-
-.somos-logros__slider .card-tinet:first-child {
+.logros-slider .slick-arrow:before {
+  font-family: "icomoon";
+  font-size: 11px;
+}
+.logros-slider .slick-prev.slick-arrow {
+  left: inherit;
+  right: 70px;
+}
+.logros-slider .slick-prev.slick-arrow:before{
+  content: "\e913";
+}
+.logros-slider .slick-next.slick-arrow{
+  right: 15px;
+}
+.logros-slider .slick-next.slick-arrow:before{
+  content: "\e914";
 }
 .somos-logros__slider .card-tinet {
   padding: 32px 24px;

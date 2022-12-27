@@ -1,6 +1,20 @@
 $('.logros-slider').slick({
   infinite: true,
-  slidesToShow: 4
+  slidesToShow: 4,
+  responsive: [
+    {
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
 });
 
 $('.casos-relacionados').slick({
