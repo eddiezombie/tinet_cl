@@ -17,6 +17,20 @@ $('.logros-slider').slick({
   ]
 });
 
+$('.somos-slick').slick({
+  slidesToShow: 3,
+  arrows: false,
+  infinite: true,
+  responsive: [{
+    breakpoint: 645,
+    settings:{
+      arrows: true,
+      slidesToShow: 2,
+      centerMode: true
+    }
+  }]
+});
+
 $('.casos-relacionados').slick({
     slidesToShow: 3,
     arrows: false,
