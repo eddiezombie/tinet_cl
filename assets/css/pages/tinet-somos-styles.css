@@ -183,6 +183,8 @@
 }
 
 .somos-page .pagination .page.swiper-button-disabled,
+.somos-equipment .mySwiperEquipment-left-page.swiper-button-disabled,
+.somos-equipment .mySwiperEquipment-right-page.swiper-button-disabled,
 .somos-equipment .mySwiperS3-left-page.swiper-button-disabled,
 .somos-equipment .mySwiperS3-right-pag.swiper-button-disabled,
 .somos-slider-thumbs .swiper-button-next.swiper-button-disabled,
@@ -191,6 +193,8 @@
 }
 
 .somos-page .pagination .page,
+.somos-equipment .mySwiperEquipment-left-page,
+.somos-equipment .mySwiperEquipment-right-page,
 .somos-equipment .mySwiperS3-left-page,
 .somos-equipment .mySwiperS3-right-pag,
 .somos-slider-thumbs .swiper-button-next,
@@ -207,7 +211,7 @@
   font-size: 11px;
 }
 
-.somos-page .pagination .mySwiperS3-left-page {
+.somos-page .pagination .mySwiperS3-left-page, .somos-page .pagination .mySwiperS2-left-page {
   margin-right: 32px;
 }
 
@@ -330,6 +334,8 @@
   width: 100%;
 }
 
+.somos-equipment .mySwiperEquipment-left-page,
+.somos-equipment .mySwiperEquipment-right-page,
 .somos-equipment .mySwiperS3-left-page,
 .somos-equipment .mySwiperS3-right-pag {
   position: absolute;
