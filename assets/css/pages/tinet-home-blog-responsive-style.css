@@ -258,14 +258,14 @@
   }
   @media only screen and (max-width:768px) {
     .circle-content-info .circle-content{
-      width: 330px;
-      height: 330px;
+      width: 370px;
+      height: 370px;
     }
     .content-info-circle {
       height: auto;
       max-width: 271px;
-      left: 8%;
-      padding-top: 57px;
+      left: 13%;
+      padding-top: 74px;
     }
     .text-coment-quote, .circle-content-info .content-perfil__title{
       font-size: 12px;
@@ -284,7 +284,7 @@
     }
     .conteiner-carrousel-case {
       max-width: 92vw;
-  }
+    }
 
     .working-case.banner-swiper-home{
       flex-direction: column;
@@ -348,6 +348,9 @@
     }
     .num-spk-work .dig-exp-text-content{
       max-width: 100%;
+      background-color: #fff;
+      position: relative;
+      z-index: 11111;
     }
     .dig-exp-text-content > .content-ul.mrb-62{
       margin-bottom: 0px;
@@ -360,6 +363,9 @@
     }
     .relation-cards-content .card-group .relation-card-info {
       padding-top: 16px;
+    }
+    #section-service-video .relation-cards-content video{
+      height: 400px;
     }
   }
   @media only screen and (max-width: 645px) {
@@ -571,14 +577,26 @@
     .num-spk-work .info-line-content .third-line .line--vertical {
       height: 491px;
     }
-    .num-spk-work .info-line .text-line .text-line__des{
-      background-color: white;
-    }
+
 
     .contenedor-slider .page.right{
       right: 5px;
     }
     .contenedor-slider .page.left{
       right: 55px;
+    }
+  }
+
+  @media only screen and (max-width:388px) {
+    .circle-content-info .circle-content{
+      width: 450px;
+      height: 450px;
+      margin-left: -60px;
+    }
+    .content-info-circle {
+      height: auto;
+      max-width: 271px;
+      left: 15%;
+      padding-top: 74px;
     }
   }

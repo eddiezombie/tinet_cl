@@ -734,7 +734,8 @@
   padding: 24px 28px 28px 21px;
   background: #ffffff;
   border-radius: 20px;
-  max-width: 314px;
+  width: 314px;
+  position: absolute;
 }
 .suscribe-section-coment-text__comment--tri {
   width: 0;
@@ -922,7 +923,7 @@
   cursor: pointer;
 }
 .list-category .btn-clasic-2 .btn-clasic-2__title {
-  margin-right: 8px;
+  margin-right: 0px;
 }
 .list-category .btn-clasic-2:hover {
   background: #546e7a;
@@ -1231,21 +1232,25 @@
 }
 .solucion-slide .page.left{
   bottom: 10px;
-  left: 300px;
+  left: 80px;
   transform: translate(-80px);
   position:absolute;
   z-index: 20;
 }
 .solucion-slide .page.right{
   bottom: 10px;
-  left: 300px;
+  left: 84px;
   transform: translate(-5px);
   position:absolute;
   z-index: 20;
 }
 .content-ul{
   display: flex;
+  color: #424242;
   margin-bottom: 24px;
+      font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
 }
 .content-ul img{
   height: 17.08px;
@@ -1532,6 +1537,9 @@ height: 283px;
   justify-content: space-between;
   align-items: center;
 }
+.case-study-relative .paginatuion-total-content{
+  margin-top: 0px;
+}
 .pagination-number-content{
   display: flex;
   line-height: 24px;
@@ -1551,6 +1559,9 @@ height: 283px;
 .content-services-section{
   width: 100%;
   background-color: #F5F5F5;
+}
+.content-services-section .slick-list{
+  padding-bottom: 2px;
 }
 .container-scroll-card-group{
   max-width: 100%;
@@ -1700,4 +1711,11 @@ margin-top: 24px;
     padding-left: 0;
     padding-right: 0;
   }
+  .suscribe-section-coment-text__comment {
+    width: 100%;
+  }
+  .case-wrapper .case-intern .content-rocket-dashed{
+    display: none;
+  }
+
 }
