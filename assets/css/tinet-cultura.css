@@ -68,6 +68,12 @@
     border-bottom: none;
     border-right: 1px dashed #66A0C2;
 }
+.tinet-btns{
+  padding: 12px 24px;
+  background: #C41A90;
+  border-radius: 42px 160px 160px 257px;
+  margin-top: 26px;
+}
 @media (max-width:768px){
     .vid-btn-tabs{
         overflow-x: scroll;

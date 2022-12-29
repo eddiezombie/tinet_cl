@@ -189,6 +189,32 @@ $('.slider-v-nav-4').slick({
     }
   ]
 });
+$('.casoss').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  dots: false,
+  centerMode: false,
+  //focusOnSelect: true,
+  variableWidth: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        slidesToShow: 1,
+        centerMode: true
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        slidesToShow: 1
+      }
+    }
+  ]
+})
 var $vt = $("ul.vid-btn-tabs li"),
 clickVT = false;
 
