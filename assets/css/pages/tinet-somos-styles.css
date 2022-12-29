@@ -80,6 +80,13 @@
   margin: 11px 0;
 }
 
+.somos-slick .somos-slick__items{
+  padding: 45px 24px;
+}
+
+.somos-box{ align-items: flex-start; }
+.somos-box-item{ width: 50%; }
+
 .somos-logros {
   display: block;
 }
@@ -384,6 +391,9 @@
 .somos-tabs {
   min-height: auto;
 }
+.somos-page .somos-tabs{
+  min-height: 930px;
+}
 
 .somos-tabs .content-response-section {
   width: 100%;
@@ -482,9 +492,25 @@
   transition: border-color 1s linear 6s;
 }
 
+.somos-pilares .somos-pilares__circle2.active {
+  border-left-color: #003A5C;
+  border-bottom-color: #003A5C;
+  transition: border-color 1s linear 2s;
+}
+
+.somos-pilares .somos-pilares__circle3.active {
+  border-left-color: #006099;
+  transition: border-color 1s linear 2s;
+}
+
 .somos-pilares .somos-pilares__info .somos-pilares__steps.steps2,
 .somos-pilares .somos-pilares__info .somos-pilares__steps.steps3 {
-  opacity: 0;
+  /*opacity: 0;*/
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }
 
 .somos-pilares.active-reveal .somos-pilares__steps.steps2 {

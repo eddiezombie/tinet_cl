@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+  let pilares1 = 1;
+  let pilares2 = 1;
+
   $('.methodology__circleitem').click(function(){
     $(this).toggleClass('active');
     $('.methodology__circleitem__plus').slideToggle(1);
@@ -15,6 +18,21 @@ $(document).ready(function () {
     self.next().stop().slideToggle();
   });
 
+  function disableScroll() {
+    // Get the current page scroll position
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+    
+    // if any scroll is attempted, set this to the previous value
+    window.onscroll = function() {
+      window.scrollTo(scrollLeft, scrollTop);
+    };
+  }
+    
+  function enableScroll() {
+    $('body').removeClass('stop-scrolling');
+  }
+
   $(window).scroll(function() {
      if($('#section-service-1').length){
       var hT = $('#section-service-1').offset().top,
@@ -22,10 +40,39 @@ $(document).ready(function () {
           wH = $(window).height(),
           wS = $(this).scrollTop() + 10;
       if (wS > (hT+hH-wH)){
-          console.log('H1 on the view!');
           $('#section-service-1').addClass('active');
+          $('.somos-banner-line').addClass('box-animation');
       }
      }
+
+     if($('#pilares-info1').length && pilares1){
+      var hT = $('#pilares-info1').offset().top,
+          hH = $('#pilares-info1').outerHeight(),
+          wH = $(window).height(),
+          wS = $(this).scrollTop() - 150;
+      if (wS > (hT+hH-wH)){
+        console.log('info1 disabled');
+        --pilares1;
+        $('#pilares-circle2').addClass('active');
+        $('body').addClass('stop-scrolling');
+        setTimeout(enableScroll, 900);
+      }
+     }
+
+     if($('#pilares-info2').length && pilares2){
+      var hT = $('#pilares-info2').offset().top,
+          hH = $('#pilares-info2').outerHeight(),
+          wH = $(window).height(),
+          wS = $(this).scrollTop() - 150;
+      if (wS > (hT+hH-wH)){
+        console.log('info2');
+        --pilares2;
+        $('#pilares-circle3').addClass('active');
+        $('body').addClass('stop-scrolling');
+        setTimeout(enableScroll, 900);
+      }
+     }
+
   });
 
   function reveal() {
