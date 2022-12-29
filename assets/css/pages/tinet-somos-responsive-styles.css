@@ -128,6 +128,10 @@
 
 
 @media only screen and (max-width: 645px) {
+  .somos-content.somos-box .somos-box-item:last-child{
+    padding: 0;
+  }
+
   .somos-consult .swiper.mySwiperS3{
     width: 100%;
     margin: 0;
@@ -604,6 +608,63 @@
     padding-left: 24px;
     flex-direction: column;
     align-items: flex-start;
+  }
+  .somos-content.somos-box{
+    padding: 50px 0px;
+    display: block;
+  }
+  .somos-box-item{
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .somos-slick{
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .somos-slick .somos-slick__card{
+    background: #FFFFFF;
+    padding: 38px 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 24px;
+    text-align: center;
+    width: 120px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .somos-slick .somos-slick__items img{
+    margin: 0 auto;
+  }
+  .somos-slick .slick-arrow{
+    width: 40px;
+    height: 40px;
+    background: #003a5c;
+    border-radius: 100%;
+    padding: 8px;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 0px;
+    top: 100%;
+    margin-top: 12px;
+  }
+  .somos-slick .slick-arrow:before{
+    font-family: "icomoon";
+    font-size: 11px;
+  }
+  .somos-slick .slick-arrow.slick-prev:before{
+    content: "\e913";
+  }
+  .somos-slick .slick-arrow.slick-next:before{
+    content: "\e914";
+  }
+  .somos-slick .slick-arrow.slick-prev{
+    right: inherit;
+    left: calc(50% - 50px);
+  }
+  .somos-slick .slick-arrow.slick-next{
+    left: inherit;
+    right: calc(50% - 50px);
   }
 
   .somos-content__list {
