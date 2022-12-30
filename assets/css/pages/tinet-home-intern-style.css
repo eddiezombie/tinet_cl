@@ -957,10 +957,12 @@
   margin-right: 20px;
 }
 .banner-content-home {
-  /* background: #eceff1; */
   border-radius: 0px 0px 144px 0px;
   width: 100%;
   display: block;
+}
+.banner-content-home.banner-content-grey{
+  background: #eceff1; 
 }
 .case-intern .banner-content-home{
   height: 620px;
