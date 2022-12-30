@@ -94,6 +94,43 @@ $(document).ready(function () {
   $('#section-service-1').addClass("active-reveal");
 
   window.addEventListener("scroll", reveal);
+  
+  function initSwipersAll2 () {
+    var swiper = new Swiper(".mySwiperS2", {
+        slidesPerView: 1,
+        spaceBetween: 11,
+        grid: {
+          rows: 1
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        navigation: {
+          prevEl: ".mySwiperS2-left-page",
+          nextEl: ".mySwiperS2-right-pag",
+        },
+        breakpoints: {
+          1095: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+            grid: {
+              rows: 2
+            }
+          },
+          601:{
+            slidesPerView: 2,
+            spaceBetween: 11,
+            grid: {
+              rows: 1
+            }
+          }
+      },
+      });
+    // console.log('window was resized', screen.width);
+  }
+  initSwipersAll2();
+
   function initSwipersAll () {
     var swiper = new Swiper(".mySwiperS3", {
         slidesPerView: 1,
@@ -265,8 +302,8 @@ $(document).ready(function () {
       },
 
       navigation: {
-        prevEl: ".mySwiperS3-left-page",
-        nextEl: ".mySwiperS3-right-pag",
+        prevEl: ".mySwiperEquipment-left-page",
+        nextEl: ".mySwiperEquipment-right-page",
       },
 
     },

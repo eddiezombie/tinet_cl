@@ -232,16 +232,20 @@
     width: 304px !important;
   }
 
+  .somos-equipment .mySwiperEquipment-left-page,
   .somos-equipment .mySwiperS3-left-page,
   .somos-slider-thumbs .swiper-button-prev {
     left: calc(50% - 50px);
   }
 
+  .somos-equipment .mySwiperEquipment-right-page,
   .somos-equipment .mySwiperS3-right-pag,
   .somos-slider-thumbs .swiper-button-next {
     right: calc(50% - 50px);
   }
 
+  .somos-equipment .mySwiperEquipment-left-page,
+  .somos-equipment .mySwiperEquipment-right-page,
   .somos-equipment .mySwiperS3-left-page,
   .somos-equipment .mySwiperS3-right-pag {
     bottom: -70px;
@@ -327,14 +331,18 @@
     max-width: 560px;
   }
 
+  .somos-equipment .mySwiperEquipment-left-page,
   .somos-equipment .mySwiperS3-left-page {
     left: 0;
   }
 
+  .somos-equipment .mySwiperEquipment-right-page,
   .somos-equipment .mySwiperS3-right-pag {
     right: 0;
   }
 
+  .somos-equipment .mySwiperEquipment-left-page,
+  .somos-equipment .mySwiperEquipment-right-page,
   .somos-equipment .mySwiperS3-left-page,
   .somos-equipment .mySwiperS3-right-pag {
     top: 50%;
@@ -594,10 +602,12 @@
     max-width: 1147px;
   }
 
+  .somos-equipment .mySwiperEquipment-left-page,
   .somos-equipment .mySwiperS3-left-page {
     left: -14px;
   }
 
+  .somos-equipment .mySwiperEquipment-right-page,
   .somos-equipment .mySwiperS3-right-pag {
     right: -14px;
   }
