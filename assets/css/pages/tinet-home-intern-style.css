@@ -1718,6 +1718,10 @@ margin-top: 24px;
   .case-wrapper + .section-ul-circle{
     padding-bottom: 80px;
   }
+  .banner-content-grey .banner-swiper-home{
+    min-height: 1px;
+    padding: 45px 0 60px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .case-wrapper .case-intern.banner-content-home .banner-swiper-home{
