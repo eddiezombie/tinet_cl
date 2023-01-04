@@ -7,7 +7,7 @@
     position: relative;
     overflow: hidden;    
 }
-.i-banner-main:after{
+/*.i-banner-main:after{
     content: '';
     position: absolute;
     display: block;
@@ -20,7 +20,7 @@
     background-position: right center;
     background-size: cover;
     background-image: url('../img/industry/1.png');
-}
+}*/
 .i-banner-container{
     margin: 0 auto;
     padding: 160px 24px 0;
@@ -54,9 +54,9 @@
         line-height: 21px;
         max-width: 85%; 
     }
-    .i-banner-main:after{
+    /* .i-banner-main:after{
         right: -30%;
-    }
+    } */
 }
 .i-tabs{
     margin: 16px 0;

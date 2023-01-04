@@ -1,3 +1,22 @@
+$('.expectations-slider').slick({
+  infinite: true,
+  responsive: [
+    {
+      breakpoint: 1095,
+      settings: {
+        adaptiveHeight: true
+      }
+    }
+  ]
+});
+
+if($('.expectations-slider')){
+  $('.expectations-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+    let current = currentSlide + 1;
+    $('#pagination-number').text("0" + current);
+  });
+}
+
 $('.logros-slider').slick({
   infinite: true,
   slidesToShow: 4,
