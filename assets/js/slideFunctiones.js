@@ -1,5 +1,13 @@
 $('.expectations-slider').slick({
-  infinite: true
+  infinite: true,
+  responsive: [
+    {
+      breakpoint: 1095,
+      settings: {
+        adaptiveHeight: true
+      }
+    }
+  ]
 });
 
 if($('.expectations-slider')){
