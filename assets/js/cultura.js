@@ -5,6 +5,11 @@
         dt.remove();
         et.classList.add("active");
     }, 2500);
+    $('.seeMoreB').click(function(){
+      $('.bx-b').each(function(){
+        $(this).toggleClass("activo")
+      })
+    })
 })();
 $('.slide-circle').on('init', function(event, slick, currentSlide, nextSlide){
     // $(".slide-circle .slick-active").next().addClass("scale-75 mt-[150px]");

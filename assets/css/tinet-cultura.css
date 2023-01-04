@@ -74,6 +74,22 @@
   border-radius: 42px 160px 160px 257px;
   margin-top: 26px;
 }
+.bx-b, .bx-b *{
+  transition: all ease .3s;
+  -webkit-transition: all ease .3s;
+  cursor: default;
+}
+.bx-b:hover, .bx-b.activo{
+  border-left: 8px solid #C41A90;
+}
+.bx-b > p{
+  opacity: 0;
+  margin-top: -35px;
+}
+.bx-b:hover > p, .bx-b.activo > p{
+  opacity: 1;
+  margin-top: 0px;
+}
 @media (max-width:768px){
     .vid-btn-tabs{
         overflow-x: scroll;
