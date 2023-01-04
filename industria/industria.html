@@ -264,15 +264,6 @@
             <p class="fw-4 fs-20 lh-28 cl-gr-7 ">La irrupción de las Fintech y nuevos ecosistemas de innovación han dado paso a la consolidación de una nueva cara para el mercado financiero</p>
           </div>
         </div>
-        <!-- <ul class="i-tab">
-            <li class="active">
-                <img width="1440" height="724" src="../assets/img/industry/1.png" alt="">
-                <span class="fw-6 fs-32 cl-pr-5">Financiera</span>
-                <h3 class="fw-7 fs-72 lh-72">Full financial</h3>
-                <p class="fw-4 fs-20 lh-28 cl-gr-7 ">La irrupción de las Fintech y nuevos ecosistemas de innovación han dado paso a la consolidación de una nueva cara para el mercado financiero</p>
-            </li>
-        </ul> -->
-
       </div>
     </div>
     <div class="i-nuestra-vision reveal">
@@ -610,23 +601,5 @@
     <script src="../assets/js/tabIndustry.js"></script>
     <script src="../assets/js/slideFunctiones.js"></script>
     <script src="../assets/js/navbar.js"></script>
-    <script>
-      function reveal() {
-        var reveals = document.querySelectorAll(".reveal");
-
-        for (var i = 0; i < reveals.length; i++) {
-          var windowHeight = window.innerHeight;
-          var elementTop = reveals[i].getBoundingClientRect().top;
-          var elementVisible = 150;
-
-          if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("active-reveal");
-          } else {
-            //reveals[i].classList.remove("active-reveal");
-          }
-        }
-      }
-      window.addEventListener("scroll", reveal);
-    </script>
 </body>
 </html>
