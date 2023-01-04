@@ -90,10 +90,18 @@
   align-items: center;
   width: 16px;
 }
+.line-content.line-structure {
+  position: absolute;
+  left: -29px;
+  top: -90px;
+}
 .line-content .line-dashed-y {
   height: 122px;
   width: 1px;
   border-left: 1px dashed #b0bec5;
+}
+.line-content.line-structure .line-dashed-y {
+  height: 96px;
 }
 .line-content.x-98 {
   max-width: 98px;
@@ -718,6 +726,7 @@
 }
 .methodology__head{
   padding-right: 24px;
+  position: relative;
 }
 .methodology__head__title{
   font-weight: 400;
@@ -2231,6 +2240,10 @@
   transition-duration: 0.5s;
   transition-delay: 2s;
 }
+.line-structure .cirlcle-reveal {
+  visibility: visible;
+  opacity: 1;
+}
 .num-spk-work .circle-gr{
   background-color: transparent;
   transition-property: background-color;
@@ -3255,6 +3268,7 @@
   .process-easy {
     display: flex !important;
     padding: 90px 24px;
+    overflow: hidden;
   }
   #svgroad{
     display: none;
@@ -3291,6 +3305,15 @@
     line-height: 44px;
     letter-spacing: -0.4px;
     font-family: Poppins-Bold;
+  }
+  .methodology__head__title2{
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.4px;
+    font-family: Poppins-Bold;
+  }
+  .methodology__head {
+    /*margin-left: -60px;*/
   }
   .process-easy .dig-exp-text-content.margen-met .dig-exp-title-general{
     margin: 4px 0px  48px;
@@ -3335,7 +3358,7 @@
   .line-dasshed-process{
     display: block;
     position: absolute;
-    height: 1072px;
+    height: 1172px;
     width: 1px;
     border: 1px dashed #b0bec5;
   }
@@ -3358,6 +3381,9 @@
   .diplay-block-mb{
     display: inline-block !important;
     margin-top: 18px;
+  }
+  .dig-exp-text-content{
+    width: 100%;
   }
   #process-easy-4.disabled-32 .infoblob, #process-easy-3.disabled-32 .infoblob{
     display: flex !important;
