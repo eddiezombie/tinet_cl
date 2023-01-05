@@ -356,6 +356,7 @@
 
 .somos-alianzas .content-response-section {
   align-items: flex-start;
+  justify-content: space-between;
 }
 
 .somos-alianzas .dig-exp-text-content {
@@ -378,6 +379,7 @@
   margin: 24px 0 48px;
   max-width: 576px;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .somos-alianzas .somos-alianzas__cards {
@@ -385,11 +387,15 @@
   border-radius: 24px;
   width: 120px;
   height: 120px;
-  margin-right: 32px;
+  margin-right: 24px;
+  margin-bottom: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
+}
+.somos-alianzas .somos-alianzas__logos .somos-alianzas__cards:last-child{
+  margin-right: 0;
 }
 
 .somos-alianzas .somos-alianzas__cards:last-child {
