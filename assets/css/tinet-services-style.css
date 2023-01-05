@@ -368,16 +368,19 @@
 .e-slider-video{
   padding-top: 40px;
   padding-left: 24px;
-  padding-right: 24px;
+  padding-right: 16px;
 }
 .e-slider-video video{
+  max-width: 100%;
   width: 680px;
+  height: 400px;
   max-width: 100%;
   border-radius: 22px;
 }
 .e-slider-video iframe{
+  max-width: 100%;
   width: 680px;
-  height: 400px;
+  min-height: 400px;
   max-width: 100%;
   border-radius: 22px;
 }
@@ -2537,9 +2540,11 @@
   }
   .e-slider-video{
     padding-top: 0;
+    padding-right: 24px;
   }
   .e-slider-video iframe, .e-slider-video video{
     width: 100%;
+    height: 400px;
   }
   #expectations .bs-container{
     padding: 90px 0;
