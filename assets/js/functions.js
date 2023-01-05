@@ -2,6 +2,7 @@ $(document).ready(function () {
 
   let pilares1 = 1;
   let pilares2 = 1;
+  let stage = 1;
 
   $('.methodology__circleitem').click(function(){
     $(this).toggleClass('active');
@@ -38,8 +39,13 @@ $(document).ready(function () {
       var hT = $('#section-service-1').offset().top,
           hH = $('#section-service-1').outerHeight(),
           wH = $(window).height(),
-          wS = $(this).scrollTop() + 10;
+          wS = $(this).scrollTop() + 40;
       if (wS > (hT+hH-wH)){
+          if(stage){
+            --stage;
+            $('body').addClass('stop-scrolling');
+            setTimeout(enableScroll, 2000);
+          }
           $('#section-service-1').addClass('active');
           $('.somos-banner-line').addClass('box-animation');
       }
