@@ -123,13 +123,14 @@
 }
 .logros-slider .slick-prev.slick-arrow {
   left: inherit;
-  right: 70px;
+  right: calc(50% + 15px);
 }
 .logros-slider .slick-prev.slick-arrow:before{
   content: "\e913";
 }
 .logros-slider .slick-next.slick-arrow{
-  right: 15px;
+  right: inherit;
+  left: calc(50% + 15px);
 }
 .logros-slider .slick-next.slick-arrow:before{
   content: "\e914";
@@ -304,6 +305,11 @@
 
 .somos-consult {
   padding-top: 0;
+}
+
+.somos-page .somos-consult .pagination{
+  margin-top: -10px;
+  padding-right: 5px;
 }
 
 .somos-consult .content-response-section {
