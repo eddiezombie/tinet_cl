@@ -380,6 +380,7 @@
   max-width: 576px;
   width: 100%;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .somos-alianzas .somos-alianzas__cards {
