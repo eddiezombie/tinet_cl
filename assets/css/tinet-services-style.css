@@ -2937,6 +2937,9 @@
   .conteiner-carrousel-case{
     max-width: 92vw;
   }
+  .somos-equipment{
+    padding: 0 24px;
+  }
 }
 
 @media only screen and (max-width: 1094px) {
@@ -2991,6 +2994,9 @@
   .agility .agility__label:after{
     display: none;
   }
+  .somos-alianzas .line-content{
+    top: 60px;
+  }
   .dig-exp-content {
     height: auto;
     background: linear-gradient(180deg, #ffffff 0%, #eceff1 100%);
@@ -3015,8 +3021,11 @@
     width: 100%;
     margin-top: 45.68px;
   }
+  .somos-banner__box .dig-exp-text-content .line-content.x-98{
+    display: none;
+  }
   .dig-exp-content .dig-exp-text-content .dig-exp-text-content__title {
-    margin-left: 16px;
+    margin-left: 0px;
     max-width: 534px;
   }
   .dig-exp-content .text-content-mobile .text-content-mobile__title {

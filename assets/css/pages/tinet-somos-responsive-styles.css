@@ -412,7 +412,6 @@
   .somos-pilares .somos-pilares__info .somos-pilares__steps.steps2,
   .somos-pilares .somos-pilares__info .somos-pilares__steps.steps3,
   .somos-pilares .somos-pilares__info .btn-tab {
-    opacity: 1;
     margin-top: -20px
   }
   .somos-pilares.active-reveal .somos-pilares__circle-number{
