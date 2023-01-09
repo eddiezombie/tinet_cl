@@ -32,6 +32,9 @@
 .i-banner-container h3{
     color: #212121;
 }
+.i-banner-container h3.grey{
+    color: #424242;
+}
 .i-banner-container p{
     padding-top: 16px;
     max-width: 670px;
@@ -53,6 +56,9 @@
         font-size: 18px;
         line-height: 21px;
         max-width: 85%; 
+    }
+    .i-banner-container h3.grey span{
+        font-size: 48px;
     }
     /* .i-banner-main:after{
         right: -30%;
