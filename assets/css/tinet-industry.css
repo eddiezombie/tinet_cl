@@ -133,6 +133,23 @@
     justify-content: space-between;
     align-items: center;
 }
+.i-nuestra-vision-wrapper{
+    background-color: #FAFAFA;
+    padding: 0 24px;
+}
+.i-nuestra-vision-wrapper .i-nuestra-vision{
+    width: 1180px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+.i-nuestra-vision-alt{
+    background-color: #FAFAFA;
+}
+.i-nuestra-vision-alt .linp{
+    line-height: 28px;
+}
+
 .i-nuestra-vision .right-inv, .i-nuestra-vision .left-inv{
     width: 50%;
     padding: 120px 15px;
@@ -681,6 +698,7 @@
 }
 @media (max-width:1000px){
     .titulos-iif .lineas-iif.right, .titulos-iif .lineas-iif.left{display: none;}
+    .i-nuestra-vision .left-inv h3{ font-size: 32px; line-height: 40px; }
 }
 @media (max-width:768px){
     .tab-cifras::after{
