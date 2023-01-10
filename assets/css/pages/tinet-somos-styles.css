@@ -640,7 +640,7 @@
   height: 283px;
   opacity: 1;
   border-top-right-radius: 16px;
-  transition: width 0.1s linear 5s, border-radius 0.5s linear 5.1s, height 1s linear 5.15s;
+  transition: width 0.1s linear 4s, border-radius 0.5s linear 4.1s, height 1s linear 4.1s;
 }
 
 .somos-tabs__list-border .line {
@@ -748,7 +748,7 @@
 }
 
 .somos-banner-animation.active .somos-banner__logo {
-  animation: 0.9s logoScale 0.7s;
+  animation: 0.9s logoScale 0.7s linear;
 }
 
 .somos-banner-animation .somos-banner__box {
@@ -784,11 +784,30 @@
   0% {
     transform: scale(1)
   }
-
-  50% {
-    transform: scale(4)
+  20%{
+    transform: scale(2) 
   }
-
+  30%{
+    transform: scale(3) 
+  }
+  40%{
+    transform: scale(4) 
+  }
+  50% {
+    transform: scale(5)
+  }
+  60%{
+    transform: scale(6) 
+  }
+  70%{
+    transform: scale(7) 
+  }
+  80%{
+    transform: scale(8) 
+  }
+  90%{
+    transform: scale(9) 
+  }
   100% {
     transform: scale(10)
   }
