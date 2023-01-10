@@ -3979,6 +3979,7 @@
   list-style: none;
 }
 .imd ul li::before {
+  position: relative;
   content: "\2022";
   color: #D048A6;
   font-weight: bold;
@@ -3986,8 +3987,22 @@
   vertical-align: middle;
   display: inline-block;
   width: 23px;
-  margin-left: 0em;
+  margin-left: -23px;
   margin-top: -4px;
+  z-index: 2;
+}
+.imd ul li::after{
+  position: absolute;
+  content: "";
+  width: 1px;
+  left: -7px;
+  top: 15px;
+  height:-webkit-fill-available;
+  border-left: 2px dashed #B0BEC5;
+  z-index: 1;
+}
+.imd ul li:last-of-type::after{
+  content: normal;
 }
 .border-r{border-radius: 40px}
 .cbuss .page{cursor: pointer;}
