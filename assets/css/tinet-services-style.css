@@ -3958,3 +3958,42 @@
 .trg-c.inactivo a,
 .trg-c.inactivo h4,
 .trg-c.inactivo p{color: #9E9E9E;}
+.imd{
+  background: linear-gradient(180deg, #9E3384 0%, #284482 100%);
+  border-radius: 140px 0px 0px 0px; 
+}
+.imd a{
+  padding: 16px 58px;
+  background: #C41A90;
+  border-radius: 14px 56px 56px 111px;
+}
+.imd ul{
+  list-style: none;
+}
+.imd ul li::before {
+  content: "\2022";
+  color: #D048A6;
+  font-weight: bold;
+  font-size: 37px;
+  vertical-align: middle;
+  display: inline-block;
+  width: 23px;
+  margin-left: 0em;
+  margin-top: -4px;
+}
+.border-r{border-radius: 40px}
+.cbuss .page{cursor: pointer;}
+.cbuss .page.slick-disabled{
+  opacity: .5;
+  cursor:default;
+}
+.slick-dots li button:before{
+  color: #D9D9D9;
+  opacity: 1;
+  font-size: 20px;
+  top: 10px;
+}
+.cvideo .slick-dots li.slick-active button:before{
+  color: #006099;
+  opacity: 1;
+}
