@@ -323,6 +323,7 @@ $(document).ready(function () {
       watchSlidesProgress: true,
       centerInsufficientSlides: true,
       slideToClickedSlide: true,
+      allowTouchMove: false,
       breakpoints: {
         1000: {
           slidesPerView: 8,
@@ -337,6 +338,7 @@ $(document).ready(function () {
     });
     var galleryTop = new Swiper('.somos-slider-top', {
       spaceBetween: 30,
+      allowTouchMove: false,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
