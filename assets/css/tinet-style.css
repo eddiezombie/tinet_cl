@@ -1941,12 +1941,17 @@ display: flex;
     opacity: 1;
     right: 14px;
   }
-  .revolution__sidebar--active{
+  .revolution__sidebar{
     position: fixed;
-    top: 0;
+    top: 100vh;
     left: 0;
     width: 100%;
     height: 100vh;
+    transition: .5s;
+    display: block;
+  }
+  .revolution__sidebar.revolution__sidebar--active{
+    top: 0;
   }
   .revolution__sidebar__close{
     position: absolute;
