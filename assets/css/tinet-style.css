@@ -1402,6 +1402,74 @@ strong{
   }
 }
 
+.revolution{
+  padding: 0 24px;
+  overflow: hidden;
+}
+.revolution__wrapper{
+  max-width: 100%;
+  width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  background-color: grey;
+}
+.revolution__main{
+  background-color: red;
+  padding: 16px;
+  width: 60%;
+  position: relative;
+}
+.revolution__sidebar{
+  background-color: orange;
+  padding: 16px;
+  width: 40%;
+  position: relative;
+  z-index: 3;
+}
+.revolution__sidebar:after{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000px;
+  height: 100%;
+  background-color: orange;
+  z-index: -1;
+}
+.revolution__twrapper{
+  position: relative;
+}
+.revolution__twrapper:after{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1000px;
+  height: 100%;
+  background-color: grey;
+}
+.revolution__tabs{
+  display: table;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+}
+.revolution__tr{
+  display: table-row;
+}
+.revolution__td{
+  display: table-cell;
+  width: 25%;
+  height: 280px;
+  vertical-align: bottom;
+}
+.revolution__td--active{
+  background-color: #006099;
+  vertical-align: top;
+}
+
 .circle{
   width: 16px;
   height: 16px;
