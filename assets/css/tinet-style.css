@@ -1593,6 +1593,58 @@ strong{
   background-color: #F44336;
 }
 
+.revolution__ruler{
+  width: 100%;
+  display: block;
+  height: 32px;
+  position: relative;
+}
+.revolution__axis{
+  display: inline-block;
+  position: absolute;
+  transition: .5s;
+}
+.revolution__axis:after{
+  content: '';
+  display: inline-block;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  background-color: #66A0C2;
+  z-index: 3;
+}
+.revolution__axisx{
+  border-top: 1px dashed #9E9E9E;
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+.revolution__axisx:after{
+  right: 0;
+  top: 0;
+  transform: translate(0,-50%);
+}
+.revolution__axisy{
+  border-left: 1px dashed #9E9E9E;
+  height: 32px;
+  left: 0%;
+  bottom: 0;
+}
+.revolution__axisy:after{
+  left: 0;
+  bottom: 0;
+  transform: translate(-50%, 0);
+}
+.revolution__axisx.revolution__axis1{ width: 87.5%;}
+.revolution__axisy.revolution__axis1{ left: 12.5%;}
+.revolution__axisx.revolution__axis2{ width: 87.5%;}
+.revolution__axisy.revolution__axis2{ left: 12.5%;}
+.revolution__axisx.revolution__axis3{ width: 87.5%;}
+.revolution__axisy.revolution__axis3{ left: 12.5%;}
+.revolution__axisx.revolution__axis4{ width: 87.5%;}
+.revolution__axisy.revolution__axis4{ left: 12.5%;}
+
 .circle{
   width: 16px;
   height: 16px;
@@ -1863,6 +1915,9 @@ display: flex;
 }
 
 @media only screen and (max-width: 800px){
+  .revolution__ruler{
+    display: none;
+  }
   .revolution__tabs, .revolution__tr, .revolution__td{
     display: block;
     width: 100%;
