@@ -3347,7 +3347,7 @@
     margin-bottom: 32px;
   }
   .our-cap .pesta-page {
-    padding: 60px 0px 60px 16px;
+    padding: 60px 0px 60px 24px;
     width: 100%;
     align-items: flex-end;
   }
@@ -3641,7 +3641,7 @@
     display: none;
   }
   .our-cap .content-line-data {
-    padding: 0px 16px;
+    padding: 0px 24px;
   }
   .dig-exp-content .text-content-mobile .text-content-mobile__des {
     font-size: 48px;
@@ -3659,7 +3659,7 @@
     margin-top: 31px;
   }
   .emot-dig-per-content {
-    padding: 64px 16px 228px;
+    padding: 64px 24px 228px;
     height: 1278px;
   }
   .emot-dig-per-content .info-number {
@@ -3968,7 +3968,7 @@
 .trg-c.inactivo h4,
 .trg-c.inactivo p{color: #9E9E9E;}
 .imd{
-  border-radius: 140px 0px 0px 0px; 
+  border-radius: 140px 0px 0px 0px;
 }
 .imd a{
   padding: 16px 58px;
