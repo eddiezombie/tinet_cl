@@ -39,12 +39,12 @@ $(document).ready(function () {
       var hT = $('#section-service-1').offset().top,
           hH = $('#section-service-1').outerHeight(),
           wH = $(window).height(),
-          wS = $(this).scrollTop() + 40;
+          wS = $(this).scrollTop() + 20;
       if (wS > (hT+hH-wH)){
           if(stage){
             --stage;
             $('body').addClass('stop-scrolling');
-            setTimeout(enableScroll, 2000);
+            setTimeout(enableScroll, 1600);
           }
           $('#section-service-1').addClass('active');
           $('.somos-banner-line').addClass('box-animation');
