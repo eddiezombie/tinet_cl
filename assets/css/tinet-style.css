@@ -1520,6 +1520,7 @@ strong{
   transition: .5s;
   cursor: pointer;
   position: relative;
+  background-color: #F5F5F5;
 }
 .revolution__td--active{
   background-color: #006099;
@@ -1628,7 +1629,7 @@ strong{
 .revolution__axisy{
   border-left: 1px dashed #9E9E9E;
   height: 32px;
-  left: 0%;
+  right: 100%;
   bottom: 0;
 }
 .revolution__axisy:after{
@@ -1637,13 +1638,13 @@ strong{
   transform: translate(-50%, 0);
 }
 .revolution__axisx.revolution__axis1{ width: 87.5%;}
-.revolution__axisy.revolution__axis1{ left: 12.5%;}
-.revolution__axisx.revolution__axis2{ width: 87.5%;}
-.revolution__axisy.revolution__axis2{ left: 12.5%;}
-.revolution__axisx.revolution__axis3{ width: 87.5%;}
-.revolution__axisy.revolution__axis3{ left: 12.5%;}
-.revolution__axisx.revolution__axis4{ width: 87.5%;}
-.revolution__axisy.revolution__axis4{ left: 12.5%;}
+.revolution__axisy.revolution__axis1{ right: 87.5%;}
+.revolution__axisx.revolution__axis2{ width: 62.5%;}
+.revolution__axisy.revolution__axis2{ right: 62.5%;}
+.revolution__axisx.revolution__axis3{ width: 37.5%;}
+.revolution__axisy.revolution__axis3{ right: 37.5%;}
+.revolution__axisx.revolution__axis4{ width: 12.5%;}
+.revolution__axisy.revolution__axis4{ right: 12.5%;}
 
 .circle{
   width: 16px;
@@ -1890,7 +1891,7 @@ display: flex;
     width: 100%;
   }
   .revolution__main{
-    padding: 60px 0;
+    padding: 60px 0 0;
   }
   .revolution__sidebar{
     padding: 60px 24px 120px;
@@ -1915,6 +1916,9 @@ display: flex;
 }
 
 @media only screen and (max-width: 800px){
+  .revolution{
+    padding-bottom: 60px;
+  }
   .revolution__ruler{
     display: none;
   }
@@ -1931,6 +1935,7 @@ display: flex;
     padding: 20px;
     height: auto;
     padding-bottom: 50px;
+    min-height: 230px;
   }
   .revolution__td:after{
     opacity: 1;
@@ -1959,5 +1964,18 @@ display: flex;
   }
   .revolution__td--active .revolution__td__content{
     color: #212121;
+  }
+  .revolution__td--active .revolution__td__content .fs-12{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .revolution__main__text .fs-56{
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .revolution__main__text .fs-15{
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 45px;
   }
 }

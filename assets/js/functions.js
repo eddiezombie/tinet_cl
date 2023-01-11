@@ -35,6 +35,23 @@ $(document).ready(function () {
     $('.revolution__td').removeClass('revolution__td--active');
     self.addClass('revolution__td--active');
     $(tab).addClass('revolution__sidebar--active');
+    $('.revolution__axis').removeClass('revolution__axis1');
+    $('.revolution__axis').removeClass('revolution__axis2');
+    $('.revolution__axis').removeClass('revolution__axis3');
+    $('.revolution__axis').removeClass('revolution__axis4');
+    
+    if(tab == "#revsidebar1"){
+      $('.revolution__axis').addClass('revolution__axis1');
+    }
+    if(tab == "#revsidebar2"){
+      $('.revolution__axis').addClass('revolution__axis2');
+    }
+    if(tab == "#revsidebar3"){
+      $('.revolution__axis').addClass('revolution__axis3');
+    }
+    if(tab == "#revsidebar4"){
+      $('.revolution__axis').addClass('revolution__axis4');
+    }
   });
 
   $('.revolution__sidebar__close').click(function(event){
