@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./assets/css/tinet-services-style.css" />
   </head>
   <body>
+
     <!-- Menu -->
 
     <!-- Hero -->
@@ -27,16 +28,203 @@
     <!--Industria -->
 
     <!-- Tinet way -->
-    <section class="our-cap reveal active-reveal bg-[#101010]">
-      <div class="content-response-section">
-        <div class="box-animation delay-bezier-1">
-          <p class="text-[#EEEEEE]">El camino que garantiza el éxito</p>
-          <div class="">
-            <p>Tinet</p>
-            <p>way</p>
+    <section class="our-cap reveal active-reveal lg:bg-[#101010] lg:h-full">
+      <div class="content-response-section tab-primary tab items-center">
+        <div class="w-full lg:w-3/12">
+          <div class="box-animation delay-bezier-1">
+            <div class="h-[645px] relative before:absolute before:bg-black before:content-[''] before:top-0 before:bottom-0 before:left-0 before:right-0 before:opacity-70 lg:h-full flex items-center justify-center flex-col">
+              <img class="w-full h-full object-cover lg:hidden" src="./assets/img/tab1-mobile.png" alt="">
+              <div class="absolute lg:bg-[#101010] lg:relative flex flex-col items-center lg:items-start justify-center">
+                <p class="text-center lg:text-left text-[#EEEEEE]">El camino que garantiza el éxito</p>
+                <div class="flex items-center justify-center lg:justify-start">
+                  <div class="relative mb-[60px] w-[240px]">
+                    <p class="text-[64px] text-white fw-7">Tinet</p>
+                    <p class="top-[26px] left-[59px] text-[84px] absolute text-[#C41A90] fw-7">way</p>
+                  </div>
+                </div>
+                <p class="text-center lg:text-left text-[#E0E0E0] leading-6 w-10/12 lg:w-full mx-auto lg:pr-10">Aplicamos un proceso interactivo de diseño de experiencias digitales, que permita convertir a su negocio en único y exitoso.</p>
+                <div class="hidden lg:flex my-10">
+                  <div class="w-[5px] min-h-[224px] bg-[#C41A90] mr-[25px]"></div>
+                  <div class="flex flex-col">
+                    <div class="mb-4">
+                      <button class="tab-button active" data-id="digitalremoto">
+                        100% digital, 100% remoto
+                      </button>
+                    </div>
+                    <div class="mb-4">
+                      <button class="tab-button" data-id="cultura">
+                        Cultura de innovación
+                      </button>
+                    </div>
+                    <div class="mb-4">
+                      <button class="tab-button" data-id="agiles">
+                        Ágiles y  furiosos
+                      </button>
+                    </div>
+                    <div>
+                      <button class="tab-button" data-id="solidaridad">
+                        Solidaridad, nuestra bandera de lucha
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex items-center lg:justify-start justify-center mt-10 lg:mt-0">
+                  <button class="working-case btn-tab bg-sc-5 fw-6 cl-ff banner-swiper-home-text__btn">Ver cultura</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden lg:block lg:w-9/12">
+          <div class="content active" id="digitalremoto">
+            <div class="h-[867px] flex items-center justify-start relative before:absolute before:bg-black before:content-[''] before:top-0 before:bottom-0 before:left-0 before:right-0 before:opacity-70">
+              <img class="w-full h-full object-cover" src="./assets/img/tab1.png" alt="">
+              <div class="absolute ml-10 flex items-center">
+                <div class="text-right w-[500px]">
+                  <p class="text-[32px] text-white fw-7 mb-4">100% digital, 100% remoto</p>
+                  <p class="text-white">Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr nuestras metas y la autonomía de nuestros talentos.</p>
+                </div>
+                <div class="border-2 border-solid p-5 rounded-full border-[#C41A90] flex items-center justify-center cursor-pointer ml-[33px]">
+                  <img class="w-[55px] h-[55px]" src="./assets/img/play-circle-filled.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content" id="cultura">
+            <div class="h-[867px] flex items-center justify-start relative before:absolute before:bg-black before:content-[''] before:top-0 before:bottom-0 before:left-0 before:right-0 before:opacity-70">
+              <img class="w-full h-full object-cover" src="./assets/img/tab1.png" alt="">
+              <div class="absolute ml-10 flex items-center">
+                <div class="text-right w-[500px]">
+                  <p class="text-[32px] text-white fw-7 mb-4">Cultura de innovación</p>
+                  <p class="text-white">Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr nuestras metas y la autonomía de nuestros talentos.</p>
+                </div>
+                <div class="border-2 border-solid p-5 rounded-full border-[#C41A90] flex items-center justify-center cursor-pointer ml-[33px]">
+                  <img class="w-[55px] h-[55px]" src="./assets/img/play-circle-filled.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content" id="agiles">
+            <div class="h-[867px] flex items-center justify-start relative before:absolute before:bg-black before:content-[''] before:top-0 before:bottom-0 before:left-0 before:right-0 before:opacity-70">
+              <img class="w-full h-full object-cover" src="./assets/img/tab1.png" alt="">
+              <div class="absolute ml-10 flex items-center">
+                <div class="text-right w-[500px]">
+                  <p class="text-[32px] text-white fw-7 mb-4">Ágiles y  furiosos</p>
+                  <p class="text-white">Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr nuestras metas y la autonomía de nuestros talentos.</p>
+                </div>
+                <div class="border-2 border-solid p-5 rounded-full border-[#C41A90] flex items-center justify-center cursor-pointer ml-[33px]">
+                  <img class="w-[55px] h-[55px]" src="./assets/img/play-circle-filled.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content" id="solidaridad">
+            <div class="h-[867px] flex items-center justify-start relative before:absolute before:bg-black before:content-[''] before:top-0 before:bottom-0 before:left-0 before:right-0 before:opacity-70">
+              <img class="w-full h-full object-cover" src="./assets/img/tab1.png" alt="">
+              <div class="absolute ml-10 flex items-center">
+                <div class="text-right w-[500px]">
+                  <p class="text-[32px] text-white fw-7 mb-4">Solidaridad, nuestra bandera de lucha</p>
+                  <p class="text-white">Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr nuestras metas y la autonomía de nuestros talentos.</p>
+                </div>
+                <div class="border-2 border-solid p-5 rounded-full border-[#C41A90] flex items-center justify-center cursor-pointer ml-[33px]">
+                  <img class="w-[55px] h-[55px]" src="./assets/img/play-circle-filled.png" alt="">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!--Footer-->
+    <div class="footer-general">
+      <div class="top_footer">
+        <div class="tf_desc">
+          <img src="assets/img/footer/Logo.svg" alt="">
+          <p class="fs-12 fw-4 c-pf padbot_60">Somos una consultora tecnológica líder en transformación y cultura digital
+            con soluciones de negocios basadas en tecnología y consultoría.</p>
+          <div class="icotext">
+            <img src="assets/img/footer/phone.svg" alt="">
+            <p class="fw-4 fs-14 cl-ff lh-21">264690839</p>
+          </div>
+          <div class="icotext">
+            <img src="assets/img/footer/place.svg" alt="">
+            <p class="fw-4 fs-14 cl-ff lh-21">Evaristo Lillo 48, Las Condes, Santiago, RM</p>
+          </div>
+        </div>
+        <div class="td_btns">
+          <ul>
+            <li class="fw-6 fs-14 cl-ff lh-21">Compañia</li>
+            <li class="fw-4 fs-14 c-pf lh-21"><a href="">Somos tinet</a></li>
+            <li class="fw-4 fs-14 c-pf lh-21"><a href="">Que hacemos</a></li>
+            <li class="fw-4 fs-14 c-pf lh-21"><a href="">Industrias</a></li>
+            <li class="fw-4 fs-14 c-pf lh-21"><a href="">Casos de Éxito</a></li>
+            <li class="fw-4 fs-14 c-pf lh-21"><a href="">Hablemos</a></li>
+          </ul>
+          <ul>
+            <li class="fw-6 fs-14 cl-ff lh-21">Talento Tinet</li>
+            <li class="fw-4 fs-14 c-pf lh-21"><a href="">Trabaja con nosotros</a></li>
+            <li class="fw-4 fs-14 c-pf lh-21"><a href="">Carreras</a></li>
+          </ul>
+          <ul>
+            <li class="fw-6 fs-14 cl-ff lh-21">Contenido</li>
+            <li class="fw-4 fs-14 c-pf lh-21"><a href="">Blog</a></li>
+          </ul>
+          <ul>
+            <li class="fw-6 fs-14 cl-ff lh-21">Redes Sociales</li>
+            <li class="fw-4 fs-14 c-pf lh-21 icoredes">
+              <a href=""><img src="assets/img/footer/linkedin.svg" alt=""></a>
+              <a href=""><img src="assets/img/footer/ig.svg" alt=""></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bot_footer">
+        <div class="bf_left">
+          <div class="ea_f">
+            <p class="fw-6 fs-14 cl-ff lh-21 pabo20">Empresas asociadas</p>
+            <div class="c_ea">
+              <img src="assets/img/footer/Drop.svg" alt="">
+            </div>
+
+          </div>
+          <div class="ea_f">
+            <p class="fw-6 fs-14 cl-ff lh-21 pabo20">Somos parte de</p>
+            <img src="assets/img/footer/Acti.svg" alt="">
+          </div>
+        </div>
+        <div class="bf_right">
+          <div>
+            <p class="fw-4 fs-14 cl-ff lh-21 lr">M.P.D.</p>
+            <p class="fw-4 fs-14 cl-ff lh-21 lr">Canal de denuncias</p>
+            <p class="fw-4 fs-14 cl-ff lh-21">Política de Privacidad </p>
+          </div>
+          <p class="fw-4 fs-14 cl-ff lh-21">© 2022 Tinet. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
+
+<script>
+  const tabs = document.querySelector(".tab");
+  const tabButton = document.querySelectorAll(".tab-button");
+  const contents = document.querySelectorAll(".content");
+
+  tabs.onclick = (e) => {
+    const id = e.target.dataset.id;
+    if (id) {
+      tabButton.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+      e.target.classList.add("active");
+
+      contents.forEach((content) => {
+        content.classList.remove("active");
+      });
+      const element = document.getElementById(id);
+      element.classList.add("active");
+    }
+  };
+</script>
