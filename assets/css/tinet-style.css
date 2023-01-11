@@ -462,7 +462,7 @@ strong{
     width: 384px;
     background-color: white;
     top: 80px;
-    z-index: 40;
+    z-index: 50;
   }
   .left-navbar .first-ul a{
     padding: 24px;
