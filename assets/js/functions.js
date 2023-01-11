@@ -19,6 +19,15 @@ $(document).ready(function () {
     self.next().stop().slideToggle();
   });
 
+  $('.revolution__td').click(function(){
+    let self = $(this);
+    let tab = "#" + self.attr('data-tab');
+    $('.revolution__sidebar').removeClass('revolution__sidebar--active');
+    $('.revolution__td').removeClass('revolution__td--active');
+    self.addClass('revolution__td--active');
+    $(tab).addClass('revolution__sidebar--active');
+  });
+
   function disableScroll() {
     // Get the current page scroll position
     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
