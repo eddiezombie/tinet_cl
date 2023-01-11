@@ -4,6 +4,15 @@ $(document).ready(function () {
   let pilares2 = 1;
   let stage = 1;
 
+  if($( window ).width() <= 800){
+    $('.revolution__sidebar--active').removeClass('revolution__sidebar--active');
+  }
+  $(window).resize(function(){
+    if($( window ).width() <= 800){
+      $('.revolution__sidebar--active').removeClass('revolution__sidebar--active');
+    }
+  });
+
   $('.methodology__circleitem').click(function(){
     $(this).toggleClass('active');
     $('.methodology__circleitem__plus').slideToggle(1);
@@ -26,6 +35,11 @@ $(document).ready(function () {
     $('.revolution__td').removeClass('revolution__td--active');
     self.addClass('revolution__td--active');
     $(tab).addClass('revolution__sidebar--active');
+  });
+
+  $('.revolution__sidebar__close').click(function(event){
+    $(this).parent().removeClass('revolution__sidebar--active');
+    event.preventDefault();
   });
 
   function disableScroll() {

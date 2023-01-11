@@ -1326,25 +1326,7 @@ strong{
     text-align: center;
   }
 }
-@media only screen and (max-width: 1000px){
-  .footer-general{
-    width: 1180px;
-    max-width: 100%;
-  }
-  .top_footer, .bot_footer{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-  .bot_footer{
-    padding-top: 30px;
-  }
-  .top_footer .td_btns{
-    padding-left: 0;
-  }
-}
+
 @media only screen and (max-width: 426px){
   .td_btns{
     display: flex;
@@ -1843,4 +1825,84 @@ display: flex;
     max-width: 1180px;
     margin: 0px auto;
     display: flex;
+}
+
+@media only screen and (max-width: 1000px){
+  .revolution__wrapper{
+    display: block;
+  }
+  .revolution__twrapper:after, .revolution__sidebar:after{
+    display: none;
+  }
+  .revolution__main, .revolution__sidebar{
+    width: 100%;
+  }
+  .revolution__main{
+    padding: 60px 0;
+  }
+  .revolution__sidebar{
+    padding: 60px 24px 120px;
+  }
+  .footer-general{
+    width: 1180px;
+    max-width: 100%;
+  }
+  .top_footer, .bot_footer{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .bot_footer{
+    padding-top: 30px;
+  }
+  .top_footer .td_btns{
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .revolution__tabs, .revolution__tr, .revolution__td{
+    display: block;
+    width: 100%;
+  }
+  .revolution__tr .revolution__td:last-child{
+    margin-bottom: 0;
+  }
+  .revolution__td{
+    margin-bottom: 15px;
+    background: #FAFAFA;
+    padding: 20px;
+    height: auto;
+    padding-bottom: 50px;
+  }
+  .revolution__td:after{
+    opacity: 1;
+    right: 14px;
+  }
+  .revolution__sidebar--active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  .revolution__sidebar__close{
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/sidebarclose.svg);
+  }
+  #revtd1.revolution__td--active, #revtd2.revolution__td--active, 
+  #revtd3.revolution__td--active, #revtd4.revolution__td--active{
+    background: #FAFAFA;
+  }
+  .revolution__td--active .revolution__td__content{
+    color: #212121;
+  }
 }
