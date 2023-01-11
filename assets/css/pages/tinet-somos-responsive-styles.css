@@ -8,8 +8,8 @@
     min-height: auto;
   }
   .somos--pading-mobile {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
   .dig-exp-content .text-content-mobile .text-content-mobile__des{
     font-size: 56px;
@@ -110,8 +110,8 @@
     padding-bottom: 32px;
   }
   .somos-alianzas {
-    padding: 40px 16px;
-  }  
+    padding: 40px 24px;
+  }
   .somos-alianzas .content-response-section{
     flex-direction: column;
   }
@@ -139,7 +139,7 @@
   }
   .somos-banner-animation {
     height: 100%;
-  } 
+  }
   .dig-exp-content .text-content-mobile .text-content-mobile__des{
     font-size: 40px;
     line-height: 44px;
@@ -353,6 +353,9 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .somos-page .dig-exp-content{
+    z-index: 3;
+  }
   .somos-banner-animation .somos-banner{
     padding-top: 0px;
     padding-left: 24px;
@@ -360,6 +363,11 @@
   }
   .somos-page .pagination {
     justify-content: center;
+  }
+  .somos-number{
+    background: #fff;
+    z-index: 3;
+    padding-top: 80px;
   }
   .somos-pilares {
     padding-top: 40px;
@@ -369,10 +377,12 @@
     width: 120px !important;
     height: 100% !important;
   }
-  .somos-banner__box{
-    /*padding-top: 30px;
-    padding-bottom: 30px;*/
+
+   .somos-logros {
+    padding-top: 0px!important;
+    padding-right: 0;
   }
+
 
   .somos-slider-thumbs {
     width: 360px;
@@ -406,11 +416,11 @@
     border-left-color: #003A5C;
     border-bottom-color: #003A5C;
   }
-  
+
   .somos-pilares .somos-pilares__box .somos-pilares__circle3 {
     border-left-color: #006099;
   }
-  
+
   .somos-pilares .somos-pilares__info .somos-pilares__steps.steps2,
   .somos-pilares .somos-pilares__info .somos-pilares__steps.steps3,
   .somos-pilares .somos-pilares__info .btn-tab {
@@ -429,6 +439,8 @@
   .somos-page .pagination {
     justify-content: flex-end;
   }
+
+
 
   .somos-slider-thumbs .swiper-slide {
     width: 125px !important;
@@ -473,7 +485,7 @@
     padding-top: 95px;
     padding-bottom: 127px;
   }
-  
+
   .somos-pilares .somos-pilares__box {
     margin-top: 56px;
   }
@@ -522,7 +534,7 @@
   }
   .somos-alianzas {
     padding: 0 16px 112px 16px;
-  }  
+  }
   .somos-slider-thumbs .swiper-wrapper{
     padding: 0 60px 0 40px;
     width: calc(100% - 100px);

@@ -27,6 +27,9 @@
   top: 0;
 }
 
+.somos-banner__title{
+  line-height: 44px;
+}
 .somos-banner__title,
 .somos-banner__text {
   margin-bottom: 16px;
@@ -786,28 +789,28 @@
     transform: scale(1)
   }
   20%{
-    transform: scale(2) 
+    transform: scale(2)
   }
   30%{
-    transform: scale(3) 
+    transform: scale(3)
   }
   40%{
-    transform: scale(4) 
+    transform: scale(4)
   }
   50% {
     transform: scale(5)
   }
   60%{
-    transform: scale(6) 
+    transform: scale(6)
   }
   70%{
-    transform: scale(7) 
+    transform: scale(7)
   }
   80%{
-    transform: scale(8) 
+    transform: scale(8)
   }
   90%{
-    transform: scale(9) 
+    transform: scale(9)
   }
   100% {
     transform: scale(10)
