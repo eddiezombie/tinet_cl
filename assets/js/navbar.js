@@ -1,6 +1,7 @@
 $(".tr-ul li a").click(function(){
     $(".tr-ul li a").not(this).next('.menu-desplegable').fadeOut("fast");
     $(this).next('.menu-desplegable').fadeToggle("fast");
+    $(this).toggleClass('btn-nav__active');
 })
 $(window).click(function() {
     $('.menu-desplegable').fadeOut("fast");

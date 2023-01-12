@@ -116,6 +116,11 @@ strong {
 
 .tr-ul li > a {
   color: #00263d;
+
+}
+.tr-ul li > a:hover, .tr-ul li .btn-nav__active{
+  color: #006099;
+  border-bottom: 2px solid #006099;
 }
 .btn-nav > ul.tr-ul {
   list-style: none;
@@ -237,6 +242,19 @@ strong {
 .content-ul-stm li.active {
   display: block;
 }
+.content-ul-stm li > a.active{
+  color: #006099;
+  position: relative;
+}
+.content-ul-stm li > a.active:before{
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 10px;
+  background: #006099;
+  left: 24px;
+  top: 4px;
+}
 .contenedor-menu-nav > div:last-child {
   width: 381px;
   padding: 16px 26px;
@@ -257,6 +275,9 @@ strong {
   color: #212121;
   padding: 0px 0 8px 30px;
   display: block;
+}
+.content-ul-stm li > a:hover {
+  border-bottom: 0px solid #006099;
 }
 .menu-desplegable.m-industria {
   width: 593px;
@@ -312,6 +333,11 @@ strong {
   color: #212121;
   padding: 15px 0;
 }
+.cont-ind-m > div:last-child > a:hover {
+  color: #006099;
+}
+
+
 .menu-desplegable.m-talento {
   width: 593px;
   height: 197px;
@@ -1595,7 +1621,7 @@ strong {
   background: #26C6DA;
 }
 
-#revtd1.revolution__td--active, #revmore1, #revcontent1:after, 
+#revtd1.revolution__td--active, #revmore1, #revcontent1:after,
 #revsidebar1.revolution__sidebar, #revsidebar1.revolution__sidebar:after{
   background-color: #006099;
 }
@@ -1603,7 +1629,7 @@ strong {
 #revsidebar2.revolution__sidebar, #revsidebar2.revolution__sidebar:after{
   background-color: #ffa726;
 }
-#revtd3.revolution__td--active, #revmore3, #revcontent3:after, 
+#revtd3.revolution__td--active, #revmore3, #revcontent3:after,
 #revsidebar3.revolution__sidebar, #revsidebar3.revolution__sidebar:after{
   background-color: #C41A90;
 }
@@ -2040,7 +2066,7 @@ strong {
     background-position: center;
     background-image: url(../img/sidebarclose.svg);
   }
-  #revtd1.revolution__td--active, #revtd2.revolution__td--active, 
+  #revtd1.revolution__td--active, #revtd2.revolution__td--active,
   #revtd3.revolution__td--active, #revtd4.revolution__td--active{
     background: #FAFAFA;
   }
