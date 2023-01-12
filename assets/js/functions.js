@@ -13,6 +13,17 @@ $(document).ready(function () {
     }
   });
 
+  $('#proyecto').click(function(event){
+    event.preventDefault();
+    $('.proyects__card').toggleClass('proyects__card--disabled');
+  });
+
+  $('.proyects__card').click(function(){
+    if($(this).hasClass('proyects__card--disabled')){
+      $('.proyects__card').toggleClass('proyects__card--disabled');
+    }
+  });
+
   $('.methodology__circleitem').click(function(){
     $(this).toggleClass('active');
     $('.methodology__circleitem__plus').slideToggle(1);
