@@ -19,9 +19,21 @@ $(document).ready(function () {
   });
 
   $('.proyects__card').click(function(){
-    if($(this).hasClass('proyects__card--disabled')){
+    let self = $(this);
+    let data;
+    if(self.hasClass('proyects__card--disabled') && $( window ).width() > 800){
       $('.proyects__card').toggleClass('proyects__card--disabled');
+      $('.proyects__sidebar').removeClass('proyects__sidebar--active');
+    }else{
+      data = "#" + self.attr('data-proyect');
+      $('.proyects__sidebar').removeClass('proyects__sidebar--active');
+      $(data).addClass('proyects__sidebar--active');
     }
+  });
+
+  $('.proyects__sidebar__close').click(function(event){
+    $(this).parent().removeClass('proyects__sidebar--active');
+    event.preventDefault();
   });
 
   $('.methodology__circleitem').click(function(){

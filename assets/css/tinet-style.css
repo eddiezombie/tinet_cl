@@ -2188,6 +2188,13 @@ strong {
     right: initial;
     margin-top: 15px;
   }
+  .proyects__sidebar{
+    right: 0;
+    top: 100vh;
+  }
+  .proyects__sidebar--active{
+    top: 0;
+  }
 
   .revolution{
     padding-bottom: 60px;
