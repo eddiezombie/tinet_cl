@@ -353,6 +353,29 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .somos-banner-animation .somos-banner{
+    opacity: 1!important;
+    position: relative!important;
+    z-index: 333333333;
+  }
+  .somos-banner-animation.active .somos-banner__description{
+    transform: translateY(0%)!important;
+    transition: 1s transform 0.7s;
+  }
+  .somos-banner-animation.active .somos-banner__logo{
+        animation: none!important;
+  }
+  .somos-banner-animation{
+    display: block;
+  }
+  .somos-banner, .somos-banner__box {
+    min-height: 578px;
+  }
+  .somos-banner__box{
+    opacity: 1!important;
+    transition: none!important;
+    animation: none!important;
+  }
   .somos-page .dig-exp-content{
     z-index: 3;
   }

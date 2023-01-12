@@ -191,26 +191,7 @@
   background-color: #006099;
   color: white;
 }
-/*@keyframes rocket-0 {
-  0% {
-    left: -340px;
-    transform: rotate(90deg);
-    top: 240px;
-  }
-  50%{
-    transform: rotate(90deg);
-  }
-  51%{
-    top:-42px;
-    left: -340px;
-    transform: rotate(180deg);
-  }
-  100%{
-    top:-42px;
-    left:0px;
-    transform: rotate(180deg);
-  }
-}*/
+
 @keyframes rocket-1 {
   0%{
     top:-42px;
@@ -231,14 +212,7 @@
   55%{
     transform: rotate(-90deg);
   }
-  /*51%{
-    transform: rotate(-90deg);
-  }*/
-/*  100% {
-    left: -340px;
-    transform: rotate(-90deg);
-    top: 240px;
-  }*/
+
 }
 .dig-exp-content .img-video {
   margin-right: 56px;
@@ -383,6 +357,20 @@
   min-height: 400px;
   max-width: 100%;
   border-radius: 22px;
+}
+
+.cbuss .slick-list{
+  padding:0 100px 0 0!important;
+}
+.cbuss__bg{
+  position: absolute;
+  right: 150px;
+  top: 130px;
+  z-index: 3;
+  height: 586px;
+  width: 120px;
+  background: rgb(240,240,240);
+background: linear-gradient(90deg, rgba(240,240,240,0) 50%, rgba(239,239,239,1) 100%);
 }
 
 @media (min-width:1441px){
@@ -2890,8 +2878,14 @@
   .back_malla img {
     margin-left: 41%;
   }
+  .cbuss__bg{
+    right: 0px;
+  }
 }
 @media only screen and (max-width: 768px) {
+  .our-cap .circle-dashed-content {
+    justify-content: center;
+  }
   .td_btns{
     padding-left: 0;
   }
@@ -2940,9 +2934,18 @@
   .somos-equipment{
     padding: 0 24px;
   }
+
 }
 
 @media only screen and (max-width: 1094px) {
+
+  .cbuss .slick-list{
+    padding:0 0px 0 0!important;
+  }
+  .cbuss__bg{
+    display: none!important;
+  }
+
   .mobile-none {
     display: none !important;
   }

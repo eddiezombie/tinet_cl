@@ -244,12 +244,23 @@ $('.cbuss').slick({
   slidesToShow: 1,
   arrows: true,
   centerMode: false,
+  centerPadding: '60px',
   slidesToScroll: 1,
   variableWidth: false,
   infinite:false,
   prevArrow: "<div class='page left bg-[#003A5C] flex flex-col items-center justify-center text-[#ffffff] w-[40px] h-[40px] rounded-full absolute bottom-[-60px] left-[216px]'><i class='icon-arrow-left-page'></i></div>",
   nextArrow: "<div class='page right bg-[#003A5C] flex flex-col items-center justify-center text-[#ffffff] w-[40px] h-[40px] rounded-full absolute bottom-[-60px] left-[280px]'><i class='icon-arrow-right-page'></i></div>",
 })
+
+$('.cbuss').on('afterChange', function(event, slick, currentSlide) {
+  console.log(slick, currentSlide);
+  if (slick.$slides.length-1 == currentSlide) {
+    $('.cbuss__bg').hide();
+  }else{
+    $('.cbuss__bg').show();
+  }
+})
+
 $('.cvideo').slick({
   slidesToShow: 1,
   arrows: false,
