@@ -4,6 +4,15 @@ $(document).ready(function () {
   let pilares2 = 1;
   let stage = 1;
 
+  if($( window ).width() <= 800){
+    $('.revolution__sidebar--active').removeClass('revolution__sidebar--active');
+  }
+  $(window).resize(function(){
+    if($( window ).width() <= 800){
+      $('.revolution__sidebar--active').removeClass('revolution__sidebar--active');
+    }
+  });
+
   $('.methodology__circleitem').click(function(){
     $(this).toggleClass('active');
     $('.methodology__circleitem__plus').slideToggle(1);
@@ -17,6 +26,37 @@ $(document).ready(function () {
     self.parents('.methodology__bubble').removeClass('disabled');
     self.toggleClass('active');
     self.next().stop().slideToggle();
+  });
+
+  $('.revolution__td').click(function(){
+    let self = $(this);
+    let tab = "#" + self.attr('data-tab');
+    $('.revolution__sidebar').removeClass('revolution__sidebar--active');
+    $('.revolution__td').removeClass('revolution__td--active');
+    self.addClass('revolution__td--active');
+    $(tab).addClass('revolution__sidebar--active');
+    $('.revolution__axis').removeClass('revolution__axis1');
+    $('.revolution__axis').removeClass('revolution__axis2');
+    $('.revolution__axis').removeClass('revolution__axis3');
+    $('.revolution__axis').removeClass('revolution__axis4');
+    
+    if(tab == "#revsidebar1"){
+      $('.revolution__axis').addClass('revolution__axis1');
+    }
+    if(tab == "#revsidebar2"){
+      $('.revolution__axis').addClass('revolution__axis2');
+    }
+    if(tab == "#revsidebar3"){
+      $('.revolution__axis').addClass('revolution__axis3');
+    }
+    if(tab == "#revsidebar4"){
+      $('.revolution__axis').addClass('revolution__axis4');
+    }
+  });
+
+  $('.revolution__sidebar__close').click(function(event){
+    $(this).parent().removeClass('revolution__sidebar--active');
+    event.preventDefault();
   });
 
   function disableScroll() {
