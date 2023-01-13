@@ -18,6 +18,10 @@ $(document).ready(function () {
     $('.projects__card').toggleClass('projects__card--disabled');
   });
 
+  $('.projects__arrow').click(function(){
+    $('.projects__card').toggleClass('projects__card--disabled');
+  });
+
   $('.projects__card').click(function(){
     let self = $(this);
     if($( window ).width() > 800 && self.hasClass('projects__card--disabled')){
@@ -57,8 +61,6 @@ $(document).ready(function () {
   //     }
   //   ]
   // });
-
-  console.log('change!');
 
   slick_slider();
   $(window).resize(slick_slider);

@@ -1457,6 +1457,40 @@ strong {
   z-index: 8;
   width: 100%;
 }
+.projects__arrow{
+  width: 40px;
+  height: 40px;
+  background: #003a5c;
+  border-radius: 100%;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 0px;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 9;
+  cursor: pointer;
+  text-align: center;
+}
+.projects__arrow:before{
+    font-family: "icomoon";
+    font-size: 11px;
+    line-height: 40px;
+  }
+}
+.projects__arrow--left{
+  left: 0;
+}
+.projects__arrow--left:before{
+  content: "\e913";
+}
+.projects__arrow--right{
+  right: 0;
+}
+.projects__arrow--right:before{
+  content: "\e914";
+}
 .projects__card{
   background-color: #fff;
   border-radius: 12px;
@@ -1516,6 +1550,25 @@ strong {
 .projects__card--color2:hover:not(.projects__card--disabled){
   background-color: #BB0000;
 }
+.projects__card--color3:hover:not(.projects__card--disabled){
+  background-color: #ffa726;
+}
+.projects__card--color4:hover:not(.projects__card--disabled){
+  background-color: #006099;
+}
+.projects__card--color5:hover:not(.projects__card--disabled){
+  background-color: #510375;
+}
+.projects__card--color6:hover:not(.projects__card--disabled){
+  background-color: #BB0000;
+}
+.projects__card--color7:hover:not(.projects__card--disabled){
+  background-color: #510375;
+}
+.projects__card--color8:hover:not(.projects__card--disabled){
+  background-color: #BB0000;
+}
+
 .projects__card:hover:not(.projects__card--disabled) .projects__card__logo{
   opacity: 0.7;
 }
@@ -2309,6 +2362,9 @@ strong {
     top: 0;
     left: 0;
     transform: translate(0);
+  }
+  .projects__arrow{
+    display: none;
   }
 
   .revolution{
