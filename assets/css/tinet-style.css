@@ -1611,17 +1611,17 @@ strong {
 }
 
 
-#project1{ top: 5px; left: 5px; }
-#project2{ top: 140px; left: 5px; }
+#project1, #slick-slide00{ top: 5px; left: 5px; }
+#project2, #slick-slide01{ top: 140px; left: 5px; }
 
-#project3{ top: 5px; right: 5px; }
-#project4{ top: 140px; right: 5px; }
+#project3, #slick-slide02{ top: 5px; right: 5px; }
+#project4, #slick-slide03{ top: 140px; right: 5px; }
 
-#project5{ bottom: 5px; left: 5px; }
-#project6{ bottom: 140px; left: 5px; }
+#project5, #slick-slide04{ bottom: 5px; left: 5px; }
+#project6, #slick-slide05{ bottom: 140px; left: 5px; }
 
-#project7{ bottom: 5px; right: 5px; }
-#project8{ bottom: 140px; right: 5px; }
+#project7, #slick-slide06{ bottom: 5px; right: 5px; }
+#project8, #slick-slide07{ bottom: 140px; right: 5px; }
 
 
 .revolution{
