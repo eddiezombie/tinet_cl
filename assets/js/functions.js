@@ -13,6 +13,81 @@ $(document).ready(function () {
     }
   });
 
+  $('#proyecto').click(function(event){
+    event.preventDefault();
+    $('.projects__card').toggleClass('projects__card--disabled');
+  });
+
+  $('.projects__arrow').click(function(){
+    $('.projects__card').toggleClass('projects__card--disabled');
+  });
+
+  $('.projects__card').click(function(){
+    let self = $(this);
+    if($( window ).width() > 800 && self.hasClass('projects__card--disabled')){
+      $('.projects__card').toggleClass('projects__card--disabled');
+      $('.projects__sidebar').removeClass('projects__sidebar--active');
+    }
+  });
+
+  $('.projects__card__show').click(function(){
+    let self = $(this);
+    let card = self.parents('.projects__card');
+    let data = "#" + self.attr('data-project');
+    if(!(card.hasClass('projects__card--disabled') && $( window ).width() > 800)){
+      $('.projects__sidebar').removeClass('projects__sidebar--active');
+      $(data).addClass('projects__sidebar--active');
+    }
+  });
+
+  $('.projects__sidebar__close').click(function(event){
+    $(this).parent().removeClass('projects__sidebar--active');
+    event.preventDefault();
+  });
+
+  // $('.projects__slider').slick({
+  //   mobileFirst: true, 
+  //   responsive: [
+  //     {
+  //       breakpoint: 200,
+  //       settings: {
+  //         dots: true,
+  //         arrows: false
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 800,
+  //       settings: "unslick"
+  //     }
+  //   ]
+  // });
+
+  slick_slider();
+  $(window).resize(slick_slider);
+
+  function slick_slider() {
+    var wrapper = $('.projects__slider')
+    if ($(".projects .slick-initialized").length) {
+      wrapper.slick('unslick');
+    }
+    wrapper.slick({
+      mobileFirst: true, 
+      responsive: [
+        {
+          breakpoint: 200,
+          settings: {
+            dots: true,
+            arrows: false
+          }
+        },
+        {
+          breakpoint: 800,
+          settings: "unslick"
+        }
+      ]
+    });
+  }
+
   $('.methodology__circleitem').click(function(){
     $(this).toggleClass('active');
     $('.methodology__circleitem__plus').slideToggle(1);
