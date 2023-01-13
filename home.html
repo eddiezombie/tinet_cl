@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="./assets/css/tinet-style.css" />
     <link rel="stylesheet" href="./assets/css/tinet-services-style.css" />
   </head>
-  <body class="conte" data-scroll-container>
-
+  <body>
+<div data-scroll-container>
     <!-- Menu -->
     <div class="header-content dark z-50 relative bg-transparent shadow-none">
       <div class="responsive-burger ml-[26px]">
@@ -246,21 +246,23 @@
       </div>
   </div>
     <!-- Hero -->
-    <div class="relative h-[700px] bg-[#0D0D0D] z-10 mt-[-104px] pt-[144px]">
-      <div class="max-w-[1440px] mx-[auto] xl:px-[130px] px-[24px]" data-scroll-section data-scroll-section-id="uno">
-        <div id="scroll-direction">
-          <h3 class="text-[#ffffff]" data-scroll data-scroll-sticky data-scroll-target="scroll-direction">Hola</h3>
-          <div id="direction" class="absolute">
-            <p class="text-[#fff] absolute top-[10%] w-[700px] mx-[auto] left-[0px] right-[0px]" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, provident reiciendis corrupti animi nesciunt amet quasi aliquam, praesentium corporis quo et laboriosam minus similique voluptas dignissimos ipsum, illum vitae. Perspiciatis.</p>
-          </div>
+    <div id="scroll-direction" class="relative h-[800px] bg-[#0D0D0D] z-10 mt-[-104px] pt-[144px]" data-scroll="" data-scroll-sticky="">
+      <div class="relative max-w-[1440px] mx-[auto] xl:px-[130px] px-[24px]">
+        <div class="flex flex-col items-center">
+          <h3 class="text-[#ffffff] text-[56px] leading-[58px] fw-6 max-w-[577px] mb-[70px] mt-[40px] text-center">Movilizamos la transformación,  digital </h3>
+          <p class="text-[#ffffff] text-[16px] leading-[24px] fw-4 max-w-[400px] text-center">Co-creando soluciones basadas en tecnología y consultoría</p>
+          <a class="btn-banner bg-[#C41A90] text-[#FFFFFF] text-[16px] leading-[24px] fw-5 text-center mt-[38px]" href="">Conocenos</a>
         </div>
       </div>
+      <div class="absolute bg-[#C41A90] w-[6px] h-[114px] top-[160px] right-[330px] z-10" data-scroll="" data-scroll-direction="horizontal" data-scroll-speed="6"></div>
+      <div class="absolute bg-[#C41A90] w-[96px] h-[593px] opacity-50 z-[10] right-[-65px] top-[45px]" data-scroll="" data-scroll-direction="horizontal" data-scroll-speed="3"></div>
+      <div class="absolute bg-[#C41A90] w-[300px] h-[593px] opacity-80 z-[10] right-[-312px] top-[45px]" data-scroll="" data-scroll-direction="horizontal" data-scroll-speed="5"></div>
     </div>
 
     <!-- Tinet en cifras / vinter -->
-    <div class="relative max-w-[1440px] mx-[auto] px-[24px] xl:px-[130px]" data-scroll data-scroll-speed="-2">
+    <div class="relative bg-[#0D0D0D] max-w-[1440px] mx-[auto] px-[24px] xl:px-[130px]">
       <!-- elementos flotante-->
-      <div class="absolute z-[0] bg-[#ffffff] top-[0px] left-[0] w-[100%] h-[832px]"></div>
+      <div class="btrr absolute z-[0] bg-[#ffffff] top-[0px] left-[0] w-[100%] h-[832px]"></div>
       <img class="absolute lg:block hidden z-20 bottom-[188px] xl:left-[7%] lg:left-[-3%] md:left-[-176px]" src="assets/img/flechamorada.png" alt="">
       <img class="absolute lg:block hidden z-[10] top-[0px] right-[0px] left-[0] mx-[auto] w-[1438px] h-[832px]" src="assets/img/basebg.png" alt="">
 
@@ -518,6 +520,7 @@
         </div>
       </div>
     </div>
+  </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/js/locomotive-scroll.min.js"></script>
     <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
@@ -528,27 +531,7 @@
         el: document.querySelector("[data-scroll-container]"),
         smooth: true
       });
-      gsap.registerPlugin(ScrollTrigger);
-      ScrollTrigger.addEventListener("refresh", () => scroller.update());
-      scroller.on("scroll", ScrollTrigger.update);
-
-      ScrollTrigger.scrollerProxy(".conte", {
-        scrollTop(value) {
-          return arguments.length
-            ? scroller.scrollTo(value, 0, 0)
-            : scroller.scroll.instance.scroll.y;
-        },
-        getBoundingClientRect() {
-          return {
-            left: 0,
-            top: 0,
-            width: window.innerWidth,
-            height: window.innerHeight
-          };
-        }
-      });
-      ScrollTrigger.refresh();
-  </script>
+    </script>
   </body>
 </html>
 
