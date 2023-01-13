@@ -1436,7 +1436,7 @@ strong {
 }
 
 .proyects{
-  padding: 0 24px;
+  padding: 300px 24px;
   background-color: #EFF9FF;
   position: relative;
   overflow: hidden;
@@ -1445,8 +1445,17 @@ strong {
   max-width: 100%;
   width: 1180px;
   margin: 0 auto;
-  min-height: 600px;
+  min-height: 700px;
   position: relative;
+}
+.proyects__motto{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 8;
+  width: 100%;
 }
 .proyects__card{
   cursor: pointer;
@@ -1457,12 +1466,23 @@ strong {
   position: absolute;
   z-index: 3;
   width: 450px;
-  padding-right: 120px;
+  padding-right: 150px;
 }
 .proyects__card--disabled{
   filter: blur(3px);
   transform: scale(0.5);
   z-index: 2;
+}
+.proyects__card__logo{
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: .5s;
+}
+.proyects__card__title, .proyects__card__text, .proyects__card__show{
+  transition: .5s;
 }
 .proyects__card__show{
   position: absolute;
@@ -1491,6 +1511,9 @@ strong {
 }
 .proyects__card--color2:hover:not(.proyects__card--disabled){
   background-color: #BB0000;
+}
+.proyects__card:hover:not(.proyects__card--disabled) .proyects__card__logo{
+  opacity: 0.7;
 }
 .proyects__card:hover:not(.proyects__card--disabled) .proyects__card__show{
   color: #fff;
@@ -1563,6 +1586,16 @@ strong {
   width: 40px;
   background-color: grey;
 }
+.proyects__sidebar__item--ux{
+  background: #C4A0E1;
+}
+.proyects__sidebar__item--ui{
+  background: #FFA726;
+}
+.proyects__sidebar__item--dev{
+  background: #006099;
+  color: #fff;
+}
 .proyects__sidebar__show{
   float: right;
   display: inline-block;
@@ -1574,17 +1607,17 @@ strong {
 }
 
 
-#proyect1{ top: 20px; left: 20px; }
-#proyect2{ top: 150px; left: 20px; }
+#proyect1{ top: 5px; left: 5px; }
+#proyect2{ top: 140px; left: 5px; }
 
-#proyect3{ top: 20px; right: 20px; }
-#proyect4{ top: 150px; right: 20px; }
+#proyect3{ top: 5px; right: 5px; }
+#proyect4{ top: 140px; right: 5px; }
 
-#proyect5{ bottom: 20px; left: 20px; }
-#proyect6{ bottom: 150px; left: 20px; }
+#proyect5{ bottom: 5px; left: 5px; }
+#proyect6{ bottom: 140px; left: 5px; }
 
-#proyect7{ bottom: 20px; right: 20px; }
-#proyect8{ bottom: 150px; right: 20px; }
+#proyect7{ bottom: 5px; right: 5px; }
+#proyect8{ bottom: 140px; right: 5px; }
 
 
 .revolution{
@@ -2134,6 +2167,18 @@ strong {
 }
 
 @media only screen and (max-width: 1000px) {
+  .proyects__motto h2{ font-size: 32px; line-height: 40px; }
+  .proyects__motto h3{ font-size: 20px; line-height: 28px; }
+  .proyects__card{
+    padding-right: 20px;
+    width: 320px;
+  }
+  .proyects__card__show{
+    position: relative;
+    bottom: initial;
+    right: initial;
+    margin-top: 5px;
+  }
   .revolution__wrapper{
     display: block;
   }
@@ -2171,21 +2216,75 @@ strong {
 
 @media only screen and (max-width: 800px){
 
+  .proyects{
+    padding: 120px 48px;
+  }
+  .proyects__wrapper{
+    min-height: 0;
+    padding: 35px 0 80px;
+  }
+  .proyects .slick-dots{
+    bottom: -70px;
+  }
+  .proyects .slick-dots li button:before{
+    color: #006099;
+  }
+  .proyects .slick-dots li.slick-active button:before{
+    opacity: 1;
+    color: #C41A90;
+  }
+  .proyects__slider .slick-list{
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+  }
   .proyects__card{
     position: initial;
     width: auto;
+    min-height: 250px;
+    padding-top: 34px;
     padding-right: 20px;
     text-align: center;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  .proyects__card__logo{
+    opacity: 1;
+    position: relative;
+    right: initial;
+    top: initial;
+    margin: 0 auto;
+  }
+  .proyects__card__title{
+    display: none;
+  }
+  .proyects__card:hover:not(.proyects__card--disabled) .proyects__card__title, 
+  .proyects__card:hover:not(.proyects__card--disabled) .proyects__card__text {
+    color: #424242;
+  }
+  .proyects__card:hover:not(.proyects__card--disabled) .proyects__card__show {
+    color: #c41a90;
+  }
+  .proyects__card:hover:not(.proyects__card--disabled) .proyects__card__show:after {
+    background-color: #c41a90;
+  }
+  .proyects__card--color1:hover:not(.proyects__card--disabled), 
+  .proyects__card--color2:hover:not(.proyects__card--disabled), 
+  .proyects__card--color3:hover:not(.proyects__card--disabled), 
+  .proyects__card--color4:hover:not(.proyects__card--disabled), 
+  .proyects__card--color5:hover:not(.proyects__card--disabled), 
+  .proyects__card--color6:hover:not(.proyects__card--disabled), 
+  .proyects__card--color7:hover:not(.proyects__card--disabled), 
+  .proyects__card--color8:hover:not(.proyects__card--disabled), 
+  .proyects__card:hover:not(.proyects__card--disabled){
+    background-color: #fff;
   }
   .proyects__card--disabled{
     filter: blur(0);
     transform: scale(1);
   }
+  .proyects__card__text{
+    margin-top: 42px;
+  }
   .proyects__card__show{
-    position: relative;
-    bottom: initial;
-    right: initial;
     margin-top: 15px;
   }
   .proyects__sidebar{
@@ -2194,6 +2293,12 @@ strong {
   }
   .proyects__sidebar--active{
     top: 0;
+  }
+  .proyects__motto{
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0);
   }
 
   .revolution{

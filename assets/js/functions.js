@@ -36,6 +36,23 @@ $(document).ready(function () {
     event.preventDefault();
   });
 
+  $('.proyects__slider').slick({
+    mobileFirst: true, 
+    responsive: [
+      {
+        breakpoint: 200,
+        settings: {
+          dots: true,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: "unslick"
+      }
+    ]
+  });
+
   $('.methodology__circleitem').click(function(){
     $(this).toggleClass('active');
     $('.methodology__circleitem__plus').slideToggle(1);
