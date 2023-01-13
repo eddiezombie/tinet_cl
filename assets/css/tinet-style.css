@@ -117,6 +117,9 @@ strong {
 .tr-ul li > a {
   color: #00263d;
 }
+.dark .tr-ul li > a {
+  color: #ffffff;
+}
 .btn-nav > ul.tr-ul {
   list-style: none;
   display: flex;

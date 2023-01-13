@@ -7,23 +7,24 @@
     <!-- esencials -->
     <script src="./assets/tailwindcss/tailwindcss.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <link rel="stylesheet" href="./assets/css/locomotive-scroll.css">
     <link rel="stylesheet" href="./assets/css/common/fonts.css" />
     <link rel="stylesheet" href="./assets/css/slick.css">
     <link rel="stylesheet" href="./assets/css/slick-theme.css">
     <link rel="stylesheet" href="./assets/css/tinet-style.css" />
     <link rel="stylesheet" href="./assets/css/tinet-services-style.css" />
   </head>
-  <body>
+  <body class="conte" data-scroll-container>
 
     <!-- Menu -->
-    <div class="header-content">
+    <div class="header-content dark z-50 relative bg-transparent shadow-none">
       <div class="responsive-burger ml-[26px]">
         <div class="top"></div>
         <div class="mid"></div>
         <div class="bot"></div>
       </div>
-      <div class="cntHead">
-        <div class="logo-header"><img src="../assets/img/header/Logo.svg" alt=""></div>
+      <div class="cntHead z-50 bg-transparent">
+        <div class="logo-header"><img src="assets/img/header/Logo_blackTinet.svg" alt=""></div>
         <div class="btn-nav">
           <ul class="tr-ul">
             <li><a class="fs-14 lh-21 fw-6" href="#!">Somos Tinet</a></li>
@@ -130,10 +131,10 @@
         </div>
         <div class="side-nav">
           <div class="top-side-nav mb-[16px]">
-            <a href="#!"><img src="../assets/img/header/candado.svg" alt=""><span class="fs-12 lh-18 fw-6 pl-[7px]">Sitio
+            <a href="#!"><img src="assets/img/header/candado-w.svg" alt=""><span class="fs-12 lh-18 fw-6 pl-[7px] text-[#ffffff]">Sitio
                 privado</span></a>
-            <a class="es-btn ml-[36px]" href="#!"><span class="fw-6 fs-12 lh-18 es-btn">ES</span> <img class="ml-[8px]"
-                src="../assets/img/header/lang-btn.png" alt=""></a>
+            <a class="es-btn ml-[36px]" href="#!"><span class="fw-6 fs-12 lh-18 es-btn text-[#ffffff]">ES</span> <img class="ml-[8px]"
+                src="assets/img/header/es-w.svg" alt=""></a>
             <div class="select-lang">
               <a class="active esp-btn" href="#!"><span class="fs-12 lh-18 fw-4">Español</span><img width="11.17"
                   height="8.38" src="../assets/img/header/selectedcheck.png" alt=""></a>
@@ -157,7 +158,7 @@
           <li><a class="trg-talento" href="#!"><span class="fs-14 lh-21 fw-6">Talento</span><img src="../assets/img/header/right-arrow.svg"></a></li>
           <li><a href="#!"><span class="fs-14 lh-21 fw-6">Digitalk</span></a></li>
           <li class="separador"></li>
-          <li><a class="btn-sp-r" href=""><img class="mr-[8px]" src="../assets/img/header/candado.svg" alt=""><span class="fs-14 lh-21 fw-6">Sitio privado</span></a></li>
+          <li><a class="btn-sp-r" href=""><img class="mr-[8px]" src="../assets/img/header/candado.svg" alt=""><span class="fs-14 lh-21 fw-6 text-[#ffffff]">Sitio privado</span></a></li>
           <li><a class="trg-idioma" href="#!"><span class="fs-14 lh-21 fw-6">Español</span><img src="../assets/img/header/right-arrow.svg"></a></li>
       </ul>
       <div class="rServicios">
@@ -244,19 +245,20 @@
           </ul>
       </div>
   </div>
-  <div class="screen-block"></div>
-    <div class="nav-tour">
-      <div class="content-response-section">
-        <span class="fw-6">Inicio</span>
-      <img class="bcimg" src="../assets/icons/breadcrumb-sep.svg" alt="">
-      <span class="fw-6 active">Diseño de experiencia digital</span>
+    <!-- Hero -->
+    <div class="relative h-[700px] bg-[#0D0D0D] z-10 mt-[-104px] pt-[144px]">
+      <div class="max-w-[1440px] mx-[auto] xl:px-[130px] px-[24px]" data-scroll-section data-scroll-section-id="uno">
+        <div id="scroll-direction">
+          <h3 class="text-[#ffffff]" data-scroll data-scroll-sticky data-scroll-target="scroll-direction">Hola</h3>
+          <div id="direction" class="absolute">
+            <p class="text-[#fff] absolute top-[10%] w-[700px] mx-[auto] left-[0px] right-[0px]" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, provident reiciendis corrupti animi nesciunt amet quasi aliquam, praesentium corporis quo et laboriosam minus similique voluptas dignissimos ipsum, illum vitae. Perspiciatis.</p>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Hero -->
-
     <!-- Tinet en cifras / vinter -->
-    <div class="relative max-w-[1440px] mx-[auto] px-[24px] xl:px-[130px]">
+    <div class="relative max-w-[1440px] mx-[auto] px-[24px] xl:px-[130px]" data-scroll data-scroll-speed="-2">
       <!-- elementos flotante-->
       <div class="absolute z-[0] bg-[#ffffff] top-[0px] left-[0] w-[100%] h-[832px]"></div>
       <img class="absolute lg:block hidden z-20 bottom-[188px] xl:left-[7%] lg:left-[-3%] md:left-[-176px]" src="assets/img/flechamorada.png" alt="">
@@ -516,7 +518,37 @@
         </div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/locomotive-scroll.min.js"></script>
+    <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
+<script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
+    <script src="../assets/js/navbar.js"></script>
+    <script>
+      const scroller = new LocomotiveScroll({
+        el: document.querySelector("[data-scroll-container]"),
+        smooth: true
+      });
+      gsap.registerPlugin(ScrollTrigger);
+      ScrollTrigger.addEventListener("refresh", () => scroller.update());
+      scroller.on("scroll", ScrollTrigger.update);
 
+      ScrollTrigger.scrollerProxy(".conte", {
+        scrollTop(value) {
+          return arguments.length
+            ? scroller.scrollTo(value, 0, 0)
+            : scroller.scroll.instance.scroll.y;
+        },
+        getBoundingClientRect() {
+          return {
+            left: 0,
+            top: 0,
+            width: window.innerWidth,
+            height: window.innerHeight
+          };
+        }
+      });
+      ScrollTrigger.refresh();
+  </script>
   </body>
 </html>
 
