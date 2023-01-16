@@ -3619,6 +3619,7 @@ background: linear-gradient(90deg, rgba(240,240,240,0) 50%, rgba(239,239,239,1) 
   }
   .dig-exp-content .dig-exp-text-content {
     margin-top: 40px;
+    padding: 0 24px;
   }
   .dig-exp-content .text-content-mobile .text-content-mobile__title {
     font-size: 18px;
@@ -3665,6 +3666,11 @@ background: linear-gradient(90deg, rgba(240,240,240,0) 50%, rgba(239,239,239,1) 
   .emot-dig-per-content {
     padding: 64px 24px 228px;
     height: 1278px;
+  }
+  #section-service-2.emot-dig-per-content{
+    padding-bottom: 250px;
+    height: auto;
+    min-height: 1278px;
   }
   .emot-dig-per-content .info-number {
     max-width: 276px;
@@ -3758,7 +3764,7 @@ background: linear-gradient(90deg, rgba(240,240,240,0) 50%, rgba(239,239,239,1) 
     max-width: calc(100vw - 32px);
   }
   .exp-max-neg {
-    padding-top: 64px;
+    padding-top: 80px;
     padding-right: 16px;
   }
   .exp-max-neg .dig-exp-text-content .dig-exp-text-content__title {
