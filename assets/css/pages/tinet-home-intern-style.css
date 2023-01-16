@@ -450,6 +450,7 @@ table.content-text-lateral__p2 td{
 .content-comment {
   border-left: 2px solid #c41a90;
   padding-left: 19px;
+  margin-top: 30px;
   margin-bottom: 40px;
 }
 .content-comment .content-comment__text {
