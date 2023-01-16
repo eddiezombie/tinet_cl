@@ -1435,11 +1435,23 @@ strong {
   }
 }
 
+.numbers{
+  background: url(../img/numbers_bg.png) left 63px repeat-x;
+}
+.numbers__bg{
+  background: url(../img/numbers_bgr.png) right top no-repeat;
+}
+.cellphone{
+  background-color: #EFF9FF;
+}
+.somos-pilares{
+  z-index: 1;
+}
 .projects{
   padding: 300px 24px;
-  background-color: #EFF9FF;
   position: relative;
   overflow: hidden;
+  z-index: 2;
 }
 .projects__wrapper{
   max-width: 100%;
@@ -1531,16 +1543,18 @@ strong {
 }
 .projects__card__show:after{
   content: '';
-  background-color: #c41a90;
-  mask-image: url(../img/eye.svg);
+  background:  url(../img/eye.svg) left top no-repeat;
   position: absolute;
   top: 0;
   left: 0;
   width: 25px;
   height: 20px;
-  mask-position: center;
-  mask-repeat: no-repeat; 
 }
+.projects__card:hover .projects__card__show:after{
+  background-color: none;
+  background:  url(../img/eye_white.svg) left top no-repeat;
+}
+
 .projects__card:hover:not(.projects__card--disabled){
   background-color: grey;
 }
@@ -1576,7 +1590,7 @@ strong {
   color: #fff;
 }
 .projects__card:hover:not(.projects__card--disabled) .projects__card__show:after{
-  background-color: #fff;
+
 }
 .projects__card:hover:not(.projects__card--disabled) .projects__card__title, .projects__card:hover:not(.projects__card--disabled) .projects__card__text{
   color: #fff;
@@ -1605,10 +1619,6 @@ strong {
   top: 14px;
   width: 14px;
   height: 14px;
-  mask-repeat: no-repeat;
-  mask-position: center;
-  background-color: #757575;
-  mask-image: url(../img/sidebarclose.svg);
 }
 .projects__sidebar__testimony{
   padding: 12px 20px;
@@ -1774,6 +1784,10 @@ strong {
   padding-bottom: 60px;
   border-bottom: 1px dashed #fff;
 }
+.revolution__sidebar__content p a{
+  text-decoration: underline;
+  font-weight: 800;
+}
 
 .revolution__twrapper{
   position: relative;
@@ -1784,7 +1798,7 @@ strong {
   position: absolute;
   top: 0;
   right: 0;
-  width: 1000px;
+  width: 2000px;
   height: 100%;
   background-color: #F5F5F5;
 }
@@ -1997,6 +2011,8 @@ strong {
 .modal {
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
     helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+    z-index:33;
+    position: relative;
 }
 
 .modal__overlay {
@@ -2274,7 +2290,7 @@ strong {
 @media only screen and (max-width: 800px){
 
   .projects{
-    padding: 120px 48px;
+    padding: 500px 48px 120px 48px;
   }
   .projects__wrapper{
     min-height: 0;
@@ -2319,7 +2335,7 @@ strong {
   .projects__card__title{
     display: none;
   }
-  .projects__card:hover:not(.projects__card--disabled) .projects__card__title, 
+  .projects__card:hover:not(.projects__card--disabled) .projects__card__title,
   .projects__card:hover:not(.projects__card--disabled) .projects__card__text {
     color: #424242;
   }
@@ -2329,14 +2345,14 @@ strong {
   .projects__card:hover:not(.projects__card--disabled) .projects__card__show:after {
     background-color: #c41a90;
   }
-  .projects__card--color1:hover:not(.projects__card--disabled), 
-  .projects__card--color2:hover:not(.projects__card--disabled), 
-  .projects__card--color3:hover:not(.projects__card--disabled), 
-  .projects__card--color4:hover:not(.projects__card--disabled), 
-  .projects__card--color5:hover:not(.projects__card--disabled), 
-  .projects__card--color6:hover:not(.projects__card--disabled), 
-  .projects__card--color7:hover:not(.projects__card--disabled), 
-  .projects__card--color8:hover:not(.projects__card--disabled), 
+  .projects__card--color1:hover:not(.projects__card--disabled),
+  .projects__card--color2:hover:not(.projects__card--disabled),
+  .projects__card--color3:hover:not(.projects__card--disabled),
+  .projects__card--color4:hover:not(.projects__card--disabled),
+  .projects__card--color5:hover:not(.projects__card--disabled),
+  .projects__card--color6:hover:not(.projects__card--disabled),
+  .projects__card--color7:hover:not(.projects__card--disabled),
+  .projects__card--color8:hover:not(.projects__card--disabled),
   .projects__card:hover:not(.projects__card--disabled){
     background-color: #fff;
   }

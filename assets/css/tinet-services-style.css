@@ -45,6 +45,7 @@
   max-width: 1180px;
   margin: 0px auto;
   display: flex;
+  z-index:22;
 }
 .our-cap .content-response-section {
   max-width: 100%;
@@ -3965,6 +3966,14 @@ background: linear-gradient(90deg, rgba(240,240,240,0) 50%, rgba(239,239,239,1) 
   .box-c-6{
     border-radius: 0 0 20px 20px;
   }
+
+  .numbers{
+    background: none;
+  }
+  .numbers__bg{
+    background: none;
+  }
+
 }
 .trg-c.inactivo img{opacity: 0.4;}
 .trg-c.inactivo a,

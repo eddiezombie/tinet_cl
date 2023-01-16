@@ -108,7 +108,7 @@ MicroModal.init();
         }
     })
   }
-  
+
   const servicios = [
     {
       nombre: 'Digital Transformation Services',
@@ -206,7 +206,7 @@ MicroModal.init();
           }
         }
       }
-      
+
     })
     //fin formulario
 })();
