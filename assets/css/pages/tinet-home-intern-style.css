@@ -296,6 +296,13 @@
   letter-spacing: -0.25px;
   margin-bottom: 8px;
 }
+.content-text-lateral__title{
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.25px;
+  margin-top: 14px;
+  color: #424242;
+}
 .content-text-lateral__p1-alt{
   color: #424242;
 }
