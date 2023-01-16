@@ -1001,6 +1001,11 @@
   color: #424242;
   margin-bottom: 4px;
 }
+.banner-swiper-home .banner-swiper-home-text__subtitle ,
+.banner-swiper-home .banner-swiper-home-text__desc{
+  width: 622px;
+  max-width: 100%;
+}
 .case-intern .banner-swiper-home-text__subtitle {
   font-size: 72px;
   line-height: 80px;
