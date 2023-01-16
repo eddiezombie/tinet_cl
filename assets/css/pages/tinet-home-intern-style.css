@@ -305,6 +305,24 @@
   letter-spacing: -0.25px;
   margin-top: 14px;
 }
+ul.content-text-lateral__p2, ol.content-text-lateral__p2{
+  list-style: initial;
+  padding-left: 20px;
+}
+ol.content-text-lateral__p2{
+  list-style: decimal;
+}
+table.content-text-lateral__p2{
+  width: 100%;
+}
+table.content-text-lateral__p2 td{
+  padding: 8px 10px;
+  border: 1px solid #b0bec5;
+}
+.content-text-lateral__p2 a{
+  text-decoration: underline;
+  color: inherit;
+}
 .content-text-lateral__p2-alt{
   color: #616161;
 }
