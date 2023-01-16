@@ -1455,7 +1455,6 @@ strong {
   padding: 300px 24px;
   position: relative;
   overflow: hidden;
-  z-index: 2;
 }
 .projects__wrapper{
   max-width: 100%;
@@ -1600,6 +1599,20 @@ strong {
   color: #fff;
 }
 
+.projects__overlay{
+  position: fixed;
+  z-index: 49;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.7; 
+}
+.projects__overlay--active{
+  display: block;
+}
 .projects__sidebar{
   position: fixed;
   z-index: 50;
@@ -1609,34 +1622,56 @@ strong {
   height: 100vh;
   background: #FFFFFF;
   padding: 40px 24px;
+  padding: 160px 40px 30px;
   width: 735px;
   max-width: 100%;
   transition: .5s;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+.projects__sidebar__background{
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.projects__sidebar__content{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  position: relative;
+  z-index: 3;
 }
 .projects__sidebar--active{
   right: 0;
 }
 .projects__sidebar__close{
   position: absolute;
-  right: 24px;
+  display: inline-block;
+  left: -20px;
   top: 14px;
-  width: 14px;
-  height: 14px;
+  width: 40px;
+  padding: 8px;
+  z-index: 4;
+  text-align: center;
+  background-color: #C41A90;
+}
+.projects__sidebar__close i{
+  color: #fff;
 }
 .projects__sidebar__testimony{
   padding: 12px 20px;
   display: flex;
   background: #E5EFF5;
-  border-radius: 12px;
+  border-radius: 100px;
   align-items: center;
 }
 .projects__sidebar__testimony__img{
   margin-right: 20px;
-  flex: 0 0 70px;
+  flex: 0 0 90px;
 }
 .projects__sidebar__testimony__img img{
-  width: 72px;
+  width: 92px;
   max-width: 100%;
   border-radius: 50% 50% 0 50%;
 }
@@ -2347,7 +2382,7 @@ strong {
     color: #c41a90;
   }
   .projects__card:hover:not(.projects__card--disabled) .projects__card__show:after {
-    background-color: #c41a90;
+    background: url(../img/eye.svg) left top no-repeat;
   }
   .projects__card--color1:hover:not(.projects__card--disabled),
   .projects__card--color2:hover:not(.projects__card--disabled),
@@ -2373,9 +2408,26 @@ strong {
   .projects__sidebar{
     right: 0;
     top: 100vh;
+    padding: 0;
   }
   .projects__sidebar--active{
     top: 0;
+  }
+  .projects__sidebar__close{
+    left: initial;
+    right: 24px;
+    padding: 0;
+    background: none;
+    width: auto;
+  }
+  .projects__sidebar__close i{
+    color: #757575;
+  }
+  .projects__sidebar__content{
+    padding: 0px 24px 24px;
+  }
+  .projects__sidebar__background{
+    display: none;
   }
   .projects__motto{
     position: relative;

@@ -22,6 +22,11 @@ $(document).ready(function () {
     $('.projects__card').toggleClass('projects__card--disabled');
   });
 
+  $('.projects__overlay').click(function(){
+    $('.projects__overlay').removeClass('projects__overlay--active');
+    $('.projects__sidebar').removeClass('projects__sidebar--active');
+  });
+
   $('.projects__card').click(function(){
     let self = $(this);
     if($( window ).width() > 800 && self.hasClass('projects__card--disabled')){
@@ -35,6 +40,7 @@ $(document).ready(function () {
     let card = self.parents('.projects__card');
     let data = "#" + self.attr('data-project');
     if(!(card.hasClass('projects__card--disabled') && $( window ).width() > 800)){
+      $('.projects__overlay').addClass('projects__overlay--active');
       $('.projects__sidebar').removeClass('projects__sidebar--active');
       $(data).addClass('projects__sidebar--active');
     }
@@ -42,6 +48,7 @@ $(document).ready(function () {
 
   $('.projects__sidebar__close').click(function(event){
     $(this).parent().removeClass('projects__sidebar--active');
+    $('.projects__overlay').removeClass('projects__overlay--active');
     event.preventDefault();
   });
 
