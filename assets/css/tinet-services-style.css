@@ -3278,6 +3278,14 @@ background: linear-gradient(90deg, rgba(240,240,240,0) 50%, rgba(239,239,239,1) 
     line-height: 24px;
     letter-spacing: -0.25px;
     overflow-wrap: break-word;
+    z-index: 5;
+    background-color: rgba(255,255,255,0.2);
+    padding: 1px 5px;
+  }
+  .num-spk-work .info-line .text-line .text-line__des + span{
+    padding: 1px 5px 3px;
+    z-index: 5;
+    background-color: rgba(255,255,255,0.8);
   }
 
   .num-spk-work .dig-exp-text-content .dig-exp-text-content__title {
@@ -3833,6 +3841,7 @@ background: linear-gradient(90deg, rgba(240,240,240,0) 50%, rgba(239,239,239,1) 
     height: 602px;
     position: relative;
     z-index: 2;
+    opacity: 0.6;
   }
   .num-spk-work .fisrt-line .cirlcle.bg-sc-5 {
     width: 20px;
@@ -3847,6 +3856,7 @@ background: linear-gradient(90deg, rgba(240,240,240,0) 50%, rgba(239,239,239,1) 
     position: relative;
     z-index: 2;
     left: 30px;
+    opacity: 0.6;
   }
   .num-spk-work .second-line .cirlcle.bg-sc-5 {
     position: relative;
@@ -3863,6 +3873,7 @@ background: linear-gradient(90deg, rgba(240,240,240,0) 50%, rgba(239,239,239,1) 
     height: 115.5px;
     position: relative;
     z-index: 2;
+    opacity: 0.6;
   }
   .num-spk-work .info-line-content .third-line .circle-gr {
     position: relative;
