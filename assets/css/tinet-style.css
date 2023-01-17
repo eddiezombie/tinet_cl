@@ -2508,3 +2508,11 @@ strong {
     margin-bottom: 45px;
   }
 }
+#navbar .dot {
+  border-left: 4px solid transparent;
+  transition: all 0.2s;
+}
+#navbar .dot.active {
+  border-left: 4px solid #006099;
+  transition: all 0.2s;
+}
