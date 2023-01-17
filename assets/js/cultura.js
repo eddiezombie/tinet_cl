@@ -1,3 +1,39 @@
+$(document).ready(function () {
+
+  let cultura = 1;
+
+  function enableScroll() {
+    $('body').removeClass('stop-scrolling');
+  }
+
+  $(window).scroll(function() {
+     if($('#cultura-lock').length && false){
+      var hT = $('#cultura-lock').offset().top,
+          hH = $('#cultura-lock').outerHeight(),
+          wH = $(window).height(),
+          wS = $(this).scrollTop() + 20;
+      if (wS > (hT+hH-wH)){
+          if(cultura){
+            --cultura;
+            let dt = document.querySelector(".destroy");
+            let et = document.querySelector(".entr");
+            dt.remove();
+            et.classList.add("active");
+          }
+      }
+     }
+  });
+
+});
+
+$('.cultura-slider').slick({
+  infinite: true,
+  arrows: true,
+  slidesToShow: 4,
+  slidesToScroll: 1
+});
+
+
 (function() {
     var dt = document.querySelector(".destroy");
     var et = document.querySelector(".entr");
@@ -264,8 +300,6 @@ function reveal() {
 
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active-reveal");
-      } else {
-        reveals[i].classList.remove("active-reveal");
       }
     }
   }

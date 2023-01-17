@@ -1,3 +1,51 @@
+#cultura-experience{
+  padding: 120px 0px;
+}
+.cultura-experience-head, .cultura-experience-wrapper{
+  width: 1180px;
+  max-width: 100%;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+.cultura-experience-header{
+  width: 600px;
+  max-width: 100%;
+  margin-bottom: 55px;
+  padding-left: 24px;
+}
+.cultura-experience-body{
+  position: relative;
+}
+.cultura-slider .slick-arrow{
+  width: 40px;
+  height: 40px;
+  background: #003a5c;
+  border-radius: 100%;
+  padding: 8px;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 0px;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.cultura-slider .slick-arrow:before{
+  font-family: "icomoon";
+  font-size: 11px;
+}
+.cultura-slider .slick-prev:before{
+  content: "\e913";
+}
+.cultura-slider .slick-next:before{
+  content: "\e914";
+}
+.cultura-slider-card{
+  padding: 20px 24px;
+}
+.cultura-slider-card h5{
+  min-height: 104px;
+  margin-bottom: 20px;
+}
+
 .entr{
     display: none;
 }
