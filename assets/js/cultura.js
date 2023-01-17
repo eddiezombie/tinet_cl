@@ -27,7 +27,7 @@ $(document).ready(function () {
 });
 
 $('.cultura-slider').slick({
-  infinite: true,
+  infinite: false,
   arrows: true,
   slidesToShow: 4,
   slidesToScroll: 1
