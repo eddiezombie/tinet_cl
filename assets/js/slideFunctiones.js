@@ -235,6 +235,7 @@ $('.slide-circle-three').on('afterChange', function(event, slick, currentSlide, 
   var suma = currentSlide + 1;
   $(".index-tres .index-slide").text(suma);
 });
+
 $('.slide-somos').on('afterChange', function(event, slick, currentSlide, nextSlide){
   var suma = currentSlide + 1;
   $(".index-uno .index-slide").text(suma);

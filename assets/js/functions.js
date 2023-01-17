@@ -739,6 +739,7 @@ $(document).ready(function () {
   })
     .setTween(tween).addTo(controller);
 	//.addIndicators()
+
 });
 
 //funciones 9 gestion de proyectos
