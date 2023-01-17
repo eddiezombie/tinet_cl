@@ -372,9 +372,7 @@
     min-height: 578px;
   }
   .somos-banner__box{
-    opacity: 1!important;
-    transition: none!important;
-    animation: none!important;
+    display: none;
   }
   .somos-page .dig-exp-content{
     z-index: 3;
@@ -574,7 +572,7 @@
 
   .somos-logros {
     padding-bottom: 80px;
-    padding-right: 0;
+    padding-right: 24px;
   }
 
   .somos-logros .info-estadist {

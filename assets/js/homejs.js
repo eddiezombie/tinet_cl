@@ -1,0 +1,17 @@
+$('.swipevideo').click(function(){
+    $(this).addClass('inittexto')
+    $('.swpImg').addClass('inittexto')
+    $('.video-home').addClass('initSlideVideo')
+    $('.line1').addClass('initline')
+    $('.line2').addClass('initline2')
+    $('.line3').addClass('initline3')
+    $('.line4').addClass('initline4')
+    $('.tituloPa').addClass('inittexto')
+    $('.animated2').addClass('inittexto2')
+    $('.animated3').addClass('inittexto2')
+    $('.video-home').children('video').get(0).play()
+})
+$('.resswiper').click(function(){
+    $('.resswiper').addClass('inittexto')
+    $('.video-home').children('video').get(0).play()
+})
