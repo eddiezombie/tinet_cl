@@ -7,7 +7,6 @@
     <!-- esencials -->
     <script src="./assets/tailwindcss/tailwindcss.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
-    <link rel="stylesheet" href="./assets/css/locomotive-scroll.css">
     <link rel="stylesheet" href="./assets/css/common/fonts.css" />
     <link rel="stylesheet" href="./assets/css/slick.css">
     <link rel="stylesheet" href="./assets/css/slick-theme.css">
@@ -246,32 +245,40 @@
       </div>
   </div>
     <!-- Hero -->
-    <div class="relative h-[800px] bg-[#0D0D0D] z-10 mt-[-104px] pt-[144px]">
+    <div class="bg-[#0D0D0D]">
+    <div class="relative max-w-[1440px] mx-[auto] h-[800px] z-10 mt-[-104px] pt-[144px] overflow-hidden">
       <div class="relative max-w-[1440px] mx-[auto] xl:px-[130px] px-[24px]">
         <div class="flex flex-col items-center">
-          <h3 class="text-[#ffffff] text-[56px] leading-[58px] fw-6 max-w-[577px] mb-[70px] mt-[40px] text-center">Movilizamos la transformación,  digital </h3>
-          <p class="text-[#ffffff] text-[16px] leading-[24px] fw-4 max-w-[400px] text-center">Co-creando soluciones basadas en tecnología y consultoría</p>
-          <a class="btn-banner bg-[#C41A90] text-[#FFFFFF] text-[16px] leading-[24px] fw-5 text-center mt-[38px]" href="">Conocenos</a>
+          <h3 class="tituloPa text-[#ffffff] lg:text-[56px] text-[32px] lg:leading-[58px] leading-[38px] fw-6 max-w-[577px] lg:mb-[70px] mb-[15px] mt-[40px] text-center">Movilizamos la transformación,  digital </h3>
+          <p class="animated2 text-[#ffffff] text-[16px] leading-[24px] fw-4 max-w-[400px] text-center">Co-creando soluciones basadas en tecnología y consultoría</p>
+          <a class="animated3 btn-banner bg-[#C41A90] text-[#FFFFFF] text-[16px] leading-[24px] fw-5 text-center mt-[38px]" href="">Conocenos</a>
         </div>
       </div>
-      <div class="absolute bg-[#C41A90] w-[6px] h-[114px] top-[160px] right-[330px] z-10"></div>
-      <div class="absolute bg-[#C41A90] w-[96px] h-[593px] opacity-50 z-[10] right-[-65px] top-[45px]"></div>
-      <div class="absolute bg-[#C41A90] w-[300px] h-[593px] opacity-80 z-[10] right-[-312px] top-[45px]"></div>
-      <img class="absolute z-[10] right-[313px] bottom-[107px]" src="assets/img/arrowS.svg" alt="">
-      <img class="absolute z-[10] right-[400px] bottom-[170px]" src="assets/img/Swipe.svg" alt="">
-      <div class="swipevideo cursor-pointer absolute z-[10] right-[148px] bottom-[115px] flex items-center">
+      <div class="line1 absolute bg-[#C41A90] w-[6px] h-[114px] lg:top-[160px] top-[480px] lg:right-[330px] right-[inherit] lg:left-[inherit] left-[10px] z-10"></div>
+      <div class="line2 lg:block hidden absolute bg-[#C41A90] w-[96px] h-[593px] opacity-30 z-[10] right-[-65px] top-[45px]"></div>
+      <div class="line3 lg:block hidden absolute bg-[#C41A90] w-[300px] h-[593px] opacity-50 z-[10] right-[-312px] top-[45px]"></div>
+      <div class="line4 lg:block hidden absolute bg-[#C41A90] w-[6px] h-[214px] top-[372px] right-[-10px] z-10"></div>
+      <img class="swpImg lg:block hidden absolute z-[10] right-[313px] bottom-[107px]" src="assets/img/arrowS.svg" alt="">
+      <img class="swpImg lg:block hidden absolute z-[10] right-[400px] bottom-[170px]" src="assets/img/Swipe.svg" alt="">
+      <div class="swipevideo lg:flex hidden cursor-pointer absolute z-[10] right-[148px] bottom-[115px] flex items-center">
         <div class="border border-[#C41A90] border-solid rounded-full p-[5px]"><img src="assets/img/play-circle-filled.svg" alt=""></div>
         <p class="text-[#ffffff] text-[16px] leading-[24px] fw-4 pl-[10px]">Reproducir reel</p>
       </div>
-      <div class="video-home absolute top-[45px] right-[-650px] opacity-40 z-[0] max-w-[1100px]">
-        <video muted class="max-w-[1100px]">
+      <div class="resswiper lg:hidden block cursor-pointer absolute z-[10] right-[0px] left-[0px] bottom-[21px] mx-[auto] flex items-center justify-center">
+        <div class="border border-[#C41A90] border-solid rounded-full p-[5px]"><img src="assets/img/play-circle-filled.svg" alt=""></div>
+        <p class="text-[#ffffff] text-[16px] leading-[24px] fw-4 pl-[10px]">Reproducir reel</p>
+      </div>
+      <div class="video-home absolute lg:top-[45px] top-[inherit] lg:bottom-[inherit] bottom-[-74px] lg:right-[-650px] right-[inherit] lg:left-[inherit] left-[28px] lg:opacity-40 opacity-100 z-[0] lg:max-w-[1100px] max-w-[700px]">
+        <video muted class="lg:max-w-[1100px] max-w-[700px]">
           <source src="assets/video/lanzamiento_instagram.mp4" type="video/mp4">
         </video>
       </div>
     </div>
-
+  </div>
     <!-- Tinet en cifras / vinter -->
-    <div class="relative bg-[#0D0D0D] max-w-[1440px] mx-[auto] px-[24px] xl:px-[130px]">
+  <div class="bgsideblack">
+    <div class="relative lg:bg-[#0D0D0D] bg-[#ffffff] max-w-[1440px] mx-[auto] px-[24px] xl:px-[130px] lg:pt-[0px] pt-[40px]">
+      <img class="lg:hidden block absolute top-[20px] left-[15px] z-[10]" src="assets/img/arrowdown.svg" alt="">
       <!-- elementos flotante-->
       <div class="btrr absolute z-[0] bg-[#ffffff] top-[0px] left-[0] w-[100%] h-[832px]"></div>
       <img class="absolute lg:block hidden z-20 bottom-[188px] xl:left-[7%] lg:left-[-3%] md:left-[-176px]" src="assets/img/flechamorada.png" alt="">
@@ -348,6 +355,7 @@
       </div>
 
     </div>
+  </div>
 
     <!--Servicios -->
 
@@ -533,7 +541,8 @@
     </div>
   </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../assets/js/navbar.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/homejs.js"></script>
   </body>
 </html>
 <script>
