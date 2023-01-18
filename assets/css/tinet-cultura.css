@@ -52,16 +52,17 @@
   height: 40px;
   background: #003a5c;
   border-radius: 100%;
-  padding: 8px;
   display: inline-block;
   color: #ffffff;
   font-size: 0px;
   top: 30%;
-  transform: translate(-50%,-50%);
+  transform: translate(0%,-50%);
   transition: 0.5s;
+  z-index: 4;
 }
 .cultura-slider .slick-arrow.slick-disabled{
   opacity: 0.5;
+  cursor: default;
 }
 .cultura-slider .slick-arrow:before{
   font-family: "icomoon";
@@ -69,6 +70,12 @@
 }
 .cultura-slider .slick-arrow.slick-disabled:before{
   opacity: 1;
+}
+.cultura-slider .slick-prev{
+  left: -40px;
+}
+.cultura-slider .slick-next{
+  right: -40px;
 }
 .cultura-slider .slick-prev:before{
   content: "\e913";
@@ -331,4 +338,32 @@
     100% {
       opacity: 0;
     }
+  }
+
+  @media (max-width: 1240px){
+    .cultura-slider .slick-arrow{
+      width: 20px;
+      height: 20px;
+      top: 40%;
+    }
+    .cultura-slider-card{
+      padding: 0px 12px 20px;
+    }
+    .cultura-slider .slick-prev{
+      left: -10px;
+    }
+    .cultura-slider .slick-next{
+      right: -10px;
+    }
+  }
+  @media (max-width: 1180px){
+    .cultura-slider .slick-arrow{
+      top: 40%;
+    }
+    .active-reveal .cultura-experience-line{
+      width: calc(100% - 24px);
+    }
+  }
+  @media (max-width: 800px){
+
   }
