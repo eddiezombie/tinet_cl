@@ -157,7 +157,7 @@ $(document).ready(function () {
   }
 
   $(window).scroll(function() {
-     if($('#section-service-1').length){
+     if($('#section-service-1.section-lock').length){
       var hT = $('#section-service-1').offset().top,
           hH = $('#section-service-1').outerHeight(),
           wH = $(window).height(),

@@ -806,6 +806,9 @@ strong {
 .bg-ba-8 {
   background-color: #37474f;
 }
+.bg-ba-9 {
+  color: #00304C;
+}
 
 .fw-1 {
   font-weight: 100;
@@ -1498,11 +1501,13 @@ strong {
   cursor: pointer;
   text-align: center;
 }
+
 .projects__arrow:before{
   font-family: "icomoon";
   font-size: 11px;
   line-height: 40px;
 }
+
 .projects__arrow--left{
   left: 0;
 }
@@ -2639,5 +2644,77 @@ strong {
   to {
     opacity: 0;
     transform: translate(-100%, 0);
+  }
+}
+
+/* animation home */
+.rw-words{
+	display: block;
+	text-indent: 10px;
+  position: relative;
+  height: 64px;
+}
+.rw-words-1 span{
+	position: absolute;
+	opacity: 0;
+	overflow: hidden;
+	color: #fff;
+  width: 100%;
+  left: 0px;
+	-webkit-animation: rotateWord 12s linear infinite 0s;
+	-ms-animation: rotateWord 12s linear infinite 0s;
+	animation: rotateWord 12s linear infinite 0s;
+}
+.rw-words-1 span:nth-child(2) {
+    -webkit-animation-delay: 4s;
+	-ms-animation-delay: 4s;
+	animation-delay: 4s;
+	color: #006099;
+}
+.rw-words-1 span:nth-child(3) {
+    -webkit-animation-delay: 8s;
+	-ms-animation-delay: 8s;
+	animation-delay: 8s;
+	color: #6b739d;
+}
+@-webkit-keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+	5% { opacity: 1; -webkit-transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); }
+	20% { opacity: 0; -webkit-transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-ms-keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -ms-transform: translateY(-30px); }
+	5% { opacity: 1; -ms-transform: translateY(0px);}
+    17% { opacity: 1; -ms-transform: translateY(0px); }
+	20% { opacity: 0; -ms-transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
+	4% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
+    27% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@media screen and (max-width: 768px){
+	.rw-sentence { font-size: 18px; }
+}
+@media screen and (max-width: 320px){
+	.rw-sentence { font-size: 9px; }
+}
+@media only screen and (max-width: 1020px){
+  .rw-words {
+    display: block;
+    text-indent: 10px;
+    position: relative;
+    height: 41px;
   }
 }
