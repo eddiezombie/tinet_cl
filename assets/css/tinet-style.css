@@ -1501,11 +1501,12 @@ strong {
   cursor: pointer;
   text-align: center;
 }
+
 .projects__arrow:before{
-    font-family: "icomoon";
-    font-size: 11px;
-    line-height: 40px;
-  }
+  font-family: "icomoon";
+  font-size: 11px;
+  line-height: 40px;
+}
 
 .projects__arrow--left{
   left: 0;
@@ -2291,7 +2292,6 @@ strong {
   padding-right: 10px;
 }
 
-
 @media only screen and (max-width: 1000px) {
   .projects__motto h2{ font-size: 32px; line-height: 40px; }
   .projects__motto h3{ font-size: 20px; line-height: 28px; }
@@ -2521,6 +2521,14 @@ strong {
     line-height: 16px;
     margin-bottom: 45px;
   }
+}
+#navbar .dot {
+  border-left: 4px solid transparent;
+  transition: all 0.2s;
+}
+#navbar .dot.active {
+  border-left: 4px solid #006099;
+  transition: all 0.2s;
 }
 
 .btrr{
