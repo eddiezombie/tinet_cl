@@ -1,5 +1,6 @@
 #cultura-experience{
   padding: 120px 0px;
+  position: relative;
 }
 .cultura-experience-head, .cultura-experience-wrapper{
   width: 1180px;
@@ -25,6 +26,55 @@
 .cultura-experience-body{
   position: relative;
 }
+.cultura-experience-start{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 200px;
+  text-align: center;
+}
+
+.cultura-experiencie-startline:after{
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  background-color: #C41A90;
+  transform: translate(-50%,50%);
+  opacity: 0;
+  transition: 5s;
+}
+.cultura-experiencie-startline{
+  right: 0;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 0px;
+  border-bottom: 2px dashed #b0bec5;
+  border-right: 2px dashed #b0bec5;
+  border-radius: 40px 0px;
+}
+.active-reveal .cultura-experiencie-startline{
+  animation-name: purpledot;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+}
+.active-reveal .cultura-experiencie-startline:after{
+  opacity: 1;
+}
+@keyframes purpledot {
+  0%    { width: 0; height: 0;}
+  50%   {width: 0px; height: 200px;}
+  100%  {width: 200px; height: 200px;}
+}
+
+
 .cultura-experience-line{
   position: absolute;
   display: inline-block;
@@ -354,6 +404,9 @@
       width: 20px;
       height: 20px;
       top: 40%;
+    }
+    .cultura-experience-header{
+      padding-left: 12px;
     }
     .cultura-slider-card{
       padding: 0px 12px 20px;
