@@ -743,7 +743,7 @@ strong {
   color: #145986;
 }
 .cl-pr-9{
-  color: #99BFD6;
+  color: #c9ebff;
 }
 .cl-sc-7 {
   color: #9d1573;
@@ -2293,8 +2293,8 @@ strong {
 }
 
 @media only screen and (max-width: 1000px) {
-  .projects__motto h2{ font-size: 32px; line-height: 40px; }
-  .projects__motto h3{ font-size: 20px; line-height: 28px; }
+  .projects__motto h2{ font-size: 32px; line-height: 32px; padding: 11px 0; }
+  .projects__motto h3{ font-size: 20px; line-height: 20px; }
   .projects__card{
     padding-right: 20px;
     width: 320px;
