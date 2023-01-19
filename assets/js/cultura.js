@@ -251,11 +251,12 @@ $('.casoss').slick({
   centerMode: false,
   //focusOnSelect: true,
   variableWidth: true,
+  prevArrow: "<div class='page left bg-[#003A5C] flex flex-col cursor-pointer items-center justify-center text-[#ffffff] w-[40px] h-[40px] rounded-full absolute bottom-[-75px] left-[40%]'><i class='icon-arrow-left-page'></i></div>",
+  nextArrow: "<div class='page right bg-[#003A5C] flex flex-col cursor-pointer items-center justify-center text-[#ffffff] w-[40px] h-[40px] rounded-full absolute bottom-[-75px] right-[40%]'><i class='icon-arrow-right-page'></i></div>",
   responsive: [
     {
       breakpoint: 768,
       settings: {
-        arrows: false,
         slidesToShow: 1,
         centerMode: true
       }
@@ -263,12 +264,20 @@ $('.casoss').slick({
     {
       breakpoint: 480,
       settings: {
-        arrows: false,
         centerMode: true,
         slidesToShow: 1
       }
     }
   ]
+})
+$('.slideBe').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  centerMode: true,
+  variableWidth: true,
+  prevArrow: "<div class='page left bg-[#003A5C] flex flex-col items-center justify-center text-[#ffffff] w-[40px] h-[40px] rounded-full absolute bottom-[-75px] left-[100px]'><i class='icon-arrow-left-page'></i></div>",
+  nextArrow: "<div class='page right bg-[#003A5C] flex flex-col items-center justify-center text-[#ffffff] w-[40px] h-[40px] rounded-full absolute bottom-[-75px] right-[100px]'><i class='icon-arrow-right-page'></i></div>",
+
 })
 var $vt = $("ul.vid-btn-tabs li"),
 clickVT = false;
