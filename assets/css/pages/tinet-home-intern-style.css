@@ -1370,13 +1370,14 @@ table.content-text-lateral__p2 td{
   position: absolute;
   right: -150px;
   bottom: -50px;
+  z-index: 1;
 }
 .circle-content-info .circle-content{
   width: 769px;
   height: 769px;
   border-radius: 100%;
   position: relative;
-    z-index: -9;
+  z-index: -1;
 }
 .content-coment-quote{
   display: flex;
@@ -1607,6 +1608,7 @@ height: 283px;
   display: flex;
   align-items: center;
   height: 100%;
+  padding: 0 30px;
 }
 .case-study .content-img-mobile{
   display: none;
@@ -1728,11 +1730,23 @@ height: 283px;
   font-size: 20px;
   line-height: 26px;
   font-family: Poppins-Bold;
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  height: 55px;
+  white-space: pre-wrap;
 }
 .content-services-section .relation-card-info__desc{
   font-size: 12px;
   line-height: 20px;
   margin-top: 10px;
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  height: 40px;
+  white-space: pre-wrap;
 }
 .content-services-section .relation-card-info__more{
 margin-top: 24px;
