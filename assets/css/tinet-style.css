@@ -2760,7 +2760,6 @@ strong {
 	position: absolute;
 	opacity: 0;
 	overflow: hidden;
-	color: #fff;
   width: 100%;
   left: 0px;
 	-webkit-animation: rotateWord 12s linear infinite 0s;
@@ -2771,13 +2770,11 @@ strong {
     -webkit-animation-delay: 4s;
 	-ms-animation-delay: 4s;
 	animation-delay: 4s;
-	color: #006099;
 }
 .rw-words-1 span:nth-child(3) {
     -webkit-animation-delay: 8s;
 	-ms-animation-delay: 8s;
 	animation-delay: 8s;
-	color: #6b739d;
 }
 @-webkit-keyframes rotateWord {
     0% { opacity: 0; }
