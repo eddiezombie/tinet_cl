@@ -2551,89 +2551,161 @@ strong {
   animation: slidevideo 1s ease-in-out;
   animation-fill-mode: forwards;
 }
+.initSlideVideorv {
+  animation: slidevideorv 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
 .initline {
   animation: slideline 2s ease-out;
+  animation-fill-mode: forwards;
+}
+.initlinerv {
+  animation: slidelinerv 2s ease-out;
   animation-fill-mode: forwards;
 }
 .initline2 {
   animation: slideline2 2s ease-out;
   animation-fill-mode: forwards;
 }
+.initline2rv {
+  animation: slideline2rv 2s ease-out;
+  animation-fill-mode: forwards;
+}
 .initline3 {
   animation: slideline3 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.initline3rv {
+  animation: slideline3rv 1s ease-in-out;
   animation-fill-mode: forwards;
 }
 .initline4 {
   animation: slideline4 3s ease-in-out;
   animation-fill-mode: forwards;
 }
+.initline4rv {
+  animation: slideline4rv 3s ease-in-out;
+  animation-fill-mode: forwards;
+}
 .inittexto {
   animation: textoan 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.inittextorv {
+  animation: textoanrv 1s ease-in-out;
   animation-fill-mode: forwards;
 }
 .inittexto2 {
   animation: textoan2 1s ease-in-out;
   animation-fill-mode: forwards;
 }
+.inittexto2rv {
+  animation: textoan2rv 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.backbtntrg {
+  animation: backb 3s ease-out;
+  animation-fill-mode: forwards;
+}
+.backbtntrgrv {
+  animation: backbrv 1s ease-out;
+  animation-fill-mode: forwards;
+}
 
 @keyframes slidevideo {
   from {
     right: -650px
-    /*transform: translate(0, 0);*/
   }
   to {
     right: 250px
-    /*transform: translate(100%, 0);*/
+  }
+}
+@keyframes slidevideorv {
+  from {
+    right: 250px
+  }
+  to {
+    right: -650px
   }
 }
 @keyframes slideline {
   from {
     right: 330px
-    /*transform: translate(0, 0);*/
   }
   to {
     right: 1220px
-    /*transform: translate(100%, 0);*/
+  }
+}
+@keyframes slidelinerv {
+  from {
+    right: 1220px
+  }
+  to {
+    right: 330px
   }
 }
 @keyframes slideline2 {
   from {
     right: -65px
-    /*transform: translate(0, 0);*/
   }
   to {
     right: 1320px
-    /*transform: translate(100%, 0);*/
+  }
+}
+@keyframes slideline2rv {
+  from {
+    right: 1320px
+  }
+  to {
+    right: -65px
   }
 }
 @keyframes slideline3 {
   from {
     right: -312px
-    /*transform: translate(0, 0);*/
   }
   to {
     right: 1320px
-    /*transform: translate(100%, 0);*/
+  }
+}
+@keyframes slideline3rv {
+  from {
+    right: 1320px
+  }
+  to {
+    right: -312px
   }
 }
 @keyframes slideline4 {
   from {
     right: -10px
-    /*transform: translate(0, 0);*/
   }
   to {
     right: 223px
-    /*transform: translate(100%, 0);*/
+  }
+}
+@keyframes slideline4rv {
+  from {
+    right: 223px
+  }
+  to {
+    right: -10px
   }
 }
 @keyframes textoan {
   from {
     opacity: 1
-    /*transform: translate(0, 0);*/
   }
   to {
     opacity: 0;
-    /*transform: translate(100%, 0);*/
+  }
+}
+@keyframes textoanrv {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
   }
 }
 @keyframes textoan2 {
@@ -2644,6 +2716,36 @@ strong {
   to {
     opacity: 0;
     transform: translate(-100%, 0);
+  }
+}
+@keyframes textoan2rv {
+  from {
+    opacity: 0;
+    transform: translate(-100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes backb {
+  from {
+    opacity: 0;
+    left: 1000px;
+  }
+  to {
+    opacity: 1;
+    left: 148px
+  }
+}
+@keyframes backbrv {
+  from {
+    opacity: 1;
+    left: 148px
+  }
+  to {
+    opacity: 0;
+    left: 1000px;
   }
 }
 

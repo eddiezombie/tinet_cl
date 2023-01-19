@@ -264,13 +264,13 @@
   letter-spacing: -0.02em;
 }
 .baner-blog-text-content .baner-blog-text-content__des {
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 24px;
   letter-spacing: -0.25px;
   margin-top: 10px;
 }
 .baner-blog-img-content img{
-  margin-top: 115px;
+  margin-top: 0px;
 }
 .content-lateral {
   display: flex;
@@ -626,15 +626,20 @@ table.content-text-lateral__p2 td{
 .filter-blog .relation-card:hover .back-hover-img img{
   transform: scale(1.05);
 }
+.relation-card{
+  border-radius: 16px;
+  overflow: hidden;
+}
 .relation-card.mrg {
   margin-right: 32px;
 }
+.relation-card-img{
+}
 .relation-card-img img {
-  border-radius: 20px 20px 0px 0px;
+  width: 100%;
 }
 .relation-card-info {
-  display: flex;
-  flex-direction: column;
+  display: block;
   padding: 16px 16px 44px;
 }
 .relation-card-info__title {
@@ -649,6 +654,12 @@ table.content-text-lateral__p2 td{
   line-height: 20px;
   letter-spacing: -0.25px;
   color: #616161;
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* start showing ellipsis when 3rd line is reached */
+  white-space: pre-wrap; /* let the text wrap preserving spaces */
 }
 .relation-card-info__more {
   margin-top: 8px;
@@ -869,6 +880,7 @@ table.content-text-lateral__p2 td{
   padding: 32px;
   display: flex;
   align-items: flex-end;
+  overflow: hidden;
 }
 .relation-card-max-img-back-contet {
   position: relative;
@@ -1022,8 +1034,8 @@ table.content-text-lateral__p2 td{
   font-family: Poppins-Bold;
 }
 .banner-swiper-home-text__subtitle {
-  font-size: 44px;
-  line-height: 52px;
+  font-size: 40px;
+  line-height: 48px;
   color: #424242;
   margin-bottom: 4px;
 }
@@ -1082,10 +1094,7 @@ table.content-text-lateral__p2 td{
   height: 56px;
 }
 .banner-swiper-home-img {
-  /*max-width: 614px;*/
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
   background-repeat: no-repeat;
   background-position: top center;
 }
