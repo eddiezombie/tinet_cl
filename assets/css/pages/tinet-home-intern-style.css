@@ -643,6 +643,9 @@ table.content-text-lateral__p2 td{
   margin-right: 32px;
 }
 .relation-card-img{
+  position: relative;
+  height: 248px;
+  overflow: hidden;
 }
 .relation-card-img img {
   width: 100%;
@@ -683,9 +686,9 @@ table.content-text-lateral__p2 td{
 }
 .info-img {
   display: flex;
-  position: relative;
+  position: absolute;
   left: 24px;
-  top: -48px;
+  bottom: 18px;
   z-index: 3;
 }
 .info-img__icon {
@@ -1725,7 +1728,7 @@ margin-top: 24px;
   margin: 22px auto 0px;
 }
 .relation-cards-content .card-group .relation-card-info{
-  padding-top: 0;
+  
 }
 .relation-cards-content.horizontal .card-group .relation-card-info{
   padding-top: 16px;
