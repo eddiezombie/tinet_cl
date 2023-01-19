@@ -462,7 +462,7 @@ table.content-text-lateral__p2 td{
 }
 .content-comment .content-comment__text {
   font-style: italic;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 30px;
   letter-spacing: -0.015em;
   color: #616161;
@@ -649,7 +649,7 @@ table.content-text-lateral__p2 td{
 }
 .relation-card-info {
   display: block;
-  padding: 16px 16px 44px;
+  padding: 16px 16px 40px;
 }
 .relation-card-info__title {
   letter-spacing: -0.25px;
