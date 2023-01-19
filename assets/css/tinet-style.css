@@ -1687,7 +1687,7 @@ strong {
 .projects__sidebar__testimony__img img{
   width: 92px;
   max-width: 100%;
-  border-radius: 50% 50% 0 50%;
+  /*border-radius: 50% 50% 0 50%;*/
 }
 .projects__sidebar__area{
   padding-left: 0;
