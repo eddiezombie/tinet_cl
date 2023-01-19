@@ -538,6 +538,15 @@ table.content-text-lateral__p2 td{
   display: flex;
   margin-top: 26px;
 }
+.card-group.card-group-category{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-group.card-group-category .relation-card.mrg.mobile{
+  flex: 0 0 auto;
+  width: 30%;
+  margin-bottom: 30px;
+}
 .filter-blog .card-group{
   flex-wrap: wrap;
   justify-content: space-between;
