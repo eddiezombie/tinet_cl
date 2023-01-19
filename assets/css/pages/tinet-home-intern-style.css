@@ -1488,12 +1488,13 @@ height: 172px;
   margin-top: 0;
 }
 .banner-swiper-home-img .working-case.item-swiper{
-  width: 235px;
+  /*width: 235px;*/
   margin-right: 32px;
 }
 .banner-swiper-home-img .working-case.item-swiper .item-swiper__img{
-  width: 235px;
-  height: 480px;
+/*  width: 235px;
+  height: 480px;*/
+  border-radius: 16px;
   margin-bottom: 20px;
 }
 .banner-swiper-home-img .working-case.item-swiper .item-swiper__text{
@@ -1501,6 +1502,9 @@ height: 172px;
   line-height: 20px;
   letter-spacing: -0.02em;
   color: #424242;
+  width: 235px;
+  max-width: 100%;
+  display: inline-block;
 }
 .working-case.banner-swiper-home{
   justify-content: space-between;
