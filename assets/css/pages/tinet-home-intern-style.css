@@ -923,14 +923,12 @@ table.content-text-lateral__p2 td{
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 16px;
   max-height: 226px;
+  overflow: hidden;
 }
 .vertical .relation-card-img {
-  border-radius: 16px 0px 0px 16px;
 }
 .vertical .relation-card-img img {
   width: 287px;
-  height: 226px;
-  border-radius: 16px 0px 0px 16px;
 }
 .vertical .info-img-text__title {
   color: #424242;
