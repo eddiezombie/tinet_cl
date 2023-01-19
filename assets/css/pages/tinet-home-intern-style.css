@@ -864,6 +864,13 @@ table.content-text-lateral__p2 td{
   position: relative;
   overflow: hidden;
 }
+
+.relation-card-max-img .info-img{
+  position: static;
+  bottom: initial;
+  top: initial;
+}
+
 .relation-card-max-layer{
   position: absolute;
   top: 0;
@@ -914,6 +921,12 @@ table.content-text-lateral__p2 td{
   line-height: 24px;
   letter-spacing: -0.25px;
   color: #fafafa;
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  white-space: pre-wrap;
 }
 .relation-card-max-img .info-img-text__title {
   font-size: 12px;
@@ -1357,13 +1370,14 @@ table.content-text-lateral__p2 td{
   position: absolute;
   right: -150px;
   bottom: -50px;
+  z-index: 1;
 }
 .circle-content-info .circle-content{
   width: 769px;
   height: 769px;
   border-radius: 100%;
   position: relative;
-    z-index: -9;
+  z-index: -1;
 }
 .content-coment-quote{
   display: flex;
@@ -1474,12 +1488,13 @@ height: 172px;
   margin-top: 0;
 }
 .banner-swiper-home-img .working-case.item-swiper{
-  width: 235px;
+  /*width: 235px;*/
   margin-right: 32px;
 }
 .banner-swiper-home-img .working-case.item-swiper .item-swiper__img{
-  width: 235px;
-  height: 480px;
+/*  width: 235px;
+  height: 480px;*/
+  border-radius: 16px;
   margin-bottom: 20px;
 }
 .banner-swiper-home-img .working-case.item-swiper .item-swiper__text{
@@ -1487,6 +1502,9 @@ height: 172px;
   line-height: 20px;
   letter-spacing: -0.02em;
   color: #424242;
+  width: 235px;
+  max-width: 100%;
+  display: inline-block;
 }
 .working-case.banner-swiper-home{
   justify-content: space-between;
@@ -1594,6 +1612,7 @@ height: 283px;
   display: flex;
   align-items: center;
   height: 100%;
+  padding: 0 30px;
 }
 .case-study .content-img-mobile{
   display: none;
@@ -1715,11 +1734,23 @@ height: 283px;
   font-size: 20px;
   line-height: 26px;
   font-family: Poppins-Bold;
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  height: 55px;
+  white-space: pre-wrap;
 }
 .content-services-section .relation-card-info__desc{
   font-size: 12px;
   line-height: 20px;
   margin-top: 10px;
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  height: 40px;
+  white-space: pre-wrap;
 }
 .content-services-section .relation-card-info__more{
 margin-top: 24px;

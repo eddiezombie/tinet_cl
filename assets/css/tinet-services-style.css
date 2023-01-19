@@ -2125,10 +2125,9 @@ background: linear-gradient(90deg, rgba(240,240,240,0) 50%, rgba(239,239,239,1) 
 }
 .case-study .content-response-section {
   margin: 0px auto;
-  max-width: 1167px;
+  max-width: 1180px;
   display: flex;
   align-items: flex-start;
-  margin-left: calc(((100vw - 1180px) / 2) - 46px);
 }
 .case-study .case-study-left {
   height: 100%;
