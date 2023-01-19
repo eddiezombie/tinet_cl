@@ -864,6 +864,13 @@ table.content-text-lateral__p2 td{
   position: relative;
   overflow: hidden;
 }
+
+.relation-card-max-img .info-img{
+  position: static;
+  bottom: initial;
+  top: initial;
+}
+
 .relation-card-max-layer{
   position: absolute;
   top: 0;
@@ -914,6 +921,12 @@ table.content-text-lateral__p2 td{
   line-height: 24px;
   letter-spacing: -0.25px;
   color: #fafafa;
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  white-space: pre-wrap;
 }
 .relation-card-max-img .info-img-text__title {
   font-size: 12px;
