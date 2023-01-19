@@ -462,7 +462,7 @@ table.content-text-lateral__p2 td{
 }
 .content-comment .content-comment__text {
   font-style: italic;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 30px;
   letter-spacing: -0.015em;
   color: #616161;
@@ -537,6 +537,15 @@ table.content-text-lateral__p2 td{
 .card-group {
   display: flex;
   margin-top: 26px;
+}
+.card-group.card-group-category{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-group.card-group-category .relation-card.mrg.mobile{
+  flex: 0 0 auto;
+  width: 30%;
+  margin-bottom: 30px;
 }
 .filter-blog .card-group{
   flex-wrap: wrap;
@@ -634,13 +643,16 @@ table.content-text-lateral__p2 td{
   margin-right: 32px;
 }
 .relation-card-img{
+  position: relative;
+  height: 248px;
+  overflow: hidden;
 }
 .relation-card-img img {
   width: 100%;
 }
 .relation-card-info {
   display: block;
-  padding: 16px 16px 44px;
+  padding: 16px 16px 40px;
 }
 .relation-card-info__title {
   letter-spacing: -0.25px;
@@ -674,9 +686,9 @@ table.content-text-lateral__p2 td{
 }
 .info-img {
   display: flex;
-  position: relative;
+  position: absolute;
   left: 24px;
-  top: -48px;
+  bottom: 18px;
   z-index: 3;
 }
 .info-img__icon {
@@ -923,14 +935,12 @@ table.content-text-lateral__p2 td{
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 16px;
   max-height: 226px;
+  overflow: hidden;
 }
 .vertical .relation-card-img {
-  border-radius: 16px 0px 0px 16px;
 }
 .vertical .relation-card-img img {
   width: 287px;
-  height: 226px;
-  border-radius: 16px 0px 0px 16px;
 }
 .vertical .info-img-text__title {
   color: #424242;
@@ -1718,7 +1728,7 @@ margin-top: 24px;
   margin: 22px auto 0px;
 }
 .relation-cards-content .card-group .relation-card-info{
-  padding-top: 0;
+  
 }
 .relation-cards-content.horizontal .card-group .relation-card-info{
   padding-top: 16px;

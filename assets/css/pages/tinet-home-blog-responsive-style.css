@@ -81,6 +81,13 @@
     .card-group.card-group-column{
       display: block;
     }
+    .card-group.card-group-column.card-group-category{
+      display: flex;
+    }
+    .card-group.card-group-category .relation-card.mrg.mobile{
+      width: 44%;
+      margin-right: 5%;
+    }
   }
   @media only screen and (max-width: 1000px) {
     .working-case.banner-home-img-alt{
@@ -275,6 +282,10 @@
     }
   }
   @media only screen and (max-width:768px) {
+    .card-group.card-group-category .relation-card.mrg.mobile{
+      width: 100%;
+      margin-right: 0%;
+    }
     .circle-content-info .circle-content{
       width: 370px;
       height: 370px;
