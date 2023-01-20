@@ -46,8 +46,6 @@ $('.cultura-slider').slick({
     }
   ]
 });
-
-
 (function() {
     var dt = document.querySelector(".destroy");
     var et = document.querySelector(".entr");
@@ -61,42 +59,16 @@ $('.cultura-slider').slick({
       })
     })
 })();
-$('.slide-circle').on('init', function(event, slick, currentSlide, nextSlide){
-    // $(".slide-circle .slick-active").next().addClass("scale-75 mt-[150px]");
-    // $(".slide-circle .slick-active").prev().addClass("scale-75 mt-[150px]");
-    // $(".slide-circle .slick-active").next().next().addClass("scale-[.45] mt-[390px] ml-[-200px]");
-    // $(".slide-circle .slick-active").prev().prev().addClass("scale-[.45] mt-[390px] mr-[-200px]");
-    // $(".slide-circle .slick-active").next().next().next().addClass("scale-[.45] mt-[390px] ml-[-200px]");
-    // $(".slide-circle .slick-active").prev().prev().prev().addClass("scale-[.45] mt-[390px] mr-[-200px]");
-});
-// $('.slide-circle').on('swipe', function(event, slick, currentSlide, nextSlide){
-//     $(".slide-circle .slick-slide").removeClass("scale-75 mt-[150px] scale-[.45] ml-[-200px] mr-[-200px] mt-[390px]");
-//     $(".slide-circle .slick-active").next().addClass("scale-75 mt-[150px]");
-//     $(".slide-circle .slick-active").prev().addClass("scale-75 mt-[150px]");
-//     $(".slide-circle .slick-active").next().next().addClass("scale-[.45] mt-[390px] ml-[-200px]");
-//     $(".slide-circle .slick-active").prev().prev().addClass("scale-[.45] mt-[390px] mr-[-200px]");
-//     $(".slide-circle .slick-active").next().next().next().addClass("scale-[.45] mt-[390px] ml-[-200px]");
-//     $(".slide-circle .slick-active").prev().prev().prev().addClass("scale-[.45] mt-[390px] mr-[-200px]");
-// });
-$('.slide-circle').on('afterChange', function(event, slick, currentSlide, nextSlide){
-    // $(".slide-circle .slick-slide").removeClass("scale-75 mt-[150px] scale-[.45] ml-[-200px] mr-[-200px] mt-[390px]");
-    // $(".slide-circle .slick-active").next().addClass("scale-75 mt-[150px]");
-    // $(".slide-circle .slick-active").prev().addClass("scale-75 mt-[150px]");
-    // $(".slide-circle .slick-active").next().next().addClass("scale-[.45] mt-[390px] ml-[-200px]");
-    // $(".slide-circle .slick-active").prev().prev().addClass("scale-[.45] mt-[390px] mr-[-200px]");
-    // $(".slide-circle .slick-active").next().next().next().addClass("scale-[.45] mt-[390px] ml-[-200px]");
-    // $(".slide-circle .slick-active").prev().prev().prev().addClass("scale-[.45] mt-[390px] mr-[-200px]");
-  });
-// $('.slide-circle').on('click', '.slick-slide', function(){
-//     $(".slide-circle .slick-slide").removeClass("scale-75 mt-[150px] scale-[.45] ml-[-200px] mr-[-200px] mt-[390px]");
-//     $(".slide-circle .slick-active").next().addClass("scale-75 mt-[150px]");
-//     $(".slide-circle .slick-active").prev().addClass("scale-75 mt-[150px]");
-//     $(".slide-circle .slick-active").next().next().addClass("scale-[.45] mt-[390px] ml-[-200px]");
-//     $(".slide-circle .slick-active").prev().prev().addClass("scale-[.45] mt-[390px] mr-[-200px]");
-//     $(".slide-circle .slick-active").next().next().next().addClass("scale-[.45] mt-[390px] ml-[-200px]");
-//     $(".slide-circle .slick-active").prev().prev().prev().addClass("scale-[.45] mt-[390px] mr-[-200px]");
-//     $('.slide-circle').slick('slickGoTo', $(this).attr('index'))
-// })
+$('.vid-btn-tabs').click(function(){
+  setTimeout(() => {
+    $('.slider-v-for-2').slick('resize');
+    $('.slider-v-for-2').slick('reinit');
+    $('.slider-v-for-3').slick('resize');
+    $('.slider-v-for-3').slick('reinit');
+    $('.slider-v-for-4').slick('resize');
+    $('.slider-v-for-4').slick('reinit');
+  }, 400);
+})
 $('.slide-circle').slick({
   infinite: true,
   speed: 300,
@@ -251,8 +223,8 @@ $('.casoss').slick({
   centerMode: false,
   //focusOnSelect: true,
   variableWidth: true,
-  prevArrow: "<div class='page left bg-[#003A5C] flex flex-col cursor-pointer items-center justify-center text-[#ffffff] w-[40px] h-[40px] rounded-full absolute bottom-[-75px] left-[40%]'><i class='icon-arrow-left-page'></i></div>",
-  nextArrow: "<div class='page right bg-[#003A5C] flex flex-col cursor-pointer items-center justify-center text-[#ffffff] w-[40px] h-[40px] rounded-full absolute bottom-[-75px] right-[40%]'><i class='icon-arrow-right-page'></i></div>",
+  prevArrow: "<div class='page left bg-[#003A5C] flex flex-col cursor-pointer items-center justify-center text-[#ffffff] w-[40px] h-[40px] rounded-full absolute bottom-[-75px] left-[50%] ml-[-17%]'><i class='icon-arrow-left-page'></i></div>",
+  nextArrow: "<div class='page right bg-[#003A5C] flex flex-col cursor-pointer items-center justify-center text-[#ffffff] w-[40px] h-[40px] rounded-full absolute bottom-[-75px] right-[50%] mr-[-17%]'><i class='icon-arrow-right-page'></i></div>",
   responsive: [
     {
       breakpoint: 768,
@@ -275,8 +247,8 @@ $('.slideBe').slick({
   slidesToScroll: 1,
   centerMode: true,
   variableWidth: true,
-  prevArrow: "<div class='page left bg-[#003A5C] flex flex-col items-center justify-center text-[#ffffff] w-[40px] h-[40px] rounded-full absolute bottom-[-75px] left-[100px]'><i class='icon-arrow-left-page'></i></div>",
-  nextArrow: "<div class='page right bg-[#003A5C] flex flex-col items-center justify-center text-[#ffffff] w-[40px] h-[40px] rounded-full absolute bottom-[-75px] right-[100px]'><i class='icon-arrow-right-page'></i></div>",
+  prevArrow: "<div class='page left bg-[#003A5C] flex flex-col items-center justify-center text-[#ffffff] w-[40px] h-[40px] rounded-full absolute bottom-[-75px] left-[50%] ml-[-17%]'><i class='icon-arrow-left-page'></i></div>",
+  nextArrow: "<div class='page right bg-[#003A5C] flex flex-col items-center justify-center text-[#ffffff] w-[40px] h-[40px] rounded-full absolute bottom-[-75px] right-[50%] mr-[-17%]'><i class='icon-arrow-right-page'></i></div>",
 
 })
 var $vt = $("ul.vid-btn-tabs li"),

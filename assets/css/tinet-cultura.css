@@ -438,3 +438,11 @@
       display: block;
     }
   }
+  @media (max-width:678px) {
+    /* .casoss .page.left {
+      left: 120px
+    } 
+    .casoss .page.right {
+      right: 120px
+    }  */
+  }
