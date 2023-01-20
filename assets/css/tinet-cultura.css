@@ -285,12 +285,12 @@
 	        animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
 }
 .fade-out-top {
-	-webkit-animation: fade-out-top 0.5s ease-in-out 2s both;
-	        animation: fade-out-top 0.5s ease-in-out 2s both;
+	-webkit-animation: fade-out-top 0.5s ease-in-out 0.9s both;
+	        animation: fade-out-top 0.5s ease-in-out 0.9s both;
 }
 .fade-out-bottom {
-	-webkit-animation: fade-out-bottom 0.5s ease-in-out 2s both;
-	        animation: fade-out-bottom 0.5s ease-in-out 2s both;
+	-webkit-animation: fade-out-bottom 0.5s ease-in-out 0.9s both;
+	        animation: fade-out-bottom 0.5s ease-in-out 0.9s both;
 }
 .fade-out {
 	-webkit-animation: fade-out 1s ease-in-out 2s both;

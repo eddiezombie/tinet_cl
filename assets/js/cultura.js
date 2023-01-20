@@ -6,19 +6,26 @@ $(document).ready(function () {
     $('body').removeClass('stop-scrolling');
   }
 
+  function nuestracultura() {
+    let dt = document.querySelector(".destroy");
+    dt.remove();
+    let et = document.querySelector(".entr");
+    et.classList.add("active");
+  }
+
   $(window).scroll(function() {
-     if($('#cultura-lock').length && false){
+     if($('#cultura-lock').length ){
       var hT = $('#cultura-lock').offset().top,
           hH = $('#cultura-lock').outerHeight(),
           wH = $(window).height(),
-          wS = $(this).scrollTop() + 20;
-      if (wS > (hT+hH-wH)){
+          wS = $(this).scrollTop();
+      if (wS > 20){
+          console.log('nuestracultura1210');
           if(cultura){
             --cultura;
-            let dt = document.querySelector(".destroy");
-            let et = document.querySelector(".entr");
-            dt.remove();
-            et.classList.add("active");
+            $("#cultura-stage1").addClass('fade-out-top');
+            $("#cultura-stage2").addClass('fade-out-bottom');
+            setTimeout(nuestracultura, 1410);
           }
       }
      }
@@ -49,10 +56,10 @@ $('.cultura-slider').slick({
 (function() {
     var dt = document.querySelector(".destroy");
     var et = document.querySelector(".entr");
-    setTimeout(() => {
-        dt.remove();
-        et.classList.add("active");
-    }, 2500);
+    // setTimeout(() => {
+    //     dt.remove();
+    //     et.classList.add("active");
+    // }, 2500);
     $('.seeMoreB').click(function(){
       $('.bx-b').each(function(){
         $(this).toggleClass("activo")
