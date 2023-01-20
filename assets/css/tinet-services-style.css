@@ -470,14 +470,14 @@ background: linear-gradient(90deg, rgba(240,240,240,0) 50%, rgba(239,239,239,1) 
 }
 .emot-dig-per-content .first-line .line-vertical {
   height: 0px;
-  transition: 2s linear;
+  transition: 1s linear;
 }
 .emot-dig-per-content .first-line {
   margin-right: 67px;
 }
 .emot-dig-per-content .second-line .line-vertical {
   height: 0px;
-  transition: 2.5s linear;
+  transition: 1.5s linear;
 }
 .emot-dig-per-content .third-line {
   position: relative;
@@ -486,11 +486,11 @@ background: linear-gradient(90deg, rgba(240,240,240,0) 50%, rgba(239,239,239,1) 
 }
 .emot-dig-per-content .third-line .line-vertical {
   height: 0px;
-  transition: 2s linear;
+  transition: 1s linear;
 }
 .emot-dig-per-content .fourth-line .line-vertical {
   height: 0px;
-  transition: 2.5s linear;
+  transition: 1.5s linear;
 }
 .emot-dig-per-content .content-numbers .fourth-line .num-line-content {
   position: relative;
@@ -3998,7 +3998,8 @@ background: linear-gradient(90deg, rgba(240,240,240,0) 50%, rgba(239,239,239,1) 
 .imd{
   border-radius: 140px 0px 0px 0px;
 }
-.imd a{
+
+.imd a, .pesta-page .text-base{
   padding: 16px 58px;
   background: #C41A90;
   border-radius: 14px 56px 56px 111px;
