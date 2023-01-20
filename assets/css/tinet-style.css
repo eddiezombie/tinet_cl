@@ -1448,6 +1448,13 @@ strong {
   }
 }
 
+.slide-circle .rounded-full{
+  cursor: pointer;
+}
+.slide-circle .slick-current .rounded-full{
+  cursor: default;
+}
+
 .numbers{
   background: url(../img/numbers_bg.png) left 63px repeat-x;
 }

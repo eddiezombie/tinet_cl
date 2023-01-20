@@ -109,7 +109,6 @@ MicroModal.init();
     })
   }
 
-cultura
   const servicios = [
     {
       nombre: 'Digital Transformation Services',
