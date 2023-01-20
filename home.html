@@ -1240,22 +1240,22 @@
                   <div class="w-[5px] min-h-[224px] bg-[#C41A90] mr-[25px]"></div>
                   <div class="flex flex-col">
                     <div class="mb-4">
-                      <button class="tab-button active" data-id="digitalremoto">
+                      <button class="tab-button tab-button-video active" data-id="digitalremoto">
                         100% digitales
                       </button>
                     </div>
                     <div class="mb-4">
-                      <button class="tab-button" data-id="cultura">
+                      <button class="tab-button tab-button-video" data-id="cultura">
                         Cultura de innovación
                       </button>
                     </div>
                     <div class="mb-4">
-                      <button class="tab-button" data-id="agiles">
+                      <button class="tab-button tab-button-video" data-id="agiles">
                         Ágiles y  furiosos
                       </button>
                     </div>
                     <div>
-                      <button class="tab-button" data-id="solidaridad">
+                      <button class="tab-button tab-button-video" data-id="solidaridad">
                         Solidarios
                       </button>
                     </div>
@@ -1271,58 +1271,78 @@
         <div class="hidden lg:block lg:w-8/12">
           <div class="content active" id="digitalremoto">
             <div class="h-[867px] flex items-center justify-start relative before:absolute before:bg-black before:content-[''] before:top-0 before:bottom-0 before:left-0 before:right-0 before:opacity-70">
-              <img class="w-full h-full object-cover" src="./assets/img/tab1.png" alt="">
-              <div class="absolute ml-10 flex items-center">
+              <!-- <img class="w-full h-full object-cover" src="./assets/img/tab1.png" alt=""> -->
+              <div class="absolute ml-10 flex items-center z-10">
                 <div class="text-right w-[500px]">
                   <p class="text-[32px] text-white fw-7 mb-4">100% digitales</p>
                   <p class="text-white">Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr nuestras metas y la autonomía de nuestros talentos.</p>
                 </div>
                 <div class="border-2 border-solid p-5 rounded-full border-[#C41A90] flex items-center justify-center cursor-pointer ml-[33px]">
-                  <img class="w-[55px] h-[55px]" src="./assets/img/play-circle-filled.png" alt="">
+                  <img class="w-[55px] h-[55px] playVideo" src="./assets/img/play-circle-filled.png" alt="">
                 </div>
+              </div>
+              <div class="video-way w-full h-full">
+                <video muted class="w-full h-full object-cover">
+                  <source src="assets/video/tab1.mp4" type="video/mp4">
+                </video>
               </div>
             </div>
           </div>
           <div class="content" id="cultura">
             <div class="h-[867px] flex items-center justify-start relative before:absolute before:bg-black before:content-[''] before:top-0 before:bottom-0 before:left-0 before:right-0 before:opacity-70">
-              <img class="w-full h-full object-cover" src="./assets/img/tab2.png" alt="">
-              <div class="absolute ml-10 flex items-center">
+              <!-- <img class="w-full h-full object-cover" src="./assets/img/tab2.png" alt=""> -->
+              <div class="absolute ml-10 flex items-center z-10">
                 <div class="text-right w-[500px]">
                   <p class="text-[32px] text-white fw-7 mb-4">Cultura de innovación</p>
                   <p class="text-white">La innovación es nuestro motor, no solo estamos a la vanguardia de la tecnología, sino que buscamos espacios de creación  de nuevos negocios en conjunto.</p>
                 </div>
                 <div class="border-2 border-solid p-5 rounded-full border-[#C41A90] flex items-center justify-center cursor-pointer ml-[33px]">
-                  <img class="w-[55px] h-[55px]" src="./assets/img/play-circle-filled.png" alt="">
+                  <img class="w-[55px] h-[55px] playVideo2" src="./assets/img/play-circle-filled.png" alt="">
                 </div>
+              </div>
+              <div class="video-way2 w-full h-full">
+                <video muted class="w-full h-full object-cover">
+                  <source src="assets/video/lanzamiento_instagram.mp4" type="video/mp4">
+                </video>
               </div>
             </div>
           </div>
           <div class="content" id="agiles">
             <div class="h-[867px] flex items-center justify-start relative before:absolute before:bg-black before:content-[''] before:top-0 before:bottom-0 before:left-0 before:right-0 before:opacity-70">
-              <img class="w-full h-full object-cover" src="./assets/img/tab1.png" alt="">
-              <div class="absolute ml-10 flex items-center">
+              <!-- <img class="w-full h-full object-cover" src="./assets/img/tab1.png" alt=""> -->
+              <div class="absolute ml-10 flex items-center z-10">
                 <div class="text-right w-[500px]">
                   <p class="text-[32px] text-white fw-7 mb-4">Ágiles y  furiosos</p>
                   <p class="text-white">Tenemos un framework de trabajo que nos permite desarrollar e implementar proyectos digitales de manera rápida y
                   eficiente a través del uso de metodologías ágiles.</p>
                 </div>
                 <div class="border-2 border-solid p-5 rounded-full border-[#C41A90] flex items-center justify-center cursor-pointer ml-[33px]">
-                  <img class="w-[55px] h-[55px]" src="./assets/img/play-circle-filled.png" alt="">
+                  <img class="w-[55px] h-[55px] playVideo3" src="./assets/img/play-circle-filled.png" alt="">
                 </div>
+              </div>
+              <div class="video-way3 w-full h-full">
+                <video muted class="w-full h-full object-cover">
+                  <source src="assets/video/tab1.mp4" type="video/mp4">
+                </video>
               </div>
             </div>
           </div>
           <div class="content" id="solidaridad">
             <div class="h-[867px] flex items-center justify-start relative before:absolute before:bg-black before:content-[''] before:top-0 before:bottom-0 before:left-0 before:right-0 before:opacity-70">
-              <img class="w-full h-full object-cover" src="./assets/img/tab1.png" alt="">
-              <div class="absolute ml-10 flex items-center">
+              <!-- <img class="w-full h-full object-cover" src="./assets/img/tab1.png" alt=""> -->
+              <div class="absolute ml-10 flex items-center z-10">
                 <div class="text-right w-[500px]">
                   <p class="text-[32px] text-white fw-7 mb-4">Solidarios</p>
                   <p class="text-white">Nuestro trabajo está sustentado por un Centro de Excelencia, el cual garantiza lograr resultados por medio de las mejores  prácticas.</p>
                 </div>
                 <div class="border-2 border-solid p-5 rounded-full border-[#C41A90] flex items-center justify-center cursor-pointer ml-[33px]">
-                  <img class="w-[55px] h-[55px]" src="./assets/img/play-circle-filled.png" alt="">
+                  <img class="w-[55px] h-[55px] playVideo4" src="./assets/img/play-circle-filled.png" alt="">
                 </div>
+              </div>
+              <div class="video-way4 w-full h-full">
+                <video muted class="w-full h-full object-cover">
+                  <source src="assets/video/lanzamiento_instagram.mp4" type="video/mp4">
+                </video>
               </div>
             </div>
           </div>
@@ -1624,7 +1644,7 @@
       e.target.classList.add("active");
 
       contents.forEach((content) => {
-        content.classList.remove("active");
+        content.classList.remove("active"); 
       });
       const element = document.getElementById(id);
       element.classList.add("active");
@@ -1646,4 +1666,5 @@
       element.classList.add("active2");
     }
   };
+
 </script>
