@@ -583,6 +583,10 @@ table.content-text-lateral__p2 td{
   transition: all ease .3s;
   -webkit-transition: all ease .3s;
 }
+.img-hover .back-hover-img img{
+  max-height: initial;
+  max-width: 100%;
+}
 .relation-card-hover-title{
   display: flex;
   flex-direction: column;
