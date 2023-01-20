@@ -1448,6 +1448,13 @@ strong {
   }
 }
 
+.slide-circle .rounded-full{
+  cursor: pointer;
+}
+.slide-circle .slick-current .rounded-full{
+  cursor: default;
+}
+
 .numbers{
   background: url(../img/numbers_bg.png) left 63px repeat-x;
 }
@@ -2762,19 +2769,19 @@ strong {
 	overflow: hidden;
   width: 100%;
   left: 0px;
-	-webkit-animation: rotateWord 12s linear infinite 0s;
-	-ms-animation: rotateWord 12s linear infinite 0s;
-	animation: rotateWord 12s linear infinite 0s;
+	-webkit-animation: rotateWord 9s linear infinite 0s;
+	-ms-animation: rotateWord 9s linear infinite 0s;
+	animation: rotateWord 9s linear infinite 0s;
 }
 .rw-words-1 span:nth-child(2) {
-    -webkit-animation-delay: 4s;
-	-ms-animation-delay: 4s;
-	animation-delay: 4s;
+    -webkit-animation-delay: 3s;
+	-ms-animation-delay: 3s;
+	animation-delay: 3s;
 }
 .rw-words-1 span:nth-child(3) {
-    -webkit-animation-delay: 8s;
-	-ms-animation-delay: 8s;
-	animation-delay: 8s;
+    -webkit-animation-delay: 6s;
+	-ms-animation-delay: 6s;
+	animation-delay: 6s;
 }
 @-webkit-keyframes rotateWord {
     0% { opacity: 0; }
