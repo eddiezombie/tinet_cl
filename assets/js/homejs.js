@@ -31,3 +31,30 @@ $('.backbtn').click(function(){
     $('.video-home').children('video')[0].pause();
     $('.backbtn').removeClass('backbtntrg').addClass('backbtntrgrv')
 })
+
+$('.playVideo').click(function(){
+    $('.video-way').addClass('active')
+    $('.video-way').children('video').get(0).play()
+})
+
+$('.playVideo2').click(function(){
+    $('.video-way2').addClass('active')
+    $('.video-way2').children('video').get(0).play()
+})
+
+$('.playVideo3').click(function(){
+    $('.video-way3').addClass('active')
+    $('.video-way3').children('video').get(0).play()
+})
+
+$('.playVideo4').click(function(){
+    $('.video-way4').addClass('active')
+    $('.video-way4').children('video').get(0).play()
+})
+
+$('.tab-button-video').click(function(){
+    $('.video-way').children('video')[0].load();
+    $('.video-way2').children('video')[0].load();
+    $('.video-way3').children('video')[0].load();
+    $('.video-way4').children('video')[0].load();
+})
