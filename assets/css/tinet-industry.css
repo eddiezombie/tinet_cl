@@ -545,6 +545,18 @@
 .ctn-t-iss li{
     display: none;
 }
+.ctn-t-iss .active .content-iss li{
+    display: list-item;
+    list-style: initial;
+}
+.ctn-t-iss .active .content-iss ul, .ctn-t-iss .active .content-iss ol{
+    list-style: initial;
+    padding-left: 20px;
+    list-style: initial;
+}
+.ctn-t-iss .active .content-iss ol li{
+    list-style: numerical;
+}
 .content-iss{
     padding: 40px 60px;
     background: #E5EFF5;
