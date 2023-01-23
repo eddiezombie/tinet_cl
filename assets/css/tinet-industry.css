@@ -545,16 +545,16 @@
 .ctn-t-iss li{
     display: none;
 }
-.ctn-t-iss .active .content-iss li{
+.ctn-t-iss .active .content-iss li, .content-iss li{
     display: list-item;
     list-style: initial;
 }
-.ctn-t-iss .active .content-iss ul, .ctn-t-iss .active .content-iss ol{
+.ctn-t-iss .active .content-iss ul, .ctn-t-iss .active .content-iss ol, .content-iss ul, .content-iss ol{
     list-style: initial;
     padding-left: 20px;
     list-style: initial;
 }
-.ctn-t-iss .active .content-iss ol li{
+.ctn-t-iss .active .content-iss ol li, .content-iss ol li{
     list-style: numerical;
 }
 .content-iss{

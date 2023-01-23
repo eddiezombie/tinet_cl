@@ -34,11 +34,11 @@ $tabs.click(function () {
   if (!$(this).hasClass("active")) {
     var tabNum = $(this).index();
     var nthChild = tabNum + 1;
-    $("ul.btn-t-iss li.active").removeClass("active");
+    $("ul.btn-t-iss > li.active").removeClass("active");
     $(this).addClass("active");
-    $("ul.ctn-t-iss li.active").fadeOut(300, function () {
+    $("ul.ctn-t-iss > li.active").fadeOut(300, function () {
       $(this).removeClass("active");
-      $("ul.ctn-t-iss li:nth-child(" + nthChild + ")")
+      $("ul.ctn-t-iss > li:nth-child(" + nthChild + ")")
         .addClass("active")
         .fadeIn(300);
     });
