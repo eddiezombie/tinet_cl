@@ -2824,3 +2824,27 @@ strong {
     height: 41px;
   }
 }
+ul.listaselect {
+  display: none;
+}
+.seleccionado {
+  display: block;
+}
+.trianguloinf::before {
+  content: "\e913";
+  font-family: "icomoon";
+  position: absolute;
+  right: 26px;
+  top: 17px;
+  width: 0;
+  rotate: 270deg;
+}
+.triangulosup::before {
+  content: "\e913";
+  font-family: "icomoon";
+  position: absolute;
+  right: 26px;
+  top: 8px;
+  width: 0;
+  rotate: 92deg;
+}
