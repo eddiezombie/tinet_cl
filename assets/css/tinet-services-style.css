@@ -4049,3 +4049,40 @@ background: linear-gradient(90deg, rgba(240,240,240,0) 50%, rgba(239,239,239,1) 
   color: #006099;
   opacity: 1;
 }
+.i-tabs{
+  margin: 16px 0;
+}
+.i-tabs li{
+  cursor: pointer;
+  color: #006099;
+  padding: 8px 24px;
+  background: white;
+  border-radius: 100px;
+  transition: all ease .3s;
+  margin: 0 30px;
+  border: 1px solid transparent;
+}
+.i-tabs li:hover {
+  border: 1px solid #006099;
+}
+.i-tabs li.active{
+  background: #006099;
+  color: white;
+}
+.i-tab li,
+.i-tabs li {
+  list-style: none;
+  display: inline-block;
+}
+@media (max-width:768px){
+.i-tabs li{
+  margin: 0 10px;
+  padding: 4px 17px;
+}
+}
+@media (max-width:570px){
+.i-tabs li{
+  margin: 0 2px;
+  padding: 4px 10px;
+}
+}
