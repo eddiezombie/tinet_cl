@@ -30,8 +30,8 @@ const carouselList = document.querySelector(".carousel__list");
 const carouselItems = document.querySelectorAll(".carousel__item");
 const elems = Array.from(carouselItems);
 
-carouselList.addEventListener("click", function (event) {
-  var newActive = event.target;
+$('.carousel__item').on("click", function (event) {
+  var newActive = $(this)[0]
   var isItem = newActive.closest(".carousel__item");
 
   if (!isItem || newActive.classList.contains("carousel__item_active")) {
@@ -39,10 +39,9 @@ carouselList.addEventListener("click", function (event) {
   }
 
   update(newActive);
-});
+})
 
 const update = function (newActive) {
-  const hola = parseInt(newActive.dataset.pos);
   const newActivePos = parseInt(newActive.dataset.pos);
 
   const current = elems.find((elem) => parseInt(elem.dataset.pos) == 0);
@@ -50,8 +49,6 @@ const update = function (newActive) {
   const next = elems.find((elem) => parseInt(elem.dataset.pos) == 1);
   const first = elems.find((elem) => parseInt(elem.dataset.pos) == -2);
   const last = elems.find((elem) => parseInt(elem.dataset.pos) == 2);
-  console.log(hola);
-
   current.classList.remove("carousel__item_active");
 
   [current, prev, next, first, last].forEach((item) => {
@@ -108,53 +105,7 @@ $('.cultura-slider').slick({
       })
     })
 })();
-$('.slide-circle').on('init', function(event, slick, currentSlide, nextSlide){
-    // $(".slide-circle .slick-active").next().addClass("scale-75 mt-[150px]");
-    // $(".slide-circle .slick-active").prev().addClass("scale-75 mt-[150px]");
-    // $(".slide-circle .slick-active").next().next().addClass("scale-[.45] mt-[390px] ml-[-200px]");
-    // $(".slide-circle .slick-active").prev().prev().addClass("scale-[.45] mt-[390px] mr-[-200px]");
-    // $(".slide-circle .slick-active").next().next().next().addClass("scale-[.45] mt-[390px] ml-[-200px]");
-    // $(".slide-circle .slick-active").prev().prev().prev().addClass("scale-[.45] mt-[390px] mr-[-200px]");
-});
-// $('.slide-circle').on('swipe', function(event, slick, currentSlide, nextSlide){
-//     $(".slide-circle .slick-slide").removeClass("scale-75 mt-[150px] scale-[.45] ml-[-200px] mr-[-200px] mt-[390px]");
-//     $(".slide-circle .slick-active").next().addClass("scale-75 mt-[150px]");
-//     $(".slide-circle .slick-active").prev().addClass("scale-75 mt-[150px]");
-//     $(".slide-circle .slick-active").next().next().addClass("scale-[.45] mt-[390px] ml-[-200px]");
-//     $(".slide-circle .slick-active").prev().prev().addClass("scale-[.45] mt-[390px] mr-[-200px]");
-//     $(".slide-circle .slick-active").next().next().next().addClass("scale-[.45] mt-[390px] ml-[-200px]");
-//     $(".slide-circle .slick-active").prev().prev().prev().addClass("scale-[.45] mt-[390px] mr-[-200px]");
-// });
-$('.slide-circle').on('afterChange', function(event, slick, currentSlide, nextSlide){
-    // $(".slide-circle .slick-slide").removeClass("scale-75 mt-[150px] scale-[.45] ml-[-200px] mr-[-200px] mt-[390px]");
-    // $(".slide-circle .slick-active").next().addClass("scale-75 mt-[150px]");
-    // $(".slide-circle .slick-active").prev().addClass("scale-75 mt-[150px]");
-    // $(".slide-circle .slick-active").next().next().addClass("scale-[.45] mt-[390px] ml-[-200px]");
-    // $(".slide-circle .slick-active").prev().prev().addClass("scale-[.45] mt-[390px] mr-[-200px]");
-    // $(".slide-circle .slick-active").next().next().next().addClass("scale-[.45] mt-[390px] ml-[-200px]");
-    // $(".slide-circle .slick-active").prev().prev().prev().addClass("scale-[.45] mt-[390px] mr-[-200px]");
-  });
-// $('.slide-circle').on('click', '.slick-slide', function(){
-//     $(".slide-circle .slick-slide").removeClass("scale-75 mt-[150px] scale-[.45] ml-[-200px] mr-[-200px] mt-[390px]");
-//     $(".slide-circle .slick-active").next().addClass("scale-75 mt-[150px]");
-//     $(".slide-circle .slick-active").prev().addClass("scale-75 mt-[150px]");
-//     $(".slide-circle .slick-active").next().next().addClass("scale-[.45] mt-[390px] ml-[-200px]");
-//     $(".slide-circle .slick-active").prev().prev().addClass("scale-[.45] mt-[390px] mr-[-200px]");
-//     $(".slide-circle .slick-active").next().next().next().addClass("scale-[.45] mt-[390px] ml-[-200px]");
-//     $(".slide-circle .slick-active").prev().prev().prev().addClass("scale-[.45] mt-[390px] mr-[-200px]");
-//     $('.slide-circle').slick('slickGoTo', $(this).attr('index'))
-// })
-$('.slide-circle').slick({
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  centerMode: true,
-  variableWidth: true,
-  arrows: false,
-  focusOnSelect: true,
-  draggable: false
-});
+
 //1
 $('.slider-v-for').slick({
   slidesToShow: 1,

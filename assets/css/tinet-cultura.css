@@ -419,12 +419,49 @@
     transition: all 0.3s ease-in;
     background-color: white;
   }
+  .carousel__item *{
+    transition: all 0.3s ease-in;
+  }
   .carousel__item[data-pos="0"] {
     z-index: 5;
   }
+  .carousel__item[data-pos="0"] > img {
+   margin-bottom: 24px;
+  }
+  .carousel__item[data-pos="0"] > h4 {
+    font-size: 24px;
+    line-height: 32px;
+    color: #424242;
+    margin-bottom: 8px;
+    text-align: center;
+   }
+  .carousel__item[data-pos="0"] > p {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 0 80px;
+    color: #616161;
+    text-align: center;
+   }
+
   .carousel__item[data-pos="-1"], .carousel__item[data-pos="1"] {
     /* opacity: 0.7; */
     filter: blur(1px) grayscale(10%);
+  }
+  .carousel__item[data-pos="-1"] > img, .carousel__item[data-pos="1"] > img {
+    transform: scale(.7);
+  }
+  .carousel__item[data-pos="-1"] > h4, .carousel__item[data-pos="1"] > h4 {
+    font-size: 16px;
+    line-height: 24px;
+    color: #424242;
+    text-align: center;
+  }
+  .carousel__item[data-pos="-1"] > p, .carousel__item[data-pos="1"] > p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #616161;
+    text-align: center;
+    padding: 0px 80px;
   }
   .carousel__item[data-pos="-1"] {
     transform: translateX(-120%) scale(0.9);
@@ -441,8 +478,17 @@
     width: 330px;
   }
   .carousel__item[data-pos="-2"], .carousel__item[data-pos="2"] {
-    /* opacity: 0.4; */
     filter: blur(3px) grayscale(20%);
+  }
+  .carousel__item[data-pos="-2"] > h4, .carousel__item[data-pos="2"] > h4 {
+    display: none;
+  }
+  .carousel__item[data-pos="-2"] > p, .carousel__item[data-pos="2"] > p {
+    display: none;
+  }
+  .carousel__item[data-pos="-2"] > img, .carousel__item[data-pos="2"] > img {
+    transform: scale(.7);
+    margin-bottom: 0px;
   }
   .carousel__item[data-pos="-2"] {
     transform: translateX(-250%) scale(0.8);
@@ -459,6 +505,23 @@
     width: 230px;
   }
   @media (max-width:678px){
+    .carousel__item[data-pos="0"] > img {
+      margin-bottom: 9px;
+    }
+    .carousel__item[data-pos="0"] > h4 {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .carousel__item[data-pos="0"] > p {
+      font-size: 10px;
+      line-height: 12px;
+    }
+    .carousel__item[data-pos="1"] > h4, .carousel__item[data-pos="-1"] > h4 {
+      display: none;
+    }
+    .carousel__item[data-pos="-1"] > p, .carousel__item[data-pos="1"] > p {
+      display: none;
+    }
     .carouselv{
       height: 430px;
       margin-top: 30px;
