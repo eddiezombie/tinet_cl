@@ -696,7 +696,7 @@ $(document).ready(function () {
 		c 0,0,200,0,200,200
 		c 0,0,0,200,-200,200
 		l -810,0
-		c 0,0,-200,0,-200,200
+		c 0,0,-165,0,-165,200
 		l 0, 100
 	  "></path>`;
     svg1Back.innerHTML = `<path class="svg-lg" id="svgscroll" style="stroke-dasharray: 3009.22px; stroke-dashoffset: 2009.22px; stroke: #891265;" fill="none"
@@ -704,7 +704,7 @@ $(document).ready(function () {
 	  c 0,0,200,0,200,200
 	  c 0,0,0,200,-200,200
 	  l -810,0
-	  c 0,0,-200,0,-200,200
+	  c 0,0,-165,0,-165,200
 	  l 0, 100
 	"></path>`;
   }
