@@ -2068,10 +2068,10 @@ strong {
   Basic Modal Styles
 \**************************/
 
-.modal {
+.modal-second {
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
     helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-    z-index:33;
+    z-index: 999;
     position: relative;
 }
 
@@ -2085,6 +2085,7 @@ strong {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 999;
 }
 
 .modal__container {
