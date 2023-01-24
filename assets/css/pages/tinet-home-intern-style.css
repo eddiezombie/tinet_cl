@@ -660,6 +660,20 @@ table.content-text-lateral__p2 td{
   height: 248px;
   overflow: hidden;
 }
+.relation-card-img::after{
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: auto;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  opacity: .5;
+  z-index: 1;
+}
 .relation-card-img img {
   width: 100%;
 }
