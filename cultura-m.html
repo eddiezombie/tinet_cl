@@ -275,42 +275,50 @@
             </div>
         </div>
       </div>
-    <!-- slide circle  -->
-    <div class="bg-[#E5EFF5] py-[52px]">
+    <!-- v2 circle -->
+    <div class="bg-[#E5EFF5] relative py-[120px]">
         <h3 class="text-center fw-5 text-[32px] leading-[40px] text-[#424242] mb-[25px]">Conoce nuestra cultura</h3>
-        <div class="max-w-[1440px] mx-[auto] overflow-hidden relative">
-            <div class="slide-circle z-[1]">
-                <div><div class="bg-[#FFFFFF] rounded-full shadow-xl lg:w-[440px] lg:h-[440px] md:w-[200px] md:h-[200px] text-center mb-[30px] flex flex-col flex-nowrap items-center justify-center lg:p-[55px] md:p-[0px]">
-                    <img class="mb-[24px] lg:w-[152px] lg:h-[152px] md:w-[69px] md:h-[69px]" src="assets/img/cultura/Avatar.png" alt="">
-                    <h4 class="text-2xl text-[#424242] fw-5 mb-[8px]">Las diferencias nos unen</h4>
-                    <p class="fw-4 text-[#616161] text-[20px] leading-[28px]">Nos adaptamos, cambiamos y mejoramos, pero nuestra cultura es nuestro mantra.</p>
-                </div></div>
-                <div><div class="bg-[#FFFFFF] rounded-full shadow-xl lg:w-[440px] lg:h-[440px] md:w-[200px] md:h-[200px] text-center mb-[30px] flex flex-col flex-nowrap items-center justify-center lg:p-[55px] md:p-[0px]">
-                    <img class="mb-[24px] lg:w-[152px] lg:h-[152px] md:w-[69px] md:h-[69px]" src="assets/img/cultura/Avatar (1).png" alt="">
-                    <h4 class="text-2xl text-[#424242] fw-5 mb-[8px]">Pegas con Sentido</h4>
-                    <p class="fw-4 text-[#616161] text-[20px] leading-[28px]">Nos importan las personas, por eso nos involucramos con iniciativas que dejan huella.</p>
-                </div></div>
-                <div><div class="bg-[#FFFFFF] rounded-full shadow-xl lg:w-[440px] lg:h-[440px] md:w-[200px] md:h-[200px] text-center mb-[30px] flex flex-col flex-nowrap items-center justify-center lg:p-[55px] md:p-[0px]">
-                    <img class="mb-[24px] lg:w-[152px] lg:h-[152px] md:w-[69px] md:h-[69px]" src="assets/img/cultura/Avatar (2).png" alt="">
-                    <h4 class="text-2xl text-[#424242] fw-5 mb-[8px]">Tu bienestar, nuestro código</h4>
-                    <p class="fw-4 text-[#616161] text-[20px] leading-[28px]">Eres el factor principal para que las cosas pasen, te cuidamos y nos preocupamos por ti</p>
-                </div></div>
-                <div><div class="bg-[#FFFFFF] rounded-full shadow-xl lg:w-[440px] lg:h-[440px] md:w-[200px] md:h-[200px] text-center mb-[30px] flex flex-col flex-nowrap items-center justify-center lg:p-[55px] md:p-[0px]">
-                    <img class="mb-[24px] lg:w-[152px] lg:h-[152px] md:w-[69px] md:h-[69px]" src="assets/img/cultura/Avatar.png" alt="">
-                    <h4 class="text-2xl text-[#424242] fw-5 mb-[8px]">Lorem, ipsum dolor.</h4>
-                    <p class="fw-4 text-[#616161] text-[20px] leading-[28px]">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div></div>
-                <div><div class="bg-[#FFFFFF] rounded-full shadow-xl lg:w-[440px] lg:h-[440px] md:w-[200px] md:h-[200px] text-center mb-[30px] flex flex-col flex-nowrap items-center justify-center lg:p-[55px] md:p-[0px]">
-                    <img class="mb-[24px] lg:w-[152px] lg:h-[152px] md:w-[69px] md:h-[69px]" src="assets/img/cultura/Avatar (1).png" alt="">
-                    <h4 class="text-2xl text-[#424242] fw-5 mb-[8px]">Lorem, ipsum.</h4>
-                    <p class="fw-4 text-[#616161] text-[20px] leading-[28px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, beatae!</p>
-                </div></div>
-            </div>
-            <div class="bbb absolute z-[0] top-[173px] w-[90%] mx-[auto] right-[0px] left-[0px] h-[500px]"></div>
+        <div class="carouselv overflow-hidden relative z-10">
+            <ul class="carousel__list">
+                <li class="carousel__item shadow-xl" data-pos="-2">
+                    <img class="lg:w-[152px] lg:h-[152px] md:w-[120px] md:h-[120px] w-[79px] h-[79px]" src="assets/img/cultura/Avatar.png" alt="">
+                    <h4 class="fw-5">Lorem, ipsum dolor.</h4>
+                    <p class="fw-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </li>
+                <li class="carousel__item shadow-xl" data-pos="-1">
+                    <img class="lg:w-[152px] lg:h-[152px] md:w-[120px] md:h-[120px] w-[79px] h-[79px]" src="assets/img/cultura/Avatar (1).png" alt="">
+                    <h4 class="fw-5">Lorem, ipsum.</h4>
+                    <p class="fw-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, beatae!</p>
+                </li>
+                <li class="carousel__item shadow-xl" data-pos="0">
+                    <img class="lg:w-[152px] lg:h-[152px] md:w-[120px] md:h-[120px] w-[79px] h-[79px]" src="assets/img/cultura/Avatar.png" alt="">
+                    <h4 class="fw-5">Las diferencias nos unen</h4>
+                    <p class="fw-4">Nos adaptamos, cambiamos y mejoramos, pero nuestra cultura es nuestro mantra.</p>
+                </li>
+                <li class="carousel__item shadow-xl" data-pos="1">
+                    <img class="lg:w-[152px] lg:h-[152px] md:w-[120px] md:h-[120px] w-[79px] h-[79px]" src="assets/img/cultura/Avatar (1).png" alt="">
+                    <h4 class="fw-5" >Pegas con Sentido</h4>
+                    <p class="fw-4">Nos importan las personas, por eso nos involucramos con iniciativas que dejan huella.</p>
+                </li>
+                <li class="carousel__item shadow-xl" data-pos="2">
+                    <img class="lg:w-[152px] lg:h-[152px] md:w-[120px] md:h-[120px] w-[79px] h-[79px]" src="assets/img/cultura/Avatar (2).png" alt="">
+                    <h4 class="fw-5">Tu bienestar, nuestro código</h4>
+                    <p class="fw-4">Eres el factor principal para que las cosas pasen, te cuidamos y nos preocupamos por ti</p>
+                </li>
+            </ul>
         </div>
-        <h4 class="mb-[100px] lg:text-[64px] lg:leading-[72px] md:text-[32px] md:leading-[40px] text-[#424242] fw-6 text-center">Nuestra cultura nos <span class="block text-[#C41A90]">hace Imparables</span></h4>
+        <div class="bbb absolute z-[0] top-[355px] w-[77%] mx-[auto] right-[0px] left-[0px] h-[455px] lg:block hidden"></div>
+        <h4 class="relative sm:mt-[-210px] mt-[-96px] lg:text-[64px] lg:leading-[72px] md:text-[32px] md:leading-[40px] text-[#424242] fw-6 text-center">Nuestra cultura nos <span class="block text-[#C41A90]">hace Imparables</span>
+            <div class="absolute top-[-130px] left-[0px] right-[0px] md:flex hidden flex-col items-center z-40">
+                <div class="rounded-full w-[16px] h-[16px] bg-[#C41A90]"></div>
+                <div class="w-[0px] h-[120px] border-r-2 border-dashed border-[#90A4AE]"></div>
+            </div>
+            <div class="absolute bottom-[-110px] left-[0px] right-[0px] md:flex hidden flex-col items-center z-40">
+                <div class="w-[0px] h-[100px] border-r-2 border-dashed border-[#90A4AE]"></div>
+            </div>
+        </h4>
     </div>
-    <!--fin  slide circle  -->
+    <!-- end v2 circle -->
 
     <div id="cultura-experience">
       <div class="cultura-experience-start reveal sm:block hidden">
