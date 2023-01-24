@@ -31,6 +31,50 @@ $(document).ready(function () {
      }
   });
 
+// circulo v2
+const state = {};
+const carouselList = document.querySelector(".carousel__list");
+const carouselItems = document.querySelectorAll(".carousel__item");
+const elems = Array.from(carouselItems);
+
+$('.carousel__item').on("click", function (event) {
+  var newActive = $(this)[0]
+  var isItem = newActive.closest(".carousel__item");
+
+  if (!isItem || newActive.classList.contains("carousel__item_active")) {
+    return;
+  }
+
+  update(newActive);
+})
+
+const update = function (newActive) {
+  const newActivePos = parseInt(newActive.dataset.pos);
+
+  const current = elems.find((elem) => parseInt(elem.dataset.pos) == 0);
+  const prev = elems.find((elem) => parseInt(elem.dataset.pos) == -1);
+  const next = elems.find((elem) => parseInt(elem.dataset.pos) == 1);
+  const first = elems.find((elem) => parseInt(elem.dataset.pos) == -2);
+  const last = elems.find((elem) => parseInt(elem.dataset.pos) == 2);
+  current.classList.remove("carousel__item_active");
+
+  [current, prev, next, first, last].forEach((item) => {
+    var itemPos = parseInt(item.dataset.pos)
+
+    item.dataset.pos = getPos(itemPos, newActivePos);
+  });
+};
+
+const getPos = function (current, active) {
+  const diff = current - active;
+
+  if (Math.abs(current - active) > 2) {
+    return -current;
+  }
+
+  return diff;
+};
+
 });
 
 $('.cultura-slider').slick({
