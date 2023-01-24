@@ -274,8 +274,8 @@ $('.casoss').slick({
   centerMode: false,
   //focusOnSelect: true,
   variableWidth: true,
-  prevArrow: "<div class='page left bg-[#003A5C] flex flex-col cursor-pointer items-center justify-center text-[#ffffff] w-[40px] h-[40px] rounded-full absolute bottom-[-75px] left-[50%] ml-[-17%]'><i class='icon-arrow-left-page'></i></div>",
-  nextArrow: "<div class='page right bg-[#003A5C] flex flex-col cursor-pointer items-center justify-center text-[#ffffff] w-[40px] h-[40px] rounded-full absolute bottom-[-75px] right-[50%] mr-[-17%]'><i class='icon-arrow-right-page'></i></div>",
+  prevArrow: "<div class='page left bg-[#003A5C] flex flex-col cursor-pointer items-center justify-center text-[#ffffff] w-[40px] h-[40px] rounded-full absolute bottom-[-75px] left-[50%] ml-[-10%]'><i class='icon-arrow-left-page'></i></div>",
+  nextArrow: "<div class='page right bg-[#003A5C] flex flex-col cursor-pointer items-center justify-center text-[#ffffff] w-[40px] h-[40px] rounded-full absolute bottom-[-75px] right-[50%] mr-[-10%]'><i class='icon-arrow-right-page'></i></div>",
   responsive: [
     {
       breakpoint: 768,
