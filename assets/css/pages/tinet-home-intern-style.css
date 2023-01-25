@@ -601,8 +601,13 @@ table.content-text-lateral__p2 td{
   max-height: 380px;
   height: 100%;
   justify-content: space-between;
-  padding: 40px 16px 42px;
+  padding: 40px 16px 60px;
   z-index: 3;
+}
+.img-hover .relation-card-info .view-case{
+  bottom: 30px;
+  left: 16px;
+  position: absolute;
 }
 .relation-card:hover .relation-card-hover-title{
   opacity: 0;
@@ -641,6 +646,10 @@ table.content-text-lateral__p2 td{
   left: 0;
   width: 100%;
   height: 100%;
+  transition: 1s;
+}
+.relation-card.img-hover:hover .back-hover-img:after{
+  opacity: 0.2;
 }
 .filter-blog .relation-card{
   margin-bottom: 48px;
