@@ -437,6 +437,16 @@
     .slideBeneficios{
       display: block;
     }
+    .relative .seeMoreB{
+      display: none;
+    }
+    .slideBe .bx-b {
+      border-left: 8px solid #C41A90;
+    }
+    .bx-b > p{
+      opacity: 1;
+      margin-top: 0px;
+    }
   }
   @media (max-width:678px) {
     /* .casoss .page.left {
