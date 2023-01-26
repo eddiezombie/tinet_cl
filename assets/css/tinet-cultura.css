@@ -640,6 +640,7 @@
     .carousel__item[data-pos="0"] > p {
       font-size: 10px;
       line-height: 12px;
+      padding: 0 30px;
     }
     .carousel__item[data-pos="1"] > h4, .carousel__item[data-pos="-1"] > h4 {
       display: none;
