@@ -427,7 +427,32 @@
     }
   }
   @media (max-width: 800px){
-
+    .cultura-slider-circle{
+      display: none;
+    }
+    .cultura-slider .slick-arrow{
+      top: initial;
+      bottom: -80px;
+      width: 40px;
+      height: 40px;
+      transform: translate(0);
+    }
+    .cultura-slider .slick-prev{
+      left: initial;
+      right: 50%;
+      margin-right: 15px;
+    }
+    .cultura-slider .slick-next{
+      right: initial;
+      left: 50%;
+      margin-left: 15px;
+    }
+    .cultura-slider-card h5{
+      min-height: 120px;
+    }
+    .cultura-experience-line{
+      top: 124px;
+    }
   }
 
   .slideBeneficios{
@@ -447,14 +472,6 @@
       opacity: 1;
       margin-top: 0px;
     }
-  }
-  @media (max-width:678px) {
-    /* .casoss .page.left {
-      left: 120px
-    } 
-    .casoss .page.right {
-      right: 120px
-    }  */
   }
   .i-tabs{
     margin: 16px 0;
