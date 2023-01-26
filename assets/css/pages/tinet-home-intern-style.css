@@ -1074,6 +1074,7 @@ table.content-text-lateral__p2 td{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding-right: 20px;
 }
 .case-intern.banner-swiper-home-text {
   max-width: 776px;

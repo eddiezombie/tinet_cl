@@ -14,6 +14,10 @@
   margin-bottom: 55px;
   padding-left: 24px;
 }
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
 @media (max-width:490px){
   .cultura-experience-header{
     padding-left: 0px;
@@ -427,7 +431,32 @@
     }
   }
   @media (max-width: 800px){
-
+    .cultura-slider-circle{
+      display: none;
+    }
+    .cultura-slider .slick-arrow{
+      top: initial;
+      bottom: -80px;
+      width: 40px;
+      height: 40px;
+      transform: translate(0);
+    }
+    .cultura-slider .slick-prev{
+      left: initial;
+      right: 50%;
+      margin-right: 15px;
+    }
+    .cultura-slider .slick-next{
+      right: initial;
+      left: 50%;
+      margin-left: 15px;
+    }
+    .cultura-slider-card h5{
+      min-height: 120px;
+    }
+    .cultura-experience-line{
+      top: 124px;
+    }
   }
 
   .slideBeneficios{
@@ -437,14 +466,16 @@
     .slideBeneficios{
       display: block;
     }
-  }
-  @media (max-width:678px) {
-    /* .casoss .page.left {
-      left: 120px
-    } 
-    .casoss .page.right {
-      right: 120px
-    }  */
+    .relative .seeMoreB{
+      display: none;
+    }
+    .slideBe .bx-b {
+      border-left: 8px solid #C41A90;
+    }
+    .bx-b > p{
+      opacity: 1;
+      margin-top: 0px;
+    }
   }
   .i-tabs{
     margin: 16px 0;
@@ -613,6 +644,7 @@
     .carousel__item[data-pos="0"] > p {
       font-size: 10px;
       line-height: 12px;
+      padding: 0 30px;
     }
     .carousel__item[data-pos="1"] > h4, .carousel__item[data-pos="-1"] > h4 {
       display: none;
