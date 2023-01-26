@@ -11,6 +11,7 @@ $(document).ready(function () {
     dt.remove();
     let et = document.querySelector(".entr");
     et.classList.add("active");
+    enableScroll();
   }
 
   $(window).scroll(function() {
@@ -20,9 +21,9 @@ $(document).ready(function () {
           wH = $(window).height(),
           wS = $(this).scrollTop();
       if (wS > 20){
-          console.log('nuestracultura1210');
           if(cultura){
             --cultura;
+            $('body').addClass('stop-scrolling');
             $("#cultura-stage1").addClass('fade-out-top');
             $("#cultura-stage2").addClass('fade-out-bottom');
             setTimeout(nuestracultura, 1410);
