@@ -24,6 +24,37 @@ strong {
   padding-right: 24px;
   box-shadow: 0px 8px 20px rgba(183, 183, 183, 0.15);
 }
+.header-content.dark{
+  position: sticky;
+  top: 0px;
+  width: 100%;
+}
+.animHeader{
+  position: relative;
+  animation: topmove 2s ease;
+  animation-fill-mode: forwards;
+}
+@keyframes topmove {
+  from {
+    top: 0px;
+  }
+  to {
+    top: -107px;
+  }
+}
+.animHeaderRever{
+  position: sticky;
+  animation: topmoveRever 2s ease;
+  animation-fill-mode: forwards;
+}
+@keyframes topmoveRever {
+  from {
+    top: -107px;
+  }
+  to {
+    top: 0px;
+  }
+}
 .cntHead {
   max-width: 1180px;
   margin: 0 auto;
@@ -99,6 +130,9 @@ strong {
   box-shadow: 9px 0px 20px rgba(183, 183, 183, 0.15);
   transition: all ease-in 0.3s;
   -webkit-transition: all ease-out 0.5s;
+}
+.header-content.dark + .left-navbar{
+  position: fixed;
 }
 .left-navbar.active {
   left: 0px;
