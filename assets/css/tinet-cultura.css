@@ -35,8 +35,8 @@
   position: absolute;
   top: 0;
   left: 50%;
-  width: 200px;
   text-align: center;
+  transform: translate(-100%);
 }
 
 .cultura-experiencie-startline:after{
@@ -428,6 +428,14 @@
     }
     .active-reveal .cultura-experience-line{
       width: calc(100% - 24px);
+    }
+    .cultura-experiencie-startline{
+      height: 95px;
+    }
+    @keyframes purpledot {
+      0%    { width: 0; height: 0;}
+      50%   {width: 0px; height: 95px;}
+      100%  {width: 200px; height: 95px;}
     }
   }
   @media (max-width: 800px){
