@@ -58,3 +58,83 @@ $('.tab-button-video').click(function(){
     $('.video-way3').children('video')[0].load();
     $('.video-way4').children('video')[0].load();
 })
+$(function () {
+  var controller = new ScrollMagic.Controller();
+
+  // movimiento paneles
+  var tween1 = new TimelineMax()
+    .to("#slideContainer", 1, { x: "-25%" })
+    .to("#slideContainer", 1, { x: "-50%" })
+
+  // s 1
+  new ScrollMagic.Scene({
+    triggerElement: "#pinContainer",
+    triggerHook: 0,
+    duration: "100%"
+  })
+    .setPin("#pinContainer")
+    .setTween(tween1)
+    .addTo(controller);
+
+  // build a 1
+  var tween2 = new TimelineMax().add([
+    TweenMax.fromTo(
+      "#sectionOne .linea1",
+      1,
+      {
+        scale: 0.5,
+        right: "230px"
+      },
+      {
+        scale: 1,
+        right: "1000px"
+      }
+    ),
+    TweenMax.fromTo(
+      "#sectionOne .linea2",
+      1,
+      {
+        opacity: 0,
+        right: "-405px"
+      },
+      {
+        opacity: 1,
+        right: "1000px"
+      }
+    ),
+    TweenMax.fromTo(
+      "#sectionOne .linea3",
+      1,
+      {
+        opacity: 0,
+        right: "-812px"
+      },
+      {
+        opacity: 1,
+        right: "1000px"
+      }
+    )
+  ]);
+
+  // build a 2
+  new ScrollMagic.Scene({
+    triggerElement: "#pinContainer",
+    duration: "200%",
+    offset: "200%" 
+  })
+    .setTween(tween2)
+    .addTo(controller); 
+
+});
+
+window.onscroll = function (e) {  
+//console.log(window.pageYOffset);
+if(window.pageYOffset >= 240 && window.pageYOffset <= 300 ){
+  var vid = document.getElementById("vidHome")
+  vid.play(); 
+}
+if(window.pageYOffset >= 850 && window.pageYOffset <= 900 ){
+  console.log('trigger header');
+  $('.header-content.dark').removeClass('animHeaderRever').addClass('animHeader')
+}
+} 
