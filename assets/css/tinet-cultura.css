@@ -236,8 +236,28 @@
     border-top-right-radius: 10000000px;
     border-left: 1px dashed #66A0C2;
     border-top: 1px dashed #66A0C2;
-    border-bottom: none;
     border-right: 1px dashed #66A0C2;
+    border-bottom: none;
+}
+.bbb-alt{
+  position: absolute;
+  display: block;
+  top: 240px;
+  width: 100vw;
+  height: 32.5vw;
+  max-height: 400px;
+  overflow: hidden;
+}
+.bbb-alt:before{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px dashed #66A0C2;
+  width: 100vw;
+  height: 100vw;
+  border-radius: 50%;
 }
 .tinet-btns{
   padding: 12px 24px;
