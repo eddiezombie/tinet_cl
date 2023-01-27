@@ -141,7 +141,7 @@ $('.slider-v-for').slick({
   asNavFor: '.slider-v-nav'
 });
 $('.slider-v-nav').slick({
-  slidesToShow: 3,
+  slidesToShow: 1,
   slidesToScroll: 1,
   asNavFor: '.slider-v-for',
   dots: false,
@@ -175,7 +175,7 @@ $('.slider-v-for-2').slick({
   asNavFor: '.slider-v-nav-2'
 });
 $('.slider-v-nav-2').slick({
-  slidesToShow: 3,
+  slidesToShow: 1,
   slidesToScroll: 1,
   asNavFor: '.slider-v-for-2',
   dots: false,
@@ -209,7 +209,7 @@ $('.slider-v-for-3').slick({
   asNavFor: '.slider-v-nav-3'
 });
 $('.slider-v-nav-3').slick({
-  slidesToShow: 3,
+  slidesToShow: 1,
   slidesToScroll: 1,
   asNavFor: '.slider-v-for-3',
   dots: false,
@@ -243,7 +243,7 @@ $('.slider-v-for-4').slick({
   asNavFor: '.slider-v-nav-4'
 });
 $('.slider-v-nav-4').slick({
-  slidesToShow: 3,
+  slidesToShow: 1,
   slidesToScroll: 1,
   asNavFor: '.slider-v-for-4',
   dots: false,
