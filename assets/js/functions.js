@@ -222,78 +222,81 @@ $(document).ready(function () {
   $('#section-service-1').addClass("active-reveal");
 
   window.addEventListener("scroll", reveal);
-  
-  function initSwipersAll2 () {
-    var swiper = new Swiper(".mySwiperS2", {
-        slidesPerView: 1,
-        spaceBetween: 11,
-        grid: {
-          rows: 1
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true
-        },
-        navigation: {
-          prevEl: ".mySwiperS2-left-page",
-          nextEl: ".mySwiperS2-right-pag",
-        },
-        breakpoints: {
-          1095: {
-            slidesPerView: 2,
-            spaceBetween: 24,
-            grid: {
-              rows: 2
-            }
-          },
-          601:{
-            slidesPerView: 2,
-            spaceBetween: 11,
-            grid: {
-              rows: 1
-            }
-          }
-      },
-      });
-    // console.log('window was resized', screen.width);
-  }
-  initSwipersAll2();
 
-  function initSwipersAll () {
-    var swiper = new Swiper(".mySwiperS3", {
-        slidesPerView: 1,
-        spaceBetween: 11,
-        grid: {
-          rows: 1
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true
-        },
-        navigation: {
-          prevEl: ".mySwiperS3-left-page",
-          nextEl: ".mySwiperS3-right-pag",
-        },
-        breakpoints: {
-          1095: {
-            slidesPerView: 2,
-            spaceBetween: 24,
-            grid: {
-              rows: 2
-            }
+  if($('.mySwiperS2').length > 0){
+    function initSwipersAll2 () {
+      var swiper = new Swiper(".mySwiperS2", {
+          slidesPerView: 1,
+          spaceBetween: 11,
+          grid: {
+            rows: 1
           },
-          601:{
-            slidesPerView: 2,
-            spaceBetween: 11,
-            grid: {
-              rows: 1
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+          },
+          navigation: {
+            prevEl: ".mySwiperS2-left-page",
+            nextEl: ".mySwiperS2-right-pag",
+          },
+          breakpoints: {
+            1095: {
+              slidesPerView: 2,
+              spaceBetween: 24,
+              grid: {
+                rows: 2
+              }
+            },
+            601:{
+              slidesPerView: 2,
+              spaceBetween: 11,
+              grid: {
+                rows: 1
+              }
             }
-          }
-      },
-      });
-    // console.log('window was resized', screen.width);
+        },
+        });
+    }
+    initSwipersAll2();
   }
-  initSwipersAll();
+
+  if($('.mySwiperS3').length > 0){
+    function initSwipersAll () {
+      var swiper = new Swiper(".mySwiperS3", {
+          slidesPerView: 1,
+          spaceBetween: 11,
+          grid: {
+            rows: 1
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+          },
+          navigation: {
+            prevEl: ".mySwiperS3-left-page",
+            nextEl: ".mySwiperS3-right-pag",
+          },
+          breakpoints: {
+            1095: {
+              slidesPerView: 2,
+              spaceBetween: 24,
+              grid: {
+                rows: 2
+              }
+            },
+            601:{
+              slidesPerView: 2,
+              spaceBetween: 11,
+              grid: {
+                rows: 1
+              }
+            }
+        },
+        });
+      // console.log('window was resized', screen.width);
+    }
+    initSwipersAll();
+  }
 
   function animate_numbers(id) {
     var count = 0;
@@ -333,145 +336,157 @@ $(document).ready(function () {
     animate_numbers("#section-service-4");
   }
 
-  function initSwipersSomos() {
-    var swiperTwo = new Swiper(".mySwiperSomos", {
-      slidesPerView: 1,
-      spaceBetween: 11,
+  if($('.mySwiperSomos').length > 0){
+    function initSwipersSomos() {
+      var swiperTwo = new Swiper(".mySwiperSomos", {
+        slidesPerView: 1,
+        spaceBetween: 11,
 
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-      },
-      navigation: {
-        prevEl: ".mySwiperS3-left-page",
-        nextEl: ".mySwiperS3-right-pag",
-      },
-      breakpoints: {
-        1095: {
-          slidesPerView: 3,
-          spaceBetween: 40,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
         },
-        480: {
-          slidesPerView: 2,
-          spaceBetween: 32,
-        }
-      },
-    },
-    );
-    // console.log('window was resized', screen.width);
-  }
-  initSwipersSomos();
-  function initSwipersPhoto() {
-    var swiperTrhee = new Swiper(".mySwiperPhoto", {
-      slidesPerView: 1,
-      spaceBetween: 11,
-      grid: {
-        rows: 1
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-      },
-      navigation: {
-        prevEl: ".mySwiperS3-left-page",
-        nextEl: ".mySwiperS3-right-pag",
-      },
-      breakpoints: {
-        1280: {
-          slidesPerView: 3,
-          spaceBetween: 28,
-          grid: {
-            rows: 2
+        navigation: {
+          prevEl: ".mySwiperS3-left-page",
+          nextEl: ".mySwiperS3-right-pag",
+        },
+        breakpoints: {
+          1095: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 32,
           }
         },
-        601: {
-          slidesPerView: 3,
-          spaceBetween: 11,
-          grid: {
-            rows: 1
+      },
+      );
+      // console.log('window was resized', screen.width);
+    }
+    initSwipersSomos();
+  }
+
+  if($('.mySwiperPhoto').length > 0){
+    function initSwipersPhoto() {
+      var swiperTrhee = new Swiper(".mySwiperPhoto", {
+        slidesPerView: 1,
+        spaceBetween: 11,
+        grid: {
+          rows: 1
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        navigation: {
+          prevEl: ".mySwiperS3-left-page",
+          nextEl: ".mySwiperS3-right-pag",
+        },
+        breakpoints: {
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: 28,
+            grid: {
+              rows: 2
+            }
+          },
+          601: {
+            slidesPerView: 3,
+            spaceBetween: 11,
+            grid: {
+              rows: 1
+            }
           }
-        }
+        },
       },
-    },
-    );
-    // console.log('window was resized', screen.width);
+      );
+      // console.log('window was resized', screen.width);
+    }
+    initSwipersPhoto(); 
   }
-  initSwipersPhoto();
-  function initSwipersEquipment() {
-    var swiperFour = new Swiper(".mySwiperEquipment", {
-      loop: true,
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        rotate: 0,
-        modifier: 2,
-        slideShadows: false,
-      },
-      breakpoints: {
-        1200: {
-          coverflowEffect: {
-            stretch: 10,
-            depth: 150,
+
+  if($('.mySwiperEquipment').length > 0){
+    function initSwipersEquipment() {
+      var swiperFour = new Swiper(".mySwiperEquipment", {
+        loop: true,
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 0,
+          modifier: 2,
+          slideShadows: false,
+        },
+        breakpoints: {
+          1200: {
+            coverflowEffect: {
+              stretch: 10,
+              depth: 150,
+            },
+          },
+          645: {
+            coverflowEffect: {
+              stretch: 85,
+              depth: 150,
+            },
+          },
+          320: {
+            coverflowEffect: false,
+            slidesPerView: 1,
+            spaceBetween: 10,
           },
         },
-        645: {
-          coverflowEffect: {
-            stretch: 85,
-            depth: 150,
-          },
-        },
-        320: {
-          coverflowEffect: false,
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-      },
 
-      navigation: {
-        prevEl: ".mySwiperEquipment-left-page",
-        nextEl: ".mySwiperEquipment-right-page",
-      },
+        navigation: {
+          prevEl: ".mySwiperEquipment-left-page",
+          nextEl: ".mySwiperEquipment-right-page",
+        },
 
-    },
-    );
-    // console.log('window was resized', screen.width);
+      },
+      );
+      // console.log('window was resized', screen.width);
+    }
+    initSwipersEquipment(); 
   }
-  initSwipersEquipment();
-  function initSwipersPrueba() {
-    var galleryThumbs = new Swiper('.somos-slider-thumbs', {
-      watchSlidesVisibility: true,
-      watchSlidesProgress: true,
-      centerInsufficientSlides: true,
-      slideToClickedSlide: true,
-      allowTouchMove: false,
-      breakpoints: {
-        1000: {
-          slidesPerView: 8,
-        },
-        768: {
-          slidesPerView: 6,
-        },
-        320: {
-          slidesPerView: 3,
-        }
-      },
-    });
-    var galleryTop = new Swiper('.somos-slider-top', {
-      spaceBetween: 30,
-      allowTouchMove: false,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      thumbs: {
-        swiper: galleryThumbs,
-      },
-    });
-    // console.log('window was resized', screen.width);
+
+  if($('.somos-slider-thumbs').length > 0){
+   function initSwipersPrueba() {
+     var galleryThumbs = new Swiper('.somos-slider-thumbs', {
+       watchSlidesVisibility: true,
+       watchSlidesProgress: true,
+       centerInsufficientSlides: true,
+       slideToClickedSlide: true,
+       allowTouchMove: false,
+       breakpoints: {
+         1000: {
+           slidesPerView: 8,
+         },
+         768: {
+           slidesPerView: 6,
+         },
+         320: {
+           slidesPerView: 3,
+         }
+       },
+     });
+     var galleryTop = new Swiper('.somos-slider-top', {
+       spaceBetween: 30,
+       allowTouchMove: false,
+       navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+       },
+       thumbs: {
+         swiper: galleryThumbs,
+       },
+     });
+     // console.log('window was resized', screen.width);
+   }
+   initSwipersPrueba(); 
   }
-  initSwipersPrueba();
+
   $('.somos-banner-animation').click(function () {
     $(this).addClass('active');
   });
@@ -503,50 +518,53 @@ $(document).ready(function () {
 
 		}
 	});
-  let svgheight = $("#svgwrapper").height();
-  let element_position = $("#section-service-6").offset().top;
-  $(window).resize(function () {
-    svgheight = $("#svgwrapper").height();
-    element_position = $("#section-service-6").offset().top;
-  });
 
-  $(window).on("scroll", function () {
-    var winposition = window.pageYOffset + 100;
-    var divposition = element_position;
-    var divposition1 = element_position + (1 * svgheight) / 5;
-    var divposition2 = element_position + (2 * svgheight) / 5;
-    var divposition3 = element_position + (3 * svgheight) / 5;
-    var divposition4 = element_position + (3 * svgheight) / 5;
-    if (winposition > divposition) {
-      //do stuff
-      if ($("#process-easy-1").hasClass("haslabel")) {
-        $("#process-easy-1 .infoblob-label").fadeIn(1);
-      }
-      $("#process-easy-1 .infoblob").fadeIn(500);
-      if (winposition > divposition1) {
-        if ($("#process-easy-2").hasClass("haslabel")) {
-          $("#process-easy-2 .infoblob-label").fadeIn(1);
+  if($('#section-service-6').length > 0){
+    let svgheight = $("#svgwrapper").height();
+    let element_position = $("#section-service-6").offset().top;
+    $(window).resize(function () {
+      svgheight = $("#svgwrapper").height();
+      element_position = $("#section-service-6").offset().top;
+    });
+
+    $(window).on("scroll", function () {
+      var winposition = window.pageYOffset + 100;
+      var divposition = element_position;
+      var divposition1 = element_position + (1 * svgheight) / 5;
+      var divposition2 = element_position + (2 * svgheight) / 5;
+      var divposition3 = element_position + (3 * svgheight) / 5;
+      var divposition4 = element_position + (3 * svgheight) / 5;
+      if (winposition > divposition) {
+        //do stuff
+        if ($("#process-easy-1").hasClass("haslabel")) {
+          $("#process-easy-1 .infoblob-label").fadeIn(1);
         }
-        $("#process-easy-2 .infoblob").fadeIn(500);
-      } 
-      if (winposition > divposition2) {
-        if ($("#process-easy-3").hasClass("haslabel")) {
+        $("#process-easy-1 .infoblob").fadeIn(500);
+        if (winposition > divposition1) {
+          if ($("#process-easy-2").hasClass("haslabel")) {
+            $("#process-easy-2 .infoblob-label").fadeIn(1);
+          }
+          $("#process-easy-2 .infoblob").fadeIn(500);
+        } 
+        if (winposition > divposition2) {
+          if ($("#process-easy-3").hasClass("haslabel")) {
+            $("#process-easy-3 .infoblob-label--alt").fadeIn(1);
+          }
           $("#process-easy-3 .infoblob-label--alt").fadeIn(1);
+          $("#process-easy-3 .infoblob").fadeIn(500);
+        } 
+        if (winposition > divposition3) {
+          if ($("#process-easy-4").hasClass("haslabel")) {
+            $("#process-easy-4 .infoblob-label").fadeIn(1);
+          }
+          $("#process-easy-4 .infoblob").fadeIn(500);
+        } 
+        if (winposition > divposition4) {
+          $("#process-easy-5 .infoblob").fadeIn(500);
         }
-        $("#process-easy-3 .infoblob-label--alt").fadeIn(1);
-        $("#process-easy-3 .infoblob").fadeIn(500);
       } 
-      if (winposition > divposition3) {
-        if ($("#process-easy-4").hasClass("haslabel")) {
-          $("#process-easy-4 .infoblob-label").fadeIn(1);
-        }
-        $("#process-easy-4 .infoblob").fadeIn(500);
-      } 
-      if (winposition > divposition4) {
-        $("#process-easy-5 .infoblob").fadeIn(500);
-      }
-    } 
-  });
+    });
+  }
   $(window).resize(function () {
     svgrize();
     var tween = new TimelineMax()
