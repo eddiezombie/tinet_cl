@@ -430,7 +430,14 @@
       opacity: 0;
     }
   }
-
+  @media (min-width: 1400px){
+    .bbb-alt:before{
+      height: 1200px;
+      width: 1200px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
   @media (max-width: 1240px){
     .cultura-slider .slick-arrow{
       width: 20px;
@@ -670,6 +677,9 @@
     width: 230px;
   }
   @media (max-width:678px){
+    #roundslider .carouselvtxt{
+      margin-top: -140px;
+    }
     .carousel__item[data-pos="0"] > img {
       margin-bottom: 9px;
     }
