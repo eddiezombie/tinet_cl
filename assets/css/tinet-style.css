@@ -28,6 +28,32 @@ strong {
   background: transparent;
   box-shadow: none;
 }
+.bg-afterScroll{
+  background: #0D0D0D;
+  animation: bgas 2s ease;
+  animation-fill-mode: forwards;
+}
+@keyframes bgas {
+  from {
+    background: transparent;
+  }
+  to {
+    background: #0D0D0D;
+  }
+}
+.bg-afterScrollrv{
+  background: #0D0D0D;
+  animation: bgasrv 2s ease;
+  animation-fill-mode: forwards;
+}
+@keyframes bgasrv {
+  from {
+    background: #0D0D0D;
+  }
+  to {
+    background: transparent;
+  }
+}
 .header-content.dark{
   position: sticky;
   top: 0px;

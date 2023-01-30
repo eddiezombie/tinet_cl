@@ -127,14 +127,15 @@ $(function () {
 
 });
 
-window.onscroll = function (e) {  
-//console.log(window.pageYOffset);
-if(window.pageYOffset >= 240 && window.pageYOffset <= 300 ){
-  var vid = document.getElementById("vidHome")
-  vid.play(); 
-}
-if(window.pageYOffset >= 850 && window.pageYOffset <= 900 ){
-  console.log('trigger header');
-  $('.header-content.dark').removeClass('animHeaderRever').addClass('animHeader')
-}
+  window.onscroll = function (e) {  
+  console.log(window.pageYOffset);
+  if(window.pageYOffset >= 240 && window.pageYOffset <= 300 ){
+    var vid = document.getElementById("vidHome")
+    vid.play(); 
+  }
+  if(window.pageYOffset >= 1300 ){
+    $('.header-content.dark').removeClass('bg-afterScrollrv').addClass('bg-afterScroll')
+  }else{
+    $('.header-content.dark').removeClass('bg-afterScroll').addClass('bg-afterScrollrv')
+  }
 } 
