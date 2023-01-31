@@ -3255,6 +3255,10 @@ background: linear-gradient(90deg, rgba(240,240,240,0) 50%, rgba(239,239,239,1) 
     padding-top: 64px;
     padding-bottom: 0px;
   }
+  .num-spk-work.somos-tabs{
+    padding-left: 24px;
+    padding-right: 24px;
+  }
   .num-spk-work .content-response-section {
     flex-direction: column;
     height: auto;

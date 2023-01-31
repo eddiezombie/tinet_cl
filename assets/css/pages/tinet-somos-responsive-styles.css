@@ -66,7 +66,7 @@
   }
 
   .somos-equipment {
-    padding-left: 16px;
+    padding-left: 24px;
   }
 
   .somos-consult {
@@ -554,7 +554,7 @@
     display: none;
   }
   .somos-alianzas {
-    padding: 0 16px 112px 16px;
+    padding: 0 24px 112px 24px;
   }
   .somos-slider-thumbs .swiper-wrapper{
     padding: 0 60px 0 40px;
@@ -573,6 +573,9 @@
   .somos-logros {
     padding-bottom: 80px;
     padding-right: 24px;
+  }
+  .somos-logros.num-spk-work{
+    padding-left: 24px;
   }
 
   .somos-logros .info-estadist {

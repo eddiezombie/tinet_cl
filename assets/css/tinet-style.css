@@ -2344,6 +2344,9 @@ strong {
 .tab-secondary .content2.active2 {
   display: block;
 }
+.content-response-section button{
+  transition: .5s;
+}
 
 .tab-secondary .tab-button2 {
   padding: 12px 16px;
@@ -2351,6 +2354,10 @@ strong {
   color: #006099;
   font-family: Poppins-SemiBold;
   border-bottom: 1px solid #EEEEEE;
+  transition: .5s;
+}
+.tab-secondary .tab-button2 i{
+  pointer-events: none;
 }
 
 .tab-secondary .tab-button2.active2 {

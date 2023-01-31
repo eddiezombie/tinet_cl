@@ -125,7 +125,7 @@
 /* fin tabs */
 .i-nuestra-vision{
     position: relative;
-    padding: 0 180px;
+    padding: 0 120px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -211,10 +211,13 @@
 .left-pr .lp{
     padding-top: 16px;
 }
-.right-pr h3{line-height: 64px;}
+.right-pr h3{
+    line-height: 64px;
+    word-break: break-word;
+}
 .i-i-financiera{
     background: #F5F5F5;
-    padding: 120px 180px;
+    padding: 120px 120px;
     overflow: hidden;
 }
 .bgfin{
@@ -443,7 +446,7 @@
     line-height: 64px;
 }
 .i-servicios-soluciones{
-    padding: 70px 130px;
+    padding: 70px 120px;
 }
 .text-info-iss{
     width: 55%;
@@ -709,6 +712,21 @@
 @media (max-width:1000px){
     .titulos-iif .lineas-iif.right, .titulos-iif .lineas-iif.left{display: none;}
     .i-nuestra-vision .left-inv h3{ font-size: 32px; line-height: 40px; }
+    .i-nuestra-vision, .i-propuesta, .i-servicios-soluciones, .i-i-financiera{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .content-iss{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .ctn-t-iss{
+        margin-left: 24px;
+    }
+    .desktop-cifras{
+        left: 50%;
+        transform: translate(-50%);
+    }
 }
 @media (max-width:768px){
     .tab-cifras::after{
@@ -806,7 +824,7 @@
         margin-left: 0px;
     }
     .i-nuestra-vision .right-inv .lp{
-        padding-left: 20px;
+        padding-left: 0px;
     }
     .i-propuesta{
         padding: 80px 24px;
@@ -817,6 +835,9 @@
         justify-content: space-between;
         align-items: flex-start;
     }
+    .i-propuesta .left-pr .linp{
+        margin-left: 0;
+    }
     .i-propuesta .left-pr, .i-propuesta .right-pr{
         width: 100%;
     }
@@ -824,7 +845,7 @@
         margin-left: 16px;
     }
     .i-propuesta .lp{
-        padding-left: 35px;
+        padding-left: 0px;
     }
     .i-propuesta .right-pr{
         padding-top: 30px;
