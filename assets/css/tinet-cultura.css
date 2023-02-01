@@ -523,10 +523,10 @@
   .carousel__item[data-pos="0"] > p {
     font-size: 20px;
     line-height: 28px;
-    padding: 0 80px;
+    padding: 0 65px;
     color: #616161;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
    }
 
   .carousel__item[data-pos="-1"], .carousel__item[data-pos="1"] {
@@ -667,6 +667,9 @@
     .slideBe .bx-b {
       border-left: 8px solid #C41A90;
     }
+    .slideBe .slick-arrow{
+      margin-top: 15px;
+    }
     .bx-b > p{
       opacity: 1;
       margin-top: 0px;
@@ -684,7 +687,7 @@
       padding: 4px 10px;
     }
   }
-  
+
   @media (max-width:678px){
     #roundslider .carouselvtxt{
       margin-top: -140px;
