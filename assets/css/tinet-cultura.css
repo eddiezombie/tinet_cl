@@ -18,6 +18,9 @@
   height: 100%;
   overflow: hidden;
 }
+.nopointer{
+  pointer-events: none;
+}
 @media (max-width:490px){
   .cultura-experience-header{
     padding-left: 0px;
