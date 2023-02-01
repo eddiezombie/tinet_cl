@@ -613,6 +613,7 @@
     padding: 0 80px;
     color: #616161;
     text-align: center;
+    padding-bottom: 20px;
    }
 
   .carousel__item[data-pos="-1"], .carousel__item[data-pos="1"] {
@@ -629,7 +630,7 @@
     text-align: center;
   }
   .carousel__item[data-pos="-1"] > p, .carousel__item[data-pos="1"] > p {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 20px;
     color: #616161;
     text-align: center;
