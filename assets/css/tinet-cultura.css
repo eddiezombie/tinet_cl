@@ -262,8 +262,8 @@
   display: block;
   top: 240px;
   width: 100vw;
-  height: 32.5vw;
-  max-height: 400px;
+  height: 30.9vw;
+  max-height: 280px;
   overflow: hidden;
 }
 .bbb-alt:before{
@@ -440,7 +440,7 @@
       opacity: 0;
     }
   }
-  @media (min-width: 1400px){
+  @media (min-width: 1440px){
     .bbb-alt:before{
       height: 1200px;
       width: 1200px;
@@ -729,16 +729,16 @@
       height: 250px;
     }
     .carousel__item[data-pos="-1"] {
-      transform: translateX(-156%) scale(0.9);
+      transform: translateX(-170%) scale(0.95);
       z-index: 4;
       margin-top: 180px;
       height: 100px;
       width: 100px;
     }
     .carousel__item[data-pos="1"] {
-      transform: translateX(156%) scale(0.9);
+      transform: translateX(170%) scale(0.95);
       z-index: 4;
-      margin-top: 180px;
+      margin-top: 175px;
       height: 100px;
       width: 100px;
     }
@@ -746,16 +746,16 @@
       opacity: 0.4;
     }
     .carousel__item[data-pos="-2"] {
-      transform: translateX(-250%) scale(0.8);
+      transform: translateX(-260%) scale(0.85);
       z-index: 3;
-      margin-top: 260px;
+      margin-top: 270px;
       height: 90px;
       width: 90px;
     }
     .carousel__item[data-pos="2"] {
-      transform: translateX(250%) scale(0.8);
+      transform: translateX(260%) scale(0.85);
       z-index: 3;
-      margin-top: 260px;
+      margin-top: 270px;
       height: 90px;
       width: 90px;
     }
