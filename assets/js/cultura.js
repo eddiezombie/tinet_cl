@@ -315,12 +315,16 @@ $vt.click(function () {
     var nc = tn + 1;
     $("ul.vid-btn-tabs > li.active").removeClass("active");
     $(this).addClass("active");
-    $("ul.cvn > li.active").fadeOut(300, function () {
-      $(this).removeClass("active");
-      $("ul.cvn > li:nth-child(" + nc + ")")
-        .addClass("active")
-        .fadeIn(300);
-    });
+    $("ul.cvn > li.active").removeClass('opacity0');
+    $("ul.cvn > li.active").removeClass('opacity1');
+    $("ul.cvn > li.active").removeClass('active');
+    var newtab = $("ul.cvn > li:nth-child(" + nc + ")");
+    newtab.addClass("active");
+    newtab.addClass("opacity0");
+    setTimeout(() => {
+      newtab.addClass("opacity1");
+    }, 440)
+
   }
 
   clickVT = true;
