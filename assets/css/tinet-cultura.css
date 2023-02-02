@@ -203,6 +203,13 @@
 .cvn > li.active{
     display: block;
 }
+.cvn > li.opacity0{
+  opacity: 0;
+  transition: 0.5s;
+}
+.cvn > li.opacity1{
+  opacity: 1;
+}
 .slide-v-nav{
 }
 .slide-v-nav-img{
