@@ -728,6 +728,9 @@
       width: 250px;
       height: 250px;
     }
+    .carousel__item[data-pos="-1"] > img, .carousel__item[data-pos="1"] > img{
+      transform: scale(1);
+    }
     .carousel__item[data-pos="-1"] {
       transform: translateX(-145%) scale(1);
       z-index: 4;
