@@ -729,34 +729,34 @@
       height: 250px;
     }
     .carousel__item[data-pos="-1"] {
-      transform: translateX(-170%) scale(0.95);
+      transform: translateX(-145%) scale(1);
       z-index: 4;
-      margin-top: 180px;
-      height: 100px;
-      width: 100px;
+      margin-top: 140px;
+      height: 150px;
+      width: 150px;
     }
     .carousel__item[data-pos="1"] {
-      transform: translateX(170%) scale(0.95);
+      transform: translateX(145%) scale(1);
       z-index: 4;
-      margin-top: 175px;
-      height: 100px;
-      width: 100px;
+      margin-top: 140px;
+      height: 150px;
+      width: 150px;
     }
     .carousel__item[data-pos="-2"], .carousel__item[data-pos="2"] {
       opacity: 0.4;
     }
     .carousel__item[data-pos="-2"] {
-      transform: translateX(-260%) scale(0.85);
+      transform: translateX(-270%) scale(0.99);
       z-index: 3;
-      margin-top: 270px;
-      height: 90px;
-      width: 90px;
+      margin-top: 280px;
+      height: 120px;
+      width: 120px;
     }
     .carousel__item[data-pos="2"] {
-      transform: translateX(260%) scale(0.85);
+      transform: translateX(270%) scale(0.99);
       z-index: 3;
-      margin-top: 270px;
-      height: 90px;
-      width: 90px;
+      margin-top: 280px;
+      height: 120px;
+      width: 120px;
     }
   }
