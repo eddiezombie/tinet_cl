@@ -323,7 +323,7 @@ $vt.click(function () {
     newtab.addClass("opacity0");
     setTimeout(() => {
       newtab.addClass("opacity1");
-    }, 400)
+    }, 440)
 
   }
 
