@@ -128,7 +128,6 @@ $(function () {
 });
 
   window.onscroll = function (e) {  
-  console.log(window.pageYOffset);
   if(window.pageYOffset >= 240 && window.pageYOffset <= 300 ){
     var vid = document.getElementById("vidHome")
     vid.play(); 

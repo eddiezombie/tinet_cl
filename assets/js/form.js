@@ -89,10 +89,10 @@ MicroModal.init();
     };
 
 (function() {
-    //formulario
-    var tagSelect = document.querySelector(".pseudo-select");
-    var cont = document.querySelector(".contenido-select");
-    var valo = document.querySelector(".valores");
+  //formulario
+  var tagSelect = document.querySelector(".pseudo-select");
+  var cont = document.querySelector(".contenido-select");
+  var valo = document.querySelector(".valores");
   $(window).click(function() {
     $('.contenido-select').removeClass("active");
     outSelect();
@@ -100,7 +100,7 @@ MicroModal.init();
   $('.cont-select-tab').click(function(event){
      event.stopPropagation();
   });
-  if(tagSelect){
+  if(tagSelect && cont){
     tagSelect.addEventListener("click", function(){
         cont.classList.toggle("active");
         if( !cont.classList.contains("active") ){
@@ -189,7 +189,9 @@ MicroModal.init();
         }
       }
     }
-    insertData(servicios)
+    if(cont){
+      insertData(servicios);
+    }
 
     $(".tagS").click(function(){
       $(this).toggleClass("active")

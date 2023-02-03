@@ -2561,7 +2561,7 @@ strong {
     height: 100vh;
     transition: .5s;
     display: block;
-    z-index: 40;
+    z-index: 60;
   }
   .revolution__sidebar.revolution__sidebar--active{
     top: 0;
