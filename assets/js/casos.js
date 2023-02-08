@@ -1,3 +1,120 @@
+function animate_numbers(id) {
+    var count = 0;
+    var classToAnimate = ".animate-numbers";
+    var offsetToScrollThrough = 500;
+    var animationDuration = 7000;
+    var animationEasing = "easeOutExpo";
+
+    $(window).scroll(function() {
+      var oTop = $(id).offset().top - window.innerHeight + offsetToScrollThrough;
+      if (count == 0 && $(window).scrollTop() > oTop) {
+        $(id + " " + classToAnimate).each(function() {
+          $(this)
+            .prop("Counter", 0)
+            .animate(
+              {
+                Counter: $(this).text()
+              },
+              {
+                duration: animationDuration,
+                easing: animationEasing,
+                step: function(now) {
+                  $(this).text(Math.ceil(now));
+                }
+              }
+            );
+        });
+        count = 1;
+      }
+    });
+  }
+
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active-reveal");
+      } 
+    }
+  }
+
+  window.addEventListener("scroll", reveal);
+
+$(".contenedor-slider").slick({
+  arrows: true,
+  centerMode: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  variableWidth: false,
+  infinite: false,
+  prevArrow: "<div class='page left'><i class='icon-arrow-left-page'></i></div>",
+  nextArrow: "<div class='page right'><i class='icon-arrow-right-page'></i></div>",
+  responsive: [
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+})
+
+$('.solucion-slide').slick({
+  arrows: true,
+  centerMode: false,
+  slidesToShow: 1,
+  variableWidth: true,
+  infinite: true,
+  prevArrow: "<div class='page left'><i class='icon-arrow-left-page'></i></div>",
+  nextArrow: "<div class='page right'><i class='icon-arrow-right-page'></i></div>",
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        centerMode: false
+      }
+    }
+  ]
+});
+
+$('.cg-slider').slick({
+  slidesToShow: 4,
+  arrows: true,
+  variableWidth: true,
+  infinite: true,
+  prevArrow: "<div class='page left'><i class='icon-arrow-left-page'></i></div>",
+  nextArrow: "<div class='page right'><i class='icon-arrow-right-page'></i></div>",
+  responsive: [
+    {
+      breakpoint: 768,
+      settings:{
+        centerMode: true,
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 460,
+      settings:{
+        centerMode: true,
+        slidesToShow: 1
+      }
+    }
+  ]
+})
+
 var gliders = document.querySelectorAll("[id^=swiper-our-cap-lista]");
 
 gliders.forEach((glide) => {
