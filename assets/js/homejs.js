@@ -138,3 +138,142 @@ $(function () {
     $('.header-content.dark').removeClass('bg-afterScroll').addClass('bg-afterScrollrv')
   }
 } 
+
+const tabs = document.querySelector(".tab");
+const tabButton = document.querySelectorAll(".tab-button");
+const contents = document.querySelectorAll(".content");
+const tabs2 = document.querySelector(".tab2");
+const tabButton2 = document.querySelectorAll(".tab-button2");
+const contents2 = document.querySelectorAll(".content2");
+
+tabs.onclick = (e) => {
+  const id = e.target.dataset.id;
+  if (id) {
+    tabButton.forEach((btn) => {
+      btn.classList.remove("active");
+    });
+    e.target.classList.add("active");
+
+    contents.forEach((content) => {
+      content.classList.remove("active"); 
+    });
+    const element = document.getElementById(id);
+    element.classList.add("active");
+  }
+};
+
+tabs2.onclick = (e) => {
+  const id = e.target.dataset.id;
+  if (id) {
+    tabButton2.forEach((btn) => {
+      btn.classList.remove("active2");
+    });
+    e.target.classList.add("active2");
+
+    contents2.forEach((content) => {
+      content.classList.remove("active2");
+    });
+    const element = document.getElementById(id);
+    element.classList.add("active2");
+  }
+};
+
+$(document).ready(function () {
+  $('#proyecto').click(function(event){
+    event.preventDefault();
+    $('.projects__card').toggleClass('projects__card--disabled');
+  });
+
+  $('.projects__arrow').click(function(){
+    $('.projects__card').toggleClass('projects__card--disabled');
+  });
+
+  $('.projects__overlay').click(function(){
+    $('.projects__overlay').removeClass('projects__overlay--active');
+    $('.projects__sidebar').removeClass('projects__sidebar--active');
+  });
+
+  $('.projects__card').click(function(){
+    let self = $(this);
+    if($( window ).width() > 800 && self.hasClass('projects__card--disabled')){
+      $('.projects__card').toggleClass('projects__card--disabled');
+      $('.projects__sidebar').removeClass('projects__sidebar--active');
+    }
+  });
+
+  $('.projects__card__show').click(function(){
+    let self = $(this);
+    let card = self.parents('.projects__card');
+    let data = "#" + self.attr('data-project');
+    if(!(card.hasClass('projects__card--disabled') && $( window ).width() > 800)){
+      $('.projects__overlay').addClass('projects__overlay--active');
+      $('.projects__sidebar').removeClass('projects__sidebar--active');
+      $(data).addClass('projects__sidebar--active');
+    }
+  });
+
+  $('.projects__sidebar__close').click(function(event){
+    $(this).parent().removeClass('projects__sidebar--active');
+    $('.projects__overlay').removeClass('projects__overlay--active');
+    event.preventDefault();
+  });
+
+  slick_slider();
+  $(window).resize(slick_slider);
+
+  function slick_slider() {
+    var wrapper = $('.projects__slider')
+    if ($(".projects .slick-initialized").length) {
+      wrapper.slick('unslick');
+    }
+    wrapper.slick({
+      mobileFirst: true, 
+      responsive: [
+        {
+          breakpoint: 200,
+          settings: {
+            dots: true,
+            arrows: false
+          }
+        },
+        {
+          breakpoint: 800,
+          settings: "unslick"
+        }
+      ]
+    });
+  }
+
+  $('.revolution__td').click(function(){
+    let self = $(this);
+    let tab = "#" + self.attr('data-tab');
+    $('.revolution__sidebar').removeClass('revolution__sidebar--active');
+    $('.revolution__td').removeClass('revolution__td--active');
+    self.addClass('revolution__td--active');
+    $(tab).addClass('revolution__sidebar--active');
+    $('.revolution__axis').removeClass('revolution__axis1');
+    $('.revolution__axis').removeClass('revolution__axis2');
+    $('.revolution__axis').removeClass('revolution__axis3');
+    $('.revolution__axis').removeClass('revolution__axis4');
+    
+    if(tab == "#revsidebar1"){
+      $('.revolution__axis').addClass('revolution__axis1');
+    }
+    if(tab == "#revsidebar2"){
+      $('.revolution__axis').addClass('revolution__axis2');
+    }
+    if(tab == "#revsidebar3"){
+      $('.revolution__axis').addClass('revolution__axis3');
+    }
+    if(tab == "#revsidebar4"){
+      $('.revolution__axis').addClass('revolution__axis4');
+    }
+  });
+
+  $('.revolution__sidebar__close').click(function(event){
+    $(this).parent().removeClass('revolution__sidebar--active');
+    event.preventDefault();
+  });
+
+  
+});
