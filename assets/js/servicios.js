@@ -398,6 +398,121 @@ $(document).ready(function () {
 	});
 
 
+	  $(window).click(function() {
+	  $('.trg-c').each(function(){
+	    $(this).removeClass('inactivo')
+	    $(this).find('p').addClass('hidden')
+	    $(this).find('.vmas').removeClass('hidden')
+	    $(this).find('.vmnos').addClass('hidden')
+	    $(this).removeClass('h-[550px]').addClass('h-[240px]')
+	    $(this).removeClass("activo")
+	  })
+	});
+	$('.trg-c').click(function(e){
+	  e.stopPropagation()
+	})
+	$('.trg-c a.vmas').click(function(e){
+	  $('.trg-c').each(function(){
+	    $(this).removeClass('inactivo')
+	    $(this).find('p').addClass('hidden')
+	    $(this).find('.vmas').removeClass('hidden')
+	    $(this).find('.vmnos').addClass('hidden')
+	    $(this).removeClass('h-[550px]').addClass('h-[240px]')
+	    $(this).removeClass("activo")
+	  })
+	  let sefl = $(this);
+	  $(this).parent().addClass("activo")
+	  $(this).parent().removeClass("inactivo")
+	  $('.trg-c a').not(this).parent().addClass("inactivo")
+	  $(this).parent().removeClass("inactivo")
+	  $(this).parent().find('p').removeClass('hidden')
+	  $(this).parent().find('.vmas').addClass('hidden')
+	  $(this).parent().find('.vmnos').removeClass('hidden')
+	  $(this).parent().removeClass('h-[240px]').addClass('h-[550px]')
+	  if( !$(this).parent().hasClass('activo') ){
+	    $('trg-c a.vmas').not(this).parent().removeClass('activo')
+	  }
+	    e.stopPropagation();
+	})
+	$('.trg-c a.vmnos').click(function(){
+	  $('.trg-c').removeClass('inactivo')
+	  $(this).remove("activo")
+	  $(this).parent().find('p').addClass('hidden')
+	  $(this).parent().find('.vmas').removeClass('hidden')
+	  $(this).parent().find('.vmnos').addClass('hidden')
+	  $(this).parent().removeClass('h-[550px]').addClass('h-[240px]')
+	})
+
+	$('.br1').click(function(){
+	  var widthScreend = $(window).width();
+	  var svg1Backd = document.getElementById("svgroad-backdd");
+	  let widthScreenSvgd = (widthScreend < 1400) ? (widthScreend - 320)  : (widthScreend - (widthScreend - 800) / 2);
+	  svg1Backd.innerHTML = `<path class="svg-lg" id="svgscrolld" style="stroke-dasharray: 3000px; stroke-dashoffset: 2709px; stroke: #891265;" fill="none"
+	  d="M 0,120.0 l ${widthScreenSvgd},0
+	  "></path>`;
+	});
+	$('.br2').click(function(){
+	  var widthScreend = $(window).width();
+	  var svg1Backd = document.getElementById("svgroad-backdd");
+	  let widthScreenSvgd = (widthScreend < 1400) ? (widthScreend - 320)  : (widthScreend - (widthScreend - 800) / 2);
+	  svg1Backd.innerHTML = `<path class="svg-lg" id="svgscrolld" style="stroke-dasharray: 3000px; stroke-dashoffset: 2346px; stroke: #891265;" fill="none"
+	  d="M 0,120.0 l ${widthScreenSvgd},0
+	  "></path>`;
+	});
+	$('.br3').click(function(){
+	  var widthScreend = $(window).width();
+	  var svg1Backd = document.getElementById("svgroad-backdd");
+	  let widthScreenSvgd = (widthScreend < 1400) ? (widthScreend - 320)  : (widthScreend - (widthScreend - 800) / 2);
+	  svg1Backd.innerHTML = `<path class="svg-lg" id="svgscrolld" style="stroke-dasharray: 3000px; stroke-dashoffset: 1958px; stroke: #891265;" fill="none"
+	  d="M 0,120.0 l ${widthScreenSvgd},0
+	  "></path>`;
+	});
+
+	function svgrized() {
+	  var widthScreen = $(window).width();
+	  var svg1 = document.getElementById("svgroadd");
+	  var svg1Back = document.getElementById("svgroad-backdd");
+	  let widthScreenSvg = (widthScreen < 1400) ? (widthScreen - 320)  : (widthScreen - (widthScreen - 800) / 2);
+
+	  svg1.innerHTML = `<path class="svg-lg" fill="none"
+	  d="M 0,120.0 l ${widthScreen},0
+	  "></path>`;
+	  svg1Back.innerHTML = `<path class="svg-lg" id="svgscrolld" style="stroke-dasharray: 3000px; stroke-dashoffset: 2009.22px; stroke: #891265;" fill="none"
+	  d="M 0,120.0 l ${widthScreen},0
+	  "></path>`;
+	} 
+	svgrized();
+	function pathPrepared($el) {
+	  var tresmil = 3000
+	  var lineLength = $el[0].getTotalLength();
+	  $el.css("stroke-dashoffset", tresmil);
+	}
+
+	var $svgscrolld = $("path#svgscrolld");
+
+	pathPrepared($svgscrolld);
+
+	var controllerd = new ScrollMagic.Controller();
+
+	var tweend = new TimelineMax()
+	  .add(
+	    TweenMax.to($svgscrolld, 1, {
+	      strokeDashoffset: 0,
+	      ease: Linear.easeNone,
+	    })
+	  )
+	  .add(
+	    TweenMax.to("#svgroad-backd path", 1, { stroke: "#891265", ease: Linear.easeNone }),
+	    0
+	  );
+
+	  var scened = new ScrollMagic.Scene({
+	    triggerElement: "#svgtriggerd",
+	    duration: 900,
+	    tweenChanges: true,
+	  })
+	  .setTween(tweend).addTo(controllerd);
+
 	  if($('#section-service-6').length > 0){
 	    let svgheight = $("#svgwrapper").height();
 	    let element_position = $("#section-service-6").offset().top;
@@ -405,7 +520,6 @@ $(document).ready(function () {
 	      svgheight = $("#svgwrapper").height();
 	      element_position = $("#section-service-6").offset().top;
 	    });
-
 	    $(window).on("scroll", function () {
 	      var winposition = window.pageYOffset + 100;
 	      var divposition = element_position;
@@ -444,6 +558,7 @@ $(document).ready(function () {
 	      } 
 	    });
 	  }
+
 	  $(window).resize(function () {
 	    svgrize();
 	    var tween = new TimelineMax()
@@ -464,6 +579,7 @@ $(document).ready(function () {
 	    })
 	      .setTween(tween).addTo(controller);
 	  });
+
 	  $('.proccess-layer').click(function(){
 	    $('.infoblob__show').removeClass('active');
 	    $('.proccess-layer').removeClass('active');
@@ -474,6 +590,7 @@ $(document).ready(function () {
 	    $(".infoblob-wrapper").removeClass("disabled-4");
 	    $('.infoblob__hidden').stop().slideUp();
 	  });
+
 	  $("#process-easy-1 .infoblob__show").click(function (event) {
 	    let self = $(this);
 	    self.toggleClass("active");
@@ -496,6 +613,7 @@ $(document).ready(function () {
 		  l 0, 100
 		"></path>`;
 	  });
+
 	  $("#process-easy-2 .infoblob__show").click(function (event) {
 	    let self = $(this);
 	    self.toggleClass("active");
@@ -518,6 +636,7 @@ $(document).ready(function () {
 		  l 0, 100
 		"></path>`;
 	  });
+
 	  $("#process-easy-3 .infoblob__show").click(function (event) {
 	    let self = $(this);
 	    self.toggleClass("active");
@@ -552,6 +671,7 @@ $(document).ready(function () {
 		"></path>`;
 	    event.preventDefault();
 	  });
+
 	  $("#process-easy-4 .infoblob__show").click(function (event) {
 	    let self = $(this);
 	    self.toggleClass("active");
@@ -605,6 +725,7 @@ $(document).ready(function () {
 		  l 0, 100
 		"></path>`;
 	  }
+
 	  svgrize();
 	  function pathPrepare($el) {
 	    var lineLength = $el[0].getTotalLength();
@@ -645,117 +766,3 @@ $(document).ready(function () {
 
 
 
-$(document).ready(function(){
-  $(window).click(function() {
-  $('.trg-c').each(function(){
-    $(this).removeClass('inactivo')
-    $(this).find('p').addClass('hidden')
-    $(this).find('.vmas').removeClass('hidden')
-    $(this).find('.vmnos').addClass('hidden')
-    $(this).removeClass('h-[550px]').addClass('h-[240px]')
-    $(this).removeClass("activo")
-  })
-});
-$('.trg-c').click(function(e){
-  e.stopPropagation()
-})
-$('.trg-c a.vmas').click(function(e){
-  $('.trg-c').each(function(){
-    $(this).removeClass('inactivo')
-    $(this).find('p').addClass('hidden')
-    $(this).find('.vmas').removeClass('hidden')
-    $(this).find('.vmnos').addClass('hidden')
-    $(this).removeClass('h-[550px]').addClass('h-[240px]')
-    $(this).removeClass("activo")
-  })
-  let sefl = $(this);
-  $(this).parent().addClass("activo")
-  $(this).parent().removeClass("inactivo")
-  $('.trg-c a').not(this).parent().addClass("inactivo")
-  $(this).parent().removeClass("inactivo")
-  $(this).parent().find('p').removeClass('hidden')
-  $(this).parent().find('.vmas').addClass('hidden')
-  $(this).parent().find('.vmnos').removeClass('hidden')
-  $(this).parent().removeClass('h-[240px]').addClass('h-[550px]')
-  if( !$(this).parent().hasClass('activo') ){
-    $('trg-c a.vmas').not(this).parent().removeClass('activo')
-  }
-    e.stopPropagation();
-})
-$('.trg-c a.vmnos').click(function(){
-  $('.trg-c').removeClass('inactivo')
-  $(this).remove("activo")
-  $(this).parent().find('p').addClass('hidden')
-  $(this).parent().find('.vmas').removeClass('hidden')
-  $(this).parent().find('.vmnos').addClass('hidden')
-  $(this).parent().removeClass('h-[550px]').addClass('h-[240px]')
-})
-$('.br1').click(function(){
-  var widthScreend = $(window).width();
-  var svg1Backd = document.getElementById("svgroad-backdd");
-  let widthScreenSvgd = (widthScreend < 1400) ? (widthScreend - 320)  : (widthScreend - (widthScreend - 800) / 2);
-  svg1Backd.innerHTML = `<path class="svg-lg" id="svgscrolld" style="stroke-dasharray: 3000px; stroke-dashoffset: 2709px; stroke: #891265;" fill="none"
-  d="M 0,120.0 l ${widthScreenSvgd},0
-  "></path>`;
-});
-$('.br2').click(function(){
-  var widthScreend = $(window).width();
-  var svg1Backd = document.getElementById("svgroad-backdd");
-  let widthScreenSvgd = (widthScreend < 1400) ? (widthScreend - 320)  : (widthScreend - (widthScreend - 800) / 2);
-  svg1Backd.innerHTML = `<path class="svg-lg" id="svgscrolld" style="stroke-dasharray: 3000px; stroke-dashoffset: 2346px; stroke: #891265;" fill="none"
-  d="M 0,120.0 l ${widthScreenSvgd},0
-  "></path>`;
-});
-$('.br3').click(function(){
-  var widthScreend = $(window).width();
-  var svg1Backd = document.getElementById("svgroad-backdd");
-  let widthScreenSvgd = (widthScreend < 1400) ? (widthScreend - 320)  : (widthScreend - (widthScreend - 800) / 2);
-  svg1Backd.innerHTML = `<path class="svg-lg" id="svgscrolld" style="stroke-dasharray: 3000px; stroke-dashoffset: 1958px; stroke: #891265;" fill="none"
-  d="M 0,120.0 l ${widthScreenSvgd},0
-  "></path>`;
-});
-function svgrized() {
-  var widthScreen = $(window).width();
-  var svg1 = document.getElementById("svgroadd");
-  var svg1Back = document.getElementById("svgroad-backdd");
-  let widthScreenSvg = (widthScreen < 1400) ? (widthScreen - 320)  : (widthScreen - (widthScreen - 800) / 2);
-
-  svg1.innerHTML = `<path class="svg-lg" fill="none"
-  d="M 0,120.0 l ${widthScreen},0
-  "></path>`;
-  svg1Back.innerHTML = `<path class="svg-lg" id="svgscrolld" style="stroke-dasharray: 3000px; stroke-dashoffset: 2009.22px; stroke: #891265;" fill="none"
-  d="M 0,120.0 l ${widthScreen},0
-  "></path>`;
-} 
-svgrized();
-function pathPrepared($el) {
-  var tresmil = 3000
-  var lineLength = $el[0].getTotalLength();
-  $el.css("stroke-dashoffset", tresmil);
-}
-
-var $svgscrolld = $("path#svgscrolld");
-
-pathPrepared($svgscrolld);
-
-var controllerd = new ScrollMagic.Controller();
-
-var tweend = new TimelineMax()
-  .add(
-    TweenMax.to($svgscrolld, 1, {
-      strokeDashoffset: 0,
-      ease: Linear.easeNone,
-    })
-  )
-  .add(
-    TweenMax.to("#svgroad-backd path", 1, { stroke: "#891265", ease: Linear.easeNone }),
-    0
-  );
-
-  var scened = new ScrollMagic.Scene({
-    triggerElement: "#svgtriggerd",
-    duration: 900,
-    tweenChanges: true,
-  })
-  .setTween(tweend).addTo(controllerd);
-})
