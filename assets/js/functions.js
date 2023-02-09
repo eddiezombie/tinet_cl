@@ -329,6 +329,10 @@ $(document).ready(function () {
     });
   }
 
+  if($('#section-service-4').length > 0){
+    animate_numbers("#section-service-4");
+  }
+
   if($('#service-somos').length > 0){
     animate_numbers("#service-somos");
   }

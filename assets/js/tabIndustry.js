@@ -1,29 +1,3 @@
-// var $tabs = $("ul.i-tabs li"),
-//   clickDisabled = false;
-
-// $tabs.click(function () {
-//   if (clickDisabled) {
-//     return;
-//   }
-//   if (!$(this).hasClass("active")) {
-//     var tabNum = $(this).index();
-//     var nthChild = tabNum + 1;
-//     $("ul.i-tabs li.active").removeClass("active");
-//     $(this).addClass("active");
-//     $("ul.i-tab li.active").fadeOut(300, function () {
-//       $(this).removeClass("active");
-//       $("ul.i-tab li:nth-child(" + nthChild + ")")
-//         .addClass("active")
-//         .fadeIn(300);
-//     });
-//   }
-
-//   clickDisabled = true;
-//   setTimeout(function () {
-//     clickDisabled = false;
-//   }, 500);
-// });
-
 var $tabs = $("ul.btn-t-iss li"),
   clickDisabled = false;
 
@@ -49,6 +23,48 @@ $tabs.click(function () {
     clickDisabled = false;
   }, 500);
 });
+
+$('.casos-relacionados').slick({
+    slidesToShow: 3,
+    arrows: false,
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+
+$('.tab-cifras').slick({
+    arrows: false,
+    centerMode: true,
+    slidesToShow: 1,
+    variableWidth: true,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            slidesToShow: 1,
+            variableWidth: true
+            }
+        }
+    ]
+})
 
 var accItem = document.getElementsByClassName("accordionItem");
 var accHD = document.getElementsByClassName("accordionItemHeading");

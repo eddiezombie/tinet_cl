@@ -1614,7 +1614,6 @@
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/homejs.js"></script>
     <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/functions.js"></script>
     <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js"></script>
     <script src="assets/js/form.js"></script>
@@ -1622,43 +1621,6 @@
 
 </html>
 <script>
-  const tabs = document.querySelector(".tab");
-  const tabButton = document.querySelectorAll(".tab-button");
-  const contents = document.querySelectorAll(".content");
-  const tabs2 = document.querySelector(".tab2");
-  const tabButton2 = document.querySelectorAll(".tab-button2");
-  const contents2 = document.querySelectorAll(".content2");
 
-  tabs.onclick = (e) => {
-    const id = e.target.dataset.id;
-    if (id) {
-      tabButton.forEach((btn) => {
-        btn.classList.remove("active");
-      });
-      e.target.classList.add("active");
-
-      contents.forEach((content) => {
-        content.classList.remove("active"); 
-      });
-      const element = document.getElementById(id);
-      element.classList.add("active");
-    }
-  };
-
-  tabs2.onclick = (e) => {
-    const id = e.target.dataset.id;
-    if (id) {
-      tabButton2.forEach((btn) => {
-        btn.classList.remove("active2");
-      });
-      e.target.classList.add("active2");
-
-      contents2.forEach((content) => {
-        content.classList.remove("active2");
-      });
-      const element = document.getElementById(id);
-      element.classList.add("active2");
-    }
-  };
 
 </script>
