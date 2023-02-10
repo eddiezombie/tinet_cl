@@ -47,17 +47,11 @@ $(document).ready(function () {
 	  variableWidth: false,
 	  dots: true
 	})
-	// var reproductor = videojs('fm-video', {
-	//   fluid: true,
-	//   aspectRatio: '9:16'
-	// });
 	$('.cbuss').on('afterChange', function(event, slick, currentSlide, nextSlide){
 	  var suma = currentSlide + 1;
 	  console.log(suma);
 	  $('.dspnum .numbu').text(suma)
-	  //$(".index-uno .index-slide").text(suma);
 	});
-	//video carousel
 	$('.video').parent().click(function () {
 	  if( $(this).children(".video").get(0).paused ){
 	      $(this).children(".video").get(0).play();
@@ -416,7 +410,6 @@ $(document).ready(function () {
 	      var divposition3 = element_position + (3 * svgheight) / 5;
 	      var divposition4 = element_position + (3 * svgheight) / 5;
 	      if (winposition > divposition) {
-	        //do stuff
 	        if ($("#process-easy-1").hasClass("haslabel")) {
 	          $("#process-easy-1 .infoblob-label").fadeIn(1);
 	        }
@@ -535,17 +528,7 @@ $(document).ready(function () {
 	    $(".infoblob-wrapper").addClass("transition");
 	    self.removeClass("disabled-3");
 	    self.find(".infoblob__hidden:first").stop().slideToggle();
-	  //   $("#process-easy-3 .infoblob-label--alt").css("display", "none");
-	  //   setTimeout( ( )=>{
-			// 	$("#process-easy-3 .infoblob-label--alt").fadeIn(1);
-			// },400)
-		// if(self.hasClass( "disabled-32" )){
-		// 	setTimeout( ( )=>{
-		// 		self.toggleClass("disabled-32");
-		// 	},400)
-		// }else{
-		// 	self.toggleClass("disabled-32");
-		// }
+
 		var widthScreen = $(window).width();
 		var svg1Back = document.getElementById("svgroad-back");
 		let widthScreenSvg = (widthScreen < 1400) ? (widthScreen - 320)  : (widthScreen - (widthScreen - 800) / 2);
@@ -569,13 +552,7 @@ $(document).ready(function () {
 	    $(".infoblob-wrapper").addClass("transition");
 	    self.removeClass("disabled-4");
 	    self.find(".infoblob__hidden:first").stop().slideToggle();
-		// if(self.hasClass( "disabled-32" )){
-		// 	setTimeout( ( )=>{
-		// 		self.toggleClass("disabled-32");
-		// 	},400)
-		// }else{
-		// 	self.toggleClass("disabled-32");
-		// }
+
 		var widthScreen = $(window).width();
 		var svg1Back = document.getElementById("svgroad-back");
 		let widthScreenSvg = (widthScreen < 1400) ? (widthScreen - 320)  : (widthScreen - (widthScreen - 800) / 2);

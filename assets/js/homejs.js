@@ -16,7 +16,7 @@ $('.resswiper').click(function(){
     $('.resswiper').addClass('inittexto')
     $('.video-home').children('video').get(0).play()
 })
-//reverse
+
 $('.backbtn').click(function(){
     $('.swipevideo').removeClass('inittexto').addClass('inittextorv')
     $('.swpImg').removeClass('inittexto').addClass('inittextorv')
@@ -61,12 +61,10 @@ $('.tab-button-video').click(function(){
 $(function () {
   var controller = new ScrollMagic.Controller();
 
-  // movimiento paneles
   var tween1 = new TimelineMax()
     .to("#slideContainer", 1, { x: "-25%" })
     .to("#slideContainer", 1, { x: "-50%" })
 
-  // s 1
   new ScrollMagic.Scene({
     triggerElement: "#pinContainer",
     triggerHook: 0,
@@ -76,7 +74,6 @@ $(function () {
     .setTween(tween1)
     .addTo(controller);
 
-  // build a 1
   var tween2 = new TimelineMax().add([
     TweenMax.fromTo(
       "#sectionOne .linea1",
@@ -116,7 +113,6 @@ $(function () {
     )
   ]);
 
-  // build a 2
   new ScrollMagic.Scene({
     triggerElement: "#pinContainer",
     duration: "200%",

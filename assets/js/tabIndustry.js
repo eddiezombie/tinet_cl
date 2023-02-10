@@ -90,9 +90,7 @@ function reveal() {
 
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active-reveal");
-    } else {
-      //reveals[i].classList.remove("active-reveal");
-    }
+    } 
   }
 }
 window.addEventListener("scroll", reveal);

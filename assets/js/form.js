@@ -89,7 +89,6 @@ MicroModal.init();
     };
 
 (function() {
-  //formulario
   var tagSelect = document.querySelector(".pseudo-select");
   var cont = document.querySelector(".contenido-select");
   var valo = document.querySelector(".valores");
@@ -160,7 +159,6 @@ MicroModal.init();
       }
     }
     valo.innerHTML = "<span class='demspan fs-16 lh-21 text-[#838799]'>Selecciona uno o más servicios</span>";
-    //console.log(cn);
     if(cn > 0){
       for(let i = 0; i < servicios.length; i++){
         if( servicios[i].select ){
@@ -210,5 +208,5 @@ MicroModal.init();
       }
 
     })
-    //fin formulario
+
 })();

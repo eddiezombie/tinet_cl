@@ -32,7 +32,6 @@ $(document).ready(function () {
      }
   });
 
-// circulo v2
 const state = {};
 const carouselList = document.querySelector(".carousel__list");
 const carouselItems = document.querySelectorAll(".carousel__item");
@@ -101,10 +100,6 @@ $('.cultura-slider').slick({
 (function() {
     var dt = document.querySelector(".destroy");
     var et = document.querySelector(".entr");
-    // setTimeout(() => {
-    //     dt.remove();
-    //     et.classList.add("active");
-    // }, 2500);
     $('.seeMoreB').click(function(){
       $('.bx-b').each(function(){
         $(this).toggleClass("activo")
@@ -132,7 +127,6 @@ $('.slide-circle').slick({
   focusOnSelect: true,
   draggable: false
 });
-//1
 $('.slider-v-for').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -166,7 +160,6 @@ $('.slider-v-nav').slick({
     }
   ]
 });
-//2
 $('.slider-v-for-2').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -200,7 +193,6 @@ $('.slider-v-nav-2').slick({
     }
   ]
 });
-//3
 $('.slider-v-for-3').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -234,7 +226,7 @@ $('.slider-v-nav-3').slick({
     }
   ]
 });
-//4
+
 $('.slider-v-for-4').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -273,7 +265,6 @@ $('.casoss').slick({
   slidesToScroll: 1,
   dots: false,
   centerMode: false,
-  //focusOnSelect: true,
   variableWidth: true,
   prevArrow: "<div class='page left bg-[#003A5C] flex flex-col cursor-pointer items-center justify-center text-[#ffffff] w-[40px] h-[40px] rounded-full absolute bottom-[-75px] right-[50%] mr-[15px]'><i class='icon-arrow-left-page'></i></div>",
   nextArrow: "<div class='page right bg-[#003A5C] flex flex-col cursor-pointer items-center justify-center text-[#ffffff] w-[40px] h-[40px] rounded-full absolute bottom-[-75px] left-[50%] ml-[15px]'><i class='icon-arrow-right-page'></i></div>",

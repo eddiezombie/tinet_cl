@@ -47,17 +47,14 @@ $(document).ready(function () {
 	  variableWidth: false,
 	  dots: true
 	})
-	// var reproductor = videojs('fm-video', {
-	//   fluid: true,
-	//   aspectRatio: '9:16'
-	// });
+
 	$('.cbuss').on('afterChange', function(event, slick, currentSlide, nextSlide){
 	  var suma = currentSlide + 1;
 	  console.log(suma);
 	  $('.dspnum .numbu').text(suma)
-	  //$(".index-uno .index-slide").text(suma);
+
 	});
-	//video carousel
+
 	$('.video').parent().click(function () {
 	  if( $(this).children(".video").get(0).paused ){
 	      $(this).children(".video").get(0).play();

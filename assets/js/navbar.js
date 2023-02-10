@@ -12,7 +12,6 @@ $('.header-content').click(function(event){
 });
 
 
-//tab menu
 var $tabsm = $("ul.ul-stm li"),
 clickDisabledm = false;
 
@@ -39,7 +38,6 @@ $tabsm.click(function () {
   }, 500);
 });
 
-//lang btn
 $(".es-btn").click(function(e){
   $(".select-lang").fadeToggle("fast");
   console.log('sd');
@@ -53,14 +51,12 @@ $(".select-lang a").click(function(e){
   e.stopPropagation();
 })
 
-//burger
 $(".responsive-burger").click(function(){
   $(this).toggleClass("active");
   $(".left-navbar").toggleClass("active");
   $(".screen-block").toggleClass("active");
 })
 
-//menu responsive
 $(".trg-servicios").click(function(){
   $(".first-ul").fadeOut("fast", function(){
     $(".rServicios").fadeIn("fast")
