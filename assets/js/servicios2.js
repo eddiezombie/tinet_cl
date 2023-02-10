@@ -31,7 +31,6 @@ $(document).ready(function () {
 	})
 
 	$('.cbuss').on('afterChange', function(event, slick, currentSlide) {
-	  console.log(slick, currentSlide);
 	  if (slick.$slides.length-1 == currentSlide) {
 	    $('.cbuss__bg').hide();
 	  }else{
@@ -50,7 +49,6 @@ $(document).ready(function () {
 
 	$('.cbuss').on('afterChange', function(event, slick, currentSlide, nextSlide){
 	  var suma = currentSlide + 1;
-	  console.log(suma);
 	  $('.dspnum .numbu').text(suma)
 
 	});

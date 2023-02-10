@@ -49,7 +49,6 @@ $(document).ready(function () {
 	})
 	$('.cbuss').on('afterChange', function(event, slick, currentSlide, nextSlide){
 	  var suma = currentSlide + 1;
-	  console.log(suma);
 	  $('.dspnum .numbu').text(suma)
 	});
 	$('.video').parent().click(function () {

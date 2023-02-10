@@ -40,7 +40,6 @@ $tabsm.click(function () {
 
 $(".es-btn").click(function(e){
   $(".select-lang").fadeToggle("fast");
-  console.log('sd');
   e.stopPropagation();
 })
 $(".select-lang a").click(function(e){
