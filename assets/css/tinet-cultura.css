@@ -300,8 +300,13 @@
   margin-top: 0px;
 }
 @media (max-width:768px){
+    .vid-btn-tabs > li{
+      margin-right: 10px;
+    }
+    .vid-btn-list{
+      overflow: scroll;
+    }
     .vid-btn-tabs{
-        overflow-x: scroll;
         display: -webkit-inline-box !important;
         padding-bottom: 20px;
     }
