@@ -179,7 +179,6 @@ $(document).ready(function () {
           wH = $(window).height(),
           wS = $(this).scrollTop() - 150;
       if (wS > (hT+hH-wH)){
-        console.log('info1 disabled');
         --pilares1;
         $('#pilares-circle2').addClass('active');
         $('body').addClass('stop-scrolling');
@@ -193,7 +192,6 @@ $(document).ready(function () {
           wH = $(window).height(),
           wS = $(this).scrollTop() - 150;
       if (wS > (hT+hH-wH)){
-        console.log('info2');
         --pilares2;
         $('#pilares-circle3').addClass('active');
         $('body').addClass('stop-scrolling');
@@ -293,7 +291,6 @@ $(document).ready(function () {
             }
         },
         });
-      // console.log('window was resized', screen.width);
     }
     initSwipersAll();
   }
@@ -366,7 +363,6 @@ $(document).ready(function () {
         },
       },
       );
-      // console.log('window was resized', screen.width);
     }
     initSwipersSomos();
   }
@@ -405,7 +401,6 @@ $(document).ready(function () {
         },
       },
       );
-      // console.log('window was resized', screen.width);
     }
     initSwipersPhoto(); 
   }
@@ -450,7 +445,6 @@ $(document).ready(function () {
 
       },
       );
-      // console.log('window was resized', screen.width);
     }
     initSwipersEquipment(); 
   }
@@ -486,7 +480,6 @@ $(document).ready(function () {
          swiper: galleryThumbs,
        },
      });
-     // console.log('window was resized', screen.width);
    }
    initSwipersPrueba(); 
   }

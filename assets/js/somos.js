@@ -5,11 +5,11 @@ $(document).ready(function () {
   let stage = 1;
 
   function disableScroll() {
-    // Get the current page scroll position
+
     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
     
-    // if any scroll is attempted, set this to the previous value
+
     window.onscroll = function() {
       window.scrollTo(scrollLeft, scrollTop);
     };
@@ -42,7 +42,6 @@ $(document).ready(function () {
           wH = $(window).height(),
           wS = $(this).scrollTop() - 150;
       if (wS > (hT+hH-wH)){
-        console.log('info1 disabled');
         --pilares1;
         $('#pilares-circle2').addClass('active');
         $('body').addClass('stop-scrolling');
@@ -56,7 +55,6 @@ $(document).ready(function () {
           wH = $(window).height(),
           wS = $(this).scrollTop() - 150;
       if (wS > (hT+hH-wH)){
-        console.log('info2');
         --pilares2;
         $('#pilares-circle3').addClass('active');
         $('body').addClass('stop-scrolling');

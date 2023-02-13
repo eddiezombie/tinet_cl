@@ -1,7 +1,7 @@
 var $tabs = $("ul.btn-t-iss li"),
   clickDisabled = false;
 
-$tabs.click(function () {
+$tabs.on("click",function () {
   if (clickDisabled) {
     return;
   }
@@ -90,9 +90,7 @@ function reveal() {
 
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active-reveal");
-    } else {
-      //reveals[i].classList.remove("active-reveal");
-    }
+    } 
   }
 }
 window.addEventListener("scroll", reveal);

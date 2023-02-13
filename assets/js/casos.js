@@ -217,7 +217,7 @@ function changePage3() {
     "0" + indexourCap3;
 }
 
-$('.case-study-swiper').click(function(){
+$('.case-study-swiper').on("click",function(){
   let self = $(this);
   let da = document.querySelectorAll(
     "#swiper-our-cap-lista-4 .swiper-lista-item"
