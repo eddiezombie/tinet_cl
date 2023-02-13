@@ -364,7 +364,7 @@ $(document).ready(function () {
 	  ]
 	})
 
-	$(".content-circle").click(function() {
+	$(".content-circle").on("click",function() {
 		if (!$(this).hasClass("active")) {
 			$(".content-circle").removeClass("active");
 			$(this).addClass("active");
@@ -393,7 +393,7 @@ $(document).ready(function () {
 	});
 
 
-	  $(window).click(function() {
+	  $(window).on("click",function() {
 	  $('.trg-c').each(function(){
 	    $(this).removeClass('inactivo')
 	    $(this).find('p').addClass('hidden')
@@ -403,10 +403,10 @@ $(document).ready(function () {
 	    $(this).removeClass("activo")
 	  })
 	});
-	$('.trg-c').click(function(e){
+	$('.trg-c').on("click",function(e){
 	  e.stopPropagation()
 	})
-	$('.trg-c a.vmas').click(function(e){
+	$('.trg-c a.vmas').on("click",function(e){
 	  $('.trg-c').each(function(){
 	    $(this).removeClass('inactivo')
 	    $(this).find('p').addClass('hidden')
@@ -429,7 +429,7 @@ $(document).ready(function () {
 	  }
 	    e.stopPropagation();
 	})
-	$('.trg-c a.vmnos').click(function(){
+	$('.trg-c a.vmnos').on("click",function(){
 	  $('.trg-c').removeClass('inactivo')
 	  $(this).remove("activo")
 	  $(this).parent().find('p').addClass('hidden')
@@ -438,7 +438,7 @@ $(document).ready(function () {
 	  $(this).parent().removeClass('h-[550px]').addClass('h-[240px]')
 	})
 
-	$('.br1').click(function(){
+	$('.br1').on("click",function(){
 	  var widthScreend = $(window).width();
 	  var svg1Backd = document.getElementById("svgroad-backdd");
 	  let widthScreenSvgd = (widthScreend < 1400) ? (widthScreend - 320)  : (widthScreend - (widthScreend - 800) / 2);
@@ -446,7 +446,7 @@ $(document).ready(function () {
 	  d="M 0,120.0 l ${widthScreenSvgd},0
 	  "></path>`;
 	});
-	$('.br2').click(function(){
+	$('.br2').on("click",function(){
 	  var widthScreend = $(window).width();
 	  var svg1Backd = document.getElementById("svgroad-backdd");
 	  let widthScreenSvgd = (widthScreend < 1400) ? (widthScreend - 320)  : (widthScreend - (widthScreend - 800) / 2);
@@ -454,7 +454,7 @@ $(document).ready(function () {
 	  d="M 0,120.0 l ${widthScreenSvgd},0
 	  "></path>`;
 	});
-	$('.br3').click(function(){
+	$('.br3').on("click",function(){
 	  var widthScreend = $(window).width();
 	  var svg1Backd = document.getElementById("svgroad-backdd");
 	  let widthScreenSvgd = (widthScreend < 1400) ? (widthScreend - 320)  : (widthScreend - (widthScreend - 800) / 2);

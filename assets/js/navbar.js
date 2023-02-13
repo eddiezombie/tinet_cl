@@ -1,13 +1,13 @@
-$(".tr-ul li a").click(function(){
+$(".tr-ul li a").on("click",function(){
     $(".tr-ul li a").not(this).next('.menu-desplegable').fadeOut("fast");
     $(this).next('.menu-desplegable').fadeToggle("fast");
     $(this).toggleClass('btn-nav__active');
 })
-$(window).click(function() {
+$(window).on("click",function() {
     $('.menu-desplegable').fadeOut("fast");
     $(".select-lang").fadeOut("fast");
 });
-$('.header-content').click(function(event){
+$('.header-content').on("click",function(event){
     event.stopPropagation();
 });
 
@@ -15,7 +15,7 @@ $('.header-content').click(function(event){
 var $tabsm = $("ul.ul-stm li"),
 clickDisabledm = false;
 
-$tabsm.click(function () {
+$tabsm.on("click",function () {
   if (clickDisabledm) {
     return;
   }
@@ -38,11 +38,11 @@ $tabsm.click(function () {
   }, 500);
 });
 
-$(".es-btn").click(function(e){
+$(".es-btn").on("click", function(e){
   $(".select-lang").fadeToggle("fast");
   e.stopPropagation();
 })
-$(".select-lang a").click(function(e){
+$(".select-lang a").on("click",function(e){
   if( !$(this).hasClass("active")  ){
     $(this).addClass("active")
     $(".select-lang a").not(this).removeClass("active")
@@ -50,38 +50,38 @@ $(".select-lang a").click(function(e){
   e.stopPropagation();
 })
 
-$(".responsive-burger").click(function(){
+$(".responsive-burger").on("click", function(){
   $(this).toggleClass("active");
   $(".left-navbar").toggleClass("active");
   $(".screen-block").toggleClass("active");
 })
 
-$(".trg-servicios").click(function(){
+$(".trg-servicios").on("click", function(){
   $(".first-ul").fadeOut("fast", function(){
     $(".rServicios").fadeIn("fast")
   });
 })
-$(".trg-industria").click(function(){
+$(".trg-industria").on("click", function(){
   $(".first-ul").fadeOut("fast", function(){
     $(".rIndustria").fadeIn("fast")
   });
 })
-$(".trg-talento").click(function(){
+$(".trg-talento").on("click", function(){
   $(".first-ul").fadeOut("fast", function(){
     $(".rTalento").fadeIn("fast")
   });
 })
-$(".trg-idioma").click(function(){
+$(".trg-idioma").on("click", function(){
   $(".first-ul").fadeOut("fast", function(){
     $(".rIdioma").fadeIn("fast")
   });
 })
-$(".returnM").click(function(){
+$(".returnM").on("click", function(){
   $(this).parent().fadeOut("fast", function(){
     $(".first-ul").fadeIn("fast")
   })
 })
-$(".nb").click(function(){
+$(".nb").on("click", function(){
   if( $(this).hasClass("active") ){
     $(this).removeClass("active")
   }

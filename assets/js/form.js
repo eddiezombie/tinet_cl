@@ -191,7 +191,7 @@ MicroModal.init();
       insertData(servicios);
     }
 
-    $(".tagS").click(function(){
+    $(".tagS").on("click",function(){
       $(this).toggleClass("active")
       if( $(this).hasClass("active") ){
         for (let i = 0; i < servicios.length; i++){

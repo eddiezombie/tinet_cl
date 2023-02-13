@@ -460,7 +460,7 @@ $(document).ready(function () {
 	      .setTween(tween).addTo(controller);
 	  });
 
-	  $('.proccess-layer').click(function(){
+	  $('.proccess-layer').on("click",function(){
 	    $('.infoblob__show').removeClass('active');
 	    $('.proccess-layer').removeClass('active');
 	    $(".infoblob-wrapper").removeClass("disabled");
@@ -471,7 +471,7 @@ $(document).ready(function () {
 	    $('.infoblob__hidden').stop().slideUp();
 	  });
 
-	  $("#process-easy-1 .infoblob__show").click(function (event) {
+	  $("#process-easy-1 .infoblob__show").on("click",function (event) {
 	    let self = $(this);
 	    self.toggleClass("active");
 	    self = self.parents(".infoblob-wrapper");
@@ -494,7 +494,7 @@ $(document).ready(function () {
 		"></path>`;
 	  });
 
-	  $("#process-easy-2 .infoblob__show").click(function (event) {
+	  $("#process-easy-2 .infoblob__show").on("click",function (event) {
 	    let self = $(this);
 	    self.toggleClass("active");
 	    self = self.parents(".infoblob-wrapper");
@@ -517,7 +517,7 @@ $(document).ready(function () {
 		"></path>`;
 	  });
 
-	  $("#process-easy-3 .infoblob__show").click(function (event) {
+	  $("#process-easy-3 .infoblob__show").on("click",function (event) {
 	    let self = $(this);
 	    self.toggleClass("active");
 	    self = self.parents(".infoblob-wrapper");
@@ -542,7 +542,7 @@ $(document).ready(function () {
 	    event.preventDefault();
 	  });
 
-	  $("#process-easy-4 .infoblob__show").click(function (event) {
+	  $("#process-easy-4 .infoblob__show").on("click",function (event) {
 	    let self = $(this);
 	    self.toggleClass("active");
 	    self = self.parents(".infoblob-wrapper");

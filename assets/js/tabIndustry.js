@@ -1,7 +1,7 @@
 var $tabs = $("ul.btn-t-iss li"),
   clickDisabled = false;
 
-$tabs.click(function () {
+$tabs.on("click",function () {
   if (clickDisabled) {
     return;
   }

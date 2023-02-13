@@ -1,4 +1,4 @@
-$('.swipevideo').click(function(){
+$('.swipevideo').on("click",function(){
     $(this).removeClass('inittextorv').addClass('inittexto')
     $('.swpImg').removeClass('inittextorv').addClass('inittexto')
     $('.video-home').removeClass('initSlideVideorv').addClass('initSlideVideo')
@@ -12,12 +12,12 @@ $('.swipevideo').click(function(){
     $('.video-home').children('video').get(0).play()
     $('.backbtn').removeClass('backbtntrgrv').addClass('backbtntrg')
 })
-$('.resswiper').click(function(){
+$('.resswiper').on("click",function(){
     $('.resswiper').addClass('inittexto')
     $('.video-home').children('video').get(0).play()
 })
 
-$('.backbtn').click(function(){
+$('.backbtn').on("click",function(){
     $('.swipevideo').removeClass('inittexto').addClass('inittextorv')
     $('.swpImg').removeClass('inittexto').addClass('inittextorv')
     $('.video-home').removeClass('initSlideVideo').addClass('initSlideVideorv')
@@ -32,27 +32,27 @@ $('.backbtn').click(function(){
     $('.backbtn').removeClass('backbtntrg').addClass('backbtntrgrv')
 })
 
-$('.playVideo').click(function(){
+$('.playVideo').on("click",function(){
     $('.video-way').addClass('active')
     $('.video-way').children('video').get(0).play()
 })
 
-$('.playVideo2').click(function(){
+$('.playVideo2').on("click",function(){
     $('.video-way2').addClass('active')
     $('.video-way2').children('video').get(0).play()
 })
 
-$('.playVideo3').click(function(){
+$('.playVideo3').on("click",function(){
     $('.video-way3').addClass('active')
     $('.video-way3').children('video').get(0).play()
 })
 
-$('.playVideo4').click(function(){
+$('.playVideo4').on("click",function(){
     $('.video-way4').addClass('active')
     $('.video-way4').children('video').get(0).play()
 })
 
-$('.tab-button-video').click(function(){
+$('.tab-button-video').on("click",function(){
     $('.video-way').children('video')[0].load();
     $('.video-way2').children('video')[0].load();
     $('.video-way3').children('video')[0].load();
@@ -175,21 +175,21 @@ tabs2.onclick = (e) => {
 };
 
 $(document).ready(function () {
-  $('#proyecto').click(function(event){
+  $('#proyecto').on("click",function(event){
     event.preventDefault();
     $('.projects__card').toggleClass('projects__card--disabled');
   });
 
-  $('.projects__arrow').click(function(){
+  $('.projects__arrow').on("click",function(){
     $('.projects__card').toggleClass('projects__card--disabled');
   });
 
-  $('.projects__overlay').click(function(){
+  $('.projects__overlay').on("click",function(){
     $('.projects__overlay').removeClass('projects__overlay--active');
     $('.projects__sidebar').removeClass('projects__sidebar--active');
   });
 
-  $('.projects__card').click(function(){
+  $('.projects__card').on("click",function(){
     let self = $(this);
     if($( window ).width() > 800 && self.hasClass('projects__card--disabled')){
       $('.projects__card').toggleClass('projects__card--disabled');
@@ -197,7 +197,7 @@ $(document).ready(function () {
     }
   });
 
-  $('.projects__card__show').click(function(){
+  $('.projects__card__show').on("click",function(){
     let self = $(this);
     let card = self.parents('.projects__card');
     let data = "#" + self.attr('data-project');
@@ -208,7 +208,7 @@ $(document).ready(function () {
     }
   });
 
-  $('.projects__sidebar__close').click(function(event){
+  $('.projects__sidebar__close').on("click",function(event){
     $(this).parent().removeClass('projects__sidebar--active');
     $('.projects__overlay').removeClass('projects__overlay--active');
     event.preventDefault();
@@ -240,7 +240,7 @@ $(document).ready(function () {
     });
   }
 
-  $('.revolution__td').click(function(){
+  $('.revolution__td').on("click",function(){
     let self = $(this);
     let tab = "#" + self.attr('data-tab');
     $('.revolution__sidebar').removeClass('revolution__sidebar--active');
@@ -266,7 +266,7 @@ $(document).ready(function () {
     }
   });
 
-  $('.revolution__sidebar__close').click(function(event){
+  $('.revolution__sidebar__close').on("click",function(event){
     $(this).parent().removeClass('revolution__sidebar--active');
     event.preventDefault();
   });
