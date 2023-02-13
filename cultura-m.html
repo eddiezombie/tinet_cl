@@ -1,1135 +1,1370 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tinet - Cultura</title>
-    <script src="assets/tailwindcss/tailwindcss.js"></script>
-    <link rel="stylesheet" href="assets/css/common/fonts.css" />
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/slick-theme.css">
-    <link rel="stylesheet" href="assets/css/tinet-style.css" />
-    <link rel="stylesheet" href="assets/css/tinet-services-style.css">
-    <link rel="stylesheet" href="assets/css/tinet-cultura.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Co-creando soluciones basadas en tecnología y consultoría" />
+  <title>Tinet - Cultura</title>
+  <script src="assets/tailwindcss/tailwindcss.js"></script>
+  <link rel="stylesheet" href="assets/css/common/fonts.css" />
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/slick-theme.css">
+  <link rel="stylesheet" href="assets/css/tinet-style.css" />
+  <link rel="stylesheet" href="assets/css/tinet-services-style.css">
+  <link rel="stylesheet" href="assets/css/tinet-cultura.css">
 </head>
+
 <body>
-    <div class="header-content">
-        <div class="responsive-burger ml-[26px]">
-            <div class="top"></div>
-            <div class="mid"></div>
-            <div class="bot"></div>
-        </div>
-        <div class="cntHead">
-          <a href="#" class="logo-header">
-            <img src="assets/img/header/Logo.svg" alt="">
-          </a>
-          <div class="btn-nav">
-              <ul class="tr-ul">
-                  <li><a class="fs-14 lh-21 fw-6" href="#!">Somos Tinet</a></li>
-                  <li>
-                      <a class="fs-14 lh-21 fw-6" href="#!">Servicios</a>
-                      <div class="menu-desplegable m-servicios">
-                          <div class="contenedor-menu-nav">
-                              <div>
-                                  <span class="fs-12 fw-6 lh-18">Construyamos juntos una historia memorable</span>
-                                  <a class="fs-14 lh-21 fw-6" href="">Contactanos</a>
-                              </div>
-                              <div class="ser-tab-menu">
-                                  <ul class="ul-stm">
-                                      <li class="fw-6 fs-16 lh-18 active">Digital Transformation</li>
-                                      <li class="fw-6 fs-16 lh-18">Digital Experience</li>
-                                      <li class="fw-6 fs-16 lh-18">Digital Technology</li>
-                                      <li class="fw-6 fs-16 lh-18">Project Management</li>
-                                  </ul>
-                              </div>
-                              <div>
-                                  <ul class="content-ul-stm">
-                                      <li class="active">
-                                          <div>
-                                              <img src="assets/img/header/Services1.svg" alt="">
-                                              <p class="fs-12 fw-6 cl-pr-5">Estrategia y negocio</p>
-                                          </div>
-                                          <a class="fs-12 fw-4" href="">Business transformation services</a>
-                                          <a class="fs-12 fw-4" href="">Digital maturity model</a>
-                                      </li>
-                                      <li>
-                                          <div>
-                                              <img src="assets/img/header/Services2.svg" alt="">
-                                              <p class="fs-12 fw-6 cl-pr-5">Canales y productos digitales</p>
-                                          </div>
-                                          <a class="fs-12 fw-4" href="">Desarrollo de canales digitales</a>
-                                          <a class="fs-12 fw-4" href="">Diseño experiencia digital</a>
-                                          <a class="fs-12 fw-4" href="">Agilidad organizacional</a>
-                                      </li>
-                                      <li>
-                                          <div>
-                                              <img src="assets/img/header/Services3.svg" alt="">
-                                              <p class="fs-12 fw-6 cl-pr-5">Arquitectura empresarial</p>
-                                          </div>
-                                          <a class="fs-12 fw-4" href="">Consultoría y modernización tecnológica</a>
-                                          <a class="fs-12 fw-4" href="">Cloud solution</a>
-                                          <div class="mt-[20px]">
-                                              <img src="assets/img/header/Services4.svg" alt="">
-                                              <p class="fs-12 fw-6 cl-pr-5">Capacidades tecnológicas</p>
-                                          </div>
-                                          <a class="fs-12 fw-4" href="">Continuidad operacional</a>
-                                          <a class="fs-12 fw-4" href="">IT staff augmentation</a>
-                                          <a class="fs-12 fw-4" href="">Desarrollo software</a>
-                                          <a class="fs-12 fw-4" href="">Automatización</a>
-                                      </li>
-                                      <li>
-                                          <div>
-                                              <img src="assets/img/header/Services5.svg" alt="">
-                                              <p class="fs-12 fw-6 cl-pr-5">Consultoría de proyectos</p>
-                                          </div>
-                                          <a class="fs-12 fw-4" href="">Gestión de proyectos</a>
-                                      </li>
-                                  </ul>
-                              </div>
-                          </div>
-                          
-                      </div>
-                  </li>
-                  <li>
-                      <a class="fs-14 lh-21 fw-6" href="#!">Industrias</a>
-                      <div class="menu-desplegable m-industria">
-                        <div class="cont-ind-m">
-                              <div>
-                                  <img src="assets/img/header/Photo.svg" alt="">
-                                  <p class="cl-gr-50 fs-16 lh-24 fw-6">Una mirada simple y actual  a la transformación digital</p>
-                                  <a class="fs-12 lh-18 fw-6" href="">Ver más</a>
-                              </div>
-                              <div>
-                                  <a class="fs-14 fw-6" href="">Financiero</a>
-                                  <a class="fs-14 fw-6" href="">AFP</a>
-                                  <a class="fs-14 fw-6" href="">Aseguradora</a>
-                                  <a class="fs-14 fw-6" href="">Telecomunicaciones</a>
-                              </div>
-                        </div>
-                      </div>
-                  </li>
-                  <li><a class="fs-14 lh-21 fw-6" href="#!">Casos</a></li>
-                  <li>
-                      <a class="fs-14 lh-21 fw-6" href="#!">Talento</a>
-                      <div class="menu-desplegable m-talento">
-                          <div class="cont-talent-m">
-                              <div class="bg-ba-50  w-[256px] h-[197px]">
-                                  <p>Amamos todo de T.I.</p>
-                                  <a class="fs-14 lh-21 fw-6 cl-sc-5 mt-[12px]" href="">Ver oportunidades</a>
-                              </div>
-                              <div class="p-[32px]">
-                                  <a class="fs-14 lh-18 fw-6" href="">Tinet way</a>
-                                  <a class="fs-14 lh-18 fw-6" href="">Ofertas laborales</a>
-                              </div>
-                          </div>
-                      </div>
-                  </li>
-                  <li><a class="fs-14 lh-21 fw-6" href="#!">Digitalk</a></li>
-              </ul>
-          </div>
-          <div class="side-nav">
-              <div class="top-side-nav mb-[16px]">
-                  <a href="#!"><img src="assets/img/header/candado.svg" alt=""><span class="fs-12 lh-18 fw-6 pl-[7px]">Sitio privado</span></a>
-                  <a class="es-btn ml-[36px]" href="#!"><span class="fw-6 fs-12 lh-18 es-btn">ES</span> <img class="ml-[8px]" src="assets/img/header/lang-btn.png" alt=""></a>
-                  <div class="select-lang">
-                      <a class="active esp-btn" href="#!"><span class="fs-12 lh-18 fw-4">Español</span><img width="11.17" height="8.38" src="assets/img/header/selectedcheck.png" alt=""></a>
-                      <a class="eng-btn" href="#!"><span class="fs-12 lh-18 fw-4">Inglés</span><img width="11.17" height="8.38" src="assets/img/header/selectedcheck.png" alt=""></a>
-                  </div>
-              </div>
-              <div class="bot-side-nav">
-                  <a class="cl-ff fw-6 fs-14 lh-21" href="#!">Hablemos</a>
-              </div>
-          </div>
-        </div>
+  <header class="header-content">
+    <div class="responsive-burger ml-[26px]">
+      <div class="top"></div>
+      <div class="mid"></div>
+      <div class="bot"></div>
     </div>
-    <div class="left-navbar">
-        <ul class="first-ul pt-[14px]">
-            <li><a href="#!"><span class="fs-14 lh-21 fw-6">Somos Tinet</span></a></li>
-            <li><a class="trg-servicios" href="#!"><span class="fs-14 lh-21 fw-6">Servicios</span><img src="assets/img/header/right-arrow.svg"></a></li>
-            <li><a class="trg-industria" href="#!"><span class="fs-14 lh-21 fw-6">Industrias</span><img src="assets/img/header/right-arrow.svg"></a></li>
-            <li><a href="#!"><span class="fs-14 lh-21 fw-6">Casos</span></a></li>
-            <li><a class="trg-talento" href="#!"><span class="fs-14 lh-21 fw-6">Talento</span><img src="assets/img/header/right-arrow.svg"></a></li>
-            <li><a href="#!"><span class="fs-14 lh-21 fw-6">Digitalk</span></a></li>
-            <li class="separador"></li>
-            <li><a class="btn-sp-r" href=""><img class="mr-[8px]" src="assets/img/header/candado.svg" alt=""><span class="fs-14 lh-21 fw-6">Sitio privado</span></a></li>
-            <li><a class="trg-idioma" href="#!"><span class="fs-14 lh-21 fw-6">Español</span><img src="assets/img/header/right-arrow.svg"></a></li>
+    <div class="cntHead">
+      <a title="Tinet" href="#" class="logo-header">
+        <img src="assets/img/header/Logo.svg" alt="Tinet">
+      </a>
+      <div class="btn-nav">
+        <ul class="tr-ul">
+          <li><a title="Somos Tinet" class="fs-14 lh-21 fw-6" href="#!">Somos Tinet</a></li>
+          <li>
+            <a title="Servicios" class="fs-14 lh-21 fw-6" href="#!">Servicios</a>
+            <div class="menu-desplegable m-servicios">
+              <div class="contenedor-menu-nav">
+                <div>
+                  <span class="fs-12 fw-6 lh-18">Construyamos juntos una historia memorable</span>
+                  <a title="Contactanos" class="fs-14 lh-21 fw-6" href="#">Contactanos</a>
+                </div>
+                <div class="ser-tab-menu">
+                  <ul class="ul-stm">
+                    <li class="fw-6 fs-16 lh-18 active">Digital Transformation</li>
+                    <li class="fw-6 fs-16 lh-18">Digital Experience</li>
+                    <li class="fw-6 fs-16 lh-18">Digital Technology</li>
+                    <li class="fw-6 fs-16 lh-18">Project Management</li>
+                  </ul>
+                </div>
+                <div>
+                  <ul class="content-ul-stm">
+                    <li class="active">
+                      <div>
+                        <img src="assets/img/header/Services1.svg" alt="Estrategia y negocio">
+                        <p class="fs-12 fw-6 cl-pr-5">Estrategia y negocio</p>
+                      </div>
+                      <a title="Business transformation services" class="fs-12 fw-4" href="#">Business transformation
+                        services</a>
+                      <a title="Business transformation services" class="fs-12 fw-4" href="#">Digital maturity model</a>
+                    </li>
+                    <li>
+                      <div>
+                        <img src="assets/img/header/Services2.svg" alt="Canales y productos digitales">
+                        <p class="fs-12 fw-6 cl-pr-5">Canales y productos digitales</p>
+                      </div>
+                      <a title="Desarrollo de canales digitales" class="fs-12 fw-4" href="#">Desarrollo de canales
+                        digitales</a>
+                      <a title="Diseño experiencia digital" class="fs-12 fw-4" href="#">Diseño experiencia digital</a>
+                      <a title="Agilidad organizacional" class="fs-12 fw-4" href="#">Agilidad organizacional</a>
+                    </li>
+                    <li>
+                      <div>
+                        <img src="assets/img/header/Services3.svg" alt="Arquitectura empresarial">
+                        <p class="fs-12 fw-6 cl-pr-5">Arquitectura empresarial</p>
+                      </div>
+                      <a title="Consultoría y modernización tecnológica" class="fs-12 fw-4" href="#">Consultoría y
+                        modernización tecnológica</a>
+                      <a title="Cloud solution" class="fs-12 fw-4" href="#">Cloud solution</a>
+                      <div class="mt-[20px]">
+                        <img src="assets/img/header/Services4.svg" alt="Capacidades tecnológicas">
+                        <p class="fs-12 fw-6 cl-pr-5">Capacidades tecnológicas</p>
+                      </div>
+                      <a title="Continuidad operacional" class="fs-12 fw-4" href="#">Continuidad operacional</a>
+                      <a title="IT staff augmentation" class="fs-12 fw-4" href="#">IT staff augmentation</a>
+                      <a title="Desarrollo software" class="fs-12 fw-4" href="#">Desarrollo software</a>
+                      <a title="Automatización" class="fs-12 fw-4" href="#">Automatización</a>
+                    </li>
+                    <li>
+                      <div>
+                        <img src="assets/img/header/Services5.svg" alt="Consultoría de proyectos">
+                        <p class="fs-12 fw-6 cl-pr-5">Consultoría de proyectos</p>
+                      </div>
+                      <a title="Gestión de proyectos" class="fs-12 fw-4" href="#">Gestión de proyectos</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </li>
+          <li>
+            <a title="Industrias" class="fs-14 lh-21 fw-6" href="#!">Industrias</a>
+            <div class="menu-desplegable m-industria">
+              <div class="cont-ind-m">
+                <div>
+                  <img src="assets/img/header/Photo.svg" alt="Una mirada simple y actual  a la transformación digital">
+                  <p class="cl-gr-50 fs-16 lh-24 fw-6">Una mirada simple y actual a la transformación digital</p>
+                  <a title="Ver más" class="fs-12 lh-18 fw-6" href="#">Ver más</a>
+                </div>
+                <div>
+                  <a title="Financiero" class="fs-14 fw-6" href="#">Financiero</a>
+                  <a title="AFP" class="fs-14 fw-6" href="#">AFP</a>
+                  <a title="Aseguradora" class="fs-14 fw-6" href="#">Aseguradora</a>
+                  <a title="Telecomunicaciones" class="fs-14 fw-6" href="#">Telecomunicaciones</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a title="Casos" class="fs-14 lh-21 fw-6" href="#!">Casos</a></li>
+          <li>
+            <a title="Talento" class="fs-14 lh-21 fw-6" href="#!">Talento</a>
+            <div class="menu-desplegable m-talento">
+              <div class="cont-talent-m">
+                <div class="bg-ba-50  w-[256px] h-[197px]">
+                  <p>Amamos todo de T.I.</p>
+                  <a title="Ver oportunidades" class="fs-14 lh-21 fw-6 cl-sc-5 mt-[12px]" href="#">Ver oportunidades</a>
+                </div>
+                <div class="p-[32px]">
+                  <a title="Tinet way" class="fs-14 lh-18 fw-6" href="#">Tinet way</a>
+                  <a title="Ofertas laborales" class="fs-14 lh-18 fw-6" href="#">Ofertas laborales</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a title="Digitalk" class="fs-14 lh-21 fw-6" href="#!">Digitalk</a></li>
         </ul>
-        <div class="rServicios">
-            <a class="returnM" href="#!"><img class="mr-[8px]" src="assets/img/header/left-arrow.svg"><span class="fs-14 lh-21 fw-6">Servicios</span></a>
-            <ul class="mt-[30px]">
-                <li><a href="#!" class="nb fs-14 lh-18 fw-6">Digital Transformation</a>
-                    <div class="cont-innerMS mt-[10px]">
-                        <p class="flex"><img class="mr-[8px]" src="assets/img/header/Services1.svg" alt=""><span class="fs-12 lh-18 fw-6 cl-pr-5">Estrategia y negocio</span></p>
-                        <ul class="innerUl ml-[28px] pt-[10px] mb-[14px]">
-                            <li><a class="fs-12 lh-18 fw-4" href="">Business transformation services</a></li>
-                            <li><a class="fs-12 lh-18 fw-4" href="">Digital maturity model</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="#!" class="nb fs-14 lh-18 fw-6">Digital Experience</a>
-                    <div class="cont-innerMS mt-[10px]">
-                        <p class="flex"><img class="mr-[8px]" src="assets/img/header/Services2.svg" alt=""><span class="fs-12 lh-18 fw-6 cl-pr-5">Canales y productos digitales</span></p>
-                        <ul class="innerUl ml-[28px] pt-[10px] mb-[14px]">
-                            <li><a class="fs-12 lh-18 fw-4" href="">Desarrollo de canales digitales</a></li>
-                            <li><a class="fs-12 lh-18 fw-4" href="">Diseño experiencia digital</a></li>
-                            <li><a class="fs-12 lh-18 fw-4" href="">Agilidad organizacional</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="#!" class="nb fs-14 lh-18 fw-6">Digital Technology</a>
-                    <div class="cont-innerMS mt-[10px]">
-                        <p class="flex"><img class="mr-[8px]" src="assets/img/header/Services3.svg" alt=""><span class="fs-12 lh-18 fw-6 cl-pr-5">Arquitectura empresarial</span></p>
-                        <ul class="innerUl ml-[28px] pt-[10px]">
-                            <li><a class="fs-12 lh-18 fw-4" href="">Consultoría y modernización tecnológica</a></li>
-                            <li><a class="fs-12 lh-18 fw-4" href="">Cloud solution</a></li>
-                        </ul>
-                        <p class="mt-[16px] flex"><img class="mr-[8px]" src="assets/img/header/Services4.svg" alt=""><span class="fs-12 lh-18 fw-6 cl-pr-5">Capacidades tecnológicas</span></p>
-                        <ul class="innerUl ml-[28px] pt-[10px] mb-[14px]">
-                            <li><a class="fs-12 lh-18 fw-4" href="">Continuidad operacional</a></li>
-                            <li><a class="fs-12 lh-18 fw-4" href="">IT staff augmentation</a></li>
-                            <li><a class="fs-12 lh-18 fw-4" href="">Desarrollo software</a></li>
-                            <li><a class="fs-12 lh-18 fw-4" href="">Automatización</a></li> 
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="#!" class="nb fs-14 lh-18 fw-6">Project Management</a>
-                    <div class="cont-innerMS mt-[10px]">
-                        <p class="flex"><img class="mr-[8px]" src="assets/img/header/Services5.svg" alt=""><span class="fs-12 lh-18 fw-6 cl-pr-5">Consultoría de proyectos</span></p>
-                        <ul class="innerUl ml-[28px] pt-[10px] mb-[14px]">
-                            <li><a class="fs-12 lh-18 fw-4" href="">Gestión de proyectos</a></li>
-                        </ul>
-                    </div></li>
-            </ul>
-            <div class="endServM flex p-[24px] text-center bg-ba-50 mt-[30px]">
-                <p class="fs-12 lh-18 fw-6">Construamos juntos una historia memorable</p>
-                <a class="mt-[10px] fs-14 lh-21 cl-sc-5 fw-6" href="">Contactanos</a>
-            </div>
+      </div>
+      <div class="side-nav">
+        <div class="top-side-nav mb-[16px]">
+          <a title="Sitio privado" href="#!"><img src="assets/img/header/candado.svg" alt="Sitio privado"><span
+              class="fs-12 lh-18 fw-6 pl-[7px]">Sitio privado</span></a>
+          <a title="ES" class="es-btn ml-[36px]" href="#!"><span class="fw-6 fs-12 lh-18 es-btn">ES</span> <img
+              class="ml-[8px]" src="assets/img/header/lang-btn.png" alt="ES"></a>
+          <div class="select-lang">
+            <a title="Español" class="active esp-btn" href="#!"><span class="fs-12 lh-18 fw-4">Español</span><img
+                width="11.17" height="8.38" src="assets/img/header/selectedcheck.png" alt="Español"></a>
+            <a title="Inglés" class="eng-btn" href="#!"><span class="fs-12 lh-18 fw-4">Inglés</span><img width="11.17"
+                height="8.38" src="assets/img/header/selectedcheck.png" alt="Inglés"></a>
+          </div>
         </div>
-        <div class="rIndustria">
-            <a class="returnM" href="#!"><img class="mr-[8px]" src="assets/img/header/left-arrow.svg"><span class="fs-14 lh-21 fw-6">Industria</span></a>
-            <ul class="mt-[40px]">
-                <li><a class="fs-14 lh-18 fw-6" href="#!">Financiero</a></li>
-                <li><a class="fs-14 lh-18 fw-6" href="#!">AFP</a></li>
-                <li><a class="fs-14 lh-18 fw-6" href="#!">Aseguradora</a></li>
-                <li><a class="fs-14 lh-18 fw-6" href="#!">Telecomunicaciones</a></li>
-            </ul>
-            <div class="indContM mt-[20px]">
-                <img src="assets/img/header/indimg.svg" alt="">
-                <p class="fs-16 lh-24 fw-6">Una mirada simple y actual  a la transformación digital</p>
-                <a class="fs-12 lh-18 fw7 cl-ff mt-[8px]" href="">Ver más</a>
-            </div>
+        <div class="bot-side-nav">
+          <a title="Hablemos" class="cl-ff fw-6 fs-14 lh-21" href="#!">Hablemos</a>
         </div>
-        <div class="rTalento">
-            <a class="returnM" href="#!"><img class="mr-[8px]" src="assets/img/header/left-arrow.svg"><span class="fs-14 lh-21 fw-6">Talento</span></a>
-            <ul class="mt-[40px]">
-                <li><a class="fs-14 lh-18 fw-6" href="#!">Tinet way</a></li>
-                <li><a class="fs-14 lh-18 fw-6" href="#!">Ofertas laborales</a></li>
-            </ul>
-            <div class="infoTalentM">
-                <span>Amamos todo de T.I.</span>
-                <a class="fs-14 lh-21 fw-6 mt-[10px] cl-sc-5" href="#!">Ver oportunidades</a>
-            </div>
-        </div>
-        <div class="rIdioma">
-            <a class="returnM" href="#!"><img class="mr-[8px]" src="assets/img/header/left-arrow.svg"><span class="fs-14 lh-21 fw-6">Idioma</span></a>
-            <ul class="mt-[32px]">
-                <li><a class="active" href="#!"><span class="fs-14 lh-18 fw-6">Español</span><img src="assets/img/header/selectedcheck.png" alt=""></a></li>
-                <li><a href="#!"><span class="fs-14 lh-18 fw-6">Inglés</span><img src="assets/img/header/selectedcheck.png" alt=""></a></li>
-            </ul>
-        </div>
+      </div>
     </div>
-    <div class="screen-block"></div>
-      <div class="nav-tour">
-        <div class="content-response-section">
-          <span class="fw-6">Inicio</span>
-        <img class="bcimg" src="assets/icons/breadcrumb-sep.svg" alt="">
-        <span class="fw-6 active">Cultura</span>
+  </header>
+
+  <div class="left-navbar">
+    <ul class="first-ul pt-[14px]">
+      <li><a title="Somos Tinet" href="#!"><span class="fs-14 lh-21 fw-6">Somos Tinet</span></a></li>
+      <li><a title="Servicios" class="trg-servicios" href="#!"><span class="fs-14 lh-21 fw-6">Servicios</span><img
+            src="../assets/img/header/right-arrow.svg" alt="Servicios"></a></li>
+      <li><a title="Industrias" class="trg-industria" href="#!"><span class="fs-14 lh-21 fw-6">Industrias</span><img
+            src="../assets/img/header/right-arrow.svg" alt="Industrias"></a></li>
+      <li><a title="Casos" href="#!"><span class="fs-14 lh-21 fw-6">Casos</span></a></li>
+      <li><a title="Talento" class="trg-talento" href="#!"><span class="fs-14 lh-21 fw-6">Talento</span><img
+            src="../assets/img/header/right-arrow.svg" alt="Talento"></a></li>
+      <li><a title="Digitalk" href="#!"><span class="fs-14 lh-21 fw-6">Digitalk</span></a></li>
+      <li class="separador"></li>
+      <li><a title="Sitio privado" class="btn-sp-r" href="#"><img class="mr-[8px]"
+            src="../assets/img/header/candado.svg" alt="Sitio privado"><span
+            class="fs-14 lh-21 fw-6 text-[#ffffff]">Sitio privado</span></a></li>
+      <li><a title="Español" class="trg-idioma" href="#!"><span class="fs-14 lh-21 fw-6">Español</span><img
+            src="../assets/img/header/right-arrow.svg" alt="Español"></a></li>
+    </ul>
+    <div class="rServicios">
+      <a title="Servicios" class="returnM" href="#!"><img class="mr-[8px]" src="../assets/img/header/left-arrow.svg"
+          alt="Servicios"><span class="fs-14 lh-21 fw-6">Servicios</span></a>
+      <ul class="mt-[30px]">
+        <li><a title="Digital Transformation" href="#!" class="nb fs-14 lh-18 fw-6">Digital Transformation</a>
+          <div class="cont-innerMS mt-[10px]">
+            <p class="flex"><img class="mr-[8px]" src="../assets/img/header/Services1.svg"
+                alt="Estrategia y negocio"><span class="fs-12 lh-18 fw-6 cl-pr-5">Estrategia y negocio</span></p>
+            <ul class="innerUl ml-[28px] pt-[10px] mb-[14px]">
+              <li><a title="Business transformation services" class="fs-12 lh-18 fw-4" href="#">Business transformation
+                  services</a></li>
+              <li><a title="Digital maturity model" class="fs-12 lh-18 fw-4" href="#">Digital maturity model</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a title="Digital Experience" href="#!" class="nb fs-14 lh-18 fw-6">Digital Experience</a>
+          <div class="cont-innerMS mt-[10px]">
+            <p class="flex"><img class="mr-[8px]" src="../assets/img/header/Services2.svg"
+                alt="Canales y productos digitales"><span class="fs-12 lh-18 fw-6 cl-pr-5">Canales y productos
+                digitales</span></p>
+            <ul class="innerUl ml-[28px] pt-[10px] mb-[14px]">
+              <li><a title="Desarrollo de canales digitales" class="fs-12 lh-18 fw-4" href="#">Desarrollo de canales
+                  digitales</a></li>
+              <li><a title="Diseño experiencia digital" class="fs-12 lh-18 fw-4" href="#">Diseño experiencia digital</a>
+              </li>
+              <li><a title="Agilidad organizacional" class="fs-12 lh-18 fw-4" href="#">Agilidad organizacional</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a title="Digital Technology" href="#!" class="nb fs-14 lh-18 fw-6">Digital Technology</a>
+          <div class="cont-innerMS mt-[10px]">
+            <p class="flex"><img class="mr-[8px]" src="../assets/img/header/Services3.svg"
+                alt="Arquitectura empresarial"><span class="fs-12 lh-18 fw-6 cl-pr-5">Arquitectura empresarial</span>
+            </p>
+            <ul class="innerUl ml-[28px] pt-[10px]">
+              <li><a title="Consultoría y modernización tecnológica" class="fs-12 lh-18 fw-4" href="#">Consultoría y
+                  modernización tecnológica</a></li>
+              <li><a title="Cloud solution" class="fs-12 lh-18 fw-4" href="#">Cloud solution</a></li>
+            </ul>
+            <p class="mt-[16px] flex"><img class="mr-[8px]" src="../assets/img/header/Services4.svg"
+                alt="Capacidades tecnológicas"><span class="fs-12 lh-18 fw-6 cl-pr-5">Capacidades tecnológicas</span>
+            </p>
+            <ul class="innerUl ml-[28px] pt-[10px] mb-[14px]">
+              <li><a title="Continuidad operacional" class="fs-12 lh-18 fw-4" href="#">Continuidad operacional</a></li>
+              <li><a title="IT staff augmentation" class="fs-12 lh-18 fw-4" href="#">IT staff augmentation</a></li>
+              <li><a title="Desarrollo software" class="fs-12 lh-18 fw-4" href="#">Desarrollo software</a></li>
+              <li><a title="Automatización" class="fs-12 lh-18 fw-4" href="#">Automatización</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a title="Project Management" href="#!" class="nb fs-14 lh-18 fw-6">Project Management</a>
+          <div class="cont-innerMS mt-[10px]">
+            <p class="flex"><img class="mr-[8px]" src="../assets/img/header/Services5.svg"
+                alt="Consultoría de proyectos"><span class="fs-12 lh-18 fw-6 cl-pr-5">Consultoría de proyectos</span>
+            </p>
+            <ul class="innerUl ml-[28px] pt-[10px] mb-[14px]">
+              <li><a title="Gestión de proyectos" class="fs-12 lh-18 fw-4" href="#">Gestión de proyectos</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="endServM flex p-[24px] text-center bg-ba-50 mt-[30px]">
+        <p class="fs-12 lh-18 fw-6">Construamos juntos una historia memorable</p>
+        <a title="Contactanos" class="mt-[10px] fs-14 lh-21 cl-sc-5 fw-6" href="#">Contactanos</a>
+      </div>
+    </div>
+    <div class="rIndustria">
+      <a title="Industria" class="returnM" href="#!"><img class="mr-[8px]" src="../assets/img/header/left-arrow.svg"
+          alt="Industria"><span class="fs-14 lh-21 fw-6">Industria</span></a>
+      <ul class="mt-[40px]">
+        <li><a title="Financiero" class="fs-14 lh-18 fw-6" href="#!">Financiero</a></li>
+        <li><a title="AFP" class="fs-14 lh-18 fw-6" href="#!">AFP</a></li>
+        <li><a title="Aseguradora" class="fs-14 lh-18 fw-6" href="#!">Aseguradora</a></li>
+        <li><a title="Telecomunicaciones" class="fs-14 lh-18 fw-6" href="#!">Telecomunicaciones</a></li>
+      </ul>
+      <div class="indContM mt-[20px]">
+        <img src="../assets/img/header/indimg.svg" alt="Una mirada simple y actual  a la transformación digital">
+        <p class="fs-16 lh-24 fw-6">Una mirada simple y actual a la transformación digital</p>
+        <a title="Ver más" class="fs-12 lh-18 fw7 cl-ff mt-[8px]" href="#">Ver más</a>
+      </div>
+    </div>
+    <div class="rTalento">
+      <a title="Talento" class="returnM" href="#!"><img class="mr-[8px]" src="../assets/img/header/left-arrow.svg"
+          alt="Talento"><span class="fs-14 lh-21 fw-6">Talento</span></a>
+      <ul class="mt-[40px]">
+        <li><a title="Tinet way" class="fs-14 lh-18 fw-6" href="#!">Tinet way</a></li>
+        <li><a title="Ofertas laborales" class="fs-14 lh-18 fw-6" href="#!">Ofertas laborales</a></li>
+      </ul>
+      <div class="infoTalentM">
+        <span>Amamos todo de T.I.</span>
+        <a title="Ver oportunidades" class="fs-14 lh-21 fw-6 mt-[10px] cl-sc-5" href="#!">Ver oportunidades</a>
+      </div>
+    </div>
+    <div class="rIdioma">
+      <a title="Idioma" class="returnM" href="#!"><img class="mr-[8px]" src="../assets/img/header/left-arrow.svg"
+          alt="Idioma"><span class="fs-14 lh-21 fw-6">Idioma</span></a>
+      <ul class="mt-[32px]">
+        <li><a title="Español" class="active" href="#!"><span class="fs-14 lh-18 fw-6">Español</span><img
+              src="../assets/img/header/selectedcheck.png" alt="Español"></a></li>
+        <li><a title="Inglés" href="#!"><span class="fs-14 lh-18 fw-6">Inglés</span><img
+              src="../assets/img/header/selectedcheck.png" alt="Inglés"></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="screen-block"></div>
+  <div class="nav-tour">
+    <div class="content-response-section">
+      <span class="fw-6">Inicio</span>
+      <img class="bcimg" src="assets/icons/breadcrumb-sep.svg" alt="Cultura">
+      <span class="fw-6 active">Cultura</span>
+    </div>
+  </div>
+  
+  <div class="bg-[#FAFAFA]" id="cultura-lock">
+    <div class="max-w-[1440px] xl:px-[130px] px-[24px] mx-[auto] py-[14px] text-center fade-in">
+      <ul class="i-tabs">
+        <li class="fw-6 fs-14 active">Nuestra cultura</li>
+        <li class="fw-6 fs-14">Trabaja con nosotros</li>
+      </ul>
+    </div>
+    <div class="max-w-[1440px] xl:px-[130px] px-[24px] mx-[auto]">
+      <div class="h-[560px] flex flex-col flex-nowrap justify-center items-center destroy">
+        <img class="mb-[32px]" src="assets/img/cultura/Isotype.svg" alt="Nuestra cultura" id="cultura-stage1">
+        <div id="cultura-stage2" class="text-center">
+          <span class="block text-2xl text-[#424242] fw-7 mb-[12px]">Nuestra cultura</span>
+          <p class="text-[#00304C] text-[44px] leading-[52px] fw-6 lg:text-left md:text-center">Somos la revolución del
+            <span class="text-[#006099]">talento</span></p>
         </div>
       </div>
-    <div class="bg-[#FAFAFA]" id="cultura-lock">
-        <div class="max-w-[1440px] xl:px-[130px] px-[24px] mx-[auto] py-[14px] text-center fade-in">
-            <ul class="i-tabs">
-                <li class="fw-6 fs-14 active">Nuestra cultura</li>
-                <li class="fw-6 fs-14">Trabaja con nosotros</li>
-              </ul>
+      <div
+        class="entr h-[620px] md:h-[auto] md:pb-[70px] md:pt-[60px] items-center justify-between lg:flex-row md:flex-col fade-in">
+        <div class="lg:max-w-[45%] md:max-w-[100%]">
+          <span class="text-2xl text-[#424242] fw-6">Nuestra cultura</span>
+          <h1 class="text-[#00304C] sm:text-[72px] sm:leading-[78px] text-[50px] leading-[50px] fw-7 pb-[8px]">Somos la
+            revolución del <span class="text-[#006099]">talento</span></h1>
+          <p class="text-[#616161] text-2xl fw-4">Nuestros talentos nos hacen invencibles ¿Eres un disruptor digital?
+            Cambia el mundo con nosotros.</p>
+          <a title="Postula ya" class="bg-[#C41A90] text-[#ffffff] bnd inline-block mt-[30px]" href="#">Postula ya</a>
         </div>
-        <div class="max-w-[1440px] xl:px-[130px] px-[24px] mx-[auto]">
-            <div class="h-[560px] flex flex-col flex-nowrap justify-center items-center destroy">
-                <img class="mb-[32px]" src="assets/img/cultura/Isotype.svg" alt="" id="cultura-stage1">
-                <div id="cultura-stage2" class="text-center">
-                  <span class="block text-2xl text-[#424242] fw-7 mb-[12px]">Nuestra cultura</span>
-                  <p class="text-[#00304C] text-[44px] leading-[52px] fw-6 lg:text-left md:text-center">Somos la revolución del <span class="text-[#006099]">talento</span></p>
-                </div>
-            </div>
-            <div class="entr h-[620px] md:h-[auto] md:pb-[70px] md:pt-[60px] items-center justify-between lg:flex-row md:flex-col fade-in">
-                <div class="lg:max-w-[45%] md:max-w-[100%]">
-                    <span class="text-2xl text-[#424242] fw-6">Nuestra cultura</span>
-                    <p class="text-[#00304C] sm:text-[72px] sm:leading-[78px] text-[50px] leading-[50px] fw-7 pb-[8px]">Somos la revolución del <span class="text-[#006099]">talento</span></p>
-                    <p class="text-[#616161] text-2xl fw-4">Nuestros talentos nos hacen invencibles ¿Eres un disruptor digital? Cambia el mundo con nosotros.</p>
-                    <a class="bg-[#C41A90] text-[#ffffff] bnd inline-block mt-[30px]" href="">Postula ya</a>
-                </div>
-                <div class="lg:max-w-[45%] lg:block md:hidden hidden">
-                    <img src="assets/img/cultura/Img.svg" alt="">
-                </div>
-            </div>
+        <div class="lg:max-w-[45%] lg:block md:hidden hidden">
+          <img src="assets/img/cultura/Img.svg" alt="Nuestra cultura">
         </div>
       </div>
-    <!-- v2 circle -->
-    <div class="bg-[#E5EFF5] relative py-[120px]" id="roundslider">
-        <h3 class="text-center fw-6 text-[32px] leading-[40px] lg:text-[50px] lg:leading-[64px] text-[#424242] mb-[25px]">
-          Conoce nuestra <span class="text-[#006099]">cultura</span>
+    </div>
+  </div>
+  <!-- v2 circle -->
+  <div class="bg-[#E5EFF5] relative py-[120px]" id="roundslider">
+    <h3 class="text-center fw-6 text-[32px] leading-[40px] lg:text-[50px] lg:leading-[64px] text-[#424242] mb-[25px]">
+      Conoce nuestra <span class="text-[#006099]">cultura</span>
+    </h3>
+    <div class="carouselv overflow-hidden relative z-10">
+      <div class="bbb-alt absolute z-[0] mx-[auto] right-[0px] left-[0px] lg:block hidden"></div>
+      <ul class="carousel__list">
+        <li class="carousel__item shadow-xl" data-pos="-2">
+          <img class="lg:w-[152px] lg:h-[152px] md:w-[133px] md:h-[133px] w-[79px] h-[79px]"
+            src="assets/img/cultura/Avatar.png" alt="Pegas con Sentido">
+          <h4 class="fw-5">Pegas con Sentido</h4>
+          <p class="fw-4">Nos importan las personas, por eso nos involucramos con iniciativas que dejan huella en la
+            sociedad</p>
+        </li>
+        <li class="carousel__item shadow-xl" data-pos="-1">
+          <img class="lg:w-[152px] lg:h-[152px] md:w-[133px] md:h-[133px] w-[79px] h-[79px]"
+            src="assets/img/cultura/Avatar (1).png" alt="Tu bienestar, nuestro código">
+          <h4 class="fw-5">Tu bienestar, nuestro código</h4>
+          <p class="fw-4">Eres el factor principal para que las cosas pasen, te cuidamos y nos preocupamos por ti</p>
+        </li>
+        <li class="carousel__item shadow-xl" data-pos="0">
+          <img class="lg:w-[152px] lg:h-[152px] md:w-[133px] md:h-[133px] w-[79px] h-[79px]"
+            src="assets/img/cultura/Avatar.png" alt="Las diferencias nos unen">
+          <h4 class="fw-5">Las diferencias nos unen</h4>
+          <p class="fw-4">Diferencias que nos unen “Creemos en el valor de pensar diferente, somos innovadores y
+            marcamos la diferencia</p>
+        </li>
+        </li>
+        <li class="carousel__item shadow-xl" data-pos="1">
+          <img class="lg:w-[152px] lg:h-[152px] md:w-[133px] md:h-[133px] w-[79px] h-[79px]"
+            src="assets/img/cultura/Avatar (1).png" alt="De Bits y Bytes">
+          <h4 class="fw-5">De Bits y Bytes</h4>
+          <p class="fw-4">Somos expertos en tecnología enseñamos lo que sabemos y aprendemos de los que saben</p>
+        </li>
+        <li class="carousel__item shadow-xl" data-pos="2">
+          <img class="lg:w-[152px] lg:h-[152px] md:w-[133px] md:h-[133px] w-[79px] h-[79px]"
+            src="assets/img/cultura/Avatar (2).png" alt="Olvida las jerarquías">
+          <h4 class="fw-5">Olvida las jerarquías</h4>
+          <p class="fw-4">Todos somos líderes de nuestro propio desarrollo, co-creadores del futuro y teams players</p>
+        </li>
+      </ul>
+    </div>
+    <h4
+      class="carouselvtxt nopointer relative z-10 max-w-[666px] mx-[auto] sm:mt-[-240px] mt-[-96px] lg:text-[64px] lg:leading-[72px] md:text-[38px] md:leading-[44px] text-[27px] leading-[32px] text-[#424242] fw-6 text-center">
+      Nuestra cultura nos <span class="block text-[#C41A90]">hace Imparables</span>
+      <div class="absolute nopointer top-[-130px] left-[0px] right-[0px] md:flex hidden flex-col items-center z-40">
+        <div class="rounded-full w-[16px] h-[16px] bg-[#C41A90]"></div>
+        <div class="w-[0px] h-[120px] border-r-2 border-dashed border-[#90A4AE]"></div>
+      </div>
+      <div class="absolute bottom-[-110px] left-[0px] right-[0px] md:flex hidden flex-col items-center z-40">
+        <div class="w-[0px] h-[100px] border-r-2 border-dashed border-[#90A4AE]"></div>
+      </div>
+    </h4>
+  </div>
+  <!-- end v2 circle -->
+
+  <div id="cultura-experience">
+    <div class="cultura-experience-start reveal sm:block hidden">
+      <div class="box-animation delay-bezier-1">
+        <div class="cultura-experiencie-startline"></div>
+      </div>
+    </div>
+    <div class="cultura-experience-head reveal">
+      <div class="cultura-experience-header">
+        <h3 class="fw-6 fs-24 lh-32 cl-gr-8 mb-[20px]">
+          ¿Por qué nosotros?
         </h3>
-        <div class="carouselv overflow-hidden relative z-10">
-          <div class="bbb-alt absolute z-[0] mx-[auto] right-[0px] left-[0px] lg:block hidden"></div>
-          <ul class="carousel__list">
-              <li class="carousel__item shadow-xl" data-pos="-2">
-                  <img class="lg:w-[152px] lg:h-[152px] md:w-[133px] md:h-[133px] w-[79px] h-[79px]" src="assets/img/cultura/Avatar.png" alt="">
-                  <h4 class="fw-5">Pegas con Sentido</h4>
-                  <p class="fw-4">Nos importan las personas, por eso nos involucramos con iniciativas que dejan huella en la sociedad</p>
-              </li>
-              <li class="carousel__item shadow-xl" data-pos="-1">
-                  <img class="lg:w-[152px] lg:h-[152px] md:w-[133px] md:h-[133px] w-[79px] h-[79px]" src="assets/img/cultura/Avatar (1).png" alt="">
-                  <h4 class="fw-5">Tu bienestar, nuestro código</h4>
-                  <p class="fw-4">Eres el factor principal para que las cosas pasen, te cuidamos y nos preocupamos por ti</p>
-              </li>
-              <li class="carousel__item shadow-xl" data-pos="0">
-                  <img class="lg:w-[152px] lg:h-[152px] md:w-[133px] md:h-[133px] w-[79px] h-[79px]" src="assets/img/cultura/Avatar.png" alt="">
-                  <h4 class="fw-5">Las diferencias nos unen</h4>
-                  <p class="fw-4">Diferencias que nos unen “Creemos en el valor de pensar diferente, somos innovadores y marcamos la diferencia</p>
-              </li>
-              </li>
-              <li class="carousel__item shadow-xl" data-pos="1">
-                  <img class="lg:w-[152px] lg:h-[152px] md:w-[133px] md:h-[133px] w-[79px] h-[79px]" src="assets/img/cultura/Avatar (1).png" alt="">
-                  <h4 class="fw-5" >De Bits y Bytes</h4>
-                  <p class="fw-4">Somos expertos en tecnología enseñamos lo que sabemos y aprendemos de los que saben</p>
-              </li>
-              <li class="carousel__item shadow-xl" data-pos="2">
-                  <img class="lg:w-[152px] lg:h-[152px] md:w-[133px] md:h-[133px] w-[79px] h-[79px]" src="assets/img/cultura/Avatar (2).png" alt="">
-                  <h4 class="fw-5">Olvida las jerarquías</h4>
-                  <p class="fw-4">Todos somos líderes de nuestro propio desarrollo, co-creadores del futuro y teams players</p>
-              </li>
-          </ul>
-        </div>
-        <h4 class="carouselvtxt nopointer relative z-10 max-w-[666px] mx-[auto] sm:mt-[-240px] mt-[-96px] lg:text-[64px] lg:leading-[72px] md:text-[38px] md:leading-[44px] text-[27px] leading-[32px] text-[#424242] fw-6 text-center">Nuestra cultura nos <span class="block text-[#C41A90]">hace Imparables</span>
-            <div class="absolute nopointer top-[-130px] left-[0px] right-[0px] md:flex hidden flex-col items-center z-40">
-                <div class="rounded-full w-[16px] h-[16px] bg-[#C41A90]"></div>
-                <div class="w-[0px] h-[120px] border-r-2 border-dashed border-[#90A4AE]"></div>
-            </div>
-            <div class="absolute bottom-[-110px] left-[0px] right-[0px] md:flex hidden flex-col items-center z-40">
-                <div class="w-[0px] h-[100px] border-r-2 border-dashed border-[#90A4AE]"></div>
-            </div>
-        </h4>
+        <h2 class="fw-7 fs-64 lh-72 bg-ba-9">
+          Vive la experiencia Tinet
+        </h2>
+      </div>
     </div>
-    <!-- end v2 circle -->
+    <div class="cultura-experience-body reveal">
+      <div class="cultura-experience-line"></div>
+      <div class="cultura-experience-wrapper">
+        <div class="cultura-slider">
+          <div class="cultura-slider-card">
+            <div class=" cultura-slider-content box-animation delay-bezier-1">
+              <h4 class="fw-6 fs-32 lh-40 cl-sc-5">
+                89%
+              </h4>
+              <h5 class="fs-20 lh-28 bg-ba-9 fw-6">
+                Tenemos un alto promedio de permanencia
+              </h5>
+              <p class="fs-16 lh-20 cl-gr-7">
+                <span class="cultura-slider-circle box-animation delay-bezier-1"></span>
+                Nuestro talento tecnológico tiene una rotación del 8%, un 31% más bajo en comparación al mercado.
+              </p>
+            </div>
+          </div>
+          <div class="cultura-slider-card">
+            <div class=" cultura-slider-content box-animation delay-bezier-2">
+              <h4 class="fw-6 fs-32 lh-40 cl-sc-5">
+                89%
+              </h4>
+              <h5 class="fs-20 lh-28 bg-ba-9 fw-6">
+                Mantenemos una baja rotación de personal
+              </h5>
+              <p class="fs-16 lh-20 cl-gr-7">
+                <span class="cultura-slider-circle box-animation delay-bezier-2"></span>
+                Nuestros líderes tienen un promedio de permanencia de 10 años.
+              </p>
+            </div>
+          </div>
+          <div class="cultura-slider-card">
+            <div class=" cultura-slider-content box-animation delay-bezier-3">
+              <h4 class="fw-6 fs-32 lh-40 cl-sc-5">
+                89%
+              </h4>
+              <h5 class="fs-20 lh-28 bg-ba-9 fw-6">
+                Contamos con experiencia acumulada
+              </h5>
+              <p class="fs-16 lh-20 cl-gr-7">
+                <span class="cultura-slider-circle box-animation delay-bezier-3"></span>
+                Nuestro equipo tiene un promedio de 37 años de edad, lo cual representa una experiencia acumulada
+                significativa.
+              </p>
+            </div>
+          </div>
+          <div class="cultura-slider-card">
+            <div class=" cultura-slider-content box-animation delay-bezier-4">
+              <h4 class="fw-6 fs-32 lh-40 cl-sc-5">
+                89%
+              </h4>
+              <h5 class="fs-20 lh-28 bg-ba-9 fw-6">
+                Estamos <br>
+                certificados
+              </h5>
+              <p class="fs-16 lh-20 cl-gr-7">
+                <span class="cultura-slider-circle box-animation delay-bezier-4"></span>
+                Certificaciones First Job, Great place to Work y Talento Joven 2023.
+              </p>
+            </div>
+          </div>
+          <div class="cultura-slider-card">
+            <div class=" cultura-slider-content box-animation delay-bezier-4">
+              <h4 class="fw-6 fs-32 lh-40 cl-sc-5">
+                89%
+              </h4>
+              <h5 class="fs-20 lh-28 bg-ba-9 fw-6">
+                Estamos certificados
+              </h5>
+              <p class="fs-16 lh-20 cl-gr-7">
+                <span class="cultura-slider-circle box-animation delay-bezier-4"></span>
+                Nuestro talento tecnológico tiene una rotación del 8%, un 31% más bajo en comparación al mercado.
+              </p>
+            </div>
+          </div>
+          <div class="cultura-slider-card">
+            <div class=" cultura-slider-content box-animation delay-bezier-4">
+              <h4 class="fw-6 fs-32 lh-40 cl-sc-5">
+                89%
+              </h4>
+              <h5 class="fs-20 lh-28 bg-ba-9 fw-6">
+                Estamos certificados
+              </h5>
+              <p class="fs-16 lh-20 cl-gr-7">
+                <span class="cultura-slider-circle box-animation delay-bezier-4"></span>
+                Nuestro talento tecnológico tiene una rotación del 8%, un 31% más bajo en comparación al mercado.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <div id="cultura-experience">
-      <div class="cultura-experience-start reveal sm:block hidden">
-        <div class="box-animation delay-bezier-1">
-          <div class="cultura-experiencie-startline"></div>
-        </div>
+  <!-- videos carousel -->
+  <div class="video-ca bg-[#212121] py-[100px]">
+    <div class="max-w-[1440px] xl:px-[130px] px-[24px] mx-[auto]">
+      <div class="overflow-hidden">
+        <span class="block text-xl fw-6 text-[#ffffff]">El camino que garantiza el éxito</span>
+        <h3 class="text-[#ffffff] fw-6 text-[64px] leading-[74px] mb-[16px] mt-[12px]">Tinet <span
+            class="text-[#C41A90]">way</span></h3>
+        <p class="max-w-[776px] text-[#E0E0E0] text-[20px] leading-[28px] fw-4">Aplicamos un proceso interactivo de
+          diseño de experiencias digitales, que permita convertir a su negocio en único y exitoso.</p>
+        <ul class="vid-btn-tabs lg:flex my-[30px]">
+          <li class="active text-sm fw-6 px-[16px] py-[12px] rounded-full cursor-pointer">100% digital</li>
+          <li class="vi2 text-sm fw-6 px-[16px] py-[12px] rounded-full cursor-pointer">Innovación</li>
+          <li class="text-sm fw-6 px-[16px] py-[12px] rounded-full cursor-pointer">Cultura</li>
+          <li class="text-sm fw-6 px-[16px] py-[12px] rounded-full cursor-pointer">Solidaridad</li>
+        </ul>
       </div>
-      <div class="cultura-experience-head reveal">
-        <div class="cultura-experience-header">
-          <h3 class="fw-6 fs-24 lh-32 cl-gr-8 mb-[20px]">
-            ¿Por qué nosotros?
-          </h3>
-          <h2 class="fw-7 fs-64 lh-72 bg-ba-9">
-            Vive la experiencia Tinet
-          </h2>
-        </div>
-      </div>
-      <div class="cultura-experience-body reveal">
-        <div class="cultura-experience-line"></div>
-        <div class="cultura-experience-wrapper">
-          <div class="cultura-slider">
-            <div class="cultura-slider-card">
-              <div class=" cultura-slider-content box-animation delay-bezier-1">
-                <h4 class="fw-6 fs-32 lh-40 cl-sc-5">
-                  89%
-                </h4>
-                <h5 class="fs-20 lh-28 bg-ba-9 fw-6">
-                  Tenemos un alto promedio de permanencia
-                </h5>
-                <p class="fs-16 lh-20 cl-gr-7">
-                  <span class="cultura-slider-circle box-animation delay-bezier-1"></span>
-                  Nuestro talento tecnológico tiene una rotación del 8%, un 31% más bajo en comparación al mercado. 
-                </p>
-              </div>
-            </div>
-            <div class="cultura-slider-card">
-              <div class=" cultura-slider-content box-animation delay-bezier-2">
-                <h4 class="fw-6 fs-32 lh-40 cl-sc-5">
-                  89%
-                </h4>
-                <h5 class="fs-20 lh-28 bg-ba-9 fw-6">
-                  Mantenemos  una baja rotación de personal
-                </h5>
-                <p class="fs-16 lh-20 cl-gr-7">
-                  <span class="cultura-slider-circle box-animation delay-bezier-2"></span>
-                  Nuestros líderes tienen un promedio de permanencia de 10 años.
-                </p>
-              </div>
-            </div>
-            <div class="cultura-slider-card">
-              <div class=" cultura-slider-content box-animation delay-bezier-3">
-                <h4 class="fw-6 fs-32 lh-40 cl-sc-5">
-                  89%
-                </h4>
-                <h5 class="fs-20 lh-28 bg-ba-9 fw-6">
-                  Contamos con experiencia acumulada 
-                </h5>
-                <p class="fs-16 lh-20 cl-gr-7">
-                  <span class="cultura-slider-circle box-animation delay-bezier-3"></span>
-                  Nuestro equipo tiene un promedio de 37 años de edad, lo cual representa una experiencia acumulada significativa.
-                </p>
-              </div>
-            </div>
-            <div class="cultura-slider-card">
-              <div class=" cultura-slider-content box-animation delay-bezier-4">
-                <h4 class="fw-6 fs-32 lh-40 cl-sc-5">
-                  89%
-                </h4>
-                <h5 class="fs-20 lh-28 bg-ba-9 fw-6">
-                  Estamos <br>
-                  certificados
-                </h5>
-                <p class="fs-16 lh-20 cl-gr-7">
-                  <span class="cultura-slider-circle box-animation delay-bezier-4"></span>
-                  Certificaciones First Job, Great place to Work y Talento Joven 2023.
-                </p>
-              </div>
-            </div>
-            <div class="cultura-slider-card">
-              <div class=" cultura-slider-content box-animation delay-bezier-4">
-                <h4 class="fw-6 fs-32 lh-40 cl-sc-5">
-                  89%
-                </h4>
-                <h5 class="fs-20 lh-28 bg-ba-9 fw-6">
-                  Estamos certificados
-                </h5>
-                <p class="fs-16 lh-20 cl-gr-7">
-                  <span class="cultura-slider-circle box-animation delay-bezier-4"></span>
-                  Nuestro talento tecnológico tiene una rotación del 8%, un 31% más bajo en comparación al mercado. 
-                </p>
-              </div>
-            </div>
-            <div class="cultura-slider-card">
-              <div class=" cultura-slider-content box-animation delay-bezier-4">
-                <h4 class="fw-6 fs-32 lh-40 cl-sc-5">
-                  89%
-                </h4>
-                <h5 class="fs-20 lh-28 bg-ba-9 fw-6">
-                  Estamos certificados
-                </h5>
-                <p class="fs-16 lh-20 cl-gr-7">
-                  <span class="cultura-slider-circle box-animation delay-bezier-4"></span>
-                  Nuestro talento tecnológico tiene una rotación del 8%, un 31% más bajo en comparación al mercado. 
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- videos carousel -->
-    <div class="video-ca bg-[#212121] py-[100px]">
-        <div class="max-w-[1440px] xl:px-[130px] px-[24px] mx-[auto]">
-            <div class="overflow-hidden">
-                <span class="block text-xl fw-6 text-[#ffffff]">El camino que garantiza el éxito</span>
-                <h3 class="text-[#ffffff] fw-6 text-[64px] leading-[74px] mb-[16px] mt-[12px]">Tinet <span class="text-[#C41A90]">way</span></h3>
-                <p class="max-w-[776px] text-[#E0E0E0] text-[20px] leading-[28px] fw-4">Aplicamos un proceso interactivo de diseño de experiencias digitales, que permita convertir a su negocio en único y exitoso.</p>
-                <ul class="vid-btn-tabs lg:flex my-[30px]">
-                    <li class="active text-sm fw-6 px-[16px] py-[12px] rounded-full cursor-pointer">100% digital</li>
-                    <li class="vi2 text-sm fw-6 px-[16px] py-[12px] rounded-full cursor-pointer">Innovación</li>
-                    <li class="text-sm fw-6 px-[16px] py-[12px] rounded-full cursor-pointer">Cultura</li>
-                    <li class="text-sm fw-6 px-[16px] py-[12px] rounded-full cursor-pointer">Solidaridad</li>
-                </ul>
-            </div>
-            <ul class="cvn">
-                <li class="active">
-                    <div class="slider-v-for py-[32px]">
-                        <div>
-                            <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">100% digital</h4>
-                            <p class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr nuestras metas y la autonomía de nuestros talentos.</p>
-                            <div class="relative cursor-pointer">
-                                <video  class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"  poster="assets/img/pablo.png" data-setup="{}">
-                                    <source src="assets/video/Nueva-York-Pablo.mp4" type="video/mp4">
-                                </video>
-                                <img src="assets/img/cultura/Button.svg" alt="" class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
-                            </div>
-                        </div>
-                        <div>
-                            <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">100% digital</h4>
-                            <p class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr nuestras metas y la autonomía de nuestros talentos.</p>
-                            <div class="relative cursor-pointer">
-                                <video  class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"  poster="assets/img/espana.png" data-setup="{}">
-                                    <source src="assets/video/testimonial-leon-espana.mp4" type="video/mp4">
-                                </video>
-                                <img src="assets/img/cultura/Button.svg" alt="" class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
-                            </div>
-                        </div> 
-                        <div>
-                            <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">100% digital</h4>
-                            <p class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr nuestras metas y la autonomía de nuestros talentos.</p>
-                            <div class="relative cursor-pointer">
-                                <video  class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"  poster="assets/img/pablo.png" data-setup="{}">
-                                    <source src="assets/video/video_cierre_anio_2021.mp4" type="video/mp4">
-                                </video>
-                                <img src="assets/img/cultura/Button.svg" alt="" class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
-                            </div>
-                        </div>
-                         
-                    </div>
-                    <div class="max-w-[1440px] mx-[auto] h-[1px] bg-[#424242] mb-[36px]"></div>
-                    <div class="slider-v-nav">
-                        <div class="slide-v-nav px-[10px]">
-                          <div class="slide-v-nav-img">
-                            <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="">
-                            <img class="" src="assets/img/cultura/vid1.png" alt="">
-                          </div>
-                          <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
-                            Lorem, ipsum dolor
-                          </p>
-                        </div>
-                        <div class="slide-v-nav px-[10px]">
-                          <div class="slide-v-nav-img">
-                            <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="">
-                            <img class="" src="assets/img/cultura/vid2.png" alt="">
-                          </div>
-                          <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
-                            Lorem, ipsum dolor
-                          </p>
-                        </div>
-                        <div class="slide-v-nav px-[10px]">
-                          <div class="slide-v-nav-img">
-                            <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="">
-                            <img class="" src="assets/img/cultura/vid1.png" alt="">
-                          </div>
-                          <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
-                            Lorem, ipsum dolor
-                          </p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="slider-v-for-2 py-[32px]">
-                        <div>
-                            <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">Innovación</h4>
-                            <p class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr nuestras metas y la autonomía de nuestros talentos.</p>
-                            <div class="relative cursor-pointer">
-                                <video  class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"  poster="assets/img/espana.png" data-setup="{}">
-                                    <source src="assets/video/Que_es_Chilebots.mp4" type="video/mp4">
-                                </video>
-                                <img src="assets/img/cultura/Button.svg" alt="" class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
-                            </div>
-                        </div>
-                        <div>
-                            <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">Innovación</h4>
-                            <p class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr nuestras metas y la autonomía de nuestros talentos.</p>
-                            <div class="relative cursor-pointer">
-                                <video  class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"  poster="assets/img/espana.png" data-setup="{}">
-                                    <source src="assets/video/Chilebots_Evento.mp4" type="video/mp4">
-                                </video>
-                                <img src="assets/img/cultura/Button.svg" alt="" class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
-                            </div>
-                        </div>
-                        <div>
-                            <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">Innovación</h4>
-                            <p class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr nuestras metas y la autonomía de nuestros talentos.</p>
-                            <div class="relative cursor-pointer">
-                                <video  class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"  poster="assets/img/pablo.png" data-setup="{}">
-                                    <source src="assets/video/Lanzamiento_Chilebots_Tecnofast.mp4" type="video/mp4">
-                                </video>
-                                <img src="assets/img/cultura/Button.svg" alt="" class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
-                            </div>
-                        </div>
-                        <div>
-                            <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">Innovación</h4>
-                            <p class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr nuestras metas y la autonomía de nuestros talentos.</p>
-                            <div class="relative cursor-pointer">
-                                <video  class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"  poster="assets/img/espana.png" data-setup="{}">
-                                    <source src="assets/video/Lanzamiento_Starken_Chilebots.mp4" type="video/mp4">
-                                </video>
-                                <img src="assets/img/cultura/Button.svg" alt="" class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
-                            </div>
-                        </div>
-                        <div>
-                            <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">Innovación</h4>
-                            <p class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr nuestras metas y la autonomía de nuestros talentos.</p>
-                            <div class="relative cursor-pointer">
-                                <video  class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"  poster="assets/img/pablo.png" data-setup="{}">
-                                    <source src="assets/video/Que_es_Drop_One.mp4" type="video/mp4">
-                                </video>
-                                <img src="assets/img/cultura/Button.svg" alt="" class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
-                            </div>
-                        </div>
-                        <div>
-                            <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">Innovación</h4>
-                            <p class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr nuestras metas y la autonomía de nuestros talentos.</p>
-                            <div class="relative cursor-pointer">
-                                <video  class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"  poster="assets/img/pablo.png" data-setup="{}">
-                                    <source src="assets/video/Que_es_Drop_HUB.mp4" type="video/mp4">
-                                </video>
-                                <img src="assets/img/cultura/Button.svg" alt="" class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
-                            </div>
-                        </div>
-                        <div>
-                            <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">Innovación</h4>
-                            <p class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr nuestras metas y la autonomía de nuestros talentos.</p>
-                            <div class="relative cursor-pointer">
-                                <video  class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"  poster="assets/img/pablo.png" data-setup="{}">
-                                    <source src="assets/video/ChileBots-Piloto-B2B.mp4" type="video/mp4">
-                                </video>
-                                <img src="assets/img/cultura/Button.svg" alt="" class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
-                            </div>
-                        </div>
-                        <div>
-                            <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">Innovación</h4>
-                            <p class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr nuestras metas y la autonomía de nuestros talentos.</p>
-                            <div class="relative cursor-pointer">
-                                <video  class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"  poster="assets/img/pablo.png" data-setup="{}">
-                                    <source src="assets/video/Chilebots-Windgarage.mp4" type="video/mp4">
-                                </video>
-                                <img src="assets/img/cultura/Button.svg" alt="" class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="max-w-[1440px] mx-[auto] h-[1px] bg-[#424242] mb-[36px]"></div>
-                    <div class="slider-v-nav-2">
-                        <div class="slide-v-nav px-[10px]">
-                          <div class="slide-v-nav-img">
-                            <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="">
-                            <img class="" src="assets/img/cultura/vid1.png" alt="">
-                          </div>
-                          <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
-                            Lorem, ipsum dolor
-                          </p>
-                        </div>
-                        <div class="slide-v-nav px-[10px]">
-                          <div class="slide-v-nav-img">
-                            <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="">
-                            <img class="" src="assets/img/cultura/vid2.png" alt="">
-                          </div>
-                          <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
-                            Lorem, ipsum dolor
-                          </p>
-                        </div>
-                        <div class="slide-v-nav px-[10px]">
-                          <div class="slide-v-nav-img">
-                            <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="">
-                            <img class="" src="assets/img/cultura/vid1.png" alt="">
-                          </div>
-                          <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
-                            Lorem, ipsum dolor
-                          </p>
-                        </div>
-                        <div class="slide-v-nav px-[10px]">
-                          <div class="slide-v-nav-img">
-                            <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="">
-                            <img class="" src="assets/img/cultura/vid2.png" alt="">
-                          </div>
-                          <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
-                            Lorem, ipsum dolor
-                          </p>
-                        </div>
-                        <div class="slide-v-nav px-[10px]">
-                          <div class="slide-v-nav-img">
-                            <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="">
-                            <img class="" src="assets/img/cultura/vid2.png" alt="">
-                          </div>
-                          <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
-                            Lorem, ipsum dolor
-                          </p>
-                        </div>
-                        <div class="slide-v-nav px-[10px]">
-                          <div class="slide-v-nav-img">
-                            <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="">
-                            <img class="" src="assets/img/cultura/vid1.png" alt="">
-                          </div>
-                          <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
-                            Lorem, ipsum dolor
-                          </p>
-                        </div>
-                        <div class="slide-v-nav px-[10px]">
-                          <div class="slide-v-nav-img">
-                            <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="">
-                            <img class="" src="assets/img/cultura/vid1.png" alt="">
-                          </div>
-                          <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
-                            Lorem, ipsum dolor
-                          </p>
-                        </div>
-                        <div class="slide-v-nav px-[10px]">
-                          <div class="slide-v-nav-img">
-                            <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="">
-                            <img class="" src="assets/img/cultura/vid2.png" alt="">
-                          </div>
-                          <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
-                            Lorem, ipsum dolor
-                          </p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="slider-v-for-3 py-[32px]">
-                        <div>
-                            <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">Cultura</h4>
-                            <p class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr nuestras metas y la autonomía de nuestros talentos.</p>
-                            <div class="relative cursor-pointer">
-                                <video  class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"  poster="assets/img/pablo.png" data-setup="{}">
-                                    <source src="assets/video/8M.mp4" type="video/mp4">
-                                </video>
-                                <img src="assets/img/cultura/Button.svg" alt="" class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
-                            </div>
-                        </div>
-                        <div>
-                            <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">Cultura</h4>
-                            <p class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr nuestras metas y la autonomía de nuestros talentos.</p>
-                            <div class="relative cursor-pointer">
-                                <video  class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"  poster="assets/img/pablo.png" data-setup="{}">
-                                    <source src="assets/video/Mujeres_en_TI.mp4" type="video/mp4">
-                                </video>
-                                <img src="assets/img/cultura/Button.svg" alt="" class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
-                            </div>
-                        </div>
-                        <div>
-                            <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">Cultura</h4>
-                            <p class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr nuestras metas y la autonomía de nuestros talentos.</p>
-                            <div class="relative cursor-pointer">
-                                <video  class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"  poster="assets/img/pablo.png" data-setup="{}">
-                                    <source src="assets/video/Vacuna_ll.mp4" type="video/mp4">
-                                </video>
-                                <img src="assets/img/cultura/Button.svg" alt="" class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="max-w-[1440px] mx-[auto] h-[1px] bg-[#424242] mb-[36px]"></div>
-                    <div class="slider-v-nav-3">
-                        <div class="slide-v-nav px-[10px]">
-                          <div class="slide-v-nav-img">
-                            <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="">
-                            <img class="" src="assets/img/cultura/vid2.png" alt="">
-                          </div>
-                          <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
-                            Lorem, ipsum dolor
-                          </p>
-                        </div>
-                        <div class="slide-v-nav px-[10px]">
-                          <div class="slide-v-nav-img">
-                            <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="">
-                            <img class="" src="assets/img/cultura/vid1.png" alt="">
-                          </div>
-                          <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
-                            Lorem, ipsum dolor
-                          </p>
-                        </div>
-                        <div class="slide-v-nav px-[10px]">
-                          <div class="slide-v-nav-img">
-                            <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="">
-                            <img class="" src="assets/img/cultura/vid2.png" alt="">
-                          </div>
-                          <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
-                            Lorem, ipsum dolor
-                          </p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="slider-v-for-4 py-[32px]">
-                        <div>
-                            <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">Solidaridad</h4>
-                            <p class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr nuestras metas y la autonomía de nuestros talentos.</p>
-                            <div class="relative cursor-pointer">
-                                <video  class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"  poster="assets/img/pablo.png" data-setup="{}">
-                                    <source src="assets/video/Tinet_Comite_1920x1080_v2.mp4" type="video/mp4">
-                                </video>
-                                <img src="assets/img/cultura/Button.svg" alt="" class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
-                            </div>
-                        </div>
-                         
-                    </div>
-                    <div class="max-w-[1440px] mx-[auto] h-[1px] bg-[#424242] mb-[36px]"></div>
-                    <div class="slider-v-nav-4">
-                        <div class="slide-v-nav px-[10px]">
-                          <div class="slide-v-nav-img">
-                            <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="">
-                            <img class="" src="assets/img/cultura/vid1.png" alt="">
-                          </div>
-                          <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
-                            Lorem, ipsum dolor
-                          </p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-     <!-- fin videos carousel -->
-     <!-- 15 beneficios -->
-     <div class="bg-[#ffffff]">
-        <div class="relative max-w-[1440px] mx-[auto] xl:px-[130px] px-[24px] pt-[100px] sm:pb-[130px] pb-[20px] flex lg:flex-row flex-col items-center">
-            <div class="absolute top-[0px] xl:left-[90px] lg:left-[5px] left-[25px] flex flex-col items-center">
-                <div class=" w-[0px] lg:h-[280px] h-[70px] border-r-2 border-dashed border-[#90A4AE]"></div>
-                <div class="rounded-full w-[16px] h-[16px] bg-[#C41A90]"></div>
-            </div>
-            <div class="lg:max-w-[45%] max-w-[100%] lg:pr-[35px] pr-[0px] lg:mb-[0px] mb-[24px]">
-                <span class="block text-[20px] leading-[24px] text-[#424242] fw-6 lg:mb-[0px] mb-[20px]">Pensamos en todo</span>
-                <h3 class="lg:text-[56px] text-[56px] lg:leading-[64px] leading-[64px] text-[#424242] fw-7 mt-[10px] mb-[10px]">15 beneficios <span class="text-[#006099]">que amarás</span></h3>
-                <p class="text-base text-[#616161] fw-4">Nos interesa tu bienestar, sabemos que la vida es un torbellino y las necesidades cambian, es por esto que nuestro beneficios se centran en aquellas cosas que pueden ser importantes para ti en diferentes etapas.</p>
-                <a class="seeMoreB flex mt-[24px]" href="#!">
-                    <img class="mr-[12px]" src="assets/img/cultura/arrow-right.svg" alt="">
-                    <span class="text-[#006099] text-base fw-5">Ver más detalles</span>
-                </a>
-            </div>
-            <div class="lg:max-w-[55%] max-w-[100%] sm:grid grid-cols-3 gap-5 hidden">
-                <div class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
-                    <h4 class="text-sm fw-5 text-[#424242]">Asesoría Financiera</h4>
-                    <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                </div>
-                <div class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
-                    <h4 class="text-sm fw-5 text-[#424242]">Siempre Seguro</h4>
-                    <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                </div>
-                <div class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
-                    <h4 class="text-sm fw-5 text-[#424242]">Días libres</h4>
-                    <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                </div>
-                <div class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
-                    <h4 class="text-sm fw-5 text-[#424242]">Home Office</h4>
-                    <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                </div>
-                <div class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
-                    <h4 class="text-sm fw-5 text-[#424242]">Chao Jefe</h4>
-                    <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                </div>
-                <div class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
-                    <h4 class="text-sm fw-5 text-[#424242]">Bono Marraqueta</h4>
-                    <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                </div>
-                <div class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
-                    <h4 class="text-sm fw-5 text-[#424242]">Asesoría Legal</h4>
-                    <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                </div>
-                <div class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
-                    <h4 class="text-sm fw-5 text-[#424242]">Bono HoneyMoon</h4>
-                    <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                </div>
-                <div class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
-                    <h4 class="text-sm fw-5 text-[#424242]">Bono HoneyMoon</h4>
-                    <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                </div>
-                <div class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
-                    <h4 class="text-sm fw-5 text-[#424242]">Crédito de emergencia</h4>
-                    <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                </div>
-                <div class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
-                    <h4 class="text-sm fw-5 text-[#424242]">Flex 40</h4>
-                    <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                </div>
-                <div class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
-                    <h4 class="text-sm fw-5 text-[#424242]">Clases de Inglés</h4>
-                    <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                </div>
-                <div class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
-                    <h4 class="text-sm fw-5 text-[#424242]">Home Office</h4>
-                    <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                </div>
-                <div class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
-                    <h4 class="text-sm fw-5 text-[#424242]">Chao Jefe</h4>
-                    <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                </div>
-                <div class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
-                    <h4 class="text-sm fw-5 text-[#424242]">Bono Marraqueta</h4>
-                    <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                </div>
-            </div>
-        </div>
-        <div class="slideBeneficios max-w-[1440px] mx-[auto] xl:px-[130px] px-[24px] pt-[5px] pb-[120px]">
-            <div class="slideBe">
-                <div>
-                    <div class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
-                        <h4 class="text-sm fw-5 text-[#424242]">Asesoría Financiera</h4>
-                        <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
-                        <h4 class="text-sm fw-5 text-[#424242]">Siempre Seguro</h4>
-                        <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
-                        <h4 class="text-sm fw-5 text-[#424242]">Días libres</h4>
-                        <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
-                        <h4 class="text-sm fw-5 text-[#424242]">Home Office</h4>
-                        <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
-                        <h4 class="text-sm fw-5 text-[#424242]">Chao Jefe</h4>
-                        <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
-                        <h4 class="text-sm fw-5 text-[#424242]">Bono Marraqueta</h4>
-                        <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
-                        <h4 class="text-sm fw-5 text-[#424242]">Asesoría Legal</h4>
-                        <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
-                        <h4 class="text-sm fw-5 text-[#424242]">Bono HoneyMoon</h4>
-                        <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
-                        <h4 class="text-sm fw-5 text-[#424242]">Crédito de emergencia</h4>
-                        <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
-                        <h4 class="text-sm fw-5 text-[#424242]">Flex 40</h4>
-                        <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
-                        <h4 class="text-sm fw-5 text-[#424242]">Clases de Inglés</h4>
-                        <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
-                        <h4 class="text-sm fw-5 text-[#424242]">Home Office</h4>
-                        <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
-                        <h4 class="text-sm fw-5 text-[#424242]">Chao Jefe</h4>
-                        <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
-                        <h4 class="text-sm fw-5 text-[#424242]">Bono Marraqueta</h4>
-                        <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
-                        <h4 class="text-sm fw-5 text-[#424242]">Flex 40</h4>
-                        <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para ayudarte a llegar a París. Transversal</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-     </div>
-     <!-- fin 15 beneficios -->
-     <!-- adn tinet -->
-     <div class="bg-[#F4F8F9]">
-        <div class="max-w-[1440px] mx-[auto] xl:px-[130px] px-[24px] pt-[100px] pb-[100px]">
-            <span class="block fw-7 text-[20px] leading-[24px] text-[#006099]">ADN Tinet</span>
-            <p class="text-[#424242] sm:text-[32px] sm:leading-[40px] text-[22px] leading-[27px] fw-6 max-w-[763px] sm:pt-[0px] pt-[8px]">Digital o presencial, encontramos momentos para compartir y llevarte la fiesta</p>
-            <video class="w-[100%] mx-[auto] md:mt-[20px] mt-[40px]" poster="assets/img/covervideocultura.png" controls>
-                <source src="assets/video/lanzamiento_instagram.mp4">
-            </video>
-        </div>
-     </div>
-     <!-- fin adn tinet -->
-    <!-- casos -->
-    <div class="bg-[#E5EFF5]">
-        <div class="relative max-w-[1440px] mx-[auto] xl:px-[130px] px-[24px] pt-[120px] pb-[140px]">
-            <div class="absolute top-[0px] xl:left-[90px] left-[5px] flex flex-col items-center">
-                <div class=" w-[0px] h-[80px] border-r-2 border-dashed border-[#90A4AE]"></div>
-                <div class="rounded-full w-[16px] h-[16px] bg-[#C41A90]"></div>
-            </div>
-            <h3 class="text-[22px] leading-[27px] max-w-[100%] lg:max-w-[600px] md:text-[32px] md:leading-[40px] lg:text-[56px] lg:leading-[64px] text-[#424242] fw-7">Lorem ipsum <span class="text-[#C41A90]">dolor sit.</span></h3>
-            <p class="text-[14px] leading-[20px] lg:text-[24px] lg:leading-[32px] text-[#616161] fw-4 max-w-[100%] lg:max-w-[800px] pt-[16px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus eleifend erat, blandit vestibulum nunc tincidunt nec. Vestibulum venenatis ultricies laoreet.</p>
-            <div class="casoss my-[60px] lg:mx-[0px] mx-[-24px]">
-                <div class="">
-                    <div class="bg-[#F0F8FD] w-[370px] h-[507px] rounded-b-lg p-[24px] relative mt-[82px] mx-[15px]">
-                        <img class="rounded-full w-[150px] h-[150px] mx-[auto] mt-[-105px]" src="assets/img/cultura/angel_Abse_1.png" alt="">
-                        <h3 class="text-center fw-5 text-[#6A6A6A] text-[24px] leading-[32px] py-[8px]">Angel Absé</h3>
-                        <span class="text-center text-[#4E4E4E] text-[14px] leading-[20px] fw-5 py-[8px] block">ISW Medio</span>
-                        <div class="flex">
-                            <img class="inline-block w-[16px] h-[29px] mr-[3px]" src="assets/img/cultura/cc.png" alt="">
-                            <img class="inline-block w-[16px] h-[29px]" src="assets/img/cultura/cc.png" alt="">
-                        </div>
-                        <p class="text-sm text-[#4E4E4E] fw-4 pt-[5px]">Gracias a Tinet es que me pude venir a estudiar a Irlanda sin tener que preocuparme por perder el trabajo. Ya llevo 6 meses en este país, en donde estoy estudiando Inglés y trabajando de forma remota, y la verdad es que ha sido una experiencia notable. He podido conocer nuevas culturas, lugares asombrosos y personas de todas partes del mundo.</p>
-                        <div class="absolute bottom-[24px] left-[24px] w-[100%] flex">
-                            <img class="w-[43px] h-[28px] mr-[9px]" src="assets/img/cultura/irlanda.svg" alt=""><span class="text-base fw-6 text-[#424242]">Irlanda</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="">
-                    <div class="bg-[#F0F8FD] w-[370px] h-[507px] rounded-b-lg p-[24px] relative mt-[82px] mx-[10px]">
-                        <img class="rounded-full w-[150px] h-[150px] mx-[auto] mt-[-105px]" src="assets/img/cultura/Yordy_Riascos_1.png" alt="">
-                        <h3 class="text-center fw-5 text-[#6A6A6A] text-[24px] leading-[32px] py-[8px]">Yordi Riascos</h3>
-                        <span class="text-center text-[#4E4E4E] text-[14px] leading-[20px] fw-5 py-[8px] block">ISW Medio</span>
-                        <div class="flex">
-                            <img class="inline-block w-[16px] h-[29px] mr-[3px]" src="assets/img/cultura/cc.png" alt="">
-                            <img class="inline-block w-[16px] h-[29px]" src="assets/img/cultura/cc.png" alt="">
-                        </div>
-                        <p class="text-sm text-[#4E4E4E] fw-4 pt-[5px]">he trabajado en otras empresas de chile pero aqui se siente el tacto por las personas en como cuidar y mantener a cada uno dentro de tinet como si fuera una familia veo la preocupacion por que cada uno se siente bien</p>
-                        <div class="absolute bottom-[24px] left-[24px] w-[100%] flex">
-                            <img class="w-[43px] h-[28px] mr-[9px]" src="assets/img/cultura/venezuela.svg" alt=""><span class="text-base fw-6 text-[#424242]">Venezuela</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="">
-                    <div class="bg-[#F0F8FD] w-[370px] h-[507px] rounded-b-lg p-[24px] relative mt-[82px] mx-[10px]">
-                        <img class="rounded-full w-[150px] h-[150px] mx-[auto] mt-[-105px]" src="assets/img/cultura/wileisy_m4_1.png" alt="">
-                        <h3 class="text-center fw-5 text-[#6A6A6A] text-[24px] leading-[32px] py-[8px]">Melisa Meza</h3>
-                        <span class="text-center text-[#4E4E4E] text-[14px] leading-[20px] fw-5 py-[8px] block">ISW Medio</span>
-                        <div class="flex">
-                            <img class="inline-block w-[16px] h-[29px] mr-[3px]" src="assets/img/cultura/cc.png" alt="">
-                            <img class="inline-block w-[16px] h-[29px]" src="assets/img/cultura/cc.png" alt="">
-                        </div>
-                        <p class="text-sm text-[#4E4E4E] fw-4 pt-[5px]">Como extranjera al llegar a Tinet como mi primer empleo, fue lo mejor que pudo pasar. Me sentí súper bien recibida y parte de la familia Tinet desde el primer momento, esto ayudo a que pudiera sentirme confiada y tranquila en los equipos/ servicios en los que he estado, ya que sé que cuento con el apoyo de la empresa. Uno de las cosas que más valoro de Tinet es esa preocupación por el bienestar de las personas, esas ganas de que las personas están bien y se sientan bien haciendo su trabajo y que todo se mueva en torno a eso.</p>
-                        <div class="absolute bottom-[24px] left-[24px] w-[100%] flex">
-                            <img class="w-[43px] h-[28px] mr-[9px]" src="assets/img/cultura/irlanda.svg" alt=""><span class="text-base fw-6 text-[#424242]">Irlanda</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="">
-                    <div class="bg-[#F0F8FD] w-[370px] h-[507px] rounded-b-lg p-[24px] relative mt-[82px] mx-[15px]">
-                        <img class="rounded-full w-[150px] h-[150px] mx-[auto] mt-[-105px]" src="assets/img/cultura/angel_Abse_1.png" alt="">
-                        <h3 class="text-center fw-5 text-[#6A6A6A] text-[24px] leading-[32px] py-[8px]">Lorem, ipsum.</h3>
-                        <span class="text-center text-[#4E4E4E] text-[14px] leading-[20px] fw-5 py-[8px] block">ISW Medio</span>
-                        <div class="flex">
-                            <img class="inline-block w-[16px] h-[29px] mr-[3px]" src="assets/img/cultura/cc.png" alt="">
-                            <img class="inline-block w-[16px] h-[29px]" src="assets/img/cultura/cc.png" alt="">
-                        </div>
-                        <p class="text-sm text-[#4E4E4E] fw-4 pt-[5px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptates doloremque sint voluptatibus dolores soluta distinctio blanditiis error facilis quia!.</p>
-                        <div class="absolute bottom-[24px] left-[24px] w-[100%] flex">
-                            <img class="w-[43px] h-[28px] mr-[9px]" src="assets/img/cultura/irlanda.svg" alt=""><span class="text-base fw-6 text-[#424242]">Irlanda</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="">
-                    <div class="bg-[#F0F8FD] w-[370px] h-[507px] rounded-b-lg p-[24px] relative mt-[82px] mx-[15px]">
-                        <img class="rounded-full w-[150px] h-[150px] mx-[auto] mt-[-105px]" src="assets/img/cultura/angel_Abse_1.png" alt="">
-                        <h3 class="text-center fw-5 text-[#6A6A6A] text-[24px] leading-[32px] py-[8px]">Lorem, ipsum dolor.</h3>
-                        <span class="text-center text-[#4E4E4E] text-[14px] leading-[20px] fw-5 py-[8px] block">ISW Medio</span>
-                        <div class="flex">
-                            <img class="inline-block w-[16px] h-[29px] mr-[3px]" src="assets/img/cultura/cc.png" alt="">
-                            <img class="inline-block w-[16px] h-[29px]" src="assets/img/cultura/cc.png" alt="">
-                        </div>
-                        <p class="text-sm text-[#4E4E4E] fw-4 pt-[5px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nobis itaque rerum nemo? Perferendis quia, quasi exercitationem voluptatibus, adipisci ad autem laboriosam eaque numquam beatae, quos facilis asperiores! Facere, perspiciatis.</p>
-                        <div class="absolute bottom-[24px] left-[24px] w-[100%] flex">
-                            <img class="w-[43px] h-[28px] mr-[9px]" src="assets/img/cultura/irlanda.svg" alt=""><span class="text-base fw-6 text-[#424242]">Irlanda</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- fin casos -->
-    <!-- oportunidades -->
-    <div class="bg-[#FAFAFA]">
-        <div class="relative max-w-[1440px] mx-[auto] px-[24px] xl:px-[130px] lg:px-[24px] py-[50px] lg:py-[100px] flex lg:flex-row flex-col items-center lg:justify-between justify-center">
-            <div class="absolute sm:flex hidden top-[0px] xl:left-[90px] sm:left-[50%] lg:left-[5px] left-[25px] flex flex-col items-center">
-                <div class=" w-[0px] lg:h-[280px] h-[70px] border-r-2 border-dashed border-[#90A4AE]"></div>
-                <div class="rounded-full w-[16px] h-[16px] bg-[#C41A90]"></div>
-            </div>
-            <div class="max-w-[100%] lg:max-w-[50%]">
-                <h3 class="fw-7 lg:pt-[0px] sm:pt-[55px] pt-[0px] text-[24px] leading-[32px] text-[#000000] sm:text-[44px] sm:leading-[52px] lg:text-[64px] lg:leading-[72px] text-center lg:text-left mb-[28px] lg:mb-[0px]">¿Quieres<br>
-                    conocer nuestras <span class="text-[#C41A90]">oportunidades?</span></h3>
-            </div>
-            <div class="max-w-[100%] lg:max-w-[50%]">
-                <div class="w-[328px] h-[328px] lg:w-[473px] lg:h-[474px] bg-[#E5EFF5] rounded-full flex flex-col justify-center items-center lg:p-[70px] p-[40px]">
-                    <p class="fw-5 text-[20px] leading-[28px] text-[#434040] text-center">Encuentra la alternativa que más se acomode a tu perfil!</p>
-                    <a class="tinet-btns bg-[#C41A90] text-[#ffffff] text-[16px] leading-[24px]" href="">Ver oportunidades</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- fin oportunidades -->
-      <div class="footer-general">
-        <div class="top_footer">
-          <div class="tf_desc">
-            <img src="assets/img/footer/Logo.svg" alt="">
-            <p class="fs-12 fw-4 c-pf padbot_60">Somos una consultora tecnológica líder en transformación y cultura digital con soluciones de negocios basadas en tecnología y consultoría.</p>
-            <div class="icotext">
-              <img src="assets/img/footer/phone.svg" alt="">
-              <p class="fw-4 fs-14 cl-ff lh-21">264690839</p>
-            </div>
-            <div class="icotext">
-              <img src="assets/img/footer/place.svg" alt="">
-              <p class="fw-4 fs-14 cl-ff lh-21">Evaristo Lillo 48, Las Condes, Santiago, RM</p>
-            </div>
-          </div>
-          <div class="td_btns">
-            <ul>
-              <li class="fw-6 fs-14 cl-ff lh-21">Compañia</li>
-              <li class="fw-4 fs-14 c-pf lh-21"><a href="">Somos tinet</a></li>
-              <li class="fw-4 fs-14 c-pf lh-21"><a href="">Que hacemos</a></li>
-              <li class="fw-4 fs-14 c-pf lh-21"><a href="">Industrias</a></li>
-              <li class="fw-4 fs-14 c-pf lh-21"><a href="">Casos de Éxito</a></li>
-              <li class="fw-4 fs-14 c-pf lh-21"><a href="">Hablemos</a></li>
-            </ul>
-            <ul>
-              <li class="fw-6 fs-14 cl-ff lh-21">Talenti Tinet</li>
-              <li class="fw-4 fs-14 c-pf lh-21"><a href="">Trabaja con nosotros</a></li>
-              <li class="fw-4 fs-14 c-pf lh-21"><a href="">Carreras</a></li>
-            </ul>
-            <ul>
-              <li class="fw-6 fs-14 cl-ff lh-21">Contenido</li>
-              <li class="fw-4 fs-14 c-pf lh-21"><a href="">Blog</a></li>
-            </ul>
-            <ul>
-              <li class="fw-6 fs-14 cl-ff lh-21">Redes Sociales</li>
-              <li class="fw-4 fs-14 c-pf lh-21 icoredes">
-                <a href=""><img src="assets/img/footer/linkedin.svg" alt=""></a>
-                <a href=""><img src="assets/img/footer/ig.svg" alt=""></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="bot_footer">
-          <div class="bf_left">
-            <div class="ea_f">
-              <p class="fw-6 fs-14 cl-ff lh-21 pabo20">Empresas asociadas</p>
-              <div class="c_ea">
-                <img src="assets/img/footer/Drop.svg" alt="">
-              </div>
-             
-            </div>
-            <div class="ea_f">
-              <p class="fw-6 fs-14 cl-ff lh-21 pabo20">Somos parte de</p>
-              <img src="assets/img/footer/Acti.svg" alt="">
-            </div>
-          </div>
-          <div class="bf_right">
+      <ul class="cvn">
+        <li class="active">
+          <div class="slider-v-for py-[32px]">
             <div>
-              <p class="fw-4 fs-14 cl-ff lh-21 lr">M.P.D.</p>
-              <p class="fw-4 fs-14 cl-ff lh-21 lr">Canal de denuncias</p>
-              <p class="fw-4 fs-14 cl-ff lh-21">Política de Privacidad </p>
+              <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">100% digital</h4>
+              <p
+                class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">
+                Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr
+                nuestras metas y la autonomía de nuestros talentos.</p>
+              <div class="relative cursor-pointer">
+                <video class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"
+                  poster="assets/img/pablo.png" data-setup="{}">
+                  <source src="assets/video/Nueva-York-Pablo.mp4" type="video/mp4">
+                </video>
+                <img src="assets/img/cultura/Button.svg" alt="Play"
+                  class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
+              </div>
             </div>
-            <p class="fw-4 fs-14 cl-ff lh-21">© 2022 Tinet. All Rights Reserved.</p>
+            <div>
+              <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">100% digital</h4>
+              <p
+                class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">
+                Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr
+                nuestras metas y la autonomía de nuestros talentos.</p>
+              <div class="relative cursor-pointer">
+                <video class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"
+                  poster="assets/img/espana.png" data-setup="{}">
+                  <source src="assets/video/testimonial-leon-espana.mp4" type="video/mp4">
+                </video>
+                <img src="assets/img/cultura/Button.svg" alt="Play"
+                  class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
+              </div>
+            </div>
+            <div>
+              <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">100% digital</h4>
+              <p
+                class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">
+                Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr
+                nuestras metas y la autonomía de nuestros talentos.</p>
+              <div class="relative cursor-pointer">
+                <video class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"
+                  poster="assets/img/pablo.png" data-setup="{}">
+                  <source src="assets/video/video_cierre_anio_2021.mp4" type="video/mp4">
+                </video>
+                <img src="assets/img/cultura/Button.svg" alt="Play"
+                  class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
+              </div>
+            </div>
+
+          </div>
+          <div class="max-w-[1440px] mx-[auto] h-[1px] bg-[#424242] mb-[36px]"></div>
+          <div class="slider-v-nav">
+            <div class="slide-v-nav px-[10px]">
+              <div class="slide-v-nav-img">
+                <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="play">
+                <img class="" src="assets/img/cultura/vid1.png" alt="Video">
+              </div>
+              <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
+                Lorem, ipsum dolor
+              </p>
+            </div>
+            <div class="slide-v-nav px-[10px]">
+              <div class="slide-v-nav-img">
+                <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="Play">
+                <img class="" src="assets/img/cultura/vid2.png" alt="Video">
+              </div>
+              <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
+                Lorem, ipsum dolor
+              </p>
+            </div>
+            <div class="slide-v-nav px-[10px]">
+              <div class="slide-v-nav-img">
+                <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="Play">
+                <img class="" src="assets/img/cultura/vid1.png" alt="Video">
+              </div>
+              <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
+                Lorem, ipsum dolor
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slider-v-for-2 py-[32px]">
+            <div>
+              <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">Innovación</h4>
+              <p
+                class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">
+                Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr
+                nuestras metas y la autonomía de nuestros talentos.</p>
+              <div class="relative cursor-pointer">
+                <video class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"
+                  poster="assets/img/espana.png" data-setup="{}">
+                  <source src="assets/video/Que_es_Chilebots.mp4" type="video/mp4">
+                </video>
+                <img src="assets/img/cultura/Button.svg" alt="Play"
+                  class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
+              </div>
+            </div>
+            <div>
+              <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">Innovación</h4>
+              <p
+                class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">
+                Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr
+                nuestras metas y la autonomía de nuestros talentos.</p>
+              <div class="relative cursor-pointer">
+                <video class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"
+                  poster="assets/img/espana.png" data-setup="{}">
+                  <source src="assets/video/Chilebots_Evento.mp4" type="video/mp4">
+                </video>
+                <img src="assets/img/cultura/Button.svg" alt="Play"
+                  class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
+              </div>
+            </div>
+            <div>
+              <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">Innovación</h4>
+              <p
+                class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">
+                Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr
+                nuestras metas y la autonomía de nuestros talentos.</p>
+              <div class="relative cursor-pointer">
+                <video class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"
+                  poster="assets/img/pablo.png" data-setup="{}">
+                  <source src="assets/video/Lanzamiento_Chilebots_Tecnofast.mp4" type="video/mp4">
+                </video>
+                <img src="assets/img/cultura/Button.svg" alt="Play"
+                  class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
+              </div>
+            </div>
+            <div>
+              <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">Innovación</h4>
+              <p
+                class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">
+                Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr
+                nuestras metas y la autonomía de nuestros talentos.</p>
+              <div class="relative cursor-pointer">
+                <video class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"
+                  poster="assets/img/espana.png" data-setup="{}">
+                  <source src="assets/video/Lanzamiento_Starken_Chilebots.mp4" type="video/mp4">
+                </video>
+                <img src="assets/img/cultura/Button.svg" alt="Play"
+                  class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
+              </div>
+            </div>
+            <div>
+              <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">Innovación</h4>
+              <p
+                class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">
+                Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr
+                nuestras metas y la autonomía de nuestros talentos.</p>
+              <div class="relative cursor-pointer">
+                <video class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"
+                  poster="assets/img/pablo.png" data-setup="{}">
+                  <source src="assets/video/Que_es_Drop_One.mp4" type="video/mp4">
+                </video>
+                <img src="assets/img/cultura/Button.svg" alt="Play"
+                  class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
+              </div>
+            </div>
+            <div>
+              <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">Innovación</h4>
+              <p
+                class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">
+                Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr
+                nuestras metas y la autonomía de nuestros talentos.</p>
+              <div class="relative cursor-pointer">
+                <video class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"
+                  poster="assets/img/pablo.png" data-setup="{}">
+                  <source src="assets/video/Que_es_Drop_HUB.mp4" type="video/mp4">
+                </video>
+                <img src="assets/img/cultura/Button.svg" alt="Play"
+                  class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
+              </div>
+            </div>
+            <div>
+              <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">Innovación</h4>
+              <p
+                class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">
+                Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr
+                nuestras metas y la autonomía de nuestros talentos.</p>
+              <div class="relative cursor-pointer">
+                <video class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"
+                  poster="assets/img/pablo.png" data-setup="{}">
+                  <source src="assets/video/ChileBots-Piloto-B2B.mp4" type="video/mp4">
+                </video>
+                <img src="assets/img/cultura/Button.svg" alt="Play"
+                  class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
+              </div>
+            </div>
+            <div>
+              <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">Innovación</h4>
+              <p
+                class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">
+                Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr
+                nuestras metas y la autonomía de nuestros talentos.</p>
+              <div class="relative cursor-pointer">
+                <video class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"
+                  poster="assets/img/pablo.png" data-setup="{}">
+                  <source src="assets/video/Chilebots-Windgarage.mp4" type="video/mp4">
+                </video>
+                <img src="assets/img/cultura/Button.svg" alt="Play"
+                  class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
+              </div>
+            </div>
+          </div>
+          <div class="max-w-[1440px] mx-[auto] h-[1px] bg-[#424242] mb-[36px]"></div>
+          <div class="slider-v-nav-2">
+            <div class="slide-v-nav px-[10px]">
+              <div class="slide-v-nav-img">
+                <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="Play">
+                <img class="" src="assets/img/cultura/vid1.png" alt="Video">
+              </div>
+              <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
+                Lorem, ipsum dolor
+              </p>
+            </div>
+            <div class="slide-v-nav px-[10px]">
+              <div class="slide-v-nav-img">
+                <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="Play">
+                <img class="" src="assets/img/cultura/vid2.png" alt="Video">
+              </div>
+              <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
+                Lorem, ipsum dolor
+              </p>
+            </div>
+            <div class="slide-v-nav px-[10px]">
+              <div class="slide-v-nav-img">
+                <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="Play">
+                <img class="" src="assets/img/cultura/vid1.png" alt="Video">
+              </div>
+              <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
+                Lorem, ipsum dolor
+              </p>
+            </div>
+            <div class="slide-v-nav px-[10px]">
+              <div class="slide-v-nav-img">
+                <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="Play">
+                <img class="" src="assets/img/cultura/vid2.png" alt="Video">
+              </div>
+              <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
+                Lorem, ipsum dolor
+              </p>
+            </div>
+            <div class="slide-v-nav px-[10px]">
+              <div class="slide-v-nav-img">
+                <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="Play">
+                <img class="" src="assets/img/cultura/vid2.png" alt="Video">
+              </div>
+              <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
+                Lorem, ipsum dolor
+              </p>
+            </div>
+            <div class="slide-v-nav px-[10px]">
+              <div class="slide-v-nav-img">
+                <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="Play">
+                <img class="" src="assets/img/cultura/vid1.png" alt="Video">
+              </div>
+              <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
+                Lorem, ipsum dolor
+              </p>
+            </div>
+            <div class="slide-v-nav px-[10px]">
+              <div class="slide-v-nav-img">
+                <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="Play">
+                <img class="" src="assets/img/cultura/vid1.png" alt="Video">
+              </div>
+              <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
+                Lorem, ipsum dolor
+              </p>
+            </div>
+            <div class="slide-v-nav px-[10px]">
+              <div class="slide-v-nav-img">
+                <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="Play">
+                <img class="" src="assets/img/cultura/vid2.png" alt="Video">
+              </div>
+              <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
+                Lorem, ipsum dolor
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slider-v-for-3 py-[32px]">
+            <div>
+              <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">Cultura</h4>
+              <p
+                class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">
+                Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr
+                nuestras metas y la autonomía de nuestros talentos.</p>
+              <div class="relative cursor-pointer">
+                <video class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"
+                  poster="assets/img/pablo.png" data-setup="{}">
+                  <source src="assets/video/8M.mp4" type="video/mp4">
+                </video>
+                <img src="assets/img/cultura/Button.svg" alt="Play"
+                  class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
+              </div>
+            </div>
+            <div>
+              <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">Cultura</h4>
+              <p
+                class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">
+                Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr
+                nuestras metas y la autonomía de nuestros talentos.</p>
+              <div class="relative cursor-pointer">
+                <video class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"
+                  poster="assets/img/pablo.png" data-setup="{}">
+                  <source src="assets/video/Mujeres_en_TI.mp4" type="video/mp4">
+                </video>
+                <img src="assets/img/cultura/Button.svg" alt="Play"
+                  class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
+              </div>
+            </div>
+            <div>
+              <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">Cultura</h4>
+              <p
+                class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">
+                Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr
+                nuestras metas y la autonomía de nuestros talentos.</p>
+              <div class="relative cursor-pointer">
+                <video class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"
+                  poster="assets/img/pablo.png" data-setup="{}">
+                  <source src="assets/video/Vacuna_ll.mp4" type="video/mp4">
+                </video>
+                <img src="assets/img/cultura/Button.svg" alt="Play"
+                  class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
+              </div>
+            </div>
+          </div>
+          <div class="max-w-[1440px] mx-[auto] h-[1px] bg-[#424242] mb-[36px]"></div>
+          <div class="slider-v-nav-3">
+            <div class="slide-v-nav px-[10px]">
+              <div class="slide-v-nav-img">
+                <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="Play">
+                <img class="" src="assets/img/cultura/vid2.png" alt="Video">
+              </div>
+              <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
+                Lorem, ipsum dolor
+              </p>
+            </div>
+            <div class="slide-v-nav px-[10px]">
+              <div class="slide-v-nav-img">
+                <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="Play">
+                <img class="" src="assets/img/cultura/vid1.png" alt="Video">
+              </div>
+              <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
+                Lorem, ipsum dolor
+              </p>
+            </div>
+            <div class="slide-v-nav px-[10px]">
+              <div class="slide-v-nav-img">
+                <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="Play">
+                <img class="" src="assets/img/cultura/vid2.png" alt="Video">
+              </div>
+              <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
+                Lorem, ipsum dolor
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slider-v-for-4 py-[32px]">
+            <div>
+              <h4 class="text-[32px] leading-[40px] fw-6 text-[#ffffff] text-center">Solidaridad</h4>
+              <p
+                class="max-w-[735px] mx-[auto] lg:px-[10px] md:px-[24px] text-center text-base	text-[#ffffff] fw-4 py-[16px]">
+                Aquí puedes trabajar desde cualquier lugar del mundo. El trabajo remoto es el camino para lograr
+                nuestras metas y la autonomía de nuestros talentos.</p>
+              <div class="relative cursor-pointer">
+                <video class="video h-[auto] md:h-[560px] w-[978px] mx-[auto] rounded-[32px] mt-[8px]"
+                  poster="assets/img/pablo.png" data-setup="{}">
+                  <source src="assets/video/Tinet_Comite_1920x1080_v2.mp4" type="video/mp4">
+                </video>
+                <img src="assets/img/cultura/Button.svg" alt="Play"
+                  class="playBtn absolute left-0 right-0 mx-[auto] top-[50%] translate-y-1/2">
+              </div>
+            </div>
+
+          </div>
+          <div class="max-w-[1440px] mx-[auto] h-[1px] bg-[#424242] mb-[36px]"></div>
+          <div class="slider-v-nav-4">
+            <div class="slide-v-nav px-[10px]">
+              <div class="slide-v-nav-img">
+                <img class="pl" src="assets/img/cultura/play-circle-outline.png" alt="Play">
+                <img class="" src="assets/img/cultura/vid1.png" alt="Video">
+              </div>
+              <p class="fw-6 fs-14 lh-20 mt-[10px] text-[#ffffff]">
+                Lorem, ipsum dolor
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- fin videos carousel -->
+  <!-- 15 beneficios -->
+  <div class="bg-[#ffffff]">
+    <div
+      class="relative max-w-[1440px] mx-[auto] xl:px-[130px] px-[24px] pt-[100px] sm:pb-[130px] pb-[20px] flex lg:flex-row flex-col items-center">
+      <div class="absolute top-[0px] xl:left-[90px] lg:left-[5px] left-[25px] flex flex-col items-center">
+        <div class=" w-[0px] lg:h-[280px] h-[70px] border-r-2 border-dashed border-[#90A4AE]"></div>
+        <div class="rounded-full w-[16px] h-[16px] bg-[#C41A90]"></div>
+      </div>
+      <div class="lg:max-w-[45%] max-w-[100%] lg:pr-[35px] pr-[0px] lg:mb-[0px] mb-[24px]">
+        <span class="block text-[20px] leading-[24px] text-[#424242] fw-6 lg:mb-[0px] mb-[20px]">Pensamos en todo</span>
+        <h3 class="lg:text-[56px] text-[56px] lg:leading-[64px] leading-[64px] text-[#424242] fw-7 mt-[10px] mb-[10px]">
+          15 beneficios <span class="text-[#006099]">que amarás</span></h3>
+        <p class="text-base text-[#616161] fw-4">Nos interesa tu bienestar, sabemos que la vida es un torbellino y las
+          necesidades cambian, es por esto que nuestro beneficios se centran en aquellas cosas que pueden ser
+          importantes para ti en diferentes etapas.</p>
+        <a title="Ver más detalles" class="seeMoreB flex mt-[24px]" href="#!">
+          <img class="mr-[12px]" src="assets/img/cultura/arrow-right.svg" alt="Ver más detalles">
+          <span class="text-[#006099] text-base fw-5">Ver más detalles</span>
+        </a>
+      </div>
+      <div class="lg:max-w-[55%] max-w-[100%] sm:grid grid-cols-3 gap-5 hidden">
+        <div
+          class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
+          <h4 class="text-sm fw-5 text-[#424242]">Asesoría Financiera</h4>
+          <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+            ayudarte a llegar a París. Transversal</p>
+        </div>
+        <div
+          class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
+          <h4 class="text-sm fw-5 text-[#424242]">Siempre Seguro</h4>
+          <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+            ayudarte a llegar a París. Transversal</p>
+        </div>
+        <div
+          class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
+          <h4 class="text-sm fw-5 text-[#424242]">Días libres</h4>
+          <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+            ayudarte a llegar a París. Transversal</p>
+        </div>
+        <div
+          class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
+          <h4 class="text-sm fw-5 text-[#424242]">Home Office</h4>
+          <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+            ayudarte a llegar a París. Transversal</p>
+        </div>
+        <div
+          class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
+          <h4 class="text-sm fw-5 text-[#424242]">Chao Jefe</h4>
+          <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+            ayudarte a llegar a París. Transversal</p>
+        </div>
+        <div
+          class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
+          <h4 class="text-sm fw-5 text-[#424242]">Bono Marraqueta</h4>
+          <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+            ayudarte a llegar a París. Transversal</p>
+        </div>
+        <div
+          class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
+          <h4 class="text-sm fw-5 text-[#424242]">Asesoría Legal</h4>
+          <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+            ayudarte a llegar a París. Transversal</p>
+        </div>
+        <div
+          class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
+          <h4 class="text-sm fw-5 text-[#424242]">Bono HoneyMoon</h4>
+          <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+            ayudarte a llegar a París. Transversal</p>
+        </div>
+        <div
+          class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
+          <h4 class="text-sm fw-5 text-[#424242]">Bono HoneyMoon</h4>
+          <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+            ayudarte a llegar a París. Transversal</p>
+        </div>
+        <div
+          class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
+          <h4 class="text-sm fw-5 text-[#424242]">Crédito de emergencia</h4>
+          <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+            ayudarte a llegar a París. Transversal</p>
+        </div>
+        <div
+          class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
+          <h4 class="text-sm fw-5 text-[#424242]">Flex 40</h4>
+          <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+            ayudarte a llegar a París. Transversal</p>
+        </div>
+        <div
+          class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
+          <h4 class="text-sm fw-5 text-[#424242]">Clases de Inglés</h4>
+          <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+            ayudarte a llegar a París. Transversal</p>
+        </div>
+        <div
+          class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
+          <h4 class="text-sm fw-5 text-[#424242]">Home Office</h4>
+          <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+            ayudarte a llegar a París. Transversal</p>
+        </div>
+        <div
+          class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
+          <h4 class="text-sm fw-5 text-[#424242]">Chao Jefe</h4>
+          <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+            ayudarte a llegar a París. Transversal</p>
+        </div>
+        <div
+          class="bx-b h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px]">
+          <h4 class="text-sm fw-5 text-[#424242]">Bono Marraqueta</h4>
+          <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+            ayudarte a llegar a París. Transversal</p>
+        </div>
+      </div>
+    </div>
+    <div class="slideBeneficios max-w-[1440px] mx-[auto] xl:px-[130px] px-[24px] pt-[5px] pb-[120px]">
+      <div class="slideBe">
+        <div>
+          <div
+            class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
+            <h4 class="text-sm fw-5 text-[#424242]">Asesoría Financiera</h4>
+            <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+              ayudarte a llegar a París. Transversal</p>
+          </div>
+        </div>
+        <div>
+          <div
+            class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
+            <h4 class="text-sm fw-5 text-[#424242]">Siempre Seguro</h4>
+            <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+              ayudarte a llegar a París. Transversal</p>
+          </div>
+        </div>
+        <div>
+          <div
+            class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
+            <h4 class="text-sm fw-5 text-[#424242]">Días libres</h4>
+            <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+              ayudarte a llegar a París. Transversal</p>
+          </div>
+        </div>
+        <div>
+          <div
+            class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
+            <h4 class="text-sm fw-5 text-[#424242]">Home Office</h4>
+            <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+              ayudarte a llegar a París. Transversal</p>
+          </div>
+        </div>
+        <div>
+          <div
+            class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
+            <h4 class="text-sm fw-5 text-[#424242]">Chao Jefe</h4>
+            <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+              ayudarte a llegar a París. Transversal</p>
+          </div>
+        </div>
+        <div>
+          <div
+            class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
+            <h4 class="text-sm fw-5 text-[#424242]">Bono Marraqueta</h4>
+            <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+              ayudarte a llegar a París. Transversal</p>
+          </div>
+        </div>
+        <div>
+          <div
+            class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
+            <h4 class="text-sm fw-5 text-[#424242]">Asesoría Legal</h4>
+            <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+              ayudarte a llegar a París. Transversal</p>
+          </div>
+        </div>
+        <div>
+          <div
+            class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
+            <h4 class="text-sm fw-5 text-[#424242]">Bono HoneyMoon</h4>
+            <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+              ayudarte a llegar a París. Transversal</p>
+          </div>
+        </div>
+        <div>
+          <div
+            class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
+            <h4 class="text-sm fw-5 text-[#424242]">Crédito de emergencia</h4>
+            <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+              ayudarte a llegar a París. Transversal</p>
+          </div>
+        </div>
+        <div>
+          <div
+            class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
+            <h4 class="text-sm fw-5 text-[#424242]">Flex 40</h4>
+            <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+              ayudarte a llegar a París. Transversal</p>
+          </div>
+        </div>
+        <div>
+          <div
+            class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
+            <h4 class="text-sm fw-5 text-[#424242]">Clases de Inglés</h4>
+            <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+              ayudarte a llegar a París. Transversal</p>
+          </div>
+        </div>
+        <div>
+          <div
+            class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
+            <h4 class="text-sm fw-5 text-[#424242]">Home Office</h4>
+            <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+              ayudarte a llegar a París. Transversal</p>
+          </div>
+        </div>
+        <div>
+          <div
+            class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
+            <h4 class="text-sm fw-5 text-[#424242]">Chao Jefe</h4>
+            <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+              ayudarte a llegar a París. Transversal</p>
+          </div>
+        </div>
+        <div>
+          <div
+            class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
+            <h4 class="text-sm fw-5 text-[#424242]">Bono Marraqueta</h4>
+            <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+              ayudarte a llegar a París. Transversal</p>
+          </div>
+        </div>
+        <div>
+          <div
+            class="bx-b w-[230px] h-[96px] border-l-[8px] border-[#ECEFF1] flex flex-col items-left rounded-l-lg justify-center pl-[16px] mr-[12px]">
+            <h4 class="text-sm fw-5 text-[#424242]">Flex 40</h4>
+            <p class="text-[10px] leading-[12px] text-[#424242] fw-4 pt-[6px]">Te regalamos días libres y un bono para
+              ayudarte a llegar a París. Transversal</p>
           </div>
         </div>
       </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/navbar.js"></script>
-    <script src="assets/js/cultura.js"></script>
+    </div>
+  </div>
+  <!-- fin 15 beneficios -->
+  <!-- adn tinet -->
+  <div class="bg-[#F4F8F9]">
+    <div class="max-w-[1440px] mx-[auto] xl:px-[130px] px-[24px] pt-[100px] pb-[100px]">
+      <span class="block fw-7 text-[20px] leading-[24px] text-[#006099]">ADN Tinet</span>
+      <p
+        class="text-[#424242] sm:text-[32px] sm:leading-[40px] text-[22px] leading-[27px] fw-6 max-w-[763px] sm:pt-[0px] pt-[8px]">
+        Digital o presencial, encontramos momentos para compartir y llevarte la fiesta</p>
+      <video class="w-[100%] mx-[auto] md:mt-[20px] mt-[40px]" poster="assets/img/covervideocultura.png" controls>
+        <source src="assets/video/lanzamiento_instagram.mp4">
+      </video>
+    </div>
+  </div>
+  <!-- fin adn tinet -->
+  <!-- casos -->
+  <div class="bg-[#E5EFF5]">
+    <div class="relative max-w-[1440px] mx-[auto] xl:px-[130px] px-[24px] pt-[120px] pb-[140px]">
+      <div class="absolute top-[0px] xl:left-[90px] left-[5px] flex flex-col items-center">
+        <div class=" w-[0px] h-[80px] border-r-2 border-dashed border-[#90A4AE]"></div>
+        <div class="rounded-full w-[16px] h-[16px] bg-[#C41A90]"></div>
+      </div>
+      <h3
+        class="text-[22px] leading-[27px] max-w-[100%] lg:max-w-[600px] md:text-[32px] md:leading-[40px] lg:text-[56px] lg:leading-[64px] text-[#424242] fw-7">
+        Lorem ipsum <span class="text-[#C41A90]">dolor sit.</span></h3>
+      <p
+        class="text-[14px] leading-[20px] lg:text-[24px] lg:leading-[32px] text-[#616161] fw-4 max-w-[100%] lg:max-w-[800px] pt-[16px]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus eleifend erat, blandit vestibulum nunc
+        tincidunt nec. Vestibulum venenatis ultricies laoreet.</p>
+      <div class="casoss my-[60px] lg:mx-[0px] mx-[-24px]">
+        <div class="">
+          <div class="bg-[#F0F8FD] w-[370px] h-[507px] rounded-b-lg p-[24px] relative mt-[82px] mx-[15px]">
+            <img class="rounded-full w-[150px] h-[150px] mx-[auto] mt-[-105px]"
+              src="assets/img/cultura/angel_Abse_1.png" alt="Angel Absé">
+            <h3 class="text-center fw-5 text-[#6A6A6A] text-[24px] leading-[32px] py-[8px]">Angel Absé</h3>
+            <span class="text-center text-[#4E4E4E] text-[14px] leading-[20px] fw-5 py-[8px] block">ISW Medio</span>
+            <div class="flex">
+              <img class="inline-block w-[16px] h-[29px] mr-[3px]" src="assets/img/cultura/cc.png" alt="Quote">
+              <img class="inline-block w-[16px] h-[29px]" src="assets/img/cultura/cc.png" alt="Quote">
+            </div>
+            <p class="text-sm text-[#4E4E4E] fw-4 pt-[5px]">Gracias a Tinet es que me pude venir a estudiar a Irlanda
+              sin tener que preocuparme por perder el trabajo. Ya llevo 6 meses en este país, en donde estoy estudiando
+              Inglés y trabajando de forma remota, y la verdad es que ha sido una experiencia notable. He podido conocer
+              nuevas culturas, lugares asombrosos y personas de todas partes del mundo.</p>
+            <div class="absolute bottom-[24px] left-[24px] w-[100%] flex">
+              <img class="w-[43px] h-[28px] mr-[9px]" src="assets/img/cultura/irlanda.svg" alt="Irlanda"><span
+                class="text-base fw-6 text-[#424242]">Irlanda</span>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="bg-[#F0F8FD] w-[370px] h-[507px] rounded-b-lg p-[24px] relative mt-[82px] mx-[10px]">
+            <img class="rounded-full w-[150px] h-[150px] mx-[auto] mt-[-105px]"
+              src="assets/img/cultura/Yordy_Riascos_1.png" alt="Yordi Riascos">
+            <h3 class="text-center fw-5 text-[#6A6A6A] text-[24px] leading-[32px] py-[8px]">Yordi Riascos</h3>
+            <span class="text-center text-[#4E4E4E] text-[14px] leading-[20px] fw-5 py-[8px] block">ISW Medio</span>
+            <div class="flex">
+              <img class="inline-block w-[16px] h-[29px] mr-[3px]" src="assets/img/cultura/cc.png" alt="Quote">
+              <img class="inline-block w-[16px] h-[29px]" src="assets/img/cultura/cc.png" alt="Quote">
+            </div>
+            <p class="text-sm text-[#4E4E4E] fw-4 pt-[5px]">he trabajado en otras empresas de chile pero aqui se siente
+              el tacto por las personas en como cuidar y mantener a cada uno dentro de tinet como si fuera una familia
+              veo la preocupacion por que cada uno se siente bien</p>
+            <div class="absolute bottom-[24px] left-[24px] w-[100%] flex">
+              <img class="w-[43px] h-[28px] mr-[9px]" src="assets/img/cultura/venezuela.svg" alt="Venezuela"><span
+                class="text-base fw-6 text-[#424242]">Venezuela</span>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="bg-[#F0F8FD] w-[370px] h-[507px] rounded-b-lg p-[24px] relative mt-[82px] mx-[10px]">
+            <img class="rounded-full w-[150px] h-[150px] mx-[auto] mt-[-105px]"
+              src="assets/img/cultura/wileisy_m4_1.png" alt="Melisa Meza">
+            <h3 class="text-center fw-5 text-[#6A6A6A] text-[24px] leading-[32px] py-[8px]">Melisa Meza</h3>
+            <span class="text-center text-[#4E4E4E] text-[14px] leading-[20px] fw-5 py-[8px] block">ISW Medio</span>
+            <div class="flex">
+              <img class="inline-block w-[16px] h-[29px] mr-[3px]" src="assets/img/cultura/cc.png" alt="Quote">
+              <img class="inline-block w-[16px] h-[29px]" src="assets/img/cultura/cc.png" alt="Quote">
+            </div>
+            <p class="text-sm text-[#4E4E4E] fw-4 pt-[5px]">Como extranjera al llegar a Tinet como mi primer empleo, fue
+              lo mejor que pudo pasar. Me sentí súper bien recibida y parte de la familia Tinet desde el primer momento,
+              esto ayudo a que pudiera sentirme confiada y tranquila en los equipos/ servicios en los que he estado, ya
+              que sé que cuento con el apoyo de la empresa. Uno de las cosas que más valoro de Tinet es esa preocupación
+              por el bienestar de las personas, esas ganas de que las personas están bien y se sientan bien haciendo su
+              trabajo y que todo se mueva en torno a eso.</p>
+            <div class="absolute bottom-[24px] left-[24px] w-[100%] flex">
+              <img class="w-[43px] h-[28px] mr-[9px]" src="assets/img/cultura/irlanda.svg" alt="Irlanda"><span
+                class="text-base fw-6 text-[#424242]">Irlanda</span>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="bg-[#F0F8FD] w-[370px] h-[507px] rounded-b-lg p-[24px] relative mt-[82px] mx-[15px]">
+            <img class="rounded-full w-[150px] h-[150px] mx-[auto] mt-[-105px]"
+              src="assets/img/cultura/angel_Abse_1.png" alt="Lorem, ipsum.">
+            <h3 class="text-center fw-5 text-[#6A6A6A] text-[24px] leading-[32px] py-[8px]">Lorem, ipsum.</h3>
+            <span class="text-center text-[#4E4E4E] text-[14px] leading-[20px] fw-5 py-[8px] block">ISW Medio</span>
+            <div class="flex">
+              <img class="inline-block w-[16px] h-[29px] mr-[3px]" src="assets/img/cultura/cc.png" alt="Quote">
+              <img class="inline-block w-[16px] h-[29px]" src="assets/img/cultura/cc.png" alt="Quote">
+            </div>
+            <p class="text-sm text-[#4E4E4E] fw-4 pt-[5px]">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quaerat voluptates doloremque sint voluptatibus dolores soluta distinctio blanditiis error facilis quia!.
+            </p>
+            <div class="absolute bottom-[24px] left-[24px] w-[100%] flex">
+              <img class="w-[43px] h-[28px] mr-[9px]" src="assets/img/cultura/irlanda.svg" alt="Irlanda"><span
+                class="text-base fw-6 text-[#424242]">Irlanda</span>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="bg-[#F0F8FD] w-[370px] h-[507px] rounded-b-lg p-[24px] relative mt-[82px] mx-[15px]">
+            <img class="rounded-full w-[150px] h-[150px] mx-[auto] mt-[-105px]"
+              src="assets/img/cultura/angel_Abse_1.png" alt="Lorem, ipsum.">
+            <h3 class="text-center fw-5 text-[#6A6A6A] text-[24px] leading-[32px] py-[8px]">Lorem, ipsum.</h3>
+            <span class="text-center text-[#4E4E4E] text-[14px] leading-[20px] fw-5 py-[8px] block">ISW Medio</span>
+            <div class="flex">
+              <img class="inline-block w-[16px] h-[29px] mr-[3px]" src="assets/img/cultura/cc.png" alt="Quote">
+              <img class="inline-block w-[16px] h-[29px]" src="assets/img/cultura/cc.png" alt="Quote">
+            </div>
+            <p class="text-sm text-[#4E4E4E] fw-4 pt-[5px]">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quaerat voluptates doloremque sint voluptatibus dolores soluta distinctio blanditiis error facilis quia!.
+            </p>
+            <div class="absolute bottom-[24px] left-[24px] w-[100%] flex">
+              <img class="w-[43px] h-[28px] mr-[9px]" src="assets/img/cultura/irlanda.svg" alt="Irlanda"><span
+                class="text-base fw-6 text-[#424242]">Irlanda</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- fin casos -->
+  <!-- oportunidades -->
+  <div class="bg-[#FAFAFA]">
+    <div
+      class="relative max-w-[1440px] mx-[auto] px-[24px] xl:px-[130px] lg:px-[24px] py-[50px] lg:py-[100px] flex lg:flex-row flex-col items-center lg:justify-between justify-center">
+      <div
+        class="absolute sm:flex hidden top-[0px] xl:left-[90px] sm:left-[50%] lg:left-[5px] left-[25px] flex flex-col items-center">
+        <div class=" w-[0px] lg:h-[280px] h-[70px] border-r-2 border-dashed border-[#90A4AE]"></div>
+        <div class="rounded-full w-[16px] h-[16px] bg-[#C41A90]"></div>
+      </div>
+      <div class="max-w-[100%] lg:max-w-[50%]">
+        <h3
+          class="fw-7 lg:pt-[0px] sm:pt-[55px] pt-[0px] text-[24px] leading-[32px] text-[#000000] sm:text-[44px] sm:leading-[52px] lg:text-[64px] lg:leading-[72px] text-center lg:text-left mb-[28px] lg:mb-[0px]">
+          ¿Quieres<br>
+          conocer nuestras <span class="text-[#C41A90]">oportunidades?</span></h3>
+      </div>
+      <div class="max-w-[100%] lg:max-w-[50%]">
+        <div
+          class="w-[328px] h-[328px] lg:w-[473px] lg:h-[474px] bg-[#E5EFF5] rounded-full flex flex-col justify-center items-center lg:p-[70px] p-[40px]">
+          <p class="fw-5 text-[20px] leading-[28px] text-[#434040] text-center">Encuentra la alternativa que más se
+            acomode a tu perfil!</p>
+          <a title="Ver oportunidades" class="tinet-btns bg-[#C41A90] text-[#ffffff] text-[16px] leading-[24px]"
+            href="#">Ver oportunidades</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- fin oportunidades -->
+  <!--Footer-->
+  <footer class="footer-general">
+    <div class="top_footer">
+      <div class="tf_desc">
+        <img src="assets/img/footer/Logo.svg" alt="Tinet">
+        <p class="fs-12 fw-4 c-pf padbot_60">Somos una consultora tecnológica líder en transformación y cultura digital
+          con soluciones de negocios basadas en tecnología y consultoría.</p>
+        <div class="icotext">
+          <img src="assets/img/footer/phone.svg" alt="Phone">
+          <p class="fw-4 fs-14 cl-ff lh-21">264690839</p>
+        </div>
+        <div class="icotext">
+          <img src="assets/img/footer/place.svg" alt="Place">
+          <p class="fw-4 fs-14 cl-ff lh-21">Evaristo Lillo 48, Las Condes, Santiago, RM</p>
+        </div>
+      </div>
+      <div class="td_btns">
+        <ul>
+          <li class="fw-6 fs-14 cl-ff lh-21">Compañia</li>
+          <li class="fw-4 fs-14 c-pf lh-21"><a title="Somos tinet" href="#">Somos tinet</a></li>
+          <li class="fw-4 fs-14 c-pf lh-21"><a title="Que hacemos" href="#">Que hacemos</a></li>
+          <li class="fw-4 fs-14 c-pf lh-21"><a title="Industrias" href="#">Industrias</a></li>
+          <li class="fw-4 fs-14 c-pf lh-21"><a title="Casos de Éxito" href="#">Casos de Éxito</a></li>
+          <li class="fw-4 fs-14 c-pf lh-21"><a title="Hablemos" href="#">Hablemos</a></li>
+        </ul>
+        <ul>
+          <li class="fw-6 fs-14 cl-ff lh-21">Talento Tinet</li>
+          <li class="fw-4 fs-14 c-pf lh-21"><a title="Trabaja con nosotros" href="#">Trabaja con nosotros</a></li>
+          <li class="fw-4 fs-14 c-pf lh-21"><a title="Carreras" href="#">Carreras</a></li>
+        </ul>
+        <ul>
+          <li class="fw-6 fs-14 cl-ff lh-21">Contenido</li>
+          <li class="fw-4 fs-14 c-pf lh-21"><a title="Blog" href="#">Blog</a></li>
+        </ul>
+        <ul>
+          <li class="fw-6 fs-14 cl-ff lh-21">Redes Sociales</li>
+          <li class="fw-4 fs-14 c-pf lh-21 icoredes">
+            <a title="LinkedIn" href="#"><img src="assets/img/footer/linkedin.svg" alt="LinkedIn"></a>
+            <a title="Instagram" href="#"><img src="assets/img/footer/ig.svg" alt="Instagram"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="bot_footer">
+      <div class="bf_left">
+        <div class="ea_f">
+          <p class="fw-6 fs-14 cl-ff lh-21 pabo20">Empresas asociadas</p>
+          <div class="c_ea">
+            <img src="assets/img/footer/Drop.svg" alt="Empresas asociadas">
+          </div>
+
+        </div>
+        <div class="ea_f">
+          <p class="fw-6 fs-14 cl-ff lh-21 pabo20">Somos parte de</p>
+          <img src="assets/img/footer/Acti.svg" alt="Somos parte de">
+        </div>
+      </div>
+      <div class="bf_right">
+        <div>
+          <p class="fw-4 fs-14 cl-ff lh-21 lr">M.P.D.</p>
+          <p class="fw-4 fs-14 cl-ff lh-21 lr">Canal de denuncias</p>
+          <p class="fw-4 fs-14 cl-ff lh-21">Política de Privacidad </p>
+        </div>
+        <p class="fw-4 fs-14 cl-ff lh-21">© 2022 Tinet. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/cultura.js"></script>
 </body>
+
 </html>
