@@ -240,6 +240,10 @@ $(document).ready(function () {
     });
   }
 
+  if($(window).width() <= 800){
+    $('.revolution__sidebar').removeClass('revolution__sidebar--active');
+  }
+
   $('.revolution__td').on("click",function(){
     let self = $(this);
     let tab = "#" + self.attr('data-tab');
