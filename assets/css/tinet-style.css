@@ -513,6 +513,30 @@ strong {
 .cont-innerMS {
   display: none;
 }
+
+.dspnum .slick-arrow{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border-radius: 50%;
+  background-color: #003a5c;
+  bottom: -60px;
+  position: absolute;
+  cursor: pointer;
+  justify-content: center;  
+  align-items: center;
+  flex-direction: column;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+}
+.dspnum .slick-arrow.left{
+  left: 216px;
+}
+.dspnum .slick-arrow.right{
+  left: 280px;
+}
+
 @media (min-width: 1441px) {
   .header-content {
     max-width: 100%;
