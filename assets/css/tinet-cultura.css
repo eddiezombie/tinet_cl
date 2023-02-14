@@ -240,7 +240,6 @@
 .slider-v-nav-2 .slick-slide.slick-current .slide-v-nav-img,
 .slider-v-nav-3 .slick-slide.slick-current .slide-v-nav-img,
 .slider-v-nav-4 .slick-slide.slick-current .slide-v-nav-img{
-    /*border: 4px solid #C41A90;*/
     outline: 4px solid #C41A90;
     border-radius: 12px;
     overflow: hidden;
