@@ -31,7 +31,6 @@ $(document).ready(function () {
 	})
 
 	$('.cbuss').on('afterChange', function(event, slick, currentSlide) {
-	  console.log(slick, currentSlide);
 	  if (slick.$slides.length-1 == currentSlide) {
 	    $('.cbuss__bg').hide();
 	  }else{
@@ -48,8 +47,9 @@ $(document).ready(function () {
 	  dots: true
 	})
 	$('.cbuss').on('afterChange', function(event, slick, currentSlide, nextSlide){
+	  if(slick.$slider[0].classList.contains('cvideo')) return;
 	  var suma = currentSlide + 1;
-	  $('.dspnum .numbu').text(suma)
+	  $('.dspnum .numbu').text(suma);
 	});
 	$('.video').parent().click(function () {
 	  if( $(this).children(".video").get(0).paused ){
