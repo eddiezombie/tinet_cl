@@ -240,8 +240,8 @@ $(document).ready(function () {
     });
   }
 
-  if($(window).width() <= 800){
-    $('.revolution__sidebar').removeClass('revolution__sidebar--active');
+  if($(window).width() > 800){
+    $('#revsidebar1').addClass('revolution__sidebar--active');
   }
 
   $('.revolution__td').on("click",function(){
