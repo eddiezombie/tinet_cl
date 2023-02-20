@@ -229,6 +229,7 @@ $(document).ready(function () {
           breakpoint: 200,
           settings: {
             dots: true,
+            adaptiveHeight: true,
             arrows: false
           }
         },

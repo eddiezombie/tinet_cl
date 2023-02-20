@@ -745,9 +745,6 @@ strong {
   .cntHead {
     width: 75%;
   }
-  .side-nav {
-    padding-right: 14px;
-  }
   .logo-header > img {
     width: 100px;
   }
@@ -2497,6 +2494,9 @@ strong {
   .projects__card:hover:not(.projects__card--disabled) .projects__card__show:after {
     background: url(../img/eye.svg) left top no-repeat;
   }
+  .projects__card:hover .projects__card__show::after {
+    background: url(../img/eye.svg) left top no-repeat;
+  }
   .projects__card--color1:hover:not(.projects__card--disabled),
   .projects__card--color2:hover:not(.projects__card--disabled),
   .projects__card--color3:hover:not(.projects__card--disabled),
@@ -2576,6 +2576,9 @@ strong {
   .revolution__td:after{
     opacity: 1;
     right: 14px;
+  }
+  .revolution__td.revolution__td--active:after{
+    display: inline-block;
   }
   .revolution__sidebar{
     position: fixed;
