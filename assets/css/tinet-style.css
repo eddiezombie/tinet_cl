@@ -200,7 +200,7 @@ strong {
   align-content: center;
   justify-content: space-around;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 32px;
 }
 .btn-nav > ul.tr-ul > li {
   padding: 0 15px;
@@ -549,6 +549,9 @@ strong {
   }
   .side-nav {
     padding-right: 0px;
+  }
+  .btn-nav > ul.tr-ul{
+    margin-top: 8px;
   }
 }
 @media (max-width: 768px) {
