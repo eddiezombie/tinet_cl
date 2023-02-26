@@ -61,6 +61,17 @@ $(document).ready(function () {
 	  }
 	});
 
+	$('.verMas').on("click",function(event){
+		event.preventDefault();
+		$('.hiddeBox').removeClass('hidden');
+		$('.verMas').addClass('hidden');
+	});
+
+	$('.verMenos').on("click",function(event){
+		event.preventDefault();
+		$('.hiddeBox').addClass('hidden');
+		$('.verMas').removeClass('hidden');
+	});
 
 	$('.expectations-slider').slick({
 	  infinite: true,
