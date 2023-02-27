@@ -1249,6 +1249,10 @@ strong {
   border-radius: 20px 56px 56px 100px;
   cursor: pointer;
 }
+.btn-tab.working-case{
+  background: #c41a90;
+  color: #fff;
+}
 .card-tab {
   background: rgba(236, 239, 241, 0.3);
   border-radius: 20px 56px 56px 152px;
